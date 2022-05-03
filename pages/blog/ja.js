@@ -13,7 +13,7 @@ export default function Blog({ posts }) {
     }
     return (
         <Container page={"blog"} customMeta={customMeta}>
-            <PageBanner title={"みどログ"} subtitle={"Miscellaneous record."}/>
+            <PageBanner title={"みどログ"} subtitle={"チャレンジして失敗するのを怖れるよりも、何もしないことを怖れろ。"}/>
             <LanguageSelector />
             <PostListContainer>
                 <PostList posts={posts}/>

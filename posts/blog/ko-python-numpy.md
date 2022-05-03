@@ -2,8 +2,9 @@
 title:  "파이썬으로 데이터 분석하기 - Numpy"
 subtitle: "Anaconda 환경이라면 `conda`, 그렇지 않다면 `pip`를 사용하여 `numpy`를 설치해준다 ..."
 date: "2022-01-31"
-categories: [Python]
-tags: [numpy, python]
+tags: 
+  - numpy
+  - python
 lang: ko
 ---
 

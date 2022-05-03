@@ -27,7 +27,7 @@ const Footer = () => {
                     ))
                 }
             </div>
-            <div>© 2022 <a href="https://m-e.blue/">Midotype</a>. Powered by&nbsp;<a href="https://vercel.com/">Vercel</a></div>
+            <div>© 2022 <a href="https://github.com/midotype/mido-blog">Mido Eu</a>. Powered by&nbsp;<a href="https://vercel.com/">Vercel</a></div>
         </FooterContainer>
     )
 }
