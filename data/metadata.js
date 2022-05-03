@@ -19,10 +19,10 @@ const metadata = {
     giscus: {
       id: 'midotype',
       url: 'https://giscus.app/client.js',
-      repo: '',
-      repoId: '',
+      repo: 'midotype/mido-blog',
+      repoId: 'R_kgDOHRtelA',
       category: 'General',
-      categoryId: '', // <your category id>
+      categoryId: 'DIC_kwDOHRtelM4CO6wU',
     },
 
     analytics: {
