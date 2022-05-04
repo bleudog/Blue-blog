@@ -11,13 +11,12 @@ const Comments = () => {
         repoId: metadata.giscus.repoId,
         category: metadata.giscus.category,
         categoryId: metadata.giscus.categoryId,
-        mapping: "title",
+        mapping: "pathname",
         theme: "light",
         crossorigin: "anonymous",
         loading: "lazy",
         ref: comment
     });
-    
 
     return (
         <div className="w-full mt-[5em]">
