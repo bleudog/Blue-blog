@@ -1,6 +1,6 @@
 ---
 title: "What is an Array?"
-date: "2022-05-04"
+date: "2022-05-04 15:00:00"
 tags: 
   - data structure
   - array
