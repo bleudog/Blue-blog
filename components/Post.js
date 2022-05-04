@@ -1,21 +1,13 @@
 import Date from "@components/Date";
 import Link from 'next/link'
-import { PostContainer, PageTitle, PageSubtitle } from "./custom-tw-components";
+import { PostContainer, PageTitle } from "./custom-tw-components";
 import { LanguageList, LanguageListWrapper } from "./custom-tw-components";
 
-const Post = ({ post, tags, title, subtitle, date, children }) => {
+const Post = ({ post, tags, title, date, children }) => {
     return (
         <PostContainer>
+            <Date dateString={date} customClass={"text-sm break-normal inline-block"} />
             <PageTitle>{title}</PageTitle>
-            {subtitle && (
-                <PageSubtitle>
-                    {subtitle} &nbsp;
-                    <Date dateString={date} customClass={"italic text-sm break-normal inline-block"} />
-                </PageSubtitle>
-            )}
-            {!subtitle && date && (
-                <Date customClass={"italic text-sm break-normal inline-block"} dateString={date} />
-            )}
             {post && (
                 <LanguageListWrapper>
                     {post.availableLanguage.map((post) => (

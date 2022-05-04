@@ -10,14 +10,14 @@ const RecentPostsContainer = ({ posts, title, link }) => {
                 <NavLink link={link} customClass={`flex justify-end text-sm text-primary dark:text-dprimary`} value={"View more..."} />
             </div>
 
-            <ul className={`list-none flex flex-wrap justify-between`}>
+            <ul className={`list-none flex flex-wrap justify-evenly`}>
                 {posts.map(({ url_path, title, subtitle, date }) => (
-                    <li className={"shadow-[0px_0px_4px_rgba(0,0,0,0.3)] rounded-md hover:shadow-[0px_0px_6px_rgba(0,0,0,0.6)] p-4 m-3 rounded w-full sm:w-[18em] h-[9em] sm:h-[12em] list-none text-center duration-300"} key={title}>
-                        <NavLink link={url_path.replace('-', '/')} customClass={"text-md md:text-lg text-primary dark:text-dprimary"} value={title} />
-                        <Subtitle>
+                    <li className={"flex items-center rounded-md hover:shadow-[0px_0px_6px_rgba(0,0,0,0.6)] pt-3 pb-3 pl-2 mb-1 rounded w-full list-none duration-300"} key={title}>
+                        <Date dateString={date} customClass={"text-xs break-normal inline-block"} />
+                        <NavLink link={url_path.replace('-', '/')} customClass={"uppercase text-md tracking-wider font-light md:text-lg text-primary dark:text-dprimary ml-5"} value={title} />
+                        {/* <Subtitle>
                             {subtitle} &nbsp;
-                            <Date dateString={date} customClass={"italic text-xs break-normal inline-block"} />
-                        </Subtitle>
+                        </Subtitle> */}
                     </li>
                 ))}
             </ul>

@@ -85,7 +85,8 @@ export const LanguageButtons = tw.div`
 export const List = tw.li`
     flex
     list-none
-    flex-col
+    items-center
+    flex-wrap
     pb-12
 `
 
@@ -96,11 +97,12 @@ export const Title = tw.div`
     text-ellipsis
     whitespace-pre
 
+    tracking-widest
+    font-light
     cursor-pointer
-    font-semibold 
-    text-xl 
-    md:text-2xl 
-    tracking-tighter 
+    md:text-xl 
+    text-md
+    uppercase
     hover:text-[#289aff]
     dark:hover:text-[#289aff]
     duration-150
@@ -134,7 +136,6 @@ export const PageHeader = tw.header`
 
 export const PageTitle = tw.div` 
     text-4xl 
-    md:text-5xl 
     md:leading-tight 
     font-bold 
     text-gray-800 
@@ -221,7 +222,6 @@ export const DocPostTitle = tw.h1`
     text-ellipsis
     whitespace-pre
 
-    font-semibold 
     text-2xl 
     md:text-3xl 
 `
@@ -230,7 +230,7 @@ export const DocPostTitle = tw.h1`
 ///  Container  Component
 //////////////////////////////////////////////////////
 export const BaseContainer = tw.section`
-    max-w-screen-xl
+    max-w-screen-md
     w-full
     px-[1rem]
     mx-auto

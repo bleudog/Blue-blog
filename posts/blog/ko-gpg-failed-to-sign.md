@@ -2,8 +2,10 @@
 title: "error: gpg failed to sign"
 subtitle: "GPG key를 사용해서 [커밋에 서명](./ko-gpg-failed-to-sign.md)을 하는데 아래와 같은 오류가 ..."
 date: "2022-04-05"
-tags: [git, gpg, error]
-categories: [Git]
+tags: 
+  - git
+  - gpg
+  - error
 lang: ko
 ---
 

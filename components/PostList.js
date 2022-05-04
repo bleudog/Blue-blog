@@ -7,8 +7,10 @@ const PostList = ({ posts }) => {
         <>
             {posts.map((post) => (
                 <List key={`${post.lang}-${post.slug}`}>
+                    <Date dateString={post.date} customClass={"text-sm break-normal inline-block"} />
                     <Link href={`/blog/${post.lang}/${post.slug}`} passHref>
                         <Title>
+                            &nbsp; &nbsp;
                             {post.lang == "ko" && (
                                 <span>🇰🇷</span>
                             )}
@@ -22,10 +24,9 @@ const PostList = ({ posts }) => {
                             {post.title}
                         </Title>
                     </Link>
-                    <Subtitle>
+                    {/* <Subtitle>
                         {post.subtitle} &nbsp;
-                        <Date dateString={post.date} customClass={"italic text-sm break-normal inline-block"} />
-                    </Subtitle>
+                    </Subtitle> */}
                 </List>
             ))}
         </>
