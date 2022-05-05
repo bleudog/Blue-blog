@@ -36,7 +36,8 @@ export const LanguageListWrapper = tw.ul`
 
 export const LanguageList = tw.li` 
     list-none
-    px-4
+    px-2
+    sm:px-4
     mr-2
     border
     rounded-md
@@ -83,10 +84,7 @@ export const LanguageButtons = tw.div`
 ///  PostList Component
 //////////////////////////////////////////////////////
 export const List = tw.li`
-    flex
     list-none
-    items-center
-    flex-wrap
     pb-12
 `
 

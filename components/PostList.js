@@ -10,7 +10,6 @@ const PostList = ({ posts }) => {
                     <Date dateString={post.date} customClass={"text-sm break-normal inline-block"} />
                     <Link href={`/blog/${post.lang}/${post.slug}`} passHref>
                         <Title>
-                            &nbsp; &nbsp;
                             {post.lang == "ko" && (
                                 <span>🇰🇷</span>
                             )}
