@@ -56,7 +56,7 @@ printf("%d    %d\n", arr[4], *(arr + 4)); // 5 5
 
 When we add a value to the pointer (`arr`), we're not adding a number 0, 1, etc...
 
-We're actually adding proper number of bytes. In this case, we're adding 4 bytes because our `arr` is an integer array and integers are normally 4 bytes -- **it's actually adding `sizeof(int)` bytes**.
+We're actually adding proper number of bytes. In this case, we're adding 4 bytes because our `arr` is an integer array and integers are normally 4 bytes -- it's actually adding `sizeof(int)` bytes.
 
 Lets take a look at addresses and see if this statement is sound.
 ```c
@@ -98,7 +98,7 @@ Just like 1-D array, we can use indexes to access elements in 2-D array.
 
 We can get the first element in row 0 and column 0 by `arr[0][0]`.
 
-## 2-D Array in memory
+### 2-D Array in memory
 
 We represented 2-D array using rows and columns but in memory, everything is 1-dimensional.
 
@@ -139,9 +139,7 @@ int main(void) {
 }
 ```
 
-
-
-## Times for Common Operations
+### Runtimes for common operations
 Adding and removing a data:
 - Beginning: O(N) / O(N) - *requires shifting*
 - End: O(1) / O(1)
@@ -153,6 +151,7 @@ Arrays are great for adding or removing at the end but not so much for beginning
 - [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - [896. Monotonic Array](https://leetcode.com/problems/monotonic-array/)
 - [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+- [1672. Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)
 
 ## Reference
 - [https://www.coursera.org/lecture/data-structures/arrays-OsBSF](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)

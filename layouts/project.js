@@ -20,7 +20,7 @@ const ProjectLayout = () => {
                 {projects.map(p => (
                     <a href={p.link} target="_blank" rel="noreferrer" key={p.title}>
                         <ProjectCard>
-                            <span className={"py-1 text-xs text-secondary dark:text-dsecondary hover:decoration-none"}>{p.spec}</span>
+                            <span className={"py-1 text-xs text-secondary hover:decoration-none"}>{p.spec}</span>
                             <Image
                                 priority
                                 src={p.cover}

@@ -27,7 +27,7 @@ arr = arr[200]; // NOT POSSIBLE
 
 The size in a static array is determined during the complie time and we cannot alter it during the runtime.
 
-## Semi-solution
+### Semi-solution
 A semi-solution to this is to use a *dynamically-allocated array*.
 
 ```c
@@ -47,7 +47,7 @@ This is only a semi-solution because we still don't know the maximum input size.
 
 What we need is a *dynamic array* or in other words, we need an array that can be resizable.
 
-## Dynamic Arrays
+## Dynamic Array
 The idea is to store a pointer to a dynamically allocated array.
 
 ![Dynamic array figure 1](/images/posts/dynamic-array/darray-m.png)
@@ -56,7 +56,7 @@ The idea is to store a pointer to a dynamically allocated array.
 
 ![Dynamic array figure 2](/images/posts/dynamic-array/darray-mid.png)
 
-## Dynamic Array Operations
+### Dynamic Array Operations
 - `get(i)`: returns element at location `i`
 - `set(i, data)`: sets element `i` to `data`
 - `pushback(data)`: adds `data` to the end

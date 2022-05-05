@@ -1,6 +1,5 @@
 ---
 title: 'BOJ 10: 브루트포스 (Bruteforce) -- [4/5]'
-subtitle: "백준 온라인저지 단계별로 문제풀기의 10번째 단계 브루트포스 풀이 ..."
 date: "2022-03-24"
 tags: 
  - bruteforce

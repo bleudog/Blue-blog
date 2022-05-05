@@ -20,7 +20,7 @@ const Header = props => {
                     <div className={styles.navLink}>
                         {
                             baseNav.map(tab => (
-                                <NavLink key={tab.link} link={tab.link} customClass={"hover:text-[#289aff] dark:hover:text-[#289aff]"} value={tab.name} />
+                                <NavLink key={tab.link} link={tab.link} customClass={"hover:text-[#289aff]"} value={tab.name} />
                             ))
                         }
                     </div>
@@ -31,14 +31,14 @@ const Header = props => {
 
             <MobileNav className={styles.mobileNavLink}>
                 <div id="hamburger" className={`${styles.mobileHamburger} duration-200`} onClick={toggleMobileMenu}>
-                    <div className={`${styles.bar} dark:bg-[#f9f9f9]`}></div>
-                    <div className={`${styles.bar} dark:bg-[#f9f9f9]`}></div>
-                    <div className={`${styles.bar} dark:bg-[#f9f9f9]`}></div>
+                    <div className={`${styles.bar}`}></div>
+                    <div className={`${styles.bar}`}></div>
+                    <div className={`${styles.bar}`}></div>
                 </div>
                 <div id="mobileMenu" className={`hide ${styles.mobileMenu}`}>
                     {
                         baseNav.map(tab => (
-                            <NavLink key={tab.link} link={tab.link} customClass={"hover:text-[#289aff] dark:hover:text-[#289aff] py-1"} value={tab.name} />
+                            <NavLink key={tab.link} link={tab.link} customClass={"hover:text-[#289aff]"} value={tab.name} />
                         ))
                     }
                 </div>

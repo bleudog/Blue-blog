@@ -11,7 +11,6 @@ export const PostListContainer = tw.ul`
     pt-[3em]
     border-t-[1px]
     border-b-[1px]
-    dark:border-slate-700
 `
 
 //////////////////////////////////////////////////////
@@ -19,10 +18,8 @@ export const PostListContainer = tw.ul`
 //////////////////////////////////////////////////////
 export const Article = tw.article`
     text-primary 
-    dark:text-dprimary 
     pb-5 
     border-b-[1px] 
-    dark:border-gray-600
 `
 
 //////////////////////////////////////////////////////
@@ -44,7 +41,6 @@ export const LanguageList = tw.li`
     font-medium
 
     hover:bg-[#289aff]
-    dark:hover:bg-[#289aff]
 `
 
 //////////////////////////////////////////////////////
@@ -53,15 +49,12 @@ export const LanguageList = tw.li`
 export const PostContainer = tw.section`
     mt-8
     text-primary
-    dark:text-dprimary
-    dark:border-gray-600
     text-sm
     w-full
 `
 
 export const PostTitle = tw.div`
     text-primary
-    dark:text-dprimary
     text-2xl
     md:text-3xl
     font-bold
@@ -69,7 +62,6 @@ export const PostTitle = tw.div`
 
 export const PostSubtitle = tw.div`
     text-secondary
-    dark:text-dsecondary
     py-1
     text-sm
 `
@@ -85,30 +77,27 @@ export const LanguageButtons = tw.div`
 //////////////////////////////////////////////////////
 export const List = tw.li`
     list-none
-    pb-12
+    pb-8
 `
 
 export const Title = tw.div` 
     text-primary 
-    dark:text-dprimary
     overflow-hidden
     text-ellipsis
     whitespace-pre
 
-    tracking-widest
+    tracking-wider
     font-light
     cursor-pointer
     md:text-xl 
     text-md
     uppercase
     hover:text-[#289aff]
-    dark:hover:text-[#289aff]
     duration-150
 `
 
 export const Subtitle = tw.div` 
     text-primary 
-    dark:text-dprimary
     pt-2
     pl-1
 `
@@ -133,18 +122,16 @@ export const PageHeader = tw.header`
 `
 
 export const PageTitle = tw.div` 
+    font-bold
     text-4xl 
     md:leading-tight 
-    font-bold 
     text-gray-800 
-    dark:text-dprimary
 `
 
 export const PageSubtitle = tw.div` 
     mt-3 
     text-md
     md:text-lg
-    dark:text-dprimary
     font-light
     whitespace-pre-line
 `
@@ -177,17 +164,14 @@ export const DocAsideHeader = tw.span`
     
     text-1
     text-primary
-    dark:text-dprimary
 `
 export const DocAsideLink = tw.a`
     px-2
     
     text-[0.9em]
     text-[#2a75e9]
-    dark:text-dsecondary
     
     hover:text-[#289aff]
-    hover:dark:text-[#289aff]
     hover:no-underline
     
     duration-300
@@ -209,13 +193,10 @@ export const DocPostContainer = tw.section`
     w-full
     text-sm
     text-primary
-    dark:text-dprimary
-    dark:border-gray-600
 `
 
 export const DocPostTitle = tw.h1`
     text-primary 
-    dark:text-dprimary
     overflow-hidden
     text-ellipsis
     whitespace-pre
@@ -244,7 +225,6 @@ export const CPHeader = tw.h1`
     md:text-2xl
     font-semibold 
     text-primary 
-    dark:text-dprimary 
     mt-8 
     pb-2
 `
@@ -260,7 +240,6 @@ export const FooterContainer = tw.footer`
     my-8
     text-sm 
     text-primary 
-    dark:text-dsecondary
 `
 
 //////////////////////////////////////////////////////

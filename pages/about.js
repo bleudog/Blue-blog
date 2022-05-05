@@ -21,13 +21,13 @@ export default function About() {
                 </PageSubtitle>
                 <email>
                     <Link href={"mailto:mido.eu@proton.me?subject=Request from m-e.blue"} target="_blank" rel="noreferrer">
-                        <a className={`text-secondary dark:text-dsecondary`}> mido.eu@proton.me </a>
+                        <a className={`text-secondary`}> mido.eu@proton.me </a>
                     </Link>
                 </email>
             </PageHeader>
 
             <hr />
-            <div className={`text-pramiry dark:text-dprimary`}>
+            <div className={`text-pramiry`}>
                 <p>
                     안녕하세요. 배움을 즐기는 개발자 유미도입니다.
                 </p>
