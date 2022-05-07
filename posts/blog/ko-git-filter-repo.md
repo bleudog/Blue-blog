@@ -8,7 +8,7 @@ tags:
 lang: ko
 ---
 
-git history에서 author 정보를 바꾸기 위해 상당히 번거로운 과정들이 필요하다 ([커밋의 author 수정하기](/ko-change-author-of-commit-in-git-history/))
+git history에서 author 정보를 바꾸기 위해 상당히 번거로운 과정들이 필요하다 ([커밋의 author 수정하기](../ko/change-author-of-commit-in-git-history/))
 
 뿐만 아니라 `git filter-branch`를 사용해서 커밋을 수정하는데 속도가 굉장히 느리다.
 

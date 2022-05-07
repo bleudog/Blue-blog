@@ -9,7 +9,7 @@ tags:
 lang: ko
 ---
 
-GPG key를 사용해서 [커밋에 서명](./ko-gpg-failed-to-sign.md)을 하는데 아래와 같은 오류가 발생했다.
+GPG key를 사용해서 커밋에 서명을 하는데 아래와 같은 오류가 발생했다.
 ```sh
 $ git commit -S 
 error: gpg failed to sign the data
