@@ -18,19 +18,19 @@ lang: en
 ---
 
 ## Linked Lists
-Linked List is a linear data structure similar to an array but elements are not stored contiguously in memory. Linked lists are sequence of nodes connected via pointers.
+Linked lists are sequence of nodes connected via pointers.
 
 ![Linked List Example](/images/posts/what-is-linked-list/linkedlist-example.png)
 
 ### Nodes
-Nodes are like elementns in an array. A node contains a data and a reference to other nodes in the memory.
+Nodes are like elements in an array except that they are not contiguous in the memory. A node contains a data and a reference to other nodes in the memory.
 
 ![Node Example](/images/posts/what-is-linked-list/nodes.png)
 
 ## Why use linked lists?
 Linked lists are useful for inserting and deleting items ([is it?](https://www.youtube.com/watch?v=YQs6IC-vgmo)).
 
-When we insert a new item in an abritrary location in the array, we first need to shift every elements to make a space for the data.
+When we insert a new item in the array, we first need to shift every elements to make a space for the data.
 
 ```rb
 # pseudocode
@@ -55,7 +55,7 @@ def delete(position)
 end
 ```
 
-We need to shift every elements to fill in the gap in between elements.
+We need to shift every elements to fill in the gap between elements.
 
 ### Advantages of Linked Lists
 With a linked list, we can insert or delete items in constant time *if* we know the reference to the previous node.
@@ -102,7 +102,7 @@ Let the previous node skip the node we're trying to delete and reconnect.
 
 One downside of linked list is that it takes linear time to find a node in the list. Arrays can do this in constant time because it allows random access. e.g) `array[5]`
 
-In order to access `n`th node, we need to traverse from the very beginning.
+To access `n`th node in the list, we need to traverse from the very beginning.
 
 ```rb
 # pseudocode
@@ -119,9 +119,9 @@ end
 
 ## How to represent an empty list?
 
-An empty array is represented as `[]`. What about an empty linked list? should it be a `NULL`?
+A pair of bracket(`[]`) denotes an empty array. What about an empty linked list? should it be a `NULL`?
 
-Setting it to a `null` seems valid option but there's a potential of causing a runtime error:
+Setting it to `null` seems valid but there's a potential of causing a runtime error:
 
 ```rb
 list = new LinkedList
@@ -133,12 +133,13 @@ list = new LinkedList
 list.insert(index, data) # runtime error
 ```
 
-The compiler will complain when a method is called on null object. To prevent this, we can use a *sentinel* node to represent the empty list.
+The compiler will complain when a null object calls the method. To prevent this, we can use a *sentinel* node to represent the empty list.
 
 ![Empty List Example](/images/posts/what-is-linked-list/empty-list.png)
 
-A sentinel is a special node that does not represent an item. Essentially, it's a dummy node and it will always exist in the list even when the list is empty.
+A sentinel is a special node that does not represent an item. 
 
+We can use sentinel as a dummy node and it will always exist in the list whether the list is empty or not.
 
 ## Reference
 - [https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
