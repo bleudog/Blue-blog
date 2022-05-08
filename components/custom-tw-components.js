@@ -123,7 +123,8 @@ export const PageHeader = tw.header`
 
 export const PageTitle = tw.div` 
     font-bold
-    text-4xl 
+    text-3xl
+    sm:text-4xl 
     md:leading-tight 
     text-gray-800 
 `

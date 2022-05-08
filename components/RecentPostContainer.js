@@ -12,9 +12,9 @@ const RecentPostsContainer = ({ posts, title, link }) => {
 
             <ul className={`list-none flex flex-wrap justify-evenly`}>
                 {posts.map(({ url_path, title, subtitle, date }) => (
-                    <li className={"flex items-center rounded-md hover:shadow-[0px_0px_6px_rgba(0,0,0,0.6)] pt-3 pb-3 pl-2 mb-1 rounded w-full list-none duration-300"} key={title}>
+                    <li className={"flex flex-col sm:flex-row sm:items-center rounded-md hover:shadow-[0px_0px_6px_rgba(0,0,0,0.6)] pt-3 pb-3 pl-2 mb-1 rounded w-full list-none duration-300"} key={title}>
                         <Date dateString={date} customClass={"text-xs break-normal inline-block"} />
-                        <NavLink link={url_path.replace('-', '/')} customClass={"uppercase text-md tracking-wider font-light md:text-lg text-primary ml-5"} value={title} />
+                        <NavLink link={url_path.replace('-', '/')} customClass={"uppercase text-md tracking-wider font-light md:text-lg text-primary ml-3 sm:ml-5"} value={title} />
                         {/* <Subtitle>
                             {subtitle} &nbsp;
                         </Subtitle> */}

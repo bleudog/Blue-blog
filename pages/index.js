@@ -8,7 +8,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-    const NUM_POSTS = 8;
+    const NUM_POSTS = 6;
     
     const posts = allBlogs.sort((a, b) => {
         return (a.date < b.date) ? 1 : -1;
