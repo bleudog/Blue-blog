@@ -1,6 +1,5 @@
 ---
 title: 'BOJ 05: 함수 (Functions)'
-subtitle: "백준 온라인저지 단계별로 문제풀기의 다섯 번째 단계 함수 풀이 ..."
 date: "2022-03-21"
 tags: 
   - implementation

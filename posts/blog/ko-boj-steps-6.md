@@ -1,6 +1,5 @@
 ---
 title: 'BOJ 06: 문자열 (Strings)'
-subtitle: "백준 온라인저지 단계별로 문제풀기의 여섯 번째 단계 문자열 풀이 ..."
 date: "2022-03-21"
 tags: 
   - implementation

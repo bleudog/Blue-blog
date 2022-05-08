@@ -1,6 +1,5 @@
 ---
 title: 'BOJ 01: 입출력과 사칙연산 (STDIO & Arithmetic)'
-subtitle: "백준 온라인저지 단계별로 문제풀기의 첫 번째 단계 입출력과 사칙연산의 풀이 ..."
 date: "2022-03-21"
 tags: 
   - implementation

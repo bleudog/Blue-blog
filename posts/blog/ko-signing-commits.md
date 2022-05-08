@@ -1,6 +1,5 @@
 ---
 title: git commit 서명하기
-subtitle: "GPG key를 사용하여 커밋에 서명하는 것이 가능하다 -- 오래된 커밋에 서명하는 방법은 ..."
 date: "2022-04-05"
 lang: "ko"
 tags: 

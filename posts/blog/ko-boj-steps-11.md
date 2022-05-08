@@ -1,6 +1,5 @@
 ---
 title: 'BOJ 11: 정렬 (Sorting)'
-subtitle: "백준 온라인저지 단계별로 문제풀기의 11번째 단계 정렬 풀이 ..."
 date: "2022-03-25"
 tags: sort
 lang: ko

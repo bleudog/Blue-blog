@@ -1,6 +1,5 @@
 ---
 title: GPG key 생성하기
-subtitle: "gpg (GnuPG) 2.3.3 ## GPG key 페어 생성 터미널을 열고 아래의 명령어를 입력 ..."
 date: "2022-04-05"
 tags: 
   - github 

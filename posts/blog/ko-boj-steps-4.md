@@ -1,6 +1,5 @@
 ---
 title: 'BOJ 04: 1차원 배열 (1-D Array)'
-subtitle: "백준 온라인저지 단계별로 문제풀기의 네 번째 단계 1차원 배열 풀이 ..."
 date: "2022-03-21"
 tags: 
   - implementation

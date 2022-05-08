@@ -80,12 +80,6 @@
     }
 }
 
-.lightswitch {
-    position: absolute;
-    right: 1em;
-    top: 0.3em;
-}
-
 @media only screen and (max-width: 640px) {
     .navLink {
         display: none;
@@ -100,12 +94,6 @@
 
     .header {
         position: absolute !important;
-    }
-
-    .lightswitch {
-        right: 2.8em;
-        top: -1px;
-        font-size: 1.3em;
     }
 }
 

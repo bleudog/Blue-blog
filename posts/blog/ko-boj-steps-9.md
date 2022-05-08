@@ -1,6 +1,5 @@
 ---
 title: 'BOJ 09: 재귀 (Recursion) -- [3/4]'
-subtitle: "백준 온라인저지 단계별로 문제풀기의 아홉 번째 단계 재귀 풀이 ..."
 date: "2022-03-23"
 tags: 
   - recursion

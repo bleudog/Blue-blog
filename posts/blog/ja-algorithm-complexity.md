@@ -1,6 +1,5 @@
 ---
 title:  "Big-O記法とは"
-subtitle: "Big-O記法（O(log N), O(N), O(N!), ...）は計算時間の上限示す。つまり、最悪の場合の計算量を示すということ ..."
 date:  "2021-05-03"
 tags: 
   - complexity

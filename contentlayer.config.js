@@ -10,7 +10,6 @@ export const Blog = defineDocumentType(() => ({
     filePathPattern: `blog/**/*.md`,
     fields: {
         title: { type: 'string', required: true },
-        subtitle: { type: 'string', required: false },
         date: { type: 'date', required: true },
         lang: { type: 'string', required: true },
         tags: { type: 'string', required: false },
