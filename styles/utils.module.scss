@@ -20,8 +20,8 @@
 
 .circleImage {
     border-radius: 50%;
+    overflow: initial;
 }
-
 .squareImage {
     border-radius: 20%;
 }
@@ -35,4 +35,36 @@
 
 .hidden {
     display: none !important;
+}
+
+.loadDown {
+    animation: loadDown 1.5s forwards ease-in-out;
+}
+
+.loadUp {
+    animation: loadUp 1s forwards ease-out;
+}
+
+@keyframes loadDown {
+    0% {
+        transform: translateY(-400px);
+    }
+    80% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadUp {
+    0% {
+        transform: translateY(30em);
+    }
+    80% {
+        transform: translateY(-1em);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

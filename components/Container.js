@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import Header from "@components/Header";
 import metadata from "@data/metadata";
-import styles from "@styles/docaside.module.scss";
 
 import { BaseContainer } from "./custom-tw-components";
 
@@ -17,8 +16,9 @@ const Container = (props) => {
     page: props.page,
     ...props.customMeta,
   };
+
   return (
-    <BaseContainer id="docContainer" className={styles.docContainer}>
+    <BaseContainer>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>{meta.title}</title>
@@ -39,6 +39,7 @@ const Container = (props) => {
         <meta name="twitter:image" content={meta.image} />
       </Head>
       <Header page={meta.page} />
+
       <main className={props.customClass}>{props.children}</main>
     </BaseContainer>
   );

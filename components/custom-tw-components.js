@@ -82,8 +82,7 @@ export const Title = tw.div`
     tracking-wider
     font-light
     cursor-pointer
-    md:text-xl 
-    text-md
+    text-lg 
     uppercase
     hover:text-[#289aff]
     duration-150
@@ -127,17 +126,55 @@ export const PageSubtitle = tw.div`
 //////////////////////////////////////////////////////
 /// RecentPostContainer Component
 //////////////////////////////////////////////////////
-export const SubContainer = tw.div`
+export const RPContainer = tw.div`
     mb-8
+`;
+
+export const RPHeader = tw.div`
+    flex
+    justify-between
+    items-center
+    mt-4
+`;
+
+export const RPTitle = tw.div`
+    py-2 
+    text-xl 
+    md:text-2xl 
+    font-semibold 
+    text-primary
+`;
+
+export const RPPosts = tw.ul`
+    list-none 
+    flex 
+    flex-wrap 
+    justify-evenly
+`;
+
+export const RPPost = tw.li`
+    flex 
+    flex-col 
+    sm:flex-row 
+    sm:items-center 
+    rounded-md 
+    hover:shadow-[0px_0px_6px_rgba(0,0,0,0.6)] 
+    pt-3 
+    pb-3 
+    pl-2 
+    mb-1 
+    rounded w-full 
+    list-none 
+    duration-300
 `;
 
 //////////////////////////////////////////////////////
 ///  DocAside  Component
 //////////////////////////////////////////////////////
 export const DocAsideContainer = tw.section`
-    w-[35%]
+    w-48
     h-full
-    pr-8
+    pr-4
     pt-5
     
     relative
@@ -156,8 +193,10 @@ export const DocAsideHeader = tw.span`
 export const DocAsideLink = tw.a`
     px-2
     
-    text-[0.9em]
+    text-[0.8em]
     text-[#2a75e9]
+    leading-5
+    my-[0.4em]
     
     hover:text-[#289aff]
     hover:no-underline
@@ -178,7 +217,7 @@ export const DocContent = tw.main`
 ///  DocPost  Component
 //////////////////////////////////////////////////////
 export const DocPostContainer = tw.section`
-    w-full
+    w-[35em]
     text-sm
     text-primary
 `;
@@ -199,22 +238,11 @@ export const DocPostTitle = tw.h1`
 export const BaseContainer = tw.section`
     max-w-screen-md
     w-full
-    px-[1rem]
+    sm:px-[1rem]
+    px-[1.2rem]
     mx-auto
     relative
     mt-5
-`;
-
-//////////////////////////////////////////////////////
-///  CPSection Component
-//////////////////////////////////////////////////////
-export const CPHeader = tw.h1`
-    text-xl
-    md:text-2xl
-    font-semibold 
-    text-primary 
-    mt-8 
-    pb-2
 `;
 
 //////////////////////////////////////////////////////
@@ -244,22 +272,4 @@ export const HeaderContainer = tw.header`
 
 export const MobileNav = tw.div`
     flex
-`;
-
-//////////////////////////////////////////////////////
-///  Header Component
-//////////////////////////////////////////////////////
-export const ProjectContainer = tw.div` 
-    flex
-    flex-wrap
-    relative
-    justify-center
-`;
-
-export const ProjectCard = tw.div` 
-    m-4
-    flex
-    flex-col
-    text-center
-    rounded-md
 `;
