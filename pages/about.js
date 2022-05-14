@@ -23,10 +23,10 @@ export default function About() {
         src={profileImg}
         width={120}
         height={120}
-        alt="Mido Eu"
+        alt="Blue Eu"
       />
       <PageHeader>
-        <PageTitle>{"Hi, I'm Mido."}</PageTitle>
+        <PageTitle>{"Hi, I'm Blue."}</PageTitle>
         <PageSubtitle>{"I'm a frontend engineer."}</PageSubtitle>
         <email>
           <Link
@@ -41,7 +41,7 @@ export default function About() {
 
       <hr />
       <div className={`text-pramiry`}>
-        <p>안녕하세요. 배움을 즐기는 개발자 유미도입니다.</p>
+        <p>안녕하세요. 배움을 즐기는 개발자 블루입니다.</p>
       </div>
       <hr />
       <Footer />

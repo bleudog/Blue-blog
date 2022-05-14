@@ -1,6 +1,6 @@
 const metadata = {
-  author: "Mido Eu",
-  title: "MIDOTYPE",
+  author: "Blue Eu",
+  title: "Blue Log",
   description: "",
   repo: "https://github.com/midotype/midotype.github.io",
   url: "https://m-e.blue",
