@@ -4,7 +4,7 @@ import Footer from "@components/Footer";
 import metadata from "@data/metadata";
 import Container from "@components/Container";
 import utilStyles from "@styles/utils.module.scss";
-import profileImg from "../public/images/profile.jpg";
+import profileImg from "../public/images/me.jpg";
 import {
   PageHeader,
   PageSubtitle,
@@ -19,13 +19,13 @@ export default function About() {
     <Container customMeta={customMeta}>
       <Image
         priority
-        className={utilStyles.circleImage}
+        className={`${utilStyles.circleImage} ${utilStyles.spin}`}
         src={profileImg}
-        width={120}
-        height={120}
+        width={130}
+        height={130}
         alt="Blue Eu"
       />
-      <PageHeader>
+      <PageHeader className={utilStyles.loadSide}>
         <PageTitle>{"Hi, I'm Blue."}</PageTitle>
         <PageSubtitle>{"I'm a frontend engineer."}</PageSubtitle>
         <email>

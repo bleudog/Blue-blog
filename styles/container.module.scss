@@ -111,8 +111,10 @@
 @keyframes introLoad {
     from {
         top: -5em;
+        opacity: 0.5;
     }
     to {
         top: 0;
+        opacity: 1;
     }
 }
