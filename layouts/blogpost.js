@@ -5,12 +5,13 @@ import Comments from "@components/Comments";
 import Container from "@components/Container";
 import Codeblock from "@lib/codeblock.js";
 import { Article } from "@components/custom-tw-components";
+import utilStyles from "@styles/utils.module.scss";
 
 const BlogPostLayout = ({ post }) => {
   return (
     <Container page={"blog"}>
       <Post post={post} title={post.title} tags={post.tags} date={post.date} />
-      <Article>
+      <Article className={utilStyles.loadUp}>
         <ReactMarkdown components={Codeblock}>{post.markdown}</ReactMarkdown>
       </Article>
       <Comments />

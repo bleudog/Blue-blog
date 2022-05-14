@@ -2,10 +2,11 @@ import Date from "@components/Date";
 import Link from "next/link";
 import { PostContainer, PageTitle } from "./custom-tw-components";
 import { LanguageList, LanguageListWrapper } from "./custom-tw-components";
+import utilStyles from "@styles/utils.module.scss";
 
 const Post = ({ post, tags, title, date, children }) => {
   return (
-    <PostContainer>
+    <PostContainer className={utilStyles.loadDown}>
       <Date
         dateString={date}
         customClass={"text-sm break-normal inline-block"}

@@ -41,7 +41,7 @@ export default function About() {
 
       <hr />
       <div className={`text-pramiry`}>
-        <p>안녕하세요. 배움을 즐기는 개발자 블루입니다.</p>
+        <p>Under Construction..</p>
       </div>
       <hr />
       <Footer />

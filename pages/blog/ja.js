@@ -14,7 +14,7 @@ export default function Blog({ posts }) {
   return (
     <Container page={"blog"} customMeta={customMeta}>
       <PageBanner
-        title={"みどログ"}
+        title={"ブログ"}
         subtitle={
           "チャレンジして失敗するのを怖れるよりも、何もしないことを怖れろ。"
         }
