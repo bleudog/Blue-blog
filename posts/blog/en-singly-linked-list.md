@@ -55,6 +55,8 @@ head = node
 list.size += 1
 ```
 
+Time complexity: **O(1)**
+
 ### push_back(key)
 ```rb
 # pseudocode
@@ -71,6 +73,10 @@ curr.next = node
 list.size += 1
 ```
 
+Time complexity **without** tail node: **O(n)**, n = number of nodes
+
+Time complexity **with** tail: **O(1)**
+
 ### pop_front()
 ```rb
 # pseudocode
@@ -81,6 +87,8 @@ end
 head = head.next
 list.size -= 1
 ```
+
+Time complexity: **O(1)**
 
 ### pop_back()
 ```rb
@@ -104,6 +112,9 @@ end
 list.size -= 1
 ```
 
+Time complexity: **O(n)**, n = number of nodes
+
+
 ### add_after(node, key)
 ```rb
 # pseudocode
@@ -114,6 +125,8 @@ node.next = node2
 
 list.size += 1
 ```
+
+Time complexity: **O(1)**
 
 ### add_before(node, key)
 ```rb
@@ -132,6 +145,22 @@ node2.next = node
 
 list.size += 1
 ```
+
+Time complexity: **O(n)**, n = number of node
+
+## Operations Runtime
+- `push_front(key)` - O(1)
+- `pop_front()` -  O(1)
+- `push_back(key)` -  O(n) or O(1) with tail
+- `pop_back()` - O(n)
+- `front()` -  O(1)
+- `back()` -  O(n) or O(1) with tail
+- `find(key)` -  O(n)
+- `erase(key)` - O(n)
+- `empty()` - O(1)
+- `size()` - O(1)
+- `add_before(node, key)` - O(n)
+- `add_after(node, key)` - O(1)
 
 ## Reference
 - [https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
