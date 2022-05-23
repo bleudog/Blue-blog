@@ -8,7 +8,7 @@ tags:
 ---
 
 ## Signing commits
-GPG key를 사용하여 커밋에 서명하는 것이 가능하다 -- 오래된 커밋에 서명하는 방법은 [여기](https://medium.com/@midotype/signing-previous-commits-787a077bdb62).
+GPG key를 사용하여 커밋에 서명하는 것이 가능하다 -- 오래된 커밋에 서명하는 방법은 [여기](https://medium.com/@bleudog/signing-previous-commits-787a077bdb62).
 
 ![Signed commits](/images/posts/05042022-sign-commit-1.png)
 
@@ -19,7 +19,7 @@ $ gpg --list-secret-keys --keyid-format=long
 
 ------------------------------------
 sec   4096R/SAMPLE4371567BD2 2016-03-10 [expires: 2023-04-05]
-uid                          Mido Eu <mido.eu@proton.me> 
+uid                          Blue Eu <eu.blue@pm.me> 
 ssb   4096R/42B317FD4BA89E7A 2016-03-10 [expires: 2023-04-05]
 ------------------------------------
 ```
@@ -59,7 +59,7 @@ git config --global commit.gpgsign true
 
 ## .gitconfig
 
-내가 쓰는 git 명령어 alias: [gist](https://gist.github.com/midotype/7d09f53e421a1fc04987363110c522cf)
+내가 쓰는 git 명령어 alias: [gist](https://gist.github.com/bleudog/7d09f53e421a1fc04987363110c522cf)
 
 ```sh
 [alias]

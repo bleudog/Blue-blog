@@ -9,8 +9,8 @@ lang: ko
 
 깃 리포지토리에서 아래의 명령어를 사용하여 이름과 이메일을 설정할 수 있다.
 ```sh
-$ git config user.name "Mido Eu"
-$ git config user.email "mido.eu@proton.me"
+$ git config user.name "Blue Eu"
+$ git config user.email "eu.blue@pm.me"
 ```
 
 이렇게 설정한 이름과 이메일은 커밋 로그에서 확인 할 수 있다.
@@ -20,7 +20,7 @@ $ git config user.email "mido.eu@proton.me"
 하지만 만약 설정하는 순간 오타가 났다거나 아니면 새로운 이메일로 업데이트 하는 걸 깜빡해서 예전의 정보를 사용했다면? 
 ```sh
 $ git config user.name "Mid oEu"
-$ git config user.email "mido.eu@proteon.me"
+$ git config user.email "eu.blue@pm.me"
 ```
 
 커밋 로그에는 일단 아래처럼 설정한 그대로 나타나게 된다.
@@ -46,13 +46,13 @@ $ git log --abbrev-commit
 
 ```sh
 commit ba5066c (HEAD -> main, origin/main, origin/HEAD)
-Author: Mid oEu <mido.eu@proteon.me>
+Author: Mid oEu <eu.blue@pm.me>
 Date:   Tue May 3 13:08:41 2022 +0900
 
     hello.c added
 
 commit c34fc66
-Author: Mido Eu <mido.eu@proton.me>
+Author: Blue Eu <eu.blue@pm.me>
 Date:   Tue May 3 12:37:55 2022 +0900
 
     author and email fixed
@@ -70,7 +70,7 @@ HEAD is now at ba5066c hello.c added
 ## author 재설정 하기
 
 ```sh
-$ git commit --amend --author "Mido Eu <mido.eu@proton.me>"
+$ git commit --amend --author "Blue Eu <eu.blue@pm.me>"
 ```
 
 해당 커밋이 완료되었다면 다시 메인 브랜치로 이동한다. 그러면 새로운 커밋의 브랜치(`81ef65b`)가 생성된 것을 확인 할 수 있다.
@@ -126,13 +126,13 @@ https://gist.github.com/zapidan/69c175416261d9a13fd4
 $ git log
 
 commit 63562c5 (HEAD -> main, origin/main, origin/HEAD)
-Author: Mido Eu <mido.eu@proton.me>
+Author: Blue Eu <eu.blue@pm.me>
 Date:   Tue May 3 13:08:41 2022 +0900
 
     hello.c added
 
 commit c34fc66
-Author: Mido Eu <mido.eu@proton.me>
+Author: Blue Eu <eu.blue@pm.me>
 Date:   Tue May 3 12:37:55 2022 +0900
 
     author and email fixed
@@ -146,5 +146,5 @@ $ git push -f
 
 ---
 
-- [signed commit](/ko-signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@midotype/signing-previous-commits-787a077bdb62)'을 참고하자.
+- [signed commit](/ko-signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@bleudog/signing-previous-commits-787a077bdb62)'을 참고하자.
 - `git filter-branch`가 상당히 느리기 때문에 [git-filter-repo](../ko/git-filter-repo/)

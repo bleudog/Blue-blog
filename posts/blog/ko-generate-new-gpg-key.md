@@ -69,7 +69,7 @@ $ gpg --list-secret-keys --keyid-format=long
 ```sh
 ------------------------------------
 sec   4096R/SAMPLE4371567BD2 2016-03-10 [expires: 2023-04-05]
-uid                          Mido Eu <mido.eu@proton.me> 
+uid                          Blue Eu <eu.blue@pm.me> 
 ssb   4096R/42B317FD4BA89E7A 2016-03-10 [expires: 2023-04-05]
 ------------------------------------
 ```

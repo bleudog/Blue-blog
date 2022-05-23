@@ -2,24 +2,24 @@ const metadata = {
   author: "Blue Eu",
   title: "Blue Log",
   description: "",
-  repo: "https://github.com/midotype/midotype.github.io",
+  repo: "https://github.com/bleudog/bleudog.github.io",
   url: "https://m-e.blue",
   profileImage: "/images/profile.jpg",
 
   social: {
-    github: "https://github.com/midotype",
-    twitter: "https://twitter.com/midotype_",
+    github: "https://github.com/bleudog",
+    twitter: "https://twitter.com/bleudog_",
   },
 
   socialHandle: {
-    github: "@midotype",
-    twitter: "@midotype_",
+    github: "@bleudog",
+    twitter: "@bleudog_",
   },
 
   giscus: {
-    id: "midotype",
+    id: "bleudog",
     url: "https://giscus.app/client.js",
-    repo: "midotype/mido-blog",
+    repo: "bleudog/mido-blog",
     repoId: "R_kgDOHRtelA",
     category: "General",
     categoryId: "DIC_kwDOHRtelM4CO6wU",

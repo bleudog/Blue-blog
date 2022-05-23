@@ -30,11 +30,11 @@ export default function About() {
         <PageSubtitle>{"I'm a frontend engineer."}</PageSubtitle>
         <email>
           <Link
-            href={"mailto:mido.eu@proton.me?subject=Request from m-e.blue"}
+            href={"mailto:eu.blue@pm.me?subject=Request from m-e.blue"}
             target="_blank"
             rel="noreferrer"
           >
-            <a className={`text-secondary`}> mido.eu@proton.me </a>
+            <a className={`text-secondary`}> eu.blue@pm.me </a>
           </Link>
         </email>
       </PageHeader>

@@ -26,7 +26,7 @@ const Footer = () => {
         ))}
       </div>
       <div>
-        © 2022 <a href="https://github.com/midotype/mido-blog">Blue Eu</a>.
+        © 2022 <a href="https://github.com/bleudog/blue-blog">Blue Eu</a>.
         Powered by&nbsp;<a href="https://vercel.com/">Vercel</a>
       </div>
     </FooterContainer>
