@@ -12,7 +12,7 @@ lang: en
 - With a tail, O(1) to insert at or remove from the back.
 - O(1) to insert between nodes or remove a node.
 - O(n) to find arbitrary element.
-- A link to full implementation: [bleudog/doubly-linked-list](https://github.com/bleudog/DataStructures-and-Algorithms/tree/main/02-linkedlists/doubly-linked-list)
+- A link to full implementation: [bleuinu/doubly-linked-list](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/02-linkedlists/doubly-linked-list)
 
 ---
 

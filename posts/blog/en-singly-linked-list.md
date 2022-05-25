@@ -9,7 +9,7 @@ lang: en
 
 ## TL;DR
 - A singly-linked list is a sequence of nodes where each node points to the next node only.
-- A link to full implementation: [bleudog/singly-linked-list](https://github.com/bleudog/DataStructures-and-Algorithms/tree/main/02-linkedlists/singly-linked-list)
+- A link to full implementation: [bleuinu/singly-linked-list](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/02-linkedlists/singly-linked-list)
 
 ---
 

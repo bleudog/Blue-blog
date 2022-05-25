@@ -8,7 +8,7 @@ lang: ko
 ---
 
 ## TL;DR
-vector 구현 소스코드: [bleudog/vector](https://github.com/bleudog/DataStructures-and-Algorithms/tree/main/01-arrays/vector)
+vector 구현 소스코드: [bleuinu/vector](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/01-arrays/vector)
 
 ---
 
@@ -63,7 +63,7 @@ typedef struct vector {
 
 ## Public 함수 구현
 
-설명하기에 앞서 모든 코드에서 코너 케이스 처리 부분은 코드에 포함시키지 않았다. 코너 케이스를 포함한 전체코드는 [깃허브](https://github.com/bleudog/DataStructures-and-Algorithms/tree/main/01-arrays/vector)를 참조.
+설명하기에 앞서 모든 코드에서 코너 케이스 처리 부분은 코드에 포함시키지 않았다. 코너 케이스를 포함한 전체코드는 [깃허브](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/01-arrays/vector)를 참조.
 
 ### size() 함수
 vector에 저장되어있는 원소의 총 개수를 반환하는 함수.

@@ -53,4 +53,4 @@ $ git remote add origin REPOSITORY_주소
 
 ---
 
-- [signed commit](./signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@bleudog/signing-previous-commits-787a077bdb62)'을 참고하자.
+- [signed commit](./signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@bleuinu/signing-previous-commits-787a077bdb62)'을 참고하자.
