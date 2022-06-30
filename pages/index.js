@@ -6,7 +6,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const NUM_POSTS = 6;
+  const NUM_POSTS = 10;
 
   const posts = allBlogs
     .sort((a, b) => {

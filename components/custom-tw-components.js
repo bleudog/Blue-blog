@@ -7,7 +7,7 @@ export const PostListContainer = tw.ul`
     list-none
     p-0
     m-0
-    pt-[3em]
+    pt-[1em]
     border-t-[1px]
     border-b-[1px]
 `;
@@ -70,22 +70,20 @@ export const LanguageButtons = tw.div`
 //////////////////////////////////////////////////////
 export const List = tw.li`
     list-none
-    pb-8
+    pt-1
+    pb-1
+    flex
+    hover:bg-[#236af229]
+    cursor-pointer
 `;
 
 export const Title = tw.div` 
     text-primary 
-    overflow-hidden
-    text-ellipsis
-    whitespace-pre
-
-    tracking-wider
-    font-light
+    font-normal
     cursor-pointer
-    text-lg 
-    uppercase
-    hover:text-[#289aff]
     duration-150
+    flex
+    flex-wrap
 `;
 
 //////////////////////////////////////////////////////
@@ -109,8 +107,8 @@ export const PageHeader = tw.header`
 
 export const PageTitle = tw.div` 
     font-bold
-    text-3xl
-    sm:text-4xl 
+    text-2xl
+    sm:text-3xl 
     md:leading-tight 
     text-gray-800 
 `;
@@ -157,15 +155,13 @@ export const RPPost = tw.li`
     flex-col 
     sm:flex-row 
     sm:items-center 
-    rounded-md 
-    hover:shadow-[0px_0px_6px_rgba(0,0,0,0.6)] 
-    pt-3 
-    pb-3 
-    pl-2 
-    mb-1 
+    mt-1
+    mb-1
     rounded w-full 
     list-none 
     duration-300
+    cursor-pointer
+    hover:bg-[#236af229]
 `;
 
 //////////////////////////////////////////////////////
@@ -202,34 +198,6 @@ export const DocAsideLink = tw.a`
     hover:no-underline
     
     duration-300
-`;
-
-//////////////////////////////////////////////////////
-///  DocContainer  Component
-//////////////////////////////////////////////////////
-export const DocContent = tw.main`
-    flex
-    w-full
-    mx-auto
-`;
-
-//////////////////////////////////////////////////////
-///  DocPost  Component
-//////////////////////////////////////////////////////
-export const DocPostContainer = tw.section`
-    w-[35em]
-    text-sm
-    text-primary
-`;
-
-export const DocPostTitle = tw.h1`
-    text-primary 
-    overflow-hidden
-    text-ellipsis
-    whitespace-pre
-
-    text-2xl 
-    md:text-3xl 
 `;
 
 //////////////////////////////////////////////////////

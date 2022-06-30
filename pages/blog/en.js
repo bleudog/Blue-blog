@@ -15,7 +15,7 @@ export default function Blog({ posts }) {
     <Container page={"blog"} customMeta={customMeta}>
       <PageBanner
         title={"Blue Log"}
-        subtitle={"Failure in life is inevitable. Fail more."}
+        subtitle={"Failure in life is inevitable. We fail by default. So, let's learn from it."}
       />
       <LanguageSelector />
       <PostListContainer>

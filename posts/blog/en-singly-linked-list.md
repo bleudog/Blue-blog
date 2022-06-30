@@ -1,6 +1,6 @@
 ---
 title: "Singly-Linked List"
-date: "2022-05-08 01:00:00"
+date: "2022-05-08 01:00"
 tags: 
   - data structure
   - linked list

@@ -26,7 +26,7 @@ const HomeLayout = ({ blog }) => {
           }
         />
       </Banner>
-      <RecentPostContainer title={"Recent Posts"} link={"blog"} posts={blog}/>
+      <RecentPostContainer title={"Recent Posts"} link={"blog/ko"} posts={blog}/>
       <Footer />
     </Container>
   );

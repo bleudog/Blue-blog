@@ -25,15 +25,15 @@ const RecentPostsContainer = ({ posts, title, link }) => {
 
       <RPPosts>
         {posts.map(({ url_path, title, date }) => (
-          <RPPost key={title}>
-            <Date
-              dateString={date}
-              customClass={"text-xs break-normal inline-block mr-3"}
-            />
-            <Link href={url_path.replace("-", "/")} passHref>
-              <Title> {title} </Title>
-            </Link>
-          </RPPost>
+          <Link href={url_path.replace("-", "/")} passHref>
+            <RPPost key={title}>
+              <Date
+                dateString={date}
+                customClass={"text-xs break-normal inline-block mr-3"}
+              />
+                <Title> {title} </Title>
+            </RPPost>
+          </Link>
         ))}
       </RPPosts>
     </RPContainer>
