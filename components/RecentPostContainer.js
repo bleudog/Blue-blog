@@ -25,8 +25,8 @@ const RecentPostsContainer = ({ posts, title, link }) => {
 
       <RPPosts>
         {posts.map(({ url_path, title, date }) => (
-          <Link href={url_path.replace("-", "/")} passHref>
-            <RPPost key={title}>
+          <Link key={title} href={url_path.replace("-", "/")} passHref>
+            <RPPost>
               <Date
                 dateString={date}
                 customClass={"text-xs break-normal inline-block mr-3"}
