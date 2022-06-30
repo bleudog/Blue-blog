@@ -1,7 +1,7 @@
 ---
 title: "Binary Search"
 date: "2021-11-11"
-section: "C++"
+lang: "en"
 ---
 
 ```c

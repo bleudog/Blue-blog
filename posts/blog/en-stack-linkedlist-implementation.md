@@ -1,6 +1,7 @@
 ---
-title: "Linked List Implementation"
-section: "Ruby"
+title: "Stack - Linked List Implementation"
+tags: "Ruby"
+lang: en
 date: "2021-12-02"
 ---
 

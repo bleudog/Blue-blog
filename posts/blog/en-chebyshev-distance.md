@@ -1,7 +1,8 @@
 ---
 title: "Chebyshev Distance"
 date: "2021-11-18"
-section: "C++"
+tags: "C++"
+lang: en
 ---
 
 ```cpp

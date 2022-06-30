@@ -1,7 +1,8 @@
 ---
-title: "Manhattan Distance"
+title: "Euclidean Distance"
 date: "2021-11-18"
-section: "C++"
+tags: "C++"
+lang: en
 ---
 
 ```cpp
@@ -11,24 +12,25 @@ using namespace std;
 typedef long long ll;
 typedef pair<int, int> p;
 
-int manhattanDistance(vector<int> x, vector<int> y)
+double euclideanDistance(vector<int> x, vector<int> y)
 {
   int distance = 0;
   const int SIZE = x.size();
 
   for (int i=0; i<SIZE; ++i) 
   {
-    distance += abs(x[i] - y[i]); 
+    int t = x[i] - y[i];
+    distance += (t * t);
   }
 
-  return distance;
+  return sqrt(distance);
 }
 
 int main()
 {
-  vector<int> x{-1,2,3};
-  vector<int> y{4,0,-3};
-  cout << manhattanDistance(x, y) << endl;
+  vector<int> x {-1, 2, 3};
+  vector<int> y {4, 0, -3};
+  cout << euclideanDistance(x, y) << endl;
 
   return 0;
 }

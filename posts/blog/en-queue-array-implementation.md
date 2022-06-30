@@ -1,7 +1,8 @@
 ---
-title: "Array Implementation"
-section: "Ruby"
+title: "Queue - Array Implementation"
+tags: "Ruby"
 date: "2021-12-03"
+lang: en
 ---
 
 ```rb

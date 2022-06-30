@@ -1,6 +1,7 @@
 ---
 title: "Adjacency List"
-section: "Ruby"
+tags: "Ruby"
+lang: en
 date: "2021-12-08"
 ---
 

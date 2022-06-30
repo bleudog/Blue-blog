@@ -1,6 +1,7 @@
 ---
-title: "Array Implementation"
-section: "Ruby"
+title: "Stack - Array Implementation"
+tags: "Ruby"
+lang: en
 date: "2021-12-02"
 ---
 
