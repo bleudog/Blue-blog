@@ -1,8 +1,9 @@
 ---
 title: "Linear vs. Non-Linear Data Structure"
-date: "2022-06-15 22:20:00"
+date: "2022-07-05 05:00:00"
 tags: 
-  - data structure
+  - linear data structure
+  - non-linear data structure
 lang: en
 ---
 

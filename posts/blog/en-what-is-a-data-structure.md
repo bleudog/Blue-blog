@@ -1,6 +1,6 @@
 ---
 title: "What is a Data Structure?"
-date: "2022-06-13 22:20:00"
+date: "2022-07-04 22:20:00"
 tags: 
   - data structure
 lang: en
@@ -39,7 +39,8 @@ Examples of non-linear data structures are:
 ---
 
 See also:
-- [Linear vs. Non-Linear Data Structures](./en-linear-vs-non-linear-ds.md)
+- [Linear vs. Non-Linear Data Structures](./linear-vs-non-linear-ds)
+- [What is an Algorithm?](./what-is-an-algorithm)
 
 Reference:
 - [https://www.programiz.com/dsa/data-structure-types](https://www.programiz.com/dsa/data-structure-types)

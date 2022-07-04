@@ -1,10 +1,12 @@
 import Date from "@components/Date";
 import Link from "next/link";
-import { PostContainer, PageTitle } from "./custom-tw-components";
+import { PostContainer, PageTitle, BackButton } from "./custom-tw-components";
 import { LanguageList, LanguageListWrapper } from "./custom-tw-components";
+import { useRouter } from "next/router";
 import utilStyles from "@styles/utils.module.scss";
 
 const Post = ({ post, tags, title, date, children }) => {
+  const router = useRouter();
   return (
     <PostContainer className={utilStyles.loadDown}>
       <Date
@@ -24,6 +26,7 @@ const Post = ({ post, tags, title, date, children }) => {
         </LanguageListWrapper>
       )}
       <hr />
+      <BackButton onClick={() => router.back()}>{'< back'}</BackButton>
       {children}
     </PostContainer>
   );

@@ -243,11 +243,14 @@ export const MobileNav = tw.div`
 `;
 
 export const BackButton = tw.button`
+    px-2
+    sm:px-4
+    mb-2
     border
-    pl-2
-    pr-2
-    hover:bg-[#289aff]
+    rounded-md
+
+    text-primary
+    hover:bg-[#f06969]
     hover:text-[#fff]
-    float-right
     duration-75
 `
