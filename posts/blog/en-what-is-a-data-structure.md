@@ -1,12 +1,12 @@
 ---
 title: "What is a Data Structure?"
-date: "2022-06-17 22:20:00"
+date: "2022-06-13 22:20:00"
 tags: 
   - data structure
 lang: en
 ---
 
-## Data Structures
+# Data Structures
 A data structure is a data organization, management, and storage format that enables efficient access and modification.
 
 More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
@@ -36,6 +36,11 @@ Examples of non-linear data structures are:
 - Trees
 - Graphs
 
-## Reference
+---
+
+See also:
+- [Linear vs. Non-Linear Data Structures](./en-linear-vs-non-linear-ds.md)
+
+Reference:
 - [https://www.programiz.com/dsa/data-structure-types](https://www.programiz.com/dsa/data-structure-types)
 - [https://en.wikipedia.org/wiki/Data_structure](https://en.wikipedia.org/wiki/Data_structure)

@@ -241,3 +241,13 @@ export const HeaderContainer = tw.header`
 export const MobileNav = tw.div`
     flex
 `;
+
+export const BackButton = tw.button`
+    border
+    pl-2
+    pr-2
+    hover:bg-[#289aff]
+    hover:text-[#fff]
+    float-right
+    duration-75
+`
