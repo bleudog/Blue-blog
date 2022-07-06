@@ -1,6 +1,6 @@
 ---
 title: "자료구조(Data Structure) 란?"
-date: "2022-07-04 22:20:00"
+date: "2022-07-06 18:55:00"
 tags: 
   - 자료구조
 lang: ko

@@ -1,7 +1,8 @@
 ---
 title: 'BOJ 11: 정렬 (Sorting)'
 date: "2022-03-25"
-tags: sort
+tags: 
+    - sort
 lang: ko
 ---
 
