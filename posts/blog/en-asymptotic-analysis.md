@@ -26,11 +26,27 @@ There are mainly three different notations to describe three different states of
 ## Big-O Notation
 Big-O notation describes the upper-bound or **worst-time** complexity of an algorithm.
 
+Mathematically, Big-O is defined as:
+```
+O(g(n)) = { f(n): there exist positive constants c and n_0
+            such that 0 ≤ f(n) ≤ cg(n) for all n ≥ n_0 }
+```
+
 ## Omega Notation
 Omega notation describes the lower-bound or **best-time** complexity of an algorithm.
-
+Mathematically, Omega notation is defined as:
+```
+Ω(g(n)) = { f(n): there exist positive constants c and n_0 
+            such that 0 ≤ cg(n) ≤ f(n) for all n ≥ n_0 }
+```
 ## Theta Notation
 Theta notation describes both the lower and upper-bound of an algorithm. It represents the **average-time** complexity of the algorithm.
+
+For a function `g(n)` and `Θ(g(n))` is given by the relation:
+```
+Θ(g(n)) = { f(n): there exist positive constants c1, c2 and n_0
+            such that 0 ≤ c1g(n) ≤ f(n) ≤ c2g(n) for all n ≥ n_0 }
+```
 
 ---
 

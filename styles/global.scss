@@ -146,11 +146,17 @@ section {
         }
 
         pre {
+            border: 1px solid #ccc;
             code {
                 background-color: transparent;
             }
-        }
 
+            div {
+                margin: 0 !important;
+                border-radius: 0 !important;
+            }
+        }
+        
         code {
             font-size: 0.8em;
             padding: 0.3em 0.4em;
@@ -190,68 +196,6 @@ section {
 
         img {
             margin: 0 0.35em;
-        }
-    }
-}
-
-.dark {
-    .postTag {
-        a {
-            color: #fff5fd;
-            border: 1px solid #646464;
-
-            &:hover {
-                border: 1px solid #ffccf2;
-            }
-        }
-    }
-
-    section {
-        pre {
-            div:first-child {
-                background-color: #1c1e22 !important;
-                border: 1px solid #3c3c3c !important;
-            }
-
-            code {
-                background-color: transparent;
-                border: none !important;
-            }
-        }
-
-        main {
-            hr {
-                border-color: #2a2a2a;
-            }
-
-            code {
-                background-color: $--theme-dark;
-                border: 1px solid #2f579f;
-                white-space: pre;
-                transition: background-color 0.3s ease;
-            }
-        }
-    }
-
-    li {
-        &.languageSelector {
-            &.active {
-                background-color: $--link;
-
-                a {
-                    color: $--theme !important;
-                }
-            }
-
-            a {
-                color: $--primary-dark;
-            }
-        }
-    }
-
-    footer {
-        a {
-            color: $--primary-dark;
         }
     }
 }
