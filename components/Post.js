@@ -1,6 +1,6 @@
 import Date from "@components/Date";
 import Link from "next/link";
-import { PostContainer, PageTitle, BackButton } from "./custom-tw-components";
+import { PostContainer, PageTitle, BackButton, Tag } from "./custom-tw-components";
 import { LanguageList, LanguageListWrapper } from "./custom-tw-components";
 import { useRouter } from "next/router";
 import utilStyles from "@styles/utils.module.scss";
@@ -14,6 +14,13 @@ const Post = ({ post, tags, title, date, children }) => {
         customClass={"text-sm break-normal inline-block"}
       />
       <PageTitle>{title}</PageTitle>
+      {tags && (
+        <div>
+          {tags.map(a => (
+            <Tag>#{a}</Tag>
+          ))}
+        </div>
+      )}
       {post && (
         <LanguageListWrapper>
           {post.availableLanguage.map((post) => (

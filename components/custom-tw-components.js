@@ -26,7 +26,7 @@ export const Article = tw.article`
 //////////////////////////////////////////////////////
 export const LanguageListWrapper = tw.ul` 
     flex
-    mt-3
+    mt-6
     mb-4
 `;
 
@@ -253,4 +253,14 @@ export const BackButton = tw.button`
     hover:bg-[#f06969]
     hover:text-[#fff]
     duration-75
+`
+
+export const Tag = tw.span`
+    py-[1px]
+    px-[3px]
+    mr-2
+    rounded-md
+    text-xs
+    bg-[#f0f0f0]
+    text-[#777]
 `
