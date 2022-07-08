@@ -148,6 +148,7 @@ section {
         pre {
             code {
                 background-color: transparent;
+                padding: 0 !important;
             }
 
             div {
@@ -157,6 +158,7 @@ section {
         }
         
         code {
+            padding: 1px 5px;
             font-size: 0.8em;
             border-radius: 5px;
             background-color: $--code;

@@ -83,6 +83,9 @@ Each time we visit a page in the browser, URLs are saved in a stack. Once we cli
 
 ---
 
+See also:
+- [Stack LinkedList-based Implementation](./stack-implementation-linkedlist)
+
 Reference:
 - [https://www.programiz.com/dsa/stack](https://www.programiz.com/dsa/stack)
 - image: [https://cdn.programiz.com/sites/tutorial2program/files/stack-of-plates_0.png](https://cdn.programiz.com/sites/tutorial2program/files/stack-of-plates_0.png)
