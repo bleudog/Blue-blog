@@ -1,6 +1,6 @@
 import Date from "@components/Date";
 import Link from "next/link";
-import { List, Title } from "./custom-tw-components";
+import { List, Title, Tag } from "./custom-tw-components";
 
 const PostList = ({ posts }) => {
   return (

@@ -152,4 +152,3 @@ See also:
 Link:
 
 - [C implementation](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/03-stack/stack-linkedlist)
-- [Stack related problems from BOJ and Leetcode](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/03-stack)

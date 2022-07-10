@@ -73,6 +73,7 @@ export const List = tw.li`
     pt-1
     pb-1
     flex
+    flex-col
     hover:bg-[#236af229]
     cursor-pointer
 `;
@@ -262,5 +263,5 @@ export const Tag = tw.span`
     rounded-md
     text-xs
     bg-[#f0f0f0]
-    text-[#777]
+    text-[#999]
 `
