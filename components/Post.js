@@ -33,7 +33,9 @@ const Post = ({ post, tags, title, date, children }) => {
         </LanguageListWrapper>
       )}
       <hr />
-      <BackButton onClick={() => router.back()}>{'< back'}</BackButton>
+      <BackButton onClick={() => router.back()}>
+        {(post.lang === 'ja') ? '← 戻る' : '← back'}
+        </BackButton>
       {children}
     </PostContainer>
   );
