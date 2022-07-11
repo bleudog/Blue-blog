@@ -1,6 +1,6 @@
 ---
 title: "データ構造（Data Structure）とは"
-date: "2022-07-11 06:00:00"
+date: "2022-07-06 22:00:00"
 tags: 
   - データ構造
 lang: ja
@@ -35,6 +35,10 @@ lang: ja
 - グラフ（Graphs）
 
 ---
+
+関連記事：
+- [線形と非線形データ構造の違い](./linear-vs-non-linear-ds)
+- [アルゴリズムとは](./what-is-an-algorithm)
 
 参考：
 - [https://www.programiz.com/dsa/data-structure-types](https://www.programiz.com/dsa/data-structure-types)
