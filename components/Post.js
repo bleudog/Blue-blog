@@ -4,11 +4,15 @@ import { PostContainer, PageTitle, BackButton, Tag } from "./custom-tw-component
 import { LanguageList, LanguageListWrapper } from "./custom-tw-components";
 import { useRouter } from "next/router";
 import utilStyles from "@styles/utils.module.scss";
+import Head from "next/head";
 
 const Post = ({ post, tags, title, date, children }) => {
   const router = useRouter();
   return (
     <PostContainer className={utilStyles.loadDown}>
+      <Head>
+        <title>Blue Log: {title}</title>
+      </Head>
       <Date
         dateString={date}
         customClass={"text-sm break-normal inline-block"}
