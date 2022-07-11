@@ -113,9 +113,7 @@ This type of queue is called **Circular Queue**.
 ---
 
 See also:
-- Circular Queue (i.p.)
-- Array-based Implementation (i.p.)
-- LinkedList-based Implementation (i.p.)
+- [What is a Circular Queue?](./what-is-a-circular-queue)
 - [Queue related problems from BOJ and Leetcode](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/04-queue)
 
 Reference:
