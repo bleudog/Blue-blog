@@ -20,7 +20,7 @@ In programming, putting the item on top of the stack is called **push** and remo
 
 To get the bottom plate, first we'll need to perform many **pop** operations.
 
-# Basic Operations of Stack
+# Basic Operations of Stack (Array-based)
 ## push
 Add an element to the top of a stack.
 
@@ -84,7 +84,6 @@ Each time we visit a page in the browser, URLs are saved in a stack. Once we cli
 ---
 
 See also:
-- Stack: Array-based implementation (i.p.)
 - [Stack: LinkedList-based Implementation](./stack-implementation-linkedlist)
 - [Stack related problems from BOJ and Leetcode](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/03-stack)
 
