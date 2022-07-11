@@ -7,7 +7,7 @@ tags:
 lang: en
 ---
 
-What are the differencens between Linear and Non-Linear data structures?
+What are the differences between Linear and Non-Linear data structures?
 
 # Linear Data Structure
 - Data items are arranged in sequential order one after the other.
@@ -15,11 +15,14 @@ What are the differencens between Linear and Non-Linear data structures?
 - We can traverse and visit all items on a single run.
 - Memory utilization is not efficient because we need to pre-allocate a block of memory.
 
+![Linear Data Structure](/images/posts/linear-vs-non-linear/ilnear.svg)
 # Non-Linear Data Structure
 - Data items are arranged in non-sequential order.
 - Items are present at different layers in hierarchical manner.
 - We cannot visit all items in a single run. It requires multiple runs to go through all layers.
 - Different structures utilize memory in different efficient ways.
+
+![Non-linear Data Structure](/images/posts/linear-vs-non-linear/nonlinear.svg)
 
 ---
 

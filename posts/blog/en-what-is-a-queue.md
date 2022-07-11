@@ -15,7 +15,9 @@ Queue is a linear data structure that follows the principle of FIFO (First-In, F
 
 Imagine you're trying to print documents `A`, `B` and `C` from a single printer. If the document `A` was the first one in the queue, it will be printed first. Not `B` nor `C`. 
 
-To put it simply, you can think of a Queue data structure as a "first-come, first-serve" type structure.
+Simply you can think of a Queue data structure as a "first-come, first-serve" type structure.
+
+In programming, the term **enqueue** refers to adding an item to the queue and **dequeue** for removing an item from the queue.
 
 # Basic Operations of Queue (Array-based)
 ## enqueue
