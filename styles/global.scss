@@ -149,6 +149,9 @@ section {
             code {
                 background-color: transparent;
                 padding: 0 !important;
+                border: none;
+                box-shadow: none;
+                margin: inherit;
             }
 
             div {
@@ -160,10 +163,13 @@ section {
         code {
             padding: 1px 5px;
             font-size: 0.8em;
-            border-radius: 5px;
-            background-color: $--code;
+            border-radius: 3px;
+            background-color: #e9f3ff;
             white-space: pre;
+            border: 1px solid #e1e1e1;
             transition: background-color 0.3s ease;
+            box-shadow: 0.5px 1px 1px #7c89a8;
+            margin: 0 2px;
         }
 
         li {
