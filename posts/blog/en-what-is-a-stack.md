@@ -20,7 +20,7 @@ In programming, putting the item on top of the stack is called **push** and remo
 
 To get the bottom plate, first we'll need to perform many **pop** operations.
 
-# Basic Operations of Stack (Array-based)
+# Basic Operations of Stack
 ## push
 Add an element to the top of a stack.
 

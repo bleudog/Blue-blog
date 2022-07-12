@@ -48,7 +48,7 @@ else
 end
 ```
 
-# Operations of Circular Queue (Array-based)
+# Operations of Circular Queue
 ## enqueue
 Add an element to the end of the queue.
 

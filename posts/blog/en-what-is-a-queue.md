@@ -19,7 +19,7 @@ Simply you can think of a Queue data structure as a "first-come, first-serve" ty
 
 In programming, the term **enqueue** refers to adding an item to the queue and **dequeue** for removing an item from the queue.
 
-# Basic Operations of Queue (Array-based)
+# Basic Operations of Queue
 ## enqueue
 Add an element to the end of the queue.
 
