@@ -1,5 +1,5 @@
 ---
-title: "What is a Stack?"
+title: "Stack?"
 date: "2022-07-07 08:20:00"
 tags: 
   - stack

@@ -1,5 +1,5 @@
 ---
-title: "What is a Queue?"
+title: "Queue?"
 date: "2022-07-10 22:00:00"
 tags: 
   - queue

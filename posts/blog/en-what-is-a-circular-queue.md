@@ -1,5 +1,5 @@
 ---
-title: "What is a Circular Queue?"
+title: "Circular Queue?"
 date: "2022-07-12 07:50:00"
 tags: 
   - circular queue

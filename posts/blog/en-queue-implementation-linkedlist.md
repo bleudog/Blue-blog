@@ -73,18 +73,21 @@ There are two cases to consider when adding a data to the queue:
 2. a queue contains 1 or more nodes
 
 When queue is empty, we simply assign a new node to both `front` and `rear` node.
-```text
-if queue.empty == TRUE
-    front = new node
-    rear = front
+```rb
+if self.empty?
+    @front = Node.new(data)
+    @rear = @front
+    @front.next = @rear
 end
 ```
 
 If queue is not empty, we use `rear` node to track the last node and let its next node be the new node. And we'll need to update our `rear`.
-```text
-if queue.empty == FALSE
-    rear.next = new node
-    rear = rear.next
+```rb
+if self.empty? == false
+    node = Node.new(data)
+    node.next = @rear.next
+    @rear.next = Node.new(data)
+    @rear = @rear.next
 end
 ```
 
@@ -98,10 +101,10 @@ Time complexity for `enqueue` is constant, O(1).
 
 We simply move `front` to `front.next` if exists.
 
-```text
-if queue.empty == FALSE
-    data = front.data
-    front = front.next
+```rb
+if self.empty? == false
+    data = @front.data
+    @front = @front.next
     return data
 end
 ```
@@ -112,22 +115,22 @@ Time complexity of `dequeue` is constant, O(1).
 Rest of these methods are trivial.
 
 `front` method:
-```text
-if queue.empty == FALSE
-    return front.data
+```rb
+if self.empty! == false
+    @front.data
 end
 ```
 
 `rear` method:
-```text
-if queue.empty == FALSE
-    return rear.data
+```rb
+if self.empty? == false
+    @rear.data
 end
 ```
 
 `empty?` method:
-```text
-return front == nil
+```rb
+@front == nil
 ```
 
 ---
