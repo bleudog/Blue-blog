@@ -4,6 +4,7 @@ date: "2022-07-06 18:55:00"
 tags: 
   - 자료구조
 lang: ko
+about: ds
 ---
 
 # 자료구조(Data Structures)

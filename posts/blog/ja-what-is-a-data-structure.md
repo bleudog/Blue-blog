@@ -4,6 +4,7 @@ date: "2022-07-06 22:00:00"
 tags: 
   - データ構造
 lang: ja
+about: ds
 ---
 
 # データ構造（Data Structures）

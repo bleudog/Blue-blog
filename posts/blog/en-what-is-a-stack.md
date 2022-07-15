@@ -5,6 +5,7 @@ tags:
   - stack
   - data structure
 lang: en
+about: ds
 ---
 
 # Stack

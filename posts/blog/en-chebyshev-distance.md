@@ -1,8 +1,10 @@
 ---
 title: "Chebyshev Distance"
-date: "2021-11-18"
-tags: "C++"
+date: "2021-11-18 07:20:00"
+tags: 
+  - algorithm
 lang: en
+about: algo
 ---
 
 ```cpp

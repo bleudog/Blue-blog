@@ -5,6 +5,7 @@ tags:
   - queue
   - data structure
 lang: en
+about: ds
 ---
 
 # Queue

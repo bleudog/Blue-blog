@@ -2,6 +2,7 @@
 title: git commit 서명하기
 date: "2022-04-05"
 lang: "ko"
+about: log
 tags: 
  - git
  - gpg

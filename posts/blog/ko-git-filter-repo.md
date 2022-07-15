@@ -5,6 +5,7 @@ tags:
   - git
   - git-filter-repo
 lang: ko
+about: log
 ---
 
 git history에서 author 정보를 바꾸기 위해 상당히 번거로운 과정들이 필요하다 ([커밋의 author 수정하기](../ko/change-author-of-commit-in-git-history/))

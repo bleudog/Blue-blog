@@ -5,6 +5,7 @@ tags:
   - github 
   - gpg
 lang: ko
+about: log
 ---
 
 gpg (GnuPG) 2.3.3

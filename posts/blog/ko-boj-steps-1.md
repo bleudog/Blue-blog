@@ -4,6 +4,7 @@ date: "2022-03-21"
 tags: 
   - implementation
 lang: ko
+about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 첫 번째 단계 [입출력과 사칙연산](https://www.acmicpc.net/step/1)의 풀이입니다.

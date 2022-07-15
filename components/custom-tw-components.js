@@ -28,6 +28,7 @@ export const LanguageListWrapper = tw.ul`
     flex
     mt-6
     mb-4
+    overflow-x-auto
 `;
 
 export const LanguageList = tw.li` 

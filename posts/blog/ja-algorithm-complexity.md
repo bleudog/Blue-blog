@@ -4,6 +4,7 @@ date:  "2021-05-03"
 tags: 
   - complexity
 lang: ja
+about: algo
 ---
 
 ## Big-O記法とは

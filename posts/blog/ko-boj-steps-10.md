@@ -4,6 +4,7 @@ date: "2022-03-24"
 tags: 
  - bruteforce
 lang: ko
+about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 열 번째 단계 [브루트포스](https://www.acmicpc.net/step/22)의 풀이입니다.

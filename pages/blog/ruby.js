@@ -9,13 +9,13 @@ import LanguageSelector from "@components/LanguageSelector";
 
 export default function Blog({ posts }) {
   const customMeta = {
-    title: `${metadata.title} - Blog`,
+    title: `${metadata.title} - Ruby`,
   };
   return (
     <Container page={"blog"} customMeta={customMeta}>
       <PageBanner
-        title={"Blue Log"}
-        subtitle={"Failure in life is inevitable. We fail by default. So, let's learn from it."}
+        title={"Ruby"}
+        subtitle={"Anything related to the Ruby language!"}
       />
       <LanguageSelector />
       <PostListContainer>
@@ -27,7 +27,7 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = getAllPosts().filter((post) => post.lang === "en");
+  const posts = getAllPosts().filter((post) => post.about === "ruby");
   return {
     props: {
       posts,

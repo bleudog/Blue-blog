@@ -6,6 +6,7 @@ tags:
   - gpg
   - error
 lang: ko
+about: log
 ---
 
 GPG key를 사용해서 커밋에 서명을 하는데 아래와 같은 오류가 발생했다.

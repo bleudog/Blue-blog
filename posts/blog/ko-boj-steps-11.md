@@ -4,6 +4,7 @@ date: "2022-03-25"
 tags: 
     - sort
 lang: ko
+about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 11번째 단계 [정렬](https://www.acmicpc.net/step/9)의 풀이입니다.

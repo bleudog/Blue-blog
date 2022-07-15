@@ -4,6 +4,7 @@ date: "2022-07-07 22:45:00"
 tags:
   - ruby
 lang: en
+about: ruby
 ---
 
 Imagine you have a string `hello world` and you want to count number vowels in the string.

@@ -9,15 +9,13 @@ import LanguageSelector from "@components/LanguageSelector";
 
 export default function Blog({ posts }) {
   const customMeta = {
-    title: `${metadata.title} - 블로그`,
+    title: `${metadata.title} - Log`,
   };
   return (
     <Container page={"blog"} customMeta={customMeta}>
       <PageBanner
-        title={"블로그"}
-        subtitle={
-          '"수많은 소원 아래 매일 다른 꿈을 꾸던 아이는 그렇게 오랜 시간 겨우 내가 되려고 아팠던 걸까"'
-        }
+        title={"Blue Log"}
+        subtitle={"Anything that I want to take notes about goes here."}
       />
       <LanguageSelector />
       <PostListContainer>
@@ -29,7 +27,7 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = getAllPosts().filter((post) => post.lang === "ko");
+  const posts = getAllPosts().filter((post) => post.about === "log");
   return {
     props: {
       posts,

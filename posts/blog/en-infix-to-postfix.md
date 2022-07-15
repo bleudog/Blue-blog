@@ -6,6 +6,7 @@ tags:
     - postfix
     - stack
 lang: en
+about: algo
 ---
 
 We can use a stack to convert the infix expression like `A*B/C+D` to postfix(`AB*C/D+`) form.

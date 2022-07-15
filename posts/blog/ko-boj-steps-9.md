@@ -5,6 +5,7 @@ tags:
   - recursion
   - divide and conquer
 lang: ko
+about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 아홉 번째 단계 [재귀](https://www.acmicpc.net/step/19)의 풀이입니다.

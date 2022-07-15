@@ -1,9 +1,10 @@
 ---
-title:  "파이썬 기초 정리"
-date:   "2022-01-30"
+title: "파이썬 기초 정리"
+date: "2022-01-30"
 tags: 
   - python
 lang: ko
+about: python
 ---
 
 ## 정수형 (Integer)

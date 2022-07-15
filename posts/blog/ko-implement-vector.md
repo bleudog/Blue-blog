@@ -5,6 +5,7 @@ tags:
   - vector
   - dynamic array
 lang: ko
+about: ds
 ---
 
 ## TL;DR

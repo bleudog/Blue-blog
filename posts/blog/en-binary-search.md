@@ -1,7 +1,10 @@
 ---
 title: "Binary Search"
 date: "2021-11-11"
-lang: "en"
+tags: 
+  - algorithm
+lang: en
+about: algo
 ---
 
 ```c

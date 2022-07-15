@@ -5,6 +5,7 @@ tags:
   - queue
   - linked list
 lang: en
+about: ds
 ---
 
 We're going to implement following functions with a linked list:

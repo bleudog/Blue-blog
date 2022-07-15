@@ -3,6 +3,7 @@ title: 'BOJ 02: 조건문 (Conditions)'
 date: "2022-03-21"
 tags: [implementation, math, arithmetic]
 lang: ko
+about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 두 번째 단계 [조건문](https://www.acmicpc.net/step/4)의 풀이입니다.

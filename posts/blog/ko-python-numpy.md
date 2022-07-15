@@ -5,6 +5,7 @@ tags:
   - numpy
   - python
 lang: ko
+about: python
 ---
 
 ## Numpy 준비하기

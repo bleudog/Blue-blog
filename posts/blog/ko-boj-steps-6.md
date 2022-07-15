@@ -5,6 +5,7 @@ tags:
   - implementation
   - string
 lang: ko
+about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 여섯 번째 단계 [문자열](https://www.acmicpc.net/step/7)의 풀이입니다.

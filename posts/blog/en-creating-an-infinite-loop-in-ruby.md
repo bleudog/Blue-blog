@@ -4,6 +4,7 @@ date: "2022-07-07 22:30:00"
 tags:
   - ruby
 lang: en
+about: ruby
 ---
 
 There are several ways to create an infinite loop in Ruby.

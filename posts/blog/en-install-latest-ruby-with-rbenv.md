@@ -5,6 +5,7 @@ tags:
   - ruby
   - rbenv
 lang: en
+about: ruby
 ---
 
 The latest stable version of Ruby is `3.1.2`, but the pre-installed version of Ruby in M1 Mac is `2.6.8p205`.

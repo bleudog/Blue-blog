@@ -9,15 +9,13 @@ import LanguageSelector from "@components/LanguageSelector";
 
 export default function Blog({ posts }) {
   const customMeta = {
-    title: `${metadata.title} - ブログ`,
+    title: `${metadata.title} - Data Structures`,
   };
   return (
     <Container page={"blog"} customMeta={customMeta}>
       <PageBanner
-        title={"ブログ"}
-        subtitle={
-          "チャレンジして失敗するのを怖れるよりも、何もしないことを怖れろ。"
-        }
+        title={"Data Structures"}
+        subtitle={"Notes about data structure concepts and implementations."}
       />
       <LanguageSelector />
       <PostListContainer>
@@ -29,7 +27,7 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = getAllPosts().filter((post) => post.lang === "ja");
+  const posts = getAllPosts().filter((post) => post.about === "ds");
   return {
     props: {
       posts,

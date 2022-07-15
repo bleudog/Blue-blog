@@ -1,8 +1,10 @@
 ---
 title: "Adjacency List"
-tags: "Ruby"
+date: "2022-07-15 08:00:00"
+tags: 
+  - algorithm
 lang: en
-date: "2021-12-08"
+about: algo
 ---
 
 

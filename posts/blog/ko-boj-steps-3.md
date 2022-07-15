@@ -6,6 +6,7 @@ tags:
   - math
   - arithmetic
 lang: ko
+about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 세 번째 단계 [반복문](https://www.acmicpc.net/step/3)의 풀이입니다.

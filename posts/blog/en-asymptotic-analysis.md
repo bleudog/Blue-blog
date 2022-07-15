@@ -4,6 +4,7 @@ date: "2022-07-06 07:00:00"
 tags: 
   - algorithm
 lang: en
+about: algo
 ---
 
 # Asymptotic Analysis

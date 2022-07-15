@@ -5,6 +5,7 @@ tags:
   - stack
   - linked list
 lang: en
+about: ds
 ---
 
 We're going to implement following functions using a linked list:
