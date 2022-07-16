@@ -1,5 +1,5 @@
 ---
-title: "Implement a Queue using a Linked List"
+title: "Queue - Linked List Implementation"
 date: "2022-07-12 21:00:00"
 tags:
   - queue

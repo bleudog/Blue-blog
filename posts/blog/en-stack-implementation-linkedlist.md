@@ -1,5 +1,5 @@
 ---
-title: "Implement a Stack using a Linked List"
+title: "Stack - Linked List Implementation"
 date: "2022-07-09 07:30:00"
 tags:
   - stack
