@@ -30,7 +30,7 @@ export const LanguageListWrapper = tw.ul`
     mb-4
     overflow-x-auto
 `;
-
+    
 export const LanguageList = tw.li` 
     list-none
     px-2
@@ -39,7 +39,7 @@ export const LanguageList = tw.li`
     border
     rounded-md
     font-medium
-
+    cursor-pointer
     hover:bg-[#289aff]
 `;
 
@@ -71,8 +71,8 @@ export const LanguageButtons = tw.div`
 //////////////////////////////////////////////////////
 export const List = tw.li`
     list-none
-    pt-1
-    pb-1
+    pt-2
+    pb-2
     flex
     flex-col
     hover:bg-[#236af229]
@@ -238,10 +238,6 @@ export const HeaderContainer = tw.header`
     justify-between
     flex-wrap
     pb-20
-`;
-
-export const MobileNav = tw.div`
-    flex
 `;
 
 export const BackButton = tw.button`

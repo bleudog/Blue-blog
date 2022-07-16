@@ -6,11 +6,6 @@ import { HeaderContainer, MobileNav } from "./custom-tw-components";
 const Header = (props) => {
   const baseNav = navlink.base;
 
-  function toggleMobileMenu(e) {
-    document.querySelector("#mobileMenu").classList.toggle("hide");
-    document.querySelector("#hamburger").classList.toggle(`${styles.active}`);
-  }
-
   return (
     <>
       <HeaderContainer className={styles.header}>
@@ -32,28 +27,6 @@ const Header = (props) => {
           </div>
         </div>
       </HeaderContainer>
-
-      <MobileNav className={styles.mobileNavLink}>
-        <div
-          id="hamburger"
-          className={`${styles.mobileHamburger} duration-200`}
-          onClick={toggleMobileMenu}
-        >
-          <div className={`${styles.bar}`}></div>
-          <div className={`${styles.bar}`}></div>
-          <div className={`${styles.bar}`}></div>
-        </div>
-        <div id="mobileMenu" className={`hide ${styles.mobileMenu}`}>
-          {baseNav.map((tab) => (
-            <NavLink
-              key={tab.link}
-              link={tab.link}
-              customClass={"hover:text-[#289aff]"}
-              value={tab.name}
-            />
-          ))}
-        </div>
-      </MobileNav>
     </>
   );
 };

@@ -7,11 +7,11 @@ const LanguageSelector = (props) => {
   return (
     <LanguageListWrapper>
       {blogNav.map((tab) => (
-        <LanguageList className="languageSelector" key={tab.link} id={tab.name}>
-          <Link href={tab.link}>
+        <Link href={tab.link} key={tab.link} id={tab.name}>
+          <LanguageList className="languageSelector">
             <a>{tab.name}</a>
-          </Link>
-        </LanguageList>
+          </LanguageList>
+        </Link>
       ))}
     </LanguageListWrapper>
   );

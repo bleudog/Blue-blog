@@ -1,12 +1,5 @@
 @import "@styles/colors.module";
 
-.mobileDocAside {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 45px;
-    height: 45px;
-}
-
 .circle {
     width: 2.5em;
     height: 2.5em;
@@ -61,16 +54,5 @@
         display: inherit !important;
         width: 99%;
         transform: translate(0em, 4em);
-    }
-
-    .mobileDocAside {
-        position: fixed;
-        bottom: 3em;
-        left: 1.5em;
-        z-index: 777;
-    }
-
-    .mobileDocAsideSlide {
-        left: 85% !important;
     }
 }

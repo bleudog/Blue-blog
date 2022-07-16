@@ -20,15 +20,15 @@ const Post = ({ post, tags, title, date, children }) => {
       <PageTitle>{title}</PageTitle>
       {tags && (
         <div>
-          {tags.map((a,idx) => (
-            <Tag key={`${a}-${idx}`}>#{a}</Tag>
+          {tags.map((tag, idx) => (
+            <Tag key={`${tag}-${idx}`}>#{tag}</Tag>
           ))}
         </div>
       )}
       {post && (
         <LanguageListWrapper>
           {post.availableLanguage.map((post) => (
-            <LanguageList className="languageSelector" key={post.slug}>
+            <LanguageList className="languageSelector" key={`${post.lang}-${post.slug}`}>
               <Link href={`/blog/${post.lang}/${post.slug}`}>
                 <a>{post.langName}</a>
               </Link>

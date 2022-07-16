@@ -16,7 +16,7 @@ const BlogLayout = ({ posts }) => {
       <PageBanner
         title={"Blue Log"}
         subtitle={
-          "If you're a living organism, failure in life is inevitable. We fail by default -- so let's learn from it."
+          "Records about my journey to become a better developer."
         }
       />
       <LanguageSelector />

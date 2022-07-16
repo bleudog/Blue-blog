@@ -27,7 +27,7 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const posts = getAllPosts().filter((post) => post.about === "ds");
+  const posts = getAllPosts().filter((post) => (post.about === "ds") && (post.lang === "en"));
   return {
     props: {
       posts,
