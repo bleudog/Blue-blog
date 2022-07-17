@@ -3,6 +3,7 @@ title: "Circular Queue - Linked List Implementation"
 date: "2022-07-16 09:00:00"
 tags:
   - circular queue
+  - linked list
 lang: en
 about: ds
 ---
@@ -65,7 +66,7 @@ def dequeue
 end
 ```
 
-Click [here](https://github.com/bleuinu/DataStructures-and-Algorithms/blob/main/04-queue/circular-queue-linkedlist/ruby/main.rb) to view the entire source code.
+Click [here](https://github.com/gonexvii/DataStructures-and-Algorithms/blob/main/04-queue/circular-queue-linkedlist/ruby/main.rb) to view the entire source code.
 
 ## Time Complexity
 Both `enqueue` and `dequeue` operations are performed in constant time, O(1).

@@ -2,24 +2,24 @@ const metadata = {
   author: "Blue Eu",
   title: "Blue Log",
   description: "",
-  repo: "https://github.com/bleuinu/bleuinu.github.io",
+  repo: "https://github.com/gonexvii/gonexvii.github.io",
   url: "https://m-e.blue",
   profileImage: "/images/profile.jpg",
 
   social: {
-    github: "https://github.com/bleuinu",
-    twitter: "https://twitter.com/bleuinu",
+    github: "https://github.com/gonexvii",
+    twitter: "https://twitter.com/gonexvii",
   },
 
   socialHandle: {
-    github: "@bleuinu",
-    twitter: "@bleuinu",
+    github: "@gonexvii",
+    twitter: "@gonexvii",
   },
 
   giscus: {
-    id: "bleuinu",
+    id: "gonexvii",
     url: "https://giscus.app/client.js",
-    repo: "bleuinu/blue-blog",
+    repo: "gonexvii/blue-blog",
     repoId: "R_kgDOHRtelA",
     category: "General",
     categoryId: "DIC_kwDOHRtelM4CO6wU",

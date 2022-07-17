@@ -122,7 +122,7 @@ The complexity of `enqueue` and `dequeue` operations in a circular queue using a
 
 See also:
 - [What is a Queue?](./what-is-a-queue)
-- [Queue related problems from BOJ and Leetcode](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/04-queue)
+- [Queue related problems from BOJ and Leetcode](https://github.com/gonexvii/DataStructures-and-Algorithms/tree/main/04-queue)
 
 Reference:
 - [https://www.programiz.com/dsa/circular-queue](https://www.programiz.com/dsa/circular-queue)

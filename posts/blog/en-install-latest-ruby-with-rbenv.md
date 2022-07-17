@@ -36,12 +36,12 @@ I'll be using `rbenv` to install and manage latest version of Ruby.
 
 Checking for `rbenv' in PATH: /usr/local/bin/rbenv
 Checking for rbenv shims in PATH: not found
-  The directory `/Users/bleuinu/.rbenv/shims' must be present in PATH for rbenv to work.
+  The directory `/Users/gonexvii/.rbenv/shims' must be present in PATH for rbenv to work.
   Please run `rbenv init' and follow the instructions.
 
 Checking `rbenv install' support: /usr/local/bin/rbenv-install (ruby-build 20220630)
 Counting installed Ruby versions: none
-  There aren't any Ruby versions installed under `/Users/bleuinu/.rbenv/versions'.
+  There aren't any Ruby versions installed under `/Users/gonexvii/.rbenv/versions'.
   You can install Ruby versions like so: rbenv install 3.1.2
 Checking RubyGems settings: OK
 Auditing installed plugins: OK
@@ -75,7 +75,7 @@ Checking for `rbenv' in PATH: /usr/local/bin/rbenv
 Checking for rbenv shims in PATH: OK
 Checking `rbenv install' support: /usr/local/bin/rbenv-install (ruby-build 20220630)
 Counting installed Ruby versions: none
-  There aren't any Ruby versions installed under `/Users/bleuinu/.rbenv/versions'.
+  There aren't any Ruby versions installed under `/Users/gonexvii/.rbenv/versions'.
   You can install Ruby versions like so: rbenv install 3.1.2
 Checking RubyGems settings: OK
 Auditing installed plugins: OK
@@ -104,13 +104,13 @@ As of July 2022, `3.1.2` is the latest version of Ruby.
 Downloading openssl-1.1.1n.tar.gz...
 -> https://dqw8nmjcqpjn7.cloudfront.net/40dceb51a4f6a5275bde0e6bf20ef4b91bfc32ed57c0552e2e8e15463372b17a
 Installing openssl-1.1.1n...
-Installed openssl-1.1.1n to /Users/bleuinu/.rbenv/versions/3.1.2
+Installed openssl-1.1.1n to /Users/gonexvii/.rbenv/versions/3.1.2
 
 Downloading ruby-3.1.2.tar.gz...
 -> https://cache.ruby-lang.org/pub/ruby/3.1/ruby-3.1.2.tar.gz
 Installing ruby-3.1.2...
 ruby-build: using readline from homebrew
-Installed ruby-3.1.2 to /Users/bleuinu/.rbenv/versions/3.1.2
+Installed ruby-3.1.2 to /Users/gonexvii/.rbenv/versions/3.1.2
 ```
 
 ## Set Global Version

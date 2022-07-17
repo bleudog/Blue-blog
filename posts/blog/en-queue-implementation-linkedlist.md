@@ -16,7 +16,7 @@ We're going to implement following functions with a linked list:
 - **empty?** - check if the stack is empty.
 
 # Implementation
-Click [here](https://github.com/bleuinu/DataStructures-and-Algorithms/blob/main/04-queue/queue-linkedlist/ruby/main.rb) to view the entire source code.
+Click [here](https://github.com/gonexvii/DataStructures-and-Algorithms/blob/main/04-queue/queue-linkedlist/ruby/main.rb) to view the entire source code.
 
 ## Node class
 
@@ -140,5 +140,5 @@ See also:
 - [What is a Queue?](./what-is-a-queue)
 
 Link:
-- [Ruby source code](https://github.com/bleuinu/DataStructures-and-Algorithms/blob/main/04-queue/queue-linkedlist/ruby/main.rb)
-- [C source code](https://github.com/bleuinu/DataStructures-and-Algorithms/blob/main/04-queue/queue-linkedlist/c/main.c)
+- [Ruby source code](https://github.com/gonexvii/DataStructures-and-Algorithms/blob/main/04-queue/queue-linkedlist/ruby/main.rb)
+- [C source code](https://github.com/gonexvii/DataStructures-and-Algorithms/blob/main/04-queue/queue-linkedlist/c/main.c)

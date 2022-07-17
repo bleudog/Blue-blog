@@ -9,7 +9,7 @@ tags:
 ---
 
 ## Signing commits
-GPG key를 사용하여 커밋에 서명하는 것이 가능하다 -- 오래된 커밋에 서명하는 방법은 [여기](https://medium.com/@bleudog/signing-previous-commits-787a077bdb62).
+GPG key를 사용하여 커밋에 서명하는 것이 가능하다.
 
 ![Signed commits](/images/posts/05042022-sign-commit-1.png)
 
@@ -60,7 +60,7 @@ git config --global commit.gpgsign true
 
 ## .gitconfig
 
-내가 쓰는 git 명령어 alias: [gist](https://gist.github.com/bleudog/7d09f53e421a1fc04987363110c522cf)
+내가 쓰는 git 명령어 alias: [gist](https://gist.github.com/gonexvii/7d09f53e421a1fc04987363110c522cf)
 
 ```sh
 [alias]

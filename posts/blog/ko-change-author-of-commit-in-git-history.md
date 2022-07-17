@@ -147,5 +147,5 @@ $ git push -f
 
 ---
 
-- [signed commit](/ko-signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@bleuinu/signing-previous-commits-787a077bdb62)'을 참고하자.
+- [signed commit](/ko-signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@gonexvii/signing-previous-commits-787a077bdb62)'을 참고하자.
 - `git filter-branch`가 상당히 느리기 때문에 [git-filter-repo](../ko/git-filter-repo/)

@@ -117,7 +117,7 @@ See also:
 - [What is a Stack?](./what-is-a-stack)
 - [What is a Circular Queue?](./what-is-a-circular-queue)
 - [Queue: LinkedList-based Implementation](./queue-implementation-linkedlist)
-- [Queue related problems from BOJ and Leetcode](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/04-queue)
+- [Queue related problems from BOJ and Leetcode](https://github.com/gonexvii/DataStructures-and-Algorithms/tree/main/04-queue)
 
 Reference:
 - [https://www.programiz.com/dsa/queue](https://www.programiz.com/dsa/queue)

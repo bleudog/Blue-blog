@@ -1,7 +1,7 @@
 const navlink = {
   base: [
     // { name: "/about", link: "/about" },
-    { name: "Blog", link: "/blog" },
+    { name: "Log", link: "/blog" },
     // { name: "/dsa", link: "/dsa/Graph/adjacency-list" },
   ],
   blog: [

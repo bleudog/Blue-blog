@@ -87,7 +87,7 @@ Each time we visit a page in the browser, URLs are saved in a stack. Once we cli
 See also:
 - [What is a Queue?](./what-is-a-queue)
 - [Stack: LinkedList-based Implementation](./stack-implementation-linkedlist)
-- [Stack related problems from BOJ and Leetcode](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/03-stack)
+- [Stack related problems from BOJ and Leetcode](https://github.com/gonexvii/DataStructures-and-Algorithms/tree/main/03-stack)
 
 Reference:
 - [https://www.programiz.com/dsa/stack](https://www.programiz.com/dsa/stack)

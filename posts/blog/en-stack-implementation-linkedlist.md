@@ -15,7 +15,7 @@ We're going to implement following functions using a linked list:
 - **empty()** - check if the stack is empty.
 
 # Implementation
-Click [here](https://github.com/bleuinu/DataStructures-and-Algorithms/blob/main/03-stack/stack-linkedlist/ruby/main.rb) to view the entire source code.
+Click [here](https://github.com/gonexvii/DataStructures-and-Algorithms/blob/main/03-stack/stack-linkedlist/ruby/main.rb) to view the entire source code.
 
 ## Node class
 
@@ -152,4 +152,4 @@ See also:
 
 Link:
 
-- [C implementation](https://github.com/bleuinu/DataStructures-and-Algorithms/tree/main/03-stack/stack-linkedlist)
+- [C implementation](https://github.com/gonexvii/DataStructures-and-Algorithms/tree/main/03-stack/stack-linkedlist)
