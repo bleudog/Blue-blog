@@ -25,11 +25,12 @@ I named it **Ghostvatar** because it's a ghost + avatar = ghostvatar 😀
     - hand
 - able to save it to your machine
 
-## Spec
+## Tech Stack
 - HTML/CSS (SASS) 
 - Vanilla JS
     - I kinda want to use React later for practice but might be an overkill... or is it not? 🤨
 - do I need database? I'm not sure how I should deal with images. For now I'll just save it locally.
+- pnpm
 
 ---
 Link:
