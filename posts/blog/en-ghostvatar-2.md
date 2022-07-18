@@ -1,5 +1,5 @@
 ---
-title: "🧸 Toy Project::Ghostvatar pt.2"
+title: "👻 Toy Project::Ghostvatar pt.2"
 date: "2022-07-17 22:00:00"
 tags: 
   - side-project
@@ -83,8 +83,11 @@ I had to set `scale` to get better quality.
 
 ![Ghostvatar Demo](/images/posts/ghostvatar/clear-ghost.png)
 
-
 ---
+
+see also:
+- [👻 Toy Project::Ghostvatar pt.1](./ghostvatar-1)
+- [👻 Toy Project::Ghostvatar pt.3](./ghostvatar-3)
 
 Link:
 - [Ghostvatar repository](https://github.com/gonexvii/ghost-vatar)
