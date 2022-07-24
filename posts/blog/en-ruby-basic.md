@@ -1,5 +1,5 @@
 ---
-title: "Ruby Basics"
+title: "Ruby - Basics"
 date: "2022-07-19 22:00:00"
 tags: []
 lang: en
@@ -264,8 +264,10 @@ loop do
 end
 ```
 
-
 ---
+
+See also:
+- [Ruby - Flow Control](./ruby-basic-flow)
 
 Reference:
 - [https://pine.fm/LearnToProgram](https://pine.fm/LearnToProgram/chap_00.html)
