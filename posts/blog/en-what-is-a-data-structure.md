@@ -41,7 +41,7 @@ Examples of non-linear data structures are:
 
 See also:
 - [Linear vs. Non-Linear Data Structures](./linear-vs-non-linear-ds)
-- [What is an Algorithm?](./what-is-an-algorithm)
+- [What is an Algorithm?](./algo-what-is-an-algorithm)
 
 Reference:
 - [https://www.programiz.com/dsa/data-structure-types](https://www.programiz.com/dsa/data-structure-types)

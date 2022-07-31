@@ -75,4 +75,4 @@ end
 ---
 
 See also:
-- [Floyd's Cycle Detection Algorithm](./algorithm-floyds-cycle-detection)
+- [Floyd's Cycle Detection Algorithm](./algo-floyds-cycle-detection)

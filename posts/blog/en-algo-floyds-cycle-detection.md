@@ -83,4 +83,4 @@ bool hasCycle(ListNode *head) {
 ---
 
 See also:
-- [Find the starting point of a cycle](./find-start-of-a-cycle)
+- [Find the starting point of a cycle](./algo-find-start-of-a-cycle)
