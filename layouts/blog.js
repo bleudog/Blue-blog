@@ -14,7 +14,7 @@ const BlogLayout = ({ posts }) => {
   return (
     <Container page={"blog"} customMeta={customMeta}>
       <PageBanner
-        title={"Blue Log"}
+        title={"Rolemadelen"}
         subtitle={
           "Records about my journey to become a better developer."
         }

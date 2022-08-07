@@ -14,7 +14,7 @@ export default function Blog({ posts }) {
   return (
     <Container page={"blog"} customMeta={customMeta}>
       <PageBanner
-        title={"Blue Log"}
+        title={"Rolemadelen"}
         subtitle={"Anything that I want to take notes about goes here."}
       />
       <LanguageSelector />

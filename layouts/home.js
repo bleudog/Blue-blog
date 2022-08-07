@@ -17,7 +17,7 @@ const HomeLayout = ({ blog }) => {
           width={135}
           height={135}
           src={profileImg}
-          alt="Blue Eu"
+          alt="Rolemadelen"
         />
         <PageBanner
           title={"Failure leads to understanding."}

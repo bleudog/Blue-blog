@@ -161,4 +161,4 @@ end
 
 ---
 
-Check full implementation from [here](https://github.com/bleuisgone/DataStructures-and-Algorithms/blob/main/02-linkedlists/circular-singly-linked-list/ruby/main.rb).
+Check full implementation from [here](https://github.com/rolemadelen/DataStructures-and-Algorithms/blob/main/02-linkedlists/circular-singly-linked-list/ruby/main.rb).

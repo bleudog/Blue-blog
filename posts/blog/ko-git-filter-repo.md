@@ -26,9 +26,9 @@ git history에서 author 정보를 바꾸기 위해 상당히 번거로운 과�
 `new_name <new_email> wrong_name <wrong_email>`
 
 ```text
-Blue Eu <eu.blue@pm.me> Blu eEu <eu.blue@pm.me>
- Blue Eu <eu.blue@pm.me> wrongname1 <wrongname1@pm.me>
- Blue Eu <eu.blue@pm.me> wrongname2 <wrongname2@pm.me>
+Rolemadelen <rolemadelen@pm.me> Blu eEu <rolemadelen@pm.me>
+ Rolemadelen <rolemadelen@pm.me> wrongname1 <wrongname1@pm.me>
+ Rolemadelen <rolemadelen@pm.me> wrongname2 <wrongname2@pm.me>
 ```
 
 여러개의 정보를 넘겨줘도 된다. 오른쪽 세 author가 모두 왼쪽의 author로 수정된다.

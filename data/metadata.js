@@ -1,25 +1,25 @@
 const metadata = {
-  author: "Blue Eu",
-  title: "Blue Log",
+  author: "Rolemadelen",
+  title: "Rolemadelen",
   description: "",
-  repo: "https://github.com/gonexvii/gonexvii.github.io",
-  url: "https://m-e.blue",
+  repo: "https://github.com/rolemadelen/rolemadelen-blog",
+  url: "https://rolemadelen.com",
   profileImage: "/images/profile.jpg",
 
   social: {
-    github: "https://github.com/gonexvii",
-    twitter: "https://twitter.com/gonexvii",
+    github: "https://github.com/rolemadelen",
+    twitter: "https://twitter.com/rolemadelen",
   },
 
   socialHandle: {
-    github: "@gonexvii",
-    twitter: "@gonexvii",
+    github: "@rolemadelen",
+    twitter: "@rolemadelen",
   },
 
   giscus: {
-    id: "gonexvii",
+    id: "rolemadelen",
     url: "https://giscus.app/client.js",
-    repo: "gonexvii/blue-blog",
+    repo: "rolemadelen/rolemadelen-blog",
     repoId: "R_kgDOHRtelA",
     category: "General",
     categoryId: "DIC_kwDOHRtelM4CO6wU",

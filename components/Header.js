@@ -12,7 +12,7 @@ const Header = (props) => {
         <NavLink
           link={"/"}
           customClass={`${styles.navLogo}`}
-          value="Blue Log"
+          value="@rolemadelen"
         />
         <div className={"flex items-center"}>
           <div className={styles.navLink}>

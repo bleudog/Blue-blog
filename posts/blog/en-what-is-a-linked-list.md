@@ -71,4 +71,4 @@ See also:
 - [Singly Linked List](./singly-linked-list)
 - [Doubly Linked List](./doubly-linked-list)
 - [Circular Linked List](./circular-linked-list)
-- [Linked List related problems from Leetcode](https://github.com/bleuisgone/DataStructures-and-Algorithms/tree/main/02-linkedlists)
+- [Linked List related problems from Leetcode](https://github.com/rolemadelen/DataStructures-and-Algorithms/tree/main/02-linkedlists)

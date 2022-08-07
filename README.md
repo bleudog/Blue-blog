@@ -1,3 +1,3 @@
-# [Blue blog](http://m-e.blue/) 
+# [Blog](http://rolemadelen.com/) 
 
 Multilingual programming blog.

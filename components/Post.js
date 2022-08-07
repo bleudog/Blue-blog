@@ -11,7 +11,7 @@ const Post = ({ post, tags, title, date, children }) => {
   return (
     <PostContainer className={utilStyles.loadDown}>
       <Head>
-        <title>Blue Log: {title}</title>
+        <title>Rolemadelen: {title}</title>
       </Head>
       <Date
         dateString={date}
