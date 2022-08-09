@@ -5,8 +5,7 @@ import { FooterContainer } from "./custom-tw-components";
 
 const Footer = () => {
   const sns = [
-    { name: "github", link: metadata.social.github },
-    { name: "twitter", link: metadata.social.twitter },
+    { name: "github", link: metadata.social.github }
   ];
   return (
     <FooterContainer>
