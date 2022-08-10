@@ -5,20 +5,20 @@ import RecentPostContainer from "@components/RecentPostContainer";
 import PageBanner from "@components/PageBanner";
 import utilStyles from "@styles/utils.module.scss";
 import { Banner } from "@components/custom-tw-components";
-import profileImg from "../public/images/profile.jpg";
+import profileImg from "../public/images/profile.png";
 
 const HomeLayout = ({ blog }) => {
   return (
     <Container>
       <Banner className={utilStyles.loadDown}>
-        {/* <Image
+        <Image
           priority
           className={utilStyles.circleImage}
-          width={135}
-          height={135}
+          width={174}
+          height={150}
           src={profileImg}
           alt="Rolemadelen"
-        /> */}
+        />
         <PageBanner
           title={"Failure leads to understanding."}
           subtitle={
