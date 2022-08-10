@@ -3,7 +3,7 @@ title: "Ruby - Basics"
 date: "2022-07-19 22:00:00"
 tags: []
 lang: en
-about: ruby
+about: programming
 ---
 
 # Display data

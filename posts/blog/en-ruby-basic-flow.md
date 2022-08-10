@@ -3,7 +3,7 @@ title: "Ruby - Flow Control using if-else and case"
 date: "2022-07-24 15:00:00"
 tags: []
 lang: en
-about: ruby
+about: programming
 ---
 
 Imagine there's a calculator that performs only addition no matter what the actual operation is.

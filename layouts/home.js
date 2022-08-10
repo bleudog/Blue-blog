@@ -11,14 +11,14 @@ const HomeLayout = ({ blog }) => {
   return (
     <Container>
       <Banner className={utilStyles.loadDown}>
-        <Image
+        {/* <Image
           priority
           className={utilStyles.circleImage}
           width={135}
           height={135}
           src={profileImg}
           alt="Rolemadelen"
-        />
+        /> */}
         <PageBanner
           title={"Failure leads to understanding."}
           subtitle={

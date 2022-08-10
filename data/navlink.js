@@ -7,7 +7,7 @@ const navlink = {
   blog: [
     { name: "Data Structures", link: "/blog/ds" },
     { name: "Algorithms", link: "/blog/algo" },
-    { name: "Ruby", link: "/blog/ruby" },
+    { name: "Programming", link: "/blog/programming" },
     { name: "CP", link: "/blog/cp" },
     { name: "Log", link: "/blog/log" },
   ],
