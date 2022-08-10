@@ -1,7 +1,7 @@
 ---
 title: "Ruby - Basics"
 date: "2022-07-19 22:00:00"
-tags: []
+tags: ["ruby"]
 lang: en
 about: programming
 ---

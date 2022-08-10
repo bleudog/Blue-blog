@@ -1,7 +1,7 @@
 ---
 title: "Ruby - Flow Control using if-else and case"
 date: "2022-07-24 15:00:00"
-tags: []
+tags: ["ruby"]
 lang: en
 about: programming
 ---
