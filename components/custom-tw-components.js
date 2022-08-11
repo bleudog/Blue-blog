@@ -26,7 +26,7 @@ export const Article = tw.article`
 //////////////////////////////////////////////////////
 export const LanguageListWrapper = tw.ul` 
     flex
-    mt-5
+    mt-3
     mb-4
     p-1
     overflow-x-auto
@@ -249,7 +249,7 @@ export const HeaderContainer = tw.header`
 export const BackButton = tw.button`
     px-2
     sm:px-4
-    mb-2
+    mb-6
     rounded-md
 
     text-primary
