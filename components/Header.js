@@ -1,9 +1,9 @@
 import NavLink from "@components/NavLink";
 import styles from "@styles/container.module.scss";
 import navlink from "@data/navlink";
-import { HeaderContainer, MobileNav } from "./custom-tw-components";
+import { HeaderContainer } from "./custom-tw-components";
 
-const Header = (props) => {
+const Header = () => {
   const baseNav = navlink.base;
 
   return (
@@ -20,7 +20,7 @@ const Header = (props) => {
               <NavLink
                 key={tab.link}
                 link={tab.link}
-                customClass={"hover:text-[#289aff]"}
+                customClass={"hover:bg-[#1691ff1c] p-2 rounded-lg"}
                 value={tab.name}
               />
             ))}

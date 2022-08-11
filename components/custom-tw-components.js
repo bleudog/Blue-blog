@@ -26,21 +26,27 @@ export const Article = tw.article`
 //////////////////////////////////////////////////////
 export const LanguageListWrapper = tw.ul` 
     flex
-    mt-6
+    mt-5
     mb-4
+    p-1
     overflow-x-auto
+    duration-75
 `;
     
 export const LanguageList = tw.li` 
+    min-w-max
+    min-w-fit
     list-none
     px-2
-    sm:px-4
     mr-2
-    border
+    shadow
+    shadow-blue-400/40
     rounded-md
     font-medium
     cursor-pointer
-    hover:bg-[#289aff]
+    hover:bg-[#1691ff1c]
+    duration-75
+    active:shadow-none
 `;
 
 //////////////////////////////////////////////////////
@@ -55,7 +61,6 @@ export const PostContainer = tw.section`
 
 export const PostTitle = tw.div`
     text-primary
-    text-2xl
     md:text-3xl
     font-bold
 `;
@@ -71,11 +76,11 @@ export const LanguageButtons = tw.div`
 //////////////////////////////////////////////////////
 export const List = tw.li`
     list-none
-    pt-2
-    pb-2
+    p-2
     flex
     flex-col
-    hover:bg-[#236af229]
+    hover:bg-[#1691ff1c]
+    hover:rounded-lg
     cursor-pointer
 `;
 
@@ -84,7 +89,6 @@ export const Title = tw.div`
     font-normal
     cursor-pointer
     duration-150
-    flex
     flex-wrap
 `;
 
@@ -101,7 +105,7 @@ export const Banner = tw.div`
 ///  PageBanner Layout
 //////////////////////////////////////////////////////
 export const PageHeader = tw.header`
-    pb-[2em]
+    pb-[1em]
     flex
     flex-col
     justify-center
@@ -109,8 +113,8 @@ export const PageHeader = tw.header`
 
 export const PageTitle = tw.div` 
     font-bold
-    text-2xl
-    sm:text-3xl 
+    text-3xl
+    sm:text-4xl 
     md:leading-tight 
     text-gray-800 
 `;
@@ -157,13 +161,15 @@ export const RPPost = tw.li`
     flex-col 
     sm:flex-row 
     sm:items-center 
+    pl-2
+    pr-2
     mt-1
     mb-1
     rounded w-full 
     list-none 
     duration-300
     cursor-pointer
-    hover:bg-[#236af229]
+    hover:bg-[#1691ff1c]
 `;
 
 //////////////////////////////////////////////////////
@@ -196,7 +202,7 @@ export const DocAsideLink = tw.a`
     leading-5
     my-[0.4em]
     
-    hover:text-[#289aff]
+    hover:text-[#1691ff1c]
     hover:no-underline
     
     duration-300
@@ -220,10 +226,10 @@ export const BaseContainer = tw.section`
 //////////////////////////////////////////////////////
 export const FooterContainer = tw.footer` 
     flex 
-    flex-col 
-    justify-center 
+    justify-between
     items-center 
     my-8
+    px-2
     text-sm 
     text-primary 
 `;
@@ -244,16 +250,19 @@ export const BackButton = tw.button`
     px-2
     sm:px-4
     mb-2
-    border
     rounded-md
 
     text-primary
-    hover:bg-[#f06969]
-    hover:text-[#fff]
+    hover:bg-[#f0696945]
     duration-75
+
+    shadow
+    shadow-red-400/40
+    active:shadow-none
 `
 
 export const Tag = tw.span`
+    min-w-full
     py-[1px]
     px-[3px]
     mr-2

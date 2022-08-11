@@ -18,7 +18,7 @@ const RecentPostsContainer = ({ posts, title, link }) => {
         <RPTitle> {title} </RPTitle>
         <NavLink
           link={link}
-          customClass={`flex justify-end text-sm text-primary`}
+          customClass={`flex justify-end text-primary hover:!underline`}
           value={"View more..."}
         />
       </RPHeader>
@@ -29,7 +29,7 @@ const RecentPostsContainer = ({ posts, title, link }) => {
             <RPPost>
               <Date
                 dateString={date}
-                customClass={"text-xs break-normal inline-block mr-3"}
+                customClass={"text-sm break-normal inline-block mr-1"}
               />
                 <Title> {title} </Title>
             </RPPost>

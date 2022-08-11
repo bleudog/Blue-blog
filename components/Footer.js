@@ -5,10 +5,15 @@ import { FooterContainer } from "./custom-tw-components";
 
 const Footer = () => {
   const sns = [
-    { name: "github", link: metadata.social.github }
+    { name: "github", link: metadata.social.github },
+    { name: "twitter", link: metadata.social.twitter }
   ];
   return (
     <FooterContainer>
+      <div>
+        © 2022 <a href="https://github.com/rolemadelen/rolemadelen-blog">Rolemadelen</a>.
+        Powered by&nbsp;<a href="https://vercel.com/">Vercel</a>
+      </div>
       <div className="snsLinks flex items-center justify-center">
         {sns.map((social) => (
           <Link href={social.link} key={social.link} passHref>
@@ -16,17 +21,13 @@ const Footer = () => {
               <Image
                 priority
                 src={`/images/social/${social.name}.svg`}
-                height={18}
-                width={18}
+                height={20}
+                width={20}
                 alt={social.name}
               />
             </a>
           </Link>
         ))}
-      </div>
-      <div>
-        © 2022 <a href="https://github.com/rolemadelen/rolemadelen-blog">Rolemadelen</a>.
-        Powered by&nbsp;<a href="https://vercel.com/">Vercel</a>
       </div>
     </FooterContainer>
   );
