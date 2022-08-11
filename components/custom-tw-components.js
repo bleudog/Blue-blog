@@ -257,7 +257,6 @@ export const BackButton = tw.button`
     duration-75
 
     shadow
-    shadow-red-400/40
     active:shadow-none
 `
 

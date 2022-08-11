@@ -1,5 +1,5 @@
 ---
-title: 'BOJ 01: 입출력과 사칙연산 (STDIO & Arithmetic)'
+title: 'BOJ 01 - 입출력과 사칙연산'
 date: "2022-08-09"
 tags: 
   - BaekjoonOJ

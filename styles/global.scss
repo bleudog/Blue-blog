@@ -155,20 +155,19 @@ section {
 
             div {
                 margin: 0 !important;
-                border-radius: 0 !important;
             }
         }
         
         code {
-            padding: 1px 5px;
+            padding: 1px 3px;
             font-size: 0.8em;
             border-radius: 3px;
-            background-color: #e9f3ff;
+            // background-color: #e9f3ff;
             white-space: pre;
-            border: 1px solid #e1e1e1;
+            border: 1px solid #1691ff1c;
             transition: background-color 0.3s ease;
-            box-shadow: 0.5px 1px 1px #7c89a8;
-            margin: 0 2px;
+            box-shadow: 0 0 1px 1px #9ab8ff;
+            margin: 0 5px;
         }
 
         li {
