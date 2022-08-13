@@ -1,6 +1,6 @@
 ---
 title: 'BOJ 04: 1차원 배열'
-date: "2022-08-13"
+date: "2022-08-13 10:00:00"
 tags: [BaekjoonOJ]
 lang: ko
 about: cp
