@@ -6,7 +6,7 @@ lang: ko
 about: cp
 ---
 
-백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 [기본 수학 1](https://www.acmicpc.net/step/8) | [기본 수학 2](https://www.acmicpc.net/step/10) 문제 풀이입니다.
+백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 [기본 수학 1](https://www.acmicpc.net/step/8) 문제 풀이입니다.
 
 # 1712 손익분기점
 
