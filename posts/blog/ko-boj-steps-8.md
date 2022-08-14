@@ -179,3 +179,51 @@ fn main() {
 	println!("{}", w);
 }
 ```
+
+---
+
+# 4948 베르트랑 공준
+
+소수 응용 문제 1
+
+```rust
+// https://www.acmicpc.net/problem/4948
+
+use std::io::{stdin};
+
+fn is_prime(n: i32) -> bool {
+	if n < 2 { return false; }
+	if n <= 3 { return true; }
+
+	if (n % 2 == 0) || (n % 3 == 0) { return false; }
+
+	let mut i = 5;
+	while i*i <= n {
+		if (n % i == 0) || (n % (i+2) == 0) { return false; }
+		i += 6;
+	}
+
+	return true;
+}
+
+fn main() {
+	loop {
+		let mut s = String::new();
+		stdin().read_line(&mut s).unwrap();
+		let mut n = s.trim().parse::<i32>().unwrap();
+		if n == 0 {break;}
+
+		let m = n*2;
+		n += 1;
+
+		let mut cnt = 0;
+		for i in n..=m {
+			if is_prime(i) {
+				cnt += 1;
+			}   
+		}
+
+		println!("{}", cnt);
+	}
+}
+```
