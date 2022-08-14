@@ -1,6 +1,6 @@
 ---
 title: 'BOJ 08: 기본 수학 2 - 소수 (in progress)'
-date: "2022-08-13 22:50gi:00"
+date: "2022-08-13 22:50:00"
 tags: [BaekjoonOJ]
 lang: ko
 about: cp
