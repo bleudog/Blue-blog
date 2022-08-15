@@ -9,6 +9,7 @@ const metadata = {
   social: {
     github: "https://github.com/rolemadelen",
     twitter: "https://twitter.com/rolemadelen",
+    mysetting: "https://mysetting.io/u/rolemadelen",
   },
 
   socialHandle: {

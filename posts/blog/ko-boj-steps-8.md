@@ -1,5 +1,5 @@
 ---
-title: 'BOJ 08: 기본 수학 2 - 소수 (in progress)'
+title: 'BOJ 08: 기본 수학 2 - 소수 (w.i.p)'
 date: "2022-08-13 22:50:00"
 tags: [BaekjoonOJ]
 lang: ko
@@ -226,4 +226,14 @@ fn main() {
 		println!("{}", cnt);
 	}
 }
+```
+
+---
+
+# 9020 골드바흐의 추측
+
+소수 응용 문제 2
+
+```rust
+// https://www.acmicpc.net/problem/9029
 ```
