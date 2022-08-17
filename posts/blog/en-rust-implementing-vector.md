@@ -4,6 +4,7 @@ date: "2022-08-17 07:00:00"
 tags: 
   - vector
   - data structure
+  - rust
 lang: en
 about: ds
 ---
