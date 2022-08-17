@@ -1,5 +1,5 @@
 ---
-title: 'BOJ 07: 기본 수학 (w.i.p)'
+title: 'BOJ 07: 기본 수학 (WIP)'
 date: "2022-08-13 14:20:00"
 tags: [BaekjoonOJ]
 lang: ko

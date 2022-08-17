@@ -1,5 +1,5 @@
 ---
-title: 'BOJ 09: 재귀 (w.i.p)'
+title: 'BOJ 09: 재귀 (WIP)'
 date: "2022-08-14"
 tags: [BaekjoonOJ]
 lang: ko
