@@ -1,5 +1,5 @@
 ---
-title: "Implementing a Vector with Rust (WIP)"
+title: "Implementing a Vector with Rust"
 date: "2022-08-17 07:00:00"
 tags: 
   - vector
@@ -198,6 +198,8 @@ So I'm starting at `size` and assigning a previous value to current position: `a
 - Space complexity: O(1)
 
 ## insert(index, item)
+This function inserts an item at a given index.
+
 ```rust
 pub fn insert(&mut self, index: usize, item: i32) {
     if self.size == self.capacity {
@@ -226,6 +228,10 @@ pub fn insert(&mut self, index: usize, item: i32) {
 }
 ```
 
+For inserting at the end and in the beginning, I used `push(item)` and `prepend(item)` respectively.
+
+When we insert in the middle, we need to shift all elements to the right from `index` to `size`. And finally we can insert the item at `arr[index]`.
+
 - Time complexity: O(2N) -> O(N), N = number of items
 - Space complexity: O(1)
 
@@ -251,6 +257,8 @@ We're not actually deleting anything here but just pretending by reducing the si
 - Space complexity: O(1)
 
 ## delete(index)
+
+This function deletes an item at given `index`.
 
 ```rust 
 pub fn delete(&mut self, index: usize) {
@@ -278,22 +286,6 @@ And then reduce the total size so that it looks like it's deleted from the array
 - Time complexity: O(N), N = number of items
 - Space complexity: O(1)
 
-## remove(item)
-
-```rust
-pub fn remove(&mut self, item: i32) {
-    let mut index = 0;
-    while index != -1 {
-        index = self.find(item);
-        if index == -1 { break; }
-        self.delete(index as usize);
-    }
-}
-```
-
-- Time complexity: O(2N) -> O(N), N = number of items
-- Space complexity: O(1)
-
 ## find(item)
 
 I'm performing a linear search here to find an item from the array.
@@ -316,4 +308,24 @@ pub fn find(&mut self, item: i32) -> i32 {
 If `item` is found, it returns the index of that item. If not, return `-1`.
 
 - Time complexity: O(N), N = number of items
+- Space complexity: O(1)
+
+## remove(item)
+
+This function removes all occurrences of `item` from the vector.
+
+```rust
+pub fn remove(&mut self, item: i32) {
+    let mut index = 0;
+    while index != -1 {
+        index = self.find(item);
+        if index == -1 { break; }
+        self.delete(index as usize);
+    }
+}
+```
+
+I used `find(item)` to get the index of 1st occurrence of `item` in the vector and passed that index in `delete(index)` to delete it.
+
+- Time complexity: O(2N) -> O(N), N = number of items
 - Space complexity: O(1)
