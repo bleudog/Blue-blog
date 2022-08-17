@@ -1,5 +1,5 @@
 ---
-title: 'BOJ 08: 기본 수학 2 - 소수 (w.i.p)'
+title: 'BOJ 08: 기본 수학 2 - 소수 (WIP)'
 date: "2022-08-13 22:50:00"
 tags: [BaekjoonOJ]
 lang: ko

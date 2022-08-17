@@ -8,21 +8,23 @@ lang: en
 about: ds
 ---
 
-As I'm studying Rust, I tried to implement a vector using fixed size array.
+A vector is a linear data structure like an array but its size can grow or shrink automatically. It's a flexible container.
 
-My vector should be able to do all the followings:
-- `size()` - return number of items in a vector.
-- `capacity()` - return number of items it can hold.
-- `is_empty()` - returns true if empty, else false.
-- `at(index)` - returns item at given index; blows up if index-out-of-bound occurs.
-- `push(item)` - inserts item at the end of the vector.
-- `insert(index, item)` - inserts item at index; shifts that index's value and trailing elements to the right.
-- `prepend(item)` - inserts item at index 0.
-- `pop()` - remove and return the last item in the vector.
-- `delete(index)` - removes item at index and shift all trailing elements to the left.
-- `remove(item)` - looks for the item and removes index holding it (even if in multiple places).
-- `find(item)` - looks for the item and returns first index with that value, -1 if not found.
-- `resize(new_capacity)` -- private function
+I tried implementing a vector with a fixed size array in Rust.
+
+My vector contains following functions:
+- `size() -> i32`
+- `capacity() -> i32`
+- `is_empty() -> bool`
+- `at(index) -> i32`
+- `push(item)`
+- `insert(index, item)`
+- `prepend(item)`
+- `pop() -> i32`
+- `delete(index)` - deletes an item at `index`
+- `remove(item)` - remove all occurrences of `item`
+- `find(item) -> i32`
+- `resize(new_capacity)` (**not yet implemented**)
     - when you reach the capacity, double the container size.
     - when current size becomes 1/4th of the capacity, halve the container size.
 
@@ -51,9 +53,9 @@ fn main() {
 }
 ```
 
-We can use this behavior to create our vector class.
+So lets define the vector.
 
-## Define Vector
+## Vector Structure
 
 ```rust
 struct Vector {
@@ -65,7 +67,7 @@ struct Vector {
 
 Here I defined my vector with three pieces of data: `size`, `capacity`, and `arr` which is the vector container itself.
 
-I actually want the `arr` to be a pointer like in C where I can later dynamically allocate memory. 
+I actually wanted the `arr` to be a pointer like in C where I can later dynamically allocate memory with an arbitrary size. 
 
 ```c
 struct Vector {
@@ -82,9 +84,9 @@ int main() {
 }
 ```
 
-But I haven't figured this part out yet in Rust, so I just hard coded `16` which is going to be our default vector size.
+But I haven't figured this part out yet in Rust, so I just hard coded `16` which is going to be our default vector size for now.
 
-Anyway, now that we have our vector struct, we can start implementing it. I added `new()` which is somewhat like a constructor or initializer in other languages.
+Now that we have our vector struct, we can start implementing it. I added `new()` which is somewhat like a constructor or initializer in other languages.
 
 ```rust
 struct Vector {
@@ -146,7 +148,11 @@ pub fn at(&mut self, index: i32) -> i32 {
 }
 ```
 
+For the last `at` function, the index of an array has to be `usize` but given type of the index is `i32`.
+So I type casted using `as usize`. 
+
 ## push(item)
+This function inserts new item at the end of the array.
 
 ```rust
 pub fn push(&mut self, item: i32) { 
@@ -160,7 +166,16 @@ pub fn push(&mut self, item: i32) {
 }
 ```
 
+If current number of item (`self.size`) is equal to the capacity that our vector can hold (`self.capacity`), we cannot add anymore data. So we just return it.
+
+If it's not full, we use our `size` as an index value and store the `item` at the end of the array.
+
+- Time complexity: O(1)
+- Space complexity: O(1)
+
 ## prepend(item)
+
+This function inserts an item in front of the array.
 
 ```rust
 pub fn prepend(&mut self, item: i32) {
@@ -174,6 +189,13 @@ pub fn prepend(&mut self, item: i32) {
     self.size += 1;
 }
 ```
+
+We need to shift all elements to the right before we can add an element at index 0.
+
+So I'm starting at `size` and assigning a previous value to current position: `arr[size] = arr[size-1]`.
+
+- Time complexity: O(N), N = number of items
+- Space complexity: O(1)
 
 ## insert(index, item)
 ```rust
@@ -204,7 +226,12 @@ pub fn insert(&mut self, index: usize, item: i32) {
 }
 ```
 
+- Time complexity: O(2N) -> O(N), N = number of items
+- Space complexity: O(1)
+
 ## pop()
+
+This function removes an item at the end of the array.
 
 ```rust
 pub fn pop(&mut self) -> i32 {
@@ -217,6 +244,11 @@ pub fn pop(&mut self) -> i32 {
     self.arr[self.size as usize]
 }
 ```
+
+We're not actually deleting anything here but just pretending by reducing the size.
+
+- Time complexity: O(1)
+- Space complexity: O(1)
 
 ## delete(index)
 
@@ -240,6 +272,12 @@ pub fn delete(&mut self, index: usize) {
 }
 ```
 
+I'm shifting all elements to the left from `index` where we're trying to delete. 
+And then reduce the total size so that it looks like it's deleted from the array.
+
+- Time complexity: O(N), N = number of items
+- Space complexity: O(1)
+
 ## remove(item)
 
 ```rust
@@ -253,10 +291,14 @@ pub fn remove(&mut self, item: i32) {
 }
 ```
 
+- Time complexity: O(2N) -> O(N), N = number of items
+- Space complexity: O(1)
+
 ## find(item)
 
+I'm performing a linear search here to find an item from the array.
+
 ```rust
-// linear search
 pub fn find(&mut self, item: i32) -> i32 {
     let mut index = -1;
 
@@ -270,3 +312,8 @@ pub fn find(&mut self, item: i32) -> i32 {
     return index;
 }
 ```
+
+If `item` is found, it returns the index of that item. If not, return `-1`.
+
+- Time complexity: O(N), N = number of items
+- Space complexity: O(1)
