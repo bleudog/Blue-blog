@@ -1,6 +1,6 @@
 ---
 title: "Installing Rust"
-date: "2022-08-20 08:49:00"
+date: "2022-08-12 17:42:00"
 tags: 
   - rust
 lang: en
