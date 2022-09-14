@@ -1,5 +1,5 @@
-import HomeLayout from "@layouts/home";
-import { allBlogs } from ".contentlayer/data";
+import HomeLayout from '@layouts/home';
+import { allBlogs } from '.contentlayer/data';
 
 export default function Home({ posts }) {
   return <HomeLayout blog={posts} />;
