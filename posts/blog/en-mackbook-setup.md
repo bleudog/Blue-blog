@@ -124,6 +124,7 @@ brew install --cask \
  iterm2 \
  visual-studio-code \
  discord \
+ slack \
  docker \
  imageoptim \
  raycast \
@@ -202,7 +203,7 @@ It couldn't read `international1` key which was used for backtick(\`) and tilde(
 
 I used [Karabiner](https://karabiner-elements.pqrs.org/) to remap `international1` to `grave_accent_and_tilde` and it works great :)
 
-## External Apps
+## Other Apps
 
 - Arc [https://thebrowser.company/](https://thebrowser.company/)
 - Nota [https://nota.md](https://nota.md/)
