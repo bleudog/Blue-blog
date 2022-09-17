@@ -1,6 +1,6 @@
 ---
 title: 'LeetCode :: 66. Plus One'
-date: '2022-09-17 10:00:00'
+date: '2022-09-15 10:00:00'
 tags:
   - leetcode
   - top interview questions

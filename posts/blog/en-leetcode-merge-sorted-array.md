@@ -1,6 +1,6 @@
 ---
 title: 'LeetCode :: 88. Merge Sorted Array'
-date: '2022-09-17 11:00:00'
+date: '2022-09-16 11:00:00'
 tags:
   - leetcode
   - top interview questions

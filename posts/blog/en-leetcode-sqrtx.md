@@ -1,6 +1,6 @@
 ---
 title: 'LeetCode :: 69. Sqrt(x)'
-date: '2022-09-17 10:20:00'
+date: '2022-09-16 10:20:00'
 tags:
   - leetcode
   - top interview questions
