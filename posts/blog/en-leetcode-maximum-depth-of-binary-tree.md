@@ -34,8 +34,6 @@ Input: root = [1,null,2]
 Output: 2
 ```
 
-<!-- # Approach -->
-
 # Code
 
 ## C++ : DFS
@@ -78,8 +76,3 @@ public:
     }
 };
 ```
-
-<!--
-# Time Complexity
-
-# Space Complexity -->
