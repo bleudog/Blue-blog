@@ -1,14 +1,15 @@
 ---
 title: git commit 서명하기
-date: "2022-04-05"
-lang: "ko"
+date: '2022-04-05'
+lang: 'ko'
 about: log
-tags: 
- - git
- - gpg
+tags:
+  - git
+  - gpg
 ---
 
 ## Signing commits
+
 GPG key를 사용하여 커밋에 서명하는 것이 가능하다.
 
 ![Signed commits](/images/posts/05042022-sign-commit-1.png)
@@ -20,12 +21,12 @@ $ gpg --list-secret-keys --keyid-format=long
 
 ------------------------------------
 sec   4096R/SAMPLE4371567BD2 2016-03-10 [expires: 2023-04-05]
-uid                          Rolemadelen <rolemadelen@pm.me> 
+uid                          Rolemadelen <rolemadelen@pm.me>
 ssb   4096R/42B317FD4BA89E7A 2016-03-10 [expires: 2023-04-05]
 ------------------------------------
 ```
 
-여기는 하나의 GPG key만이 존재하기 때문에 해당 키를 사용한다. 
+여기는 하나의 GPG key만이 존재하기 때문에 해당 키를 사용한다.
 4번째 줄의 `SAMPLE4371567BD2`가 GPG key ID이므로 이 값을 복사한다.
 
 해당 key로 커밋을 한다는 것을 git에 알려주어야 한다.
@@ -60,7 +61,7 @@ git config --global commit.gpgsign true
 
 ## .gitconfig
 
-내가 쓰는 git 명령어 alias: [gist](https://gist.github.com/gonexvii/7d09f53e421a1fc04987363110c522cf)
+내가 쓰는 git 명령어 alias: [gist](https://gist.github.com/rolemadelen/7d09f53e421a1fc04987363110c522cf)
 
 ```sh
 [alias]
@@ -90,6 +91,6 @@ git config --global commit.gpgsign true
   po = pull origin
   pom = pull origin main
 
-  a = add --all 
+  a = add --all
   s = status
 ```

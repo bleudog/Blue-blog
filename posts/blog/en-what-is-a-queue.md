@@ -1,7 +1,7 @@
 ---
-title: "Queue?"
-date: "2022-07-10 22:00:00"
-tags: 
+title: 'Queue?'
+date: '2022-07-10 22:00:00'
+tags:
   - queue
   - data structure
 lang: en
@@ -14,14 +14,16 @@ Queue is a linear data structure that follows the principle of FIFO (First-In, F
 
 ![Queue](/images/posts/what-is-a-queue/queue.svg)
 
-Imagine you're trying to print documents `A`, `B` and `C` from a single printer. If the document `A` was the first one in the queue, it will be printed first. Not `B` nor `C`. 
+Imagine you're trying to print documents `A`, `B` and `C` from a single printer. If the document `A` was the first one in the queue, it will be printed first. Not `B` nor `C`.
 
 Simply you can think of a Queue data structure as a "first-come, first-serve" type structure.
 
 In programming, the term **enqueue** refers to adding an item to the queue and **dequeue** for removing an item from the queue.
 
 # Basic Operations of Queue
+
 ## enqueue
+
 Add an element to the end of the queue.
 
 ```rb
@@ -40,6 +42,7 @@ end
 ```
 
 ## dequeue
+
 Remove an element from the front of the queue.
 
 ```rb
@@ -54,11 +57,13 @@ def dequeue
     item = @arr[@head]
     @head += 1
     item
-end 
+end
 ```
 
 ## isEmpty
+
 Check if the queue is empty.
+
 ```rb
 def empty?
     (@head == -1 && @tail == -1) or (@head == @tail)
@@ -66,6 +71,7 @@ end
 ```
 
 ## isFull
+
 Check if the queue is full.
 
 ```rb
@@ -75,7 +81,9 @@ end
 ```
 
 ## front
+
 Get the value at the front of the queue without removing it.
+
 ```rb
 def front
     if !self.empty?
@@ -85,11 +93,13 @@ end
 ```
 
 # Time Complexity
+
 The complexity of `enqueue` and `dequeue` operations in a queue using an array is `O(1)`.
 
 ---
 
 # Limitations of Queue (Array-based)
+
 Imagine we have a full sized queue like the below:
 ![Limitations of Queue 1](/images/posts/what-is-a-queue/queue2.svg)
 
@@ -98,14 +108,14 @@ losing the access to all spaces before the `front` index.
 
 ![Limitations of Queue 2](/images/posts/what-is-a-queue/queue3.svg)
 
-We can solve this issue by letting the `rear` index circulate through the queue when it reaches the last index. 
-
+We can solve this issue by letting the `rear` index circulate through the queue when it reaches the last index.
 
 ![Circular Queue](/images/posts/what-is-a-queue/circular-queue.svg)
 
 This type of queue is called **Circular Queue**.
 
 # Applications of Queue
+
 - CPU scheduling.
 - Disk Scheduling.
 - Handling of interrupts in real-time-systems.
@@ -114,10 +124,12 @@ This type of queue is called **Circular Queue**.
 ---
 
 See also:
+
 - [What is a Stack?](./what-is-a-stack)
 - [What is a Circular Queue?](./what-is-a-circular-queue)
 - [Queue: LinkedList-based Implementation](./queue-implementation-linkedlist)
-- [Queue related problems from BOJ and Leetcode](https://github.com/gonexvii/DataStructures-and-Algorithms/tree/main/04-queue)
+- [Queue related problems from BOJ and Leetcode](https://github.com/rolemadelen/DataStructures-and-Algorithms/tree/main/04-queue)
 
 Reference:
+
 - [https://www.programiz.com/dsa/queue](https://www.programiz.com/dsa/queue)

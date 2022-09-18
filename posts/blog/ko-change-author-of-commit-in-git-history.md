@@ -1,7 +1,7 @@
 ---
-title: "Change Author of Commit in Git History"
-date: "2022-05-03"
-tags: 
+title: 'Change Author of Commit in Git History'
+date: '2022-05-03'
+tags:
   - git
   - filter-branch
 lang: ko
@@ -9,6 +9,7 @@ about: log
 ---
 
 깃 리포지토리에서 아래의 명령어를 사용하여 이름과 이메일을 설정할 수 있다.
+
 ```sh
 $ git config user.name "Rolemadelen"
 $ git config user.email "rolemadelen@pm.me"
@@ -18,7 +19,8 @@ $ git config user.email "rolemadelen@pm.me"
 
 ![Git log](/images/posts/20220503-git-filter-repo1.png)
 
-하지만 만약 설정하는 순간 오타가 났다거나 아니면 새로운 이메일로 업데이트 하는 걸 깜빡해서 예전의 정보를 사용했다면? 
+하지만 만약 설정하는 순간 오타가 났다거나 아니면 새로운 이메일로 업데이트 하는 걸 깜빡해서 예전의 정보를 사용했다면?
+
 ```sh
 $ git config user.name "Mid oEu"
 $ git config user.email "rolemadelen@pm.me"
@@ -37,7 +39,6 @@ $ git config user.email "rolemadelen@pm.me"
 ---
 
 ## 커밋 checkout 하기
-
 
 ```sh
 $ git log --abbrev-commit
@@ -103,7 +104,7 @@ $ git filter-branch -- --all
 
 Proceeding with filter-branch...
 
-Rewrite ba5066c5dacd001f3ce3b5e691b6c0d2f81df2ac (4/4) (0 seconds passed, remaining 0 predicted)    
+Rewrite ba5066c5dacd001f3ce3b5e691b6c0d2f81df2ac (4/4) (0 seconds passed, remaining 0 predicted)
 Ref 'refs/heads/main' was rewritten
 Ref 'refs/remotes/origin/main' was rewritten
 WARNING: Ref 'refs/remotes/origin/main' is unchanged
@@ -119,7 +120,6 @@ Deleted replace ref 'ba5066c5dacd001f3ce3b5e691b6c0d2f81df2ac'
 ```
 
 https://gist.github.com/zapidan/69c175416261d9a13fd4
-
 
 ## 로그 확인 후 force push
 
@@ -147,5 +147,5 @@ $ git push -f
 
 ---
 
-- [signed commit](/ko-signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@gonexvii/signing-previous-commits-787a077bdb62)'을 참고하자.
+- [signed commit](/ko-signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@rolemadelen/signing-previous-commits-787a077bdb62)'을 참고하자.
 - `git filter-branch`가 상당히 느리기 때문에 [git-filter-repo](../ko/git-filter-repo/)
