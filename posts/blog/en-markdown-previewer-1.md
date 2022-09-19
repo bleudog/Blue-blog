@@ -126,3 +126,8 @@ Current progress:
 ![mdpreview1](/images/posts/markdown-previewer/mdpreview-1.jpg)
 
 The font I'm using is [Nunito](https://fonts.google.com/specimen/Nunito).
+
+---
+
+- [💻 Toy Project :: Markdown Previewer Pt.2](./markdown-previewer-2)
+- [💻 Toy Project :: Markdown Previewer Pt.3](./markdown-previewer-3)

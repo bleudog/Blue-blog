@@ -153,3 +153,8 @@ marked.setOptions({
 ```
 
 Am I supposed to add something more..? 🤔
+
+---
+
+- [💻 Toy Project :: Markdown Previewer Pt.1](./markdown-previewer-1)
+- [💻 Toy Project :: Markdown Previewer Pt.3](./markdown-previewer-3)
