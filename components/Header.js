@@ -1,7 +1,7 @@
-import NavLink from "@components/NavLink";
-import styles from "@styles/container.module.scss";
-import navlink from "@data/navlink";
-import { HeaderContainer } from "./custom-tw-components";
+import NavLink from '@components/NavLink';
+import styles from '@styles/container.module.scss';
+import navlink from '@data/navlink';
+import { HeaderContainer } from './custom-tw-components';
 
 const Header = () => {
   const baseNav = navlink.base;
@@ -9,18 +9,14 @@ const Header = () => {
   return (
     <>
       <HeaderContainer className={styles.header}>
-        <NavLink
-          link={"/"}
-          customClass={`${styles.navLogo}`}
-          value="@rolemadelen"
-        />
-        <div className={"flex items-center"}>
+        <NavLink link={'/'} value="@rolemadelen" />
+        <div className={'flex items-center'}>
           <div className={styles.navLink}>
             {baseNav.map((tab) => (
               <NavLink
                 key={tab.link}
                 link={tab.link}
-                customClass={"hover:bg-[#1691ff1c] p-2 rounded-lg"}
+                customClass={'hover:bg-[#1691ff1c] p-2 rounded-lg'}
                 value={tab.name}
               />
             ))}
