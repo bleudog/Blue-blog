@@ -131,3 +131,4 @@ The font I'm using is [Nunito](https://fonts.google.com/specimen/Nunito).
 
 - [💻 Toy Project :: Markdown Previewer Pt.2](./markdown-previewer-2)
 - [💻 Toy Project :: Markdown Previewer Pt.3](./markdown-previewer-3)
+- [💻 Toy Project :: Markdown Previewer Pt.4](./markdown-previewer-4)
