@@ -1,5 +1,5 @@
 ---
-title: 'Toy Project :: Markdown Previewer Pt.1'
+title: '💻 Toy Project :: Markdown Previewer Pt.1'
 date: '2022-09-13 22:00:00'
 tags:
   - toy-project
