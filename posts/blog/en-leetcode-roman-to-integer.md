@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 13. Roman To Integer'
+title: '13. Roman To Integer'
 date: '2022-09-15 20:50:00'
 tags:
   - leetcode

@@ -1,5 +1,5 @@
 ---
-title: "LeetCode :: 118. Pascal's Triangle"
+title: "118. Pascal's Triangle"
 date: '2022-09-19 07:30:00'
 tags:
   - leetcode

@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 412. Fizz Buzz'
+title: '412. Fizz Buzz'
 date: '2022-09-18 19:30:00'
 tags:
   - leetcode

@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 69. Sqrt(x)'
+title: '69. Sqrt(x)'
 date: '2022-09-16 10:20:00'
 tags:
   - leetcode

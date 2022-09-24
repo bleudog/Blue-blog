@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 104. Maximum Depth of Binary Tree'
+title: '104. Maximum Depth of Binary Tree'
 date: '2022-09-17 11:20:00'
 tags:
   - leetcode

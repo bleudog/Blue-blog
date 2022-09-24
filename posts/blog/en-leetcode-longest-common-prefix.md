@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 14. Longest Common Prefix'
+title: '14. Longest Common Prefix'
 date: '2022-09-15 09:30:00'
 tags:
   - leetcode

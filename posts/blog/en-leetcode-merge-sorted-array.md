@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 88. Merge Sorted Array'
+title: '88. Merge Sorted Array'
 date: '2022-09-16 11:00:00'
 tags:
   - leetcode

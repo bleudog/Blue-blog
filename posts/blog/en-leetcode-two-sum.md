@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 1. Two Sum'
+title: '1. Two Sum'
 date: '2022-08-18 06:50:00'
 tags:
   - leetcode

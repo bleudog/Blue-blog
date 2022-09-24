@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 101. Symmetric Tree'
+title: '101. Symmetric Tree'
 date: '2022-09-17 11:00:00'
 tags:
   - leetcode

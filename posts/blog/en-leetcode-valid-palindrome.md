@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 125. Valid Palindrome'
+title: '125. Valid Palindrome'
 date: '2022-09-19 08:00:00'
 tags:
   - leetcode

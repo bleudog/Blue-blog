@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 7. Reverse Integer'
+title: '7. Reverse Integer'
 date: '2022-09-24 06:00:00'
 tags:
   - leetcode

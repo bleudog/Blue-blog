@@ -1,5 +1,5 @@
 ---
-title: 'LeetCode :: 108. Convert Sorted Array to Binary Search Tree'
+title: '108. Convert Sorted Array to Binary Search Tree'
 date: '2022-09-18 19:00:00'
 tags:
   - leetcode
