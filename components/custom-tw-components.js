@@ -286,3 +286,53 @@ export const Tag = tw.span`
     bg-[#f0f0f0]
     text-[#999]
 `;
+
+//////////////////////////////////////////////////////
+///  Explore More Component
+//////////////////////////////////////////////////////
+
+export const CategoryHeader = tw.header`
+    font-[AmazonEmberDisplayMedium]
+    border-t-2
+    text-2xl
+    mt-4
+    mb-8
+`;
+
+export const CategoryList = tw.ul`
+    flex
+    sm:flex-row
+    flex-col
+    align-center
+    flex-wrap
+    justify-between
+    mx-8
+`;
+
+export const Category = tw.li`
+    font-[AmazonEmberDisplay]
+    flex
+    items-center
+    justify-center
+    text-center
+
+    hover: cursor-pointer
+    list-none
+
+    rounded-md
+    shadow-[0_1px_3px_-1px_#4e71b0]
+    w-full
+    sm:w-5/12
+
+    py-6
+    px-2
+    mb-4
+
+    text-gray-700
+    text-xl
+    hover:bg-[#1691ff1c]
+
+    ease-in-out
+    duration-200
+
+`;

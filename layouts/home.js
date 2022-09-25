@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Footer from '@components/Footer';
 import Container from '@components/Container';
 import RecentPostContainer from '@components/RecentPostContainer';
+import ExploreMoreContainer from '@components/ExploreMoreContainer';
 import PageBanner from '@components/PageBanner';
 import utilStyles from '@styles/utils.module.scss';
 import { Banner } from '@components/custom-tw-components';
@@ -26,11 +27,7 @@ const HomeLayout = ({ blog }) => {
           }
         />
       </Banner>
-      <RecentPostContainer
-        title={'Recent Logs'}
-        link={'blog/'}
-        posts={blog}
-      />
+      <ExploreMoreContainer title={'Explore'} />
       <Footer />
     </Container>
   );
