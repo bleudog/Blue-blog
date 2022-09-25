@@ -6,7 +6,8 @@ import tw from 'tailwind-styled-components';
 export const PostListContainer = tw.ul`
     list-none
     p-0
-    m-0
+    my-0
+    mx-[3em]
     pt-[1em]
     border-t-[1px]
     border-b-[1px]
@@ -334,5 +335,4 @@ export const Category = tw.li`
 
     ease-in-out
     duration-200
-
 `;
