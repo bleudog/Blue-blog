@@ -1,7 +1,9 @@
 ---
-title: "Ruby - Basics"
-date: "2022-07-19 22:00:00"
-tags: ["ruby"]
+title: 'Ruby: Basic Syntax'
+posttitle: 'Ruby Basics'
+postsubtitle: 'Basic Syntax'
+date: '2022-07-19 22:00:00'
+tags: ['ruby']
 lang: en
 about: programming
 ---
@@ -16,12 +18,13 @@ puts 1+2
 ```
 
 output:
+
 ```text
 Hello, World
 3
 ```
 
-*puts* stands for *put string*. 
+_puts_ stands for _put string_.
 
 `puts` method turns everything into a string before it displays it to the screen.
 
@@ -29,13 +32,14 @@ Hello, World
 
 # Read data
 
-There's also a *get string* or `gets` to read a value from the user.
+There's also a _get string_ or `gets` to read a value from the user.
 
 ```rb
 puts gets
 ```
 
 This waits for your input, and displays the same input to the screen.
+
 ```text
 > Hello, World!
 Hello, World!
@@ -46,6 +50,7 @@ Hello, World!
 ---
 
 # Variable
+
 Variable is a named storage to store any data you want. Since Ruby is not a typed language, we don't need to specify any types before initializing a variable.
 
 ```rb
@@ -62,19 +67,20 @@ puts data[2] # "abc"
 ---
 
 # Data Types
+
 ## Numbers
 
-There are 2 types of numbers in Ruby: *integers* and *floating point numbers*.
+There are 2 types of numbers in Ruby: _integers_ and _floating point numbers_.
 
 ```rb
 puts 1+2        # 3
 puts 1.0 + 2.0  # 3.0
 ```
 
-**Integers** are numbers without decimal points (e.g. `1`, `100`, `123`, etc..).  Floating point numbers, or **floats**, are numbers with decimal points (e.g. `1.0`, `3.14`, `2.1234`, etc...).
-
+**Integers** are numbers without decimal points (e.g. `1`, `100`, `123`, etc..). Floating point numbers, or **floats**, are numbers with decimal points (e.g. `1.0`, `3.14`, `2.1234`, etc...).
 
 ### Simple Arithmetic
+
 ```rb
 puts 16 + 1   # 17
 puts 18 - 1   # 17
@@ -83,13 +89,14 @@ puts 34 / 2   # 17
 ```
 
 You can use parenthesis to add more complexity to the expression:
+
 ```rb
 puts (2 * (12 + 5)) / 2  # 17
 ```
 
 ## Strings
 
-Anything that goes between a single quote(`''`) or double quotes(`""`) are called letters or *strings* in programming. 
+Anything that goes between a single quote(`''`) or double quotes(`""`) are called letters or _strings_ in programming.
 
 ```rb
 puts 'hello'
@@ -97,20 +104,23 @@ puts "hello"
 ```
 
 They're merely the same but consider the following:
+
 ```rb
 puts 'What's your name?'
 ```
 
-This will cause an error because a computer can't distinguish whether that single quote is part of the string or a notation used to denote a string. 
+This will cause an error because a computer can't distinguish whether that single quote is part of the string or a notation used to denote a string.
 
 A simple solution to this is to use the double quote:
+
 ```rb
 puts "What's your name?"
 
 # What's your name?
 ```
 
-Or you can *escape* the character:
+Or you can _escape_ the character:
+
 ```rb
 puts 'What\'s your name?'
 
@@ -122,6 +132,7 @@ When we use `\'` , we're telling the computer that this character is part of the
 ### String Arithmetic
 
 We can add strings just like a number:
+
 ```rb
 puts "Hello " + "World!"
 # Hello World!
@@ -135,16 +146,17 @@ puts "My favourite number is " + 17.to_s
 ---
 
 We can also multiply strings:
+
 ```rb
 puts "Hello " * 3
 # Hello Hello Hello
 ```
 
-Multiplication is simply an addition, that's why both operations work. However, we cannot subtract nor divide a string. 
+Multiplication is simply an addition, that's why both operations work. However, we cannot subtract nor divide a string.
 
 ## Booleans
 
-Booleans are `true` or `false` value. These are different from strings `"true"` and `"false"`. 
+Booleans are `true` or `false` value. These are different from strings `"true"` and `"false"`.
 
 ```rb
 puts 1 > 2 # false
@@ -157,11 +169,14 @@ puts 1 == 1 # true
 puts 1 != 2 # false
 ```
 
-Booleans are used to control the flow of a program (check *Loops* section below).
+Booleans are used to control the flow of a program (check _Loops_ section below).
 
 ## Logical Operators
+
 There are four different logical operators in Ruby:
+
 ### OR
+
 OR logical operator returns `true` if any of the expression is `true`.
 
 ```rb
@@ -175,7 +190,9 @@ puts F or F # false
 ```
 
 ### AND
+
 AND operator returns `true` only if all expressions are `true`.
+
 ```rb
 T = true
 F = false
@@ -187,7 +204,9 @@ puts F or F # false
 ```
 
 ### NOT
+
 NOT operator simply reverse the boolean value from `true` to `false` and `false` to `true`.
+
 ```rb
 T = true
 F = false
@@ -197,6 +216,7 @@ puts not(F) # true
 ```
 
 ### XOR
+
 XOR operator returns true only if two expressions have different boolean values.
 
 ```rb
@@ -212,6 +232,7 @@ puts F ^ F # false
 ---
 
 # Loops
+
 A loop is used to run certain tasks multiple times. We use a condition to control the flow.
 
 The below is a simple `while` loop that prints `Hello, World!` until condition becomes `false`.
@@ -225,6 +246,7 @@ end
 ```
 
 output:
+
 ```text
 Hello, World!
 Hello, World!
@@ -240,11 +262,11 @@ The while-loop is not the only loop in Ruby. We can re-write above code in many 
     puts "Hello, World!"
 end
 
-0.upto(4) do 
+0.upto(4) do
     puts "Hello, World!"
 end
 
-4.downto(0) do 
+4.downto(0) do
     puts "Hello, World!"
 end
 
@@ -254,11 +276,12 @@ end
 ```
 
 We also have a `loop` loop.
+
 ```rb
 n = 5
 loop do
     if n==0 then break end
-    
+
 	puts "Hello, World!"
 	n -= 1
 end
@@ -267,7 +290,9 @@ end
 ---
 
 See also:
-- [Ruby - Flow Control](./ruby-basic-flow)
+
+- [Ruby: if-else and case](./ruby-basic-flow)
 
 Reference:
+
 - [https://pine.fm/LearnToProgram](https://pine.fm/LearnToProgram/chap_00.html)

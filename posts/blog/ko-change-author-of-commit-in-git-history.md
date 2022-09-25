@@ -1,5 +1,7 @@
 ---
-title: 'Change Author of Commit in Git History'
+title: 'GitHub: 잘못된 커밋 정보 수정하기'
+posttitle: 'GitHub'
+postsubtitle: 'Git 커밋 정보 수정하기'
 date: '2022-05-03'
 tags:
   - git
@@ -17,22 +19,11 @@ $ git config user.email "rolemadelen@pm.me"
 
 이렇게 설정한 이름과 이메일은 커밋 로그에서 확인 할 수 있다.
 
-![Git log](/images/posts/20220503-git-filter-repo1.png)
+![Git log](/images/posts/20220503-git-filter-repo1.jpg)
 
 하지만 만약 설정하는 순간 오타가 났다거나 아니면 새로운 이메일로 업데이트 하는 걸 깜빡해서 예전의 정보를 사용했다면?
 
-```sh
-$ git config user.name "Mid oEu"
-$ git config user.email "rolemadelen@pm.me"
-```
-
-커밋 로그에는 일단 아래처럼 설정한 그대로 나타나게 된다.
-
-![Git log](/images/posts/20220503-git-filter-repo2.png)
-
-뿐만 아니라 깃허브에서도 커밋을 확인해보면 사용자를 확인 할 수가 없어서 잔디 기록도 남지 않게 된다.
-
-![Github commit log](/images/posts/20220503-git-filter-repo3.png)
+깃허브에서 커밋을 확인해보면 사용자를 확인 할 수가 없어서 잔디 기록도 남지 않게 된다.
 
 이를 해결하기 위해서는 author과 email을 재설정해주어야 한다.
 
@@ -48,7 +39,7 @@ $ git log --abbrev-commit
 
 ```sh
 commit ba5066c (HEAD -> main, origin/main, origin/HEAD)
-Author: Mid oEu <rolemadelen@pm.me>
+Author: Madeleine Eu <rolemadelen@pm.me>
 Date:   Tue May 3 13:08:41 2022 +0900
 
     hello.c added
@@ -147,5 +138,5 @@ $ git push -f
 
 ---
 
-- [signed commit](/ko-signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@rolemadelen/signing-previous-commits-787a077bdb62)'을 참고하자.
-- `git filter-branch`가 상당히 느리기 때문에 [git-filter-repo](../ko/git-filter-repo/)
+- [signed commit](/ko-signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다.
+- `git filter-branch`가 상당히 느리기 때문에 [git-filter-repo](../ko/git-filter-repo/)를 사용하는 것을 추천한다.

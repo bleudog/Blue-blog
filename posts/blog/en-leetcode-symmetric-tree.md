@@ -1,5 +1,7 @@
 ---
-title: '101. Symmetric Tree'
+title: '0101. Symmetric Tree'
+posttitle: 'Leetcode #0101'
+postsubtitle: 'Symmetric Tree'
 date: '2022-09-17 11:00:00'
 tags:
   - leetcode

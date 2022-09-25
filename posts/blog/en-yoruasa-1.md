@@ -1,5 +1,7 @@
 ---
-title: '🌗 Toy Project :: Yoruasa pt.1'
+title: '🌗 Toy Project: Yoruasa pt.1'
+posttitle: 'Yoruasa'
+postsubtitle: '🌗 Reflection Part 01'
 date: '2022-09-19 22:00:00'
 tags:
   - side-project

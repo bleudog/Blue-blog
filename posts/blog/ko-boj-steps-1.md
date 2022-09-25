@@ -1,7 +1,9 @@
 ---
-title: 'BOJ 01 - 입출력과 사칙연산'
-date: "2022-08-09"
-tags: 
+title: 'BOJ 01: STDIO and Arithmetics'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 01 - STDIO and Arithmetics'
+date: '2022-08-09'
+tags:
   - BaekjoonOJ
 lang: ko
 about: cp
@@ -44,7 +46,7 @@ use std::io;
 fn main() {
 	let mut val = String::new();
 	io::stdin().read_line(&mut val);
-		
+
 	let mut substr_iter = val.split_whitespace();
 	let mut next_num = || -> usize {
 		substr_iter.next().expect("Not enough input numbers")
@@ -52,7 +54,7 @@ fn main() {
 	};
 	let val1 = next_num();
 	let val2 = next_num();
-	
+
 	println!("{}", val1+val2);
 }
 ```
@@ -68,20 +70,20 @@ use std::io;
 
 fn main() {
 	let mut nums = String::new();
-	
+
 	io::stdin().read_line(&mut nums);
 	let numbers: Vec<&str> = nums.split_whitespace().collect();
-	
+
 	let val1 = match numbers[0].parse::<i32>() {
 		Ok(i) => i,
 		Err(_) => 0,
 	};
-	
+
 	let val2 = match numbers[1].parse::<i32>() {
 		Ok(i) => i,
 		Err(_) => 0,
 	};
-	
+
 	println!("{}", val1-val2);
 }
 ```
@@ -98,19 +100,19 @@ use std::io;
 fn main() {
 	let mut input = String::new();
 	io::stdin().read_line(&mut input).expect("faield");
-	
+
 	let numbers: Vec<&str> = input.split_whitespace().collect();
-	
+
 	let val1 = match numbers[0].parse::<i32>() {
 		Ok(i) => i,
 		Err(_) => 0,
 	};
-	
+
 	let val2 = match numbers[1].parse::<i32>() {
 		Ok(i) => i,
 		Err(_) => 0,
 	};
-	
+
 	println!("{}", val1*val2);
 }
 ```
@@ -127,19 +129,19 @@ use std::io;
 fn main() {
 	let mut input = String::new();
 	io::stdin().read_line(&mut input).expect("faield");
-	
+
 	let numbers: Vec<&str> = input.split_whitespace().collect();
-	
+
 	let val1 = match numbers[0].parse::<f64>() {
 		Ok(i) => i,
 		Err(_) => 0.0,
 	};
-	
+
 	let val2 = match numbers[1].parse::<f64>() {
 		Ok(i) => i,
 		Err(_) => 0.0,
 	};
-	
+
 	println!("{:.10}", val1/val2);
 }
 ```
@@ -148,7 +150,7 @@ fn main() {
 
 # 10869. 사칙연산
 
-두 자연수 A와 B를 입력받고 A+B, A-B, A*B, A/B(몫), A%B(나머지)를 구하는 문제. 
+두 자연수 A와 B를 입력받고 A+B, A-B, A\*B, A/B(몫), A%B(나머지)를 구하는 문제.
 
 ```rust
 use std::io;
@@ -156,15 +158,15 @@ use std::io;
 fn main() {
 	let mut input = String::new();
 	io::stdin().read_line(&mut input).expect("faield");
-	
+
 	let mut it = input.split_whitespace();
 	let mut next_num = || -> i32 {
 		it.next().expect("not enough input numbers").parse().expect("input is not a number")
 	};
-	
+
 	let a = next_num();
 	let b = next_num();
-	
+
 	println!("{}", a+b);
 	println!("{}", a-b);
 	println!("{}", a*b);
@@ -201,12 +203,12 @@ use std::io;
 fn main() {
 	let mut str = String::new();
 	io::stdin().read_line(&mut str).expect("failed");
-	
+
 	let year = match str.trim().parse::<i32>() {
 		Ok(i) => i,
 		Err(_) => 0,
 	};
-	
+
 	println!("{}", year-543);
 }
 ```
@@ -224,9 +226,9 @@ fn main() {
 	let mut pieces = vec![1, 1, 2, 2, 2, 8];
 	let mut str = String::new();
 	io::stdin().read_line(&mut str).expect("failed");
-	
+
 	let numbers: Vec<&str> = str.split_whitespace().collect();
-	
+
 	for i in 0..6 {
 		print!("{} ", pieces[i] - numbers[i].parse::<i32>().unwrap());
 	}
@@ -245,13 +247,13 @@ use std::io;
 fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).expect("failed");
-    
+
     let nums: Vec<&str> = s.split_whitespace().collect();
-    
+
     let a: i32 = nums[0].parse::<i32>().unwrap();
     let b: i32 = nums[1].parse::<i32>().unwrap();
     let c: i32 = nums[2].parse::<i32>().unwrap();
-    
+
     println!("{}", (a+b)%c);
     println!("{}", ((a+c)+(b%c))%c);
     println!("{}", (a*b)%c);
@@ -271,13 +273,13 @@ use std::io;
 fn main() {
     let mut x = String::new();
     let mut y = String::new();
-    
+
     io::stdin().read_line(&mut x).expect("failed");
     io::stdin().read_line(&mut y).expect("failed");
-    
+
     let a: i32 = x.trim().parse::<i32>().unwrap();
     let b: i32 = y.trim().parse::<i32>().unwrap();
-    
+
     println!("{}", a*(b%10));
     println!("{}", a*((b/10)%10));
     println!("{}", a*(b/100));

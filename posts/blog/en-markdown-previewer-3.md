@@ -1,5 +1,7 @@
 ---
-title: '💻 Toy Project :: Markdown Previewer Pt.3'
+title: '💻 Toy Project: Markdown Previewer pt.3'
+posttitle: 'Markdown Previewer'
+postsubtitle: '💻 Reflection Part 03'
 date: '2022-09-18 22:00:00'
 tags:
   - toy-project

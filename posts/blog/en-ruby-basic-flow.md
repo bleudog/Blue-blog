@@ -1,7 +1,9 @@
 ---
-title: "Ruby - Flow Control using if-else and case"
-date: "2022-07-24 15:00:00"
-tags: ["ruby"]
+title: 'Ruby: if-else And case'
+posttitle: 'Ruby Basics'
+postsubtitle: 'Flow Control: if-else and case'
+date: '2022-07-24 15:00:00'
+tags: ['ruby']
 lang: en
 about: programming
 ---
@@ -46,6 +48,7 @@ Whenever we use an `if-else` statement in Ruby, we can consider using a `case` s
 # Case statement
 
 The syntax is as follows:
+
 ```rb
 case <variable>
 when <condition1>
@@ -55,6 +58,7 @@ end
 ```
 
 Example:
+
 ```rb
 operandA, op, operandB = gets.chomp.split(' ')
 
@@ -74,7 +78,7 @@ end
 
 ## Ranges in case
 
-Personally, a `case` is more useful when dealing with ranges in condition. 
+Personally, a `case` is more useful when dealing with ranges in condition.
 
 In order to check if a number falls between 0 and 100 using `if`, we need to do...
 
@@ -84,6 +88,7 @@ end
 ```
 
 Not bad. But with a `case`, we use a range format and it becomes much simpler.
+
 ```rb
 case num
 when 0..100
@@ -91,6 +96,7 @@ end
 ```
 
 Another example:
+
 ```rb
 case capacity
 when 0
@@ -109,6 +115,7 @@ end
 ## How case works under the hood
 
 Using the above code as an example, what's really happening in Ruby is this:
+
 ```rb
 0        === capacity
 (1..50)  === capacity
@@ -134,6 +141,7 @@ end
 ```
 
 But instead, I'd use a hash because we don't want to go through each condition. It's better to just access directly to the bucket we need and get the data we want.
+
 ```rb
 SITES = {
 	"europe"  => "https://eu.example.com",
@@ -146,8 +154,10 @@ SITES[country]
 ---
 
 See also:
-- [Ruby - Basic](./ruby-basic)
+
+- [Ruby: Basic Syntax](./ruby-basic)
 
 Reference:
+
 - [https://pine.fm/LearnToProgram](https://pine.fm/LearnToProgram/chap_00.html)
 - [https://www.rubyguides.com/2015/10/ruby-case/](https://www.rubyguides.com/2015/10/ruby-case/)

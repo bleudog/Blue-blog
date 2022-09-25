@@ -1,26 +1,29 @@
 ---
-title:  "Big-O記法とは"
-date:  "2021-05-03"
-tags: 
+title: 'Big-O記法とは'
+posttitle: 'Big-O記法'
+date: '2021-05-03'
+tags:
   - complexity
 lang: ja
 about: algo
 ---
 
-## Big-O記法とは
-Big-O記法（`O(log N)`, `O(N)`, `O(N!)`, ...）は計算時間の上限示す。つまり、最悪の場合の計算量を示すということ。
+## Big-O 記法とは
 
-Big-Oは<u>最悪の場合の計算量</u>というのはわかったけど。これてどういう意味だろう。
+Big-O 記法（`O(log N)`, `O(N)`, `O(N!)`, ...）は計算時間の上限示す。つまり、最悪の場合の計算量を示すということ。
 
-Big-Oが我らに聞く質問は「 `N`が無限に大きくなるとアルゴリズムはどうなるか」だと思う。アルゴリズムを実装するときこの質問は大事。なぜかというと、結果的にBig-Oがアルゴリズムがどのぐらい効率的かを表すため。
+Big-O は<u>最悪の場合の計算量</u>というのはわかったけど。これてどういう意味だろう。
 
-下の表はよく使われる7つのBig-Oの性能を比べたググラフ。
+Big-O が我らに聞く質問は「 `N`が無限に大きくなるとアルゴリズムはどうなるか」だと思う。アルゴリズムを実装するときこの質問は大事。なぜかというと、結果的に Big-O がアルゴリズムがどのぐらい効率的かを表すため。
+
+下の表はよく使われる 7 つの Big-O の性能を比べたググラフ。
 
 ![Big-Oh Chart](/images/posts/big-o-chart.png)
 
-一番早いのがO(1)で、`N`とは関係なく必ず一回だけ実行される。赤い部分に近づくほど演算回数が増えてアルゴリズムが遅くなる。
+一番早いのが O(1)で、`N`とは関係なく必ず一回だけ実行される。赤い部分に近づくほど演算回数が増えてアルゴリズムが遅くなる。
 
 ### O(1)
+
 ```cpp
 cout << "Hello, World" << endl;
 ```
@@ -64,6 +67,7 @@ int fib(int n) {
 ```
 
 ### O(n!)
+
 Some well-known problems with a factorial time complexity.
 
 - [Travelling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem)
@@ -72,24 +76,30 @@ Some well-known problems with a factorial time complexity.
 
 ---
 
-## Big-O記法のルール
+## Big-O 記法のルール
 
 ### Coefficient Rule
-無限に近い数字に何の数字をかけても無限なので、 Nに影響がない係数は全て捨てられる。
+
+無限に近い数字に何の数字をかけても無限なので、 N に影響がない係数は全て捨てられる。
+
 ```text
-O(kf(n))  ->  O(f(n)) 
+O(kf(n))  ->  O(f(n))
 O(5n)     ->  O(n)
 ```
 
 ### Sum Rule
-最終時間計算量が複数の式の和（sum）の場合は、最終Big-Oも複数のBig-Oの和で表記する。
+
+最終時間計算量が複数の式の和（sum）の場合は、最終 Big-O も複数の Big-O の和で表記する。
+
 ```text
 O(h(n)) + O(g(n))  ->  O(h(n) + g(n))
 O(n)+O(m)          ->  O(n+m)
 ```
 
 ### Product Rule
-最終時間計算量が一つ以上の計算量の積で成り立っている場合、 最終Big-Oも複数のBig-Oの積で表記する。
+
+最終時間計算量が一つ以上の計算量の積で成り立っている場合、 最終 Big-O も複数の Big-O の積で表記する。
+
 ```text
 O(f(n)) * O(g(n))   ->  O(f(n)g(n))
 O(n^2) * O(log(n))  ->  O(n^2 log(n))
@@ -97,7 +107,9 @@ O(n) * O(m)         ->  O(nm)
 ```
 
 ### Polynomial Rule
-時間計算量が多項式の場合、Big-Oは当該式の最高次項（highest degree）になる。
+
+時間計算量が多項式の場合、Big-O は当該式の最高次項（highest degree）になる。
+
 ```text
 f(n) = 5n^2 + 7n  ->   O(n^2)
 f(n) = 10n + 2    ->   O(n)
@@ -105,4 +117,5 @@ f(n) = 10         ->   O(1)
 ```
 
 ## Reference
+
 - JavaScript Data Structures and Algorithms - Sammie Bae

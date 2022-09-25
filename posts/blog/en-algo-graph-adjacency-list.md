@@ -1,22 +1,24 @@
 ---
-title: "Adjacency List"
-date: "2022-07-15 08:00:00"
-tags: 
-  - algorithm
+title: 'Graph: Adjacency List'
+posttitle: 'Graph Data Structure'
+postsubtitle: 'Part 01: Adjacency List'
+date: '2022-07-15 08:00:00'
+tags:
+  - data structure
+  - wip
 lang: en
-about: algo
+about: ds
 ---
 
-
 ```rb
-class Node 
-  attr_accessor :data, :next 
+class Node
+  attr_accessor :data, :next
 
-  def initialize(data) 
-    @data = data 
-    @next = nil 
+  def initialize(data)
+    @data = data
+    @next = nil
   end
-end 
+end
 
 class AdjList
   def initialize(v)
@@ -25,9 +27,9 @@ class AdjList
   end
 
   def add_edge(src, dest)
-    if @graph[src] 
-      @graph[src].append(dest) 
-    elsif @graph[src] == nil 
+    if @graph[src]
+      @graph[src].append(dest)
+    elsif @graph[src] == nil
       @graph[src] = [dest]
     end
 
@@ -38,11 +40,11 @@ class AdjList
     end
   end
 
-  def display 
-    for i in 0...@v 
+  def display
+    for i in 0...@v
       puts "Adjacency list of vertex #{i}"
       print "head"
-      temp = @graph[i] 
+      temp = @graph[i]
       temp.each do |data|
         print " -> #{data}"
       end

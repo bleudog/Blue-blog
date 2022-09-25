@@ -1,6 +1,8 @@
 ---
-title: "Ruby - Creating an infinite loop"
-date: "2022-07-07 22:30:00"
+title: 'Ruby: Creating Infinite Loops'
+posttitle: 'Ruby Basics'
+postsubtitle: 'Creating Infinite Loops'
+date: '2022-07-07 22:30:00'
 tags:
   - ruby
 lang: en
@@ -10,6 +12,7 @@ about: programming
 There are several ways to create an infinite loop in Ruby.
 
 ## loop
+
 ```ruby
 loop do
     if gets.chomp == "finish"
@@ -19,6 +22,7 @@ end
 ```
 
 ## while
+
 ```ruby
 while true
     if gets.chomp == "finish"
@@ -28,6 +32,7 @@ end
 ```
 
 ## until
+
 ```ruby
 until false
     if gets.chomp == "finish"
@@ -37,6 +42,7 @@ end
 ```
 
 ## begin-end
+
 ```ruby
 begin
     puts "Hello World!"
@@ -61,7 +67,8 @@ end
 puts "Sum: #{sum}"
 ```
 
-output: 
+output:
+
 ```text
 > ruby sum.rb
 1

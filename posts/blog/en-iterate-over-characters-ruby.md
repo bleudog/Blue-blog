@@ -1,6 +1,8 @@
 ---
-title: "Ruby - Iterate over characters in a string"
-date: "2022-07-07 22:45:00"
+title: 'Ruby: Iterating Characters'
+posttitle: 'Ruby Basics'
+postsubtitle: 'Iterating Characters of a String'
+date: '2022-07-07 22:45:00'
 tags:
   - ruby
 lang: en
@@ -10,7 +12,9 @@ about: programming
 Imagine you have a string `hello world` and you want to count number vowels in the string.
 
 # Using indexes
-We can iterate over characters using the index and check if a character is a vowel:
+
+We can iterate characters using the index and check if it's a vowel:
+
 ```rb
 str = "hello world"
 vowels = 0
@@ -30,6 +34,7 @@ puts "Vowels: #{vowels}"
 There's a simpler way to iterate over characters.
 
 # Using `each_char`
+
 ```rb
 str = "hello world"
 vowels = 0
@@ -52,7 +57,8 @@ str.each_char.with_index do |char, idx|
 end
 ```
 
-output: 
+output:
+
 ```text
 char: h    index: 0
 char: e    index: 1

@@ -1,5 +1,7 @@
 ---
-title: 'Stack?'
+title: 'Stack: Array'
+posttitle: 'Stack'
+postsubtitle: 'Array Implementation'
 date: '2022-07-07 08:20:00'
 tags:
   - stack
@@ -76,9 +78,13 @@ def peek
 end
 ```
 
+---
+
 # Time Complexity
 
 All operations in stack take constant time. That is, O(1).
+
+---
 
 # Applications of Stack
 
@@ -99,7 +105,7 @@ Each time we visit a page in the browser, URLs are saved in a stack. Once we cli
 See also:
 
 - [What is a Queue?](./what-is-a-queue)
-- [Stack: LinkedList-based Implementation](./stack-implementation-linkedlist)
+- [Stack: Linked List](./stack-implementation-linkedlist)
 - [Stack related problems from BOJ and Leetcode](https://github.com/rolemadelen/DataStructures-and-Algorithms/tree/main/03-stack)
 
 Reference:

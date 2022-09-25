@@ -1,7 +1,8 @@
 ---
-title: "Binary Search"
-date: "2021-11-11"
-tags: 
+title: 'Algorithm: Binary Search'
+posttitle: 'Binary Search'
+date: '2021-11-11'
+tags:
   - algorithm
 lang: en
 about: algo

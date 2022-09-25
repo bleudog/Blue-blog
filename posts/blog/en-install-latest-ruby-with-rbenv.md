@@ -1,5 +1,6 @@
 ---
-title: 'Installing latest Ruby with rbenv'
+title: 'Installing Latest Ruby with rbenv'
+posttitle: "Installing Latest Ruby with 'rbenv'"
 date: '2022-07-07 07:00:00'
 tags:
   - ruby

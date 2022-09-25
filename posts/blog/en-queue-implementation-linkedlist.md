@@ -1,5 +1,7 @@
 ---
-title: 'Queue - Linked List Implementation'
+title: 'Queue: Linked List'
+posttitle: 'Queue'
+postsubtitle: 'Linked List Implementation'
 date: '2022-07-12 21:00:00'
 tags:
   - queue

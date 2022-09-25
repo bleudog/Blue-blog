@@ -1,7 +1,9 @@
 ---
-title: "error: gpg failed to sign"
-date: "2022-04-05"
-tags: 
+title: 'GitHub: GPG key를 이용한 커밋 서명 오류 해결하기'
+posttitle: 'GitHub'
+postsubtitle: 'GPG key를 이용한 커밋 서명 오류 해결하기'
+date: '2022-04-05'
+tags:
   - git
   - gpg
   - error
@@ -10,13 +12,14 @@ about: log
 ---
 
 GPG key를 사용해서 커밋에 서명을 하는데 아래와 같은 오류가 발생했다.
+
 ```sh
-$ git commit -S 
+$ git commit -S
 error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 
-`gpg --list-secret-keys --keyid-format=long`를 사용해서 GPG를 확인하고, 
+`gpg --list-secret-keys --keyid-format=long`를 사용해서 GPG를 확인하고,
 `git config user.signingkey <GPG key ID>`로 다시 추가를 해도 모두지 해결이 되지 않았다.
 
 검색을 하다가 비슷한 증상의 [issue](https://github.com/keybase/keybase-issues/issues/2798#issuecomment-498171379)를 찾아서 해결할 수 있었다.

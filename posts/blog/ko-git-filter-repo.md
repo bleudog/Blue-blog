@@ -1,5 +1,7 @@
 ---
-title: git-filter-repo
+title: 'GitHub: git-filter-repo'
+posttitle: 'GitHub'
+postsubtitle: 'git-filter-repo란?'
 date: '2022-05-03'
 tags:
   - git
@@ -26,9 +28,9 @@ git history에서 author 정보를 바꾸기 위해 상당히 번거로운 과�
 `new_name <new_email> wrong_name <wrong_email>`
 
 ```text
-Rolemadelen <rolemadelen@pm.me> Blu eEu <rolemadelen@pm.me>
- Rolemadelen <rolemadelen@pm.me> wrongname1 <wrongname1@pm.me>
- Rolemadelen <rolemadelen@pm.me> wrongname2 <wrongname2@pm.me>
+Rolemadelen <rolemadelen@pm.me> Madeleine Eu <rolemadelen@pm.me>
+Rolemadelen <rolemadelen@pm.me> wrongname1 <wrongname1@pm.me>
+Rolemadelen <rolemadelen@pm.me> wrongname2 <wrongname2@pm.me>
 ```
 
 여러개의 정보를 넘겨줘도 된다. 오른쪽 세 author가 모두 왼쪽의 author로 수정된다.
@@ -49,9 +51,9 @@ $ git-filter-repo --mailmap ./mymailmap
 
 ```sh
 $ git remote add origin REPOSITORY_주소
- $ git push -f
+$ git push -f
 ```
 
 ---
 
-- [signed commit](./signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다. 예전 커밋에 서명하는 방법에 대해서는 '[Signing Previous Commits](https://medium.com/@rolemadelen/signing-previous-commits-787a077bdb62)'을 참고하자.
+- [signed commit](./signing-commits/)을 사용하는 경우 해당 작업 종료 후 커밋이 unverified 될 수 있다.

@@ -1,7 +1,9 @@
 ---
-title: "Chebyshev Distance"
-date: "2021-11-18 07:20:00"
-tags: 
+title: 'Distance Metrics: Chebyshev Distance'
+posttitle: 'Distance Metrics'
+postsubtitle: 'Part 03: Chebyshev Distance'
+date: '2021-11-18 07:20:00'
+tags:
   - algorithm
 lang: en
 about: algo
@@ -10,7 +12,7 @@ about: algo
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-#define rep(i,n) for (int i=0; i<(n); ++i) 
+#define rep(i,n) for (int i=0; i<(n); ++i)
 typedef long long ll;
 typedef pair<int, int> p;
 
@@ -19,9 +21,9 @@ int chebyshevDistance(vector<int> x, vector<int> y)
   int chebyshev = 0;
   const int SIZE = x.size();
 
-  for (int i=0; i<SIZE; ++i) 
+  for (int i=0; i<SIZE; ++i)
   {
-    int v = abs(x[i] - y[i]); 
+    int v = abs(x[i] - y[i]);
     chebyshev = (v > chebyshev) ? v : chebyshev;
   }
 

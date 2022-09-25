@@ -1,5 +1,7 @@
 ---
-title: '28. Find the Index of the First Occurrence in a String'
+title: '0028. Find the Index of the First Occurrence in a String'
+posttitle: 'Leetcode #0028'
+postsubtitle: 'Find the Index of the First Occurrence in a String'
 date: '2022-09-24 07:00:00'
 tags:
   - leetcode

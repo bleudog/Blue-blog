@@ -1,7 +1,10 @@
 ---
-title: 'BOJ 07: 기본 수학 (WIP)'
-date: "2022-08-13 14:20:00"
-tags: [BaekjoonOJ]
+title: 'BOJ 07: Basic Math'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 07 - Basic Math'
+date: '2022-08-13 14:20:00'
+tags:
+	- BaekjoonOJ
 lang: ko
 about: cp
 ---
@@ -81,7 +84,7 @@ fn main() {
 
 ---
 
-# 10250 ACM 호텔	
+# 10250 ACM 호텔
 
 호텔 방 번호의 규칙을 찾아 출력하는 문제
 
@@ -101,7 +104,7 @@ fn main() {
 
 ---
 
-# 2839 설탕 배달	
+# 2839 설탕 배달
 
 5와 3을 최소 횟수로 합하여 N을 만드는 문제
 

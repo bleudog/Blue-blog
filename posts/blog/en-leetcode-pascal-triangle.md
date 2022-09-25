@@ -1,5 +1,7 @@
 ---
-title: "118. Pascal's Triangle"
+title: "0118. Pascal's Triangle"
+posttitle: 'Leetcode #0118'
+postsubtitle: "Pascal's Triangle"
 date: '2022-09-19 07:30:00'
 tags:
   - leetcode

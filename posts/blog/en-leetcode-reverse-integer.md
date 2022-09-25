@@ -1,5 +1,7 @@
 ---
-title: '7. Reverse Integer'
+title: '0007. Reverse Integer'
+posttitle: 'Leetcode #0007'
+postsubtitle: 'Reverse Integer'
 date: '2022-09-24 06:00:00'
 tags:
   - leetcode

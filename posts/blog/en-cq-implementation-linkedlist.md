@@ -1,5 +1,7 @@
 ---
-title: 'Circular Queue - Linked List Implementation'
+title: 'Circular Queue: Linked List'
+posttitle: 'Circular Queue'
+postsubtitle: 'Linked List Implementation'
 date: '2022-07-16 09:00:00'
 tags:
   - circular queue

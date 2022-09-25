@@ -1,5 +1,7 @@
 ---
-title: '66. Plus One'
+title: '0066. Plus One'
+posttitle: 'Leetcode #0066'
+postsubtitle: 'Plus One'
 date: '2022-09-15 10:00:00'
 tags:
   - leetcode

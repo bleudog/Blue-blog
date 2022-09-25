@@ -1,5 +1,7 @@
 ---
-title: '👻 Toy Project::Ghostvatar pt.1'
+title: '👻 Toy Project: Ghostvatar pt.1'
+posttitle: 'Ghostvatar'
+postsubtitle: '👻 Reflection Part 01'
 date: '2022-07-17 14:00:00'
 tags:
   - side-project

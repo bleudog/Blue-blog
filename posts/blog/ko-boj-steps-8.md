@@ -1,7 +1,10 @@
 ---
-title: 'BOJ 08: 기본 수학 2 - 소수 (WIP)'
+title: 'BOJ 08: Primality Test'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 08 - Primality Test'
 date: "2022-08-13 22:50:00"
-tags: [BaekjoonOJ]
+tags:
+	- BaekjoonOJ
 lang: ko
 about: cp
 ---
@@ -173,7 +176,7 @@ fn main() {
 	for i in nums[0]..=nums[1] {
 		if is_prime(i) {
 			writeln!(&mut w, "{}", i).unwrap();
-		}   
+		}
 	}
 
 	println!("{}", w);
@@ -220,7 +223,7 @@ fn main() {
 		for i in n..=m {
 			if is_prime(i) {
 				cnt += 1;
-			}   
+			}
 		}
 
 		println!("{}", cnt);

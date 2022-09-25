@@ -1,7 +1,9 @@
 ---
-title: "Installing Rust"
-date: "2022-08-12 17:42:00"
-tags: 
+title: 'Rust: Installation'
+posttitle: 'Rust'
+postsubtitle: "Use 'rustup' to Install Rust"
+date: '2022-08-12 17:42:00'
+tags:
   - rust
 lang: en
 about: programming
@@ -10,6 +12,7 @@ about: programming
 Recommended using `rustup` to install or update current Rust in your machine.
 
 If rust was installed without `rustup`, run the following to uninstall rust from your machine:
+
 ```shell
 $ /usr/local/lib/rustlib/uninstall.sh
 install: uninstalling component 'rustc'
@@ -21,6 +24,7 @@ install: uninstalling component 'rust-docs'
 ```
 
 Now install `rustup` using the following command:
+
 ```shell
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -36,7 +40,8 @@ Cargo's bin directory ($HOME/.cargo/bin).
 ```
 
 Now check the version:
-```shell 
+
+```shell
 $ rustc --version
 rustc 1.63.0 (4b91a6ea7 2022-08-08)
 ```
@@ -44,4 +49,5 @@ rustc 1.63.0 (4b91a6ea7 2022-08-08)
 ---
 
 Reference:
+
 - [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)

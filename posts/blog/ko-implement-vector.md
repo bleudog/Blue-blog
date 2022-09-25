@@ -1,5 +1,7 @@
 ---
-title: '[C언어] Vector 구현하기'
+title: 'C: Vector 구현하기'
+posttitle: '자료구조'
+postsubtitle: 'Vector C로 구현하기'
 date: '2022-05-05 14:58:00'
 tags:
   - vector
@@ -7,8 +9,6 @@ tags:
 lang: ko
 about: ds
 ---
-
-## TL;DR
 
 vector 구현 소스코드: [rolemadelen/vector](https://github.com/rolemadelen/DataStructures-and-Algorithms/tree/main/01-arrays/vector)
 

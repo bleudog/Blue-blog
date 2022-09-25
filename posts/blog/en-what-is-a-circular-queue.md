@@ -1,5 +1,7 @@
 ---
-title: 'Circular Queue?'
+title: 'Circular Queue: Array'
+posttitle: 'Circular Queue'
+postsubtitle: 'Array Implementation'
 date: '2022-07-12 07:50:00'
 tags:
   - circular queue

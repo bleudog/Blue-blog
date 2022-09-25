@@ -1,5 +1,7 @@
 ---
-title: '125. Valid Palindrome'
+title: '0125. Valid Palindrome'
+posttitle: 'Leetcode #0125'
+postsubtitle: 'Valid Palindrome'
 date: '2022-09-19 08:00:00'
 tags:
   - leetcode

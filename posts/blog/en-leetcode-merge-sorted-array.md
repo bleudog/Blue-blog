@@ -1,5 +1,7 @@
 ---
-title: '88. Merge Sorted Array'
+title: '0088. Merge Sorted Array'
+posttitle: 'Leetcode #0088'
+postsubtitle: 'Merge Sorted Array'
 date: '2022-09-16 11:00:00'
 tags:
   - leetcode

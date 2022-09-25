@@ -1,7 +1,10 @@
 ---
-title: 'BOJ 02 - 조건문'
-date: "2022-08-10"
-tags: [BaekjoonOJ]
+title: 'BOJ 02 - Conditional Statements'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 01 - Conditional Statements'
+date: '2022-08-10'
+tags:
+  - BaekjoonOJ
 lang: ko
 about: cp
 ---
@@ -20,11 +23,11 @@ use std::io;
 fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).expect("failed");
-    
+
     let nums: Vec<&str> = s.split_whitespace().collect();
     let x = nums[0].parse::<i32>().unwrap();
     let y = nums[1].parse::<i32>().unwrap();
-    
+
     if x > y {
         println!(">");
     } else if x < y {
@@ -49,9 +52,9 @@ use std::io;
 fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).expect("failed");
-    
+
     let x: i32 = s.trim().parse::<i32>().unwrap();
-    
+
     if x >= 90 {
         println!("A")
     } else if x >= 80 {
@@ -81,7 +84,7 @@ fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).expect("faild");
     let year = s.trim().parse::<i32>().unwrap();
-    
+
     if (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) {
         println!("1");
     } else {
@@ -110,7 +113,7 @@ fn read() -> i32 {
 fn main() {
     let a = read();
     let b = read();
-    
+
     if a > 0 && b > 0 {
         println!("{}", 1);
     } else if a < 0 && b > 0 {
@@ -137,15 +140,15 @@ use std::io;
 fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).unwrap();
-    
+
     let mut nums: Vec<i32> = s.split_whitespace().map( |n| n.parse().unwrap()).collect();
-    
+
     if (nums[1]-45) < 0 {
         nums[0] = (nums[0]+23)%24;
     }
-    
+
     nums[1] = (nums[1]+15)%60;
-    
+
     println!("{} {}", nums[0], nums[1]);
 }
 ```
@@ -165,17 +168,17 @@ fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).unwrap();
     let mut nums: Vec<i32> = s.split_whitespace().map( |n| n.parse().unwrap()).collect();
-    
+
     let mut s2 = String::new();
     io::stdin().read_line(&mut s2).unwrap();
     let mut c: i32 = s2.trim().parse::<i32>().unwrap();
-    
+
     if (nums[1] + c) > 59 {
         nums[0] = (nums[0]+(nums[1]+c)/60) % 24;
     }
-    
+
     nums[1] = (nums[1]+c)%60;
-    
+
     println!("{} {}", nums[0], nums[1]);
 }
 ```
@@ -187,6 +190,7 @@ fn main() {
 조건에 따라 상금을 계산하는 문제.
 
 처음 제출한 코드:
+
 ```rust
 // https://www.acmicpc.net/problem/2480
 
@@ -197,8 +201,8 @@ fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).unwrap();
     let mut nums: Vec<i32> = s.split_whitespace().map( |n| n.parse().unwrap()).collect();
-    
-    if (nums[0] == nums[1] && nums[1] != nums[2]) || 
+
+    if (nums[0] == nums[1] && nums[1] != nums[2]) ||
         (nums[0] == nums[2] && nums[0] != nums[1]) {
         println!("{}", 1000+nums[0]*100);
     } else if (nums[1] == nums[2] && nums[0] != nums[1]) {
@@ -220,9 +224,9 @@ fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).unwrap();
     let mut nums: Vec<i32> = s.split_whitespace().map( |n| n.parse().unwrap()).collect();
-    
+
     nums.sort();
-    
+
     if nums[0] == nums[2] {
         println!("{}", 10000+nums[0]*1000);
     } else if (nums[0] == nums[1]) | (nums[1] == nums[2]) {

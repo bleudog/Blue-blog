@@ -1,7 +1,9 @@
 ---
-title: "Manhattan Distance"
-date: "2021-11-18 07:05:00"
-tags: 
+title: 'Distance Metrics: Manhattan Distance'
+posttitle: 'Distance Metrics'
+postsubtitle: 'Part 02: Manhattan Distance'
+date: '2021-11-18 07:05:00'
+tags:
   - algorithm
 lang: en
 about: algo
@@ -10,7 +12,7 @@ about: algo
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-#define rep(i,n) for (int i=0; i<(n); ++i) 
+#define rep(i,n) for (int i=0; i<(n); ++i)
 typedef long long ll;
 typedef pair<int, int> p;
 
@@ -19,9 +21,9 @@ int manhattanDistance(vector<int> x, vector<int> y)
   int distance = 0;
   const int SIZE = x.size();
 
-  for (int i=0; i<SIZE; ++i) 
+  for (int i=0; i<SIZE; ++i)
   {
-    distance += abs(x[i] - y[i]); 
+    distance += abs(x[i] - y[i]);
   }
 
   return distance;

@@ -1,7 +1,9 @@
 ---
-title: "What is Box<T> in Rust?!"
-date: "2022-08-17 20:00:00"
-tags: 
+title: 'Rust: What is Box<T>?!'
+posttitle: 'Rust'
+postsubtitle: 'What is Box<T> ?!'
+date: '2022-08-17 20:00:00'
+tags:
   - smart pointer
   - rust
 lang: en
@@ -13,7 +15,7 @@ I was trying to solve [this problem](https://leetcode.com/problems/merge-two-sor
 ```rust
 impl Solution {
     pub fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        
+
     }
 }
 ```
@@ -24,15 +26,15 @@ And here you go, a new concept that I've never seen. So let's figure out what `B
 
 ## Smart Pointers
 
-There's a general concept of a variable that stores an address in memory. This is called a **pointer**. 
+There's a general concept of a variable that stores an address in memory. This is called a **pointer**.
 
-Now, a **smart pointer** is a data structure that acts like a pointer but with additional capabilities. There's a concept called *ownership* in Rust and this pointer enables your data to have multiple owners. It also checks the number of owner and clears the data if no one owns it.
+Now, a **smart pointer** is a data structure that acts like a pointer but with additional capabilities. There's a concept called _ownership_ in Rust and this pointer enables your data to have multiple owners. It also checks the number of owner and clears the data if no one owns it.
 
-So why are we talking about smart pointers? Because `Box<T>` is a smart pointer. 
+So why are we talking about smart pointers? Because `Box<T>` is a smart pointer.
 
-*Box* is a most straightforward smart pointer in Rust and it allows you to store values on the heap rather than the stack.
+_Box_ is a most straightforward smart pointer in Rust and it allows you to store values on the heap rather than the stack.
 
-## Using `Box<T>` 
+## Using `Box<T>`
 
 Here's a syntax of using Box.
 
@@ -52,4 +54,5 @@ Good luck to me and lets see if I can solve it in Rust.
 ---
 
 Reference:
+
 - [https://doc.rust-lang.org/book/ch15-00-smart-pointers.html](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html)

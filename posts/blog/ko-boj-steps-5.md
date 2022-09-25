@@ -1,7 +1,10 @@
 ---
-title: 'BOJ 05: 함수'
-date: "2022-08-13 10:39:00"
-tags: [BaekjoonOJ]
+title: 'BOJ 05: Functions'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 05 - Functions'
+date: '2022-08-13 10:39:00'
+tags:
+	- BaekjoonOJ
 lang: ko
 about: cp
 ---

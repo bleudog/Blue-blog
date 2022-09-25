@@ -1,5 +1,7 @@
 ---
-title: '412. Fizz Buzz'
+title: '0412. Fizz Buzz'
+posttitle: 'Leetcode #0412'
+postsubtitle: 'Fizz Buzz'
 date: '2022-09-18 19:30:00'
 tags:
   - leetcode

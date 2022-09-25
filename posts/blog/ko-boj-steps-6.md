@@ -1,7 +1,10 @@
 ---
-title: 'BOJ 06: 문자열'
-date: "2022-08-13 13:31:00"
-tags: [BaekjoonOJ]
+title: 'BOJ 06: Strings'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 06 - Strings'
+date: '2022-08-13 13:31:00'
+tags:
+	- BaekjoonOJ
 lang: ko
 about: cp
 ---
@@ -25,7 +28,7 @@ fn main() {
 }
 ```
 
---- 
+---
 
 # 11720. 숫자의 합
 
@@ -53,7 +56,7 @@ fn main() {
 }
 ```
 
---- 
+---
 
 # 10809. 알파벳 찾기
 
@@ -84,7 +87,7 @@ fn main() {
 }
 ```
 
---- 
+---
 
 # 2675. Repeating Characters
 
@@ -118,7 +121,7 @@ fn main() {
 }
 ```
 
---- 
+---
 
 # 1157. 단어 공부
 
@@ -163,7 +166,7 @@ fn main() {
 }
 ```
 
---- 
+---
 
 # 1152. 단어의 개수
 
@@ -182,13 +185,14 @@ fn main() {
 }
 ```
 
---- 
+---
 
-# 2908. FILIP	
+# 2908. FILIP
 
 숫자를 뒤집어서 비교하는 문제.
 
 직접 숫자를 뒤집는 함수를 구현해서 푼 풀이.
+
 ```rust
 // https://www.acmicpc.net/problem/2908
 
@@ -249,7 +253,7 @@ fn main() {
 }
 ```
 
---- 
+---
 
 # 5622. BAKA
 
@@ -276,7 +280,7 @@ fn main() {
 }
 ```
 
---- 
+---
 
 # 2941. LJESNJAK
 
@@ -296,7 +300,7 @@ fn main() {
 	let mut i = 0;
 	while i < chars.len() {
 		if chars[i] == 'c' {
-			if i+1 < chars.len() { 
+			if i+1 < chars.len() {
 				if chars[i+1] == '-' || chars[i+1] == '=' {
 					i += 1;
 				}
@@ -348,9 +352,10 @@ fn main() {
 }
 ```
 
---- 
+---
 
 # 1316. 그룹 단어 체커
+
 조건에 맞는 문자열을 찾는 문제.
 
 ```rust
@@ -377,7 +382,7 @@ fn main() {
 			let j = i as usize;
 			let arr_index = ((str[j] as u32) - ('a' as u32)) as usize;
 			if str[j] == str[j-1] { continue; }
-			if arr[arr_index] == true { 
+			if arr[arr_index] == true {
 				group_word = false;
 				break;
 			 }

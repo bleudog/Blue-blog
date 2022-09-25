@@ -1,10 +1,12 @@
 ---
-title: "파이썬 기초 정리"
-date: "2022-01-30"
-tags: 
+title: 'Python: 기초 문법'
+posttitle: 'Python'
+postsubtitle: 'Python Basics'
+date: '2022-01-30'
+tags:
   - python
 lang: ko
-about: python
+about: programming
 ---
 
 ## 정수형 (Integer)
@@ -12,8 +14,8 @@ about: python
 ```py
 a = 2
  b = 5
- 
- print(a+b)  # 2+5 = 7 
+
+ print(a+b)  # 2+5 = 7
  print(a*b)  # 2*5 = 10
  print(a**b) # 2^5 = 32
  print(b**a) # 5^2 = 25
@@ -27,7 +29,7 @@ a = 2
 a = 2.5
  b = 5.
  c = a/b  # 2.5 / 5.0 = 0.5
- 
+
  print(c) # 0.5
  print(d) # 0
 ```
@@ -36,7 +38,7 @@ a = 2.5
 
 ```py
 str1 = 'hello'
- str2 = "world" 
+ str2 = "world"
 
  print(str1) # hello
  print(str2) # world
@@ -51,7 +53,8 @@ str1 = 'hello'
 
 ## 문자열 자르기
 
-`문자열[start:end)` - `start`인덱스에서 `end`까지의 문자들을 가져온다. 
+`문자열[start:end)` - `start`인덱스에서 `end`까지의 문자들을 가져온다.
+
 ```py
 s = "My_name_is_Blue"
 
@@ -63,18 +66,20 @@ s = "My_name_is_Blue"
 ## 리스트 (Lists)
 
 간단한 리스트 (1차원)
+
 ```py
 a = [1,2,3]
  print(a) # [1, 2, 3]
  print(a[0]) # 1
  print(a[1]) # 2
- 
+
  a.append(4)
  print(a) # [1, 2, 3, 4]
  print(a[0:2]) # [1, 2]
 ```
 
 리스트의 리스트.. (n차원)
+
 ```py
 b = [1, [2, 3], 'hello']
  print(b[1]) # [2, 3]
@@ -83,7 +88,7 @@ b = [1, [2, 3], 'hello']
 
  b[1] = 5
  print(p) # [1, 5, 'hello']
- 
+
  c = [1, [2, [3]]]
  print(c[1]) # [2, [3]]
  print(c[1][1]) # [3]
@@ -100,7 +105,7 @@ d = {
      'age' : 20,
      'langs': ['en', 'ko']
  }
- 
+
  print(d) # {'name': 'Blue', 'age': 20, 'langs': ['en', 'ko'] }
  print(d['name']) # 'Blue'
  print(d['age'])  # 20
@@ -137,7 +142,7 @@ age = 20
 t = (1,2)
  print(t) # (1, 2)
  print(t[1]) # 2
- 
+
  t[0] = 3 # TypeError: 'tuple' object does not support item assignment
 ```
 
@@ -147,7 +152,7 @@ t = (1,2)
 
 ```py
 days = {"monday, monday, tuesday, wednesday, tuesday"}
- print(days) # {'wednesday', 'tuesday', 'monday'} 
+ print(days) # {'wednesday', 'tuesday', 'monday'}
 
  days.add('friday')
  print(days) # {'wednesday', 'friday', 'tuesday', 'monday'}
@@ -162,14 +167,14 @@ print(1 < 2)   # True
  print(2 >= 2) # True
 
  print("abc" == "def") # False
- print("abc" != "def") # True 
+ print("abc" != "def") # True
 ```
 
 ## 논리 연산자 (Logical Operators)
 
 - `and`는 조건이 **모두** 참이어야 `True`
 - `or`은 조건 중 **하나**만 참이면 `True`
-  
+
 ```py
 print(True and True) # True
  print(True and False) # False
@@ -201,6 +206,7 @@ else:
 ## 반복문 (Loops)
 
 `for` 반복문
+
 ```py
 colors = ["Blue", "Pink", "Purple"]
 
@@ -213,6 +219,7 @@ for color in colors:
 ```
 
 `while` 반복문
+
 ```py
 sum = 0
 num = 1
@@ -224,25 +231,27 @@ print("1부토 100까지 더한 값은: {}".format(sum)) # 1부터 100까지 더
 ```
 
 `range()` 범위 지정
+
 ```py
 for i in range(0, 100):
     print(i)
-    # 0, 1, 2, ..., 98, 99 
+    # 0, 1, 2, ..., 98, 99
 
 for i in range(0, 100, 2):
     print(i)
-    # 0, 2, 4, ..., 94, 96, 98 
+    # 0, 2, 4, ..., 94, 96, 98
 ```
 
 `list`와 `range()`를 사용하여 원하는 범위의 리스트를 만들 수 있다.
+
 ```py
 list(range(10, 21)) # [10, 11, ...., 19, 20]
 ```
 
-
 ## 함수 (Functions)
 
 짝수인지 홀수인지 판별해주는 함수
+
 ```py
 def isEven(number):
     return number % 2 == 0
@@ -252,7 +261,8 @@ print("1: {}".format(isEven(1))) # 1: False
 print("0: {}".format(isEven(0))) # 0: True
 ```
 
-인사하는 함수. `hello()`함수를 인자 없이 호출하면 디폴트 값인 `Blue`가 출력된다. 
+인사하는 함수. `hello()`함수를 인자 없이 호출하면 디폴트 값인 `Blue`가 출력된다.
+
 ```py
 def hello(name = "Blue"):
     print("Hello {}".format(name))
@@ -278,6 +288,7 @@ isEven = lambda n: n % 2 == 0
 ## 맵 (Map)
 
 위에서 만든 람다식으로 0부터 10의 숫자들이 각각 짝수인지 홀수인지 확인해보자. 짝수면 `True` 홀수면 `False`이다.
+
 ```py
 isEven = lambda n: n % 2 == 0
 nums = list(range(0, 11)) # [0, 1, 2, ..., 8, 9, 10]
@@ -286,11 +297,13 @@ list(map(isEven, nums)) # [True, False, True, ..., True, False, True]
 ```
 
 `map`에서 직접 람다식을 작성해도 된다.
+
 ```py
 list(map(lambda n: n*2, nums)) # [0, 2, 4, ..., 16, 18, 20]
 ```
 
 ## 필터링 (Filter)
+
 `map`이 각 원소에 해당 람다식을 적용시킨 것이라면, `filter`는 람다식 조건에 부합하는 값들만 추려서 반환한다.
 
 ```py

@@ -1,18 +1,22 @@
 ---
-title: "What is an Algorithm?"
-date: "2022-07-05 05:55:00"
-tags: 
+title: 'What is an Algorithm?'
+posttitle: 'Algorithm'
+postsubtitle: 'What is an Algorithm?'
+date: '2022-07-05 05:55:00'
+tags:
   - algorithm
 lang: en
 about: algo
 ---
 
 # Algorithm
+
 An algorithm is a set of well-defined instructions to solve a particular problem.
 
 ![Basic Algorithm](/images/posts/what-is-an-algorithm/basic-algorithm.png)
 
 ## Characteristics of an Algorithm
+
 If an algorithm meets all of the following requirement, it is considered to be a good algorithm:
 
 1. **Input** and **output** is well-defined.
@@ -24,8 +28,10 @@ If an algorithm meets all of the following requirement, it is considered to be a
 ---
 
 See also:
+
 - [What is a Data Structure?](./what-is-a-data-structure)
 
 Reference:
+
 - [https://www.programiz.com/dsa/algorithm](https://www.programiz.com/dsa/algorithm)
 - [https://medium.com/@bhattshlok12/characteristics-of-an-algorithm-49cf4d7bcd9](https://medium.com/@bhattshlok12/characteristics-of-an-algorithm-49cf4d7bcd9)

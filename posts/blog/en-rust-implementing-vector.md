@@ -1,7 +1,9 @@
 ---
-title: "Implementing a Vector with Rust"
-date: "2022-08-17 07:00:00"
-tags: 
+title: 'Rust: Vector Implementation'
+posttitle: 'Data Structure'
+postsubtitle: 'Vector Implementation'
+date: '2022-08-17 07:00:00'
+tags:
   - vector
   - data structure
   - rust
@@ -14,6 +16,7 @@ A vector is a linear data structure like an array but its size can grow or shrin
 I tried implementing a vector with a fixed size array in Rust.
 
 My vector contains following functions:
+
 - `size() -> i32`
 - `capacity() -> i32`
 - `is_empty() -> bool`
@@ -26,8 +29,8 @@ My vector contains following functions:
 - `remove(item)` - remove all occurrences of `item`
 - `find(item) -> i32`
 - `resize(new_capacity)` (**not yet implemented**)
-    - when you reach the capacity, double the container size.
-    - when current size becomes 1/4th of the capacity, halve the container size.
+  - when you reach the capacity, double the container size.
+  - when current size becomes 1/4th of the capacity, halve the container size.
 
 ---
 
@@ -36,6 +39,7 @@ I don't even know how to create a class in Rust (it has one right?) so let's sta
 If you just want to see the code, [here you go](https://github.com/rolemadelen/rust-algorithms/tree/main/src/data_structures/vector).
 
 # Classes in Rust
+
 Welp. It seems like [there is no class in Rust](https://jimmco.medium.com/classes-in-rust-c5b72c0f0a4c), but we can simulate classes using `struct` (structure) and `impl` (implement) keyword.
 
 ```rust
@@ -68,7 +72,7 @@ struct Vector {
 
 Here I defined my vector with three pieces of data: `size`, `capacity`, and `arr` which is the vector container itself.
 
-I actually wanted the `arr` to be a pointer like in C where I can later dynamically allocate memory with an arbitrary size. 
+I actually wanted the `arr` to be a pointer like in C where I can later dynamically allocate memory with an arbitrary size.
 
 ```c
 struct Vector {
@@ -113,6 +117,7 @@ fn main() {
 ```
 
 `#[allow(dead_code)]` is to hide warnings for never used functions:
+
 ```sh
 warning: associated function `size` is never used
   --> vector.rs:16:9
@@ -150,13 +155,14 @@ pub fn at(&mut self, index: i32) -> i32 {
 ```
 
 For the last `at` function, the index of an array has to be `usize` but given type of the index is `i32`.
-So I type casted using `as usize`. 
+So I type casted using `as usize`.
 
 ## push(item)
+
 This function inserts new item at the end of the array.
 
 ```rust
-pub fn push(&mut self, item: i32) { 
+pub fn push(&mut self, item: i32) {
     if self.size == self.capacity {
         println!("vector is full.");
         return;
@@ -199,6 +205,7 @@ So I'm starting at `size` and assigning a previous value to current position: `a
 - Space complexity: O(1)
 
 ## insert(index, item)
+
 This function inserts an item at a given index.
 
 ```rust
@@ -242,9 +249,9 @@ This function removes an item at the end of the array.
 
 ```rust
 pub fn pop(&mut self) -> i32 {
-    if self.size == 0 { 
+    if self.size == 0 {
         println!("vector is empty.");
-        return -1; 
+        return -1;
     }
 
     self.size -= 1;
@@ -261,11 +268,11 @@ We're not actually deleting anything here but just pretending by reducing the si
 
 This function deletes an item at given `index`.
 
-```rust 
+```rust
 pub fn delete(&mut self, index: usize) {
-    if self.size == 0 { 
+    if self.size == 0 {
         println!("vector is empty.");
-        return; 
+        return;
     }
 
     if index >= self.size as usize {
@@ -281,7 +288,7 @@ pub fn delete(&mut self, index: usize) {
 }
 ```
 
-I'm shifting all elements to the left from `index` where we're trying to delete. 
+I'm shifting all elements to the left from `index` where we're trying to delete.
 And then reduce the total size so that it looks like it's deleted from the array.
 
 - Time complexity: O(N), N = number of items
@@ -297,11 +304,11 @@ pub fn find(&mut self, item: i32) -> i32 {
 
     for i in 0..self.size {
         if self.arr[i as usize] == item {
-            index = i; 
+            index = i;
             break;
         }
     }
-    
+
     return index;
 }
 ```

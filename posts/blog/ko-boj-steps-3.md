@@ -1,7 +1,10 @@
 ---
-title: 'BOJ 03: 반복문'
-date: "2022-08-12"
-tags: [BaekjoonOJ]
+title: 'BOJ 03: Loops'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 03 - Loops'
+date: '2022-08-12'
+tags:
+	- BaekjoonOJ
 lang: ko
 about: cp
 ---
@@ -20,9 +23,9 @@ use std::io;
 fn main() {
     let mut s = String::new();
     io::stdin().read_line(&mut s).unwrap();
-    
+
     let x = s.trim().parse::<i32>().unwrap();
-    
+
     for i in 1..=9 {
         println!("{} * {} = {}", x, i, x*i);
     }
@@ -51,9 +54,9 @@ fn main() {
     while t > 0 {
         let mut s = String::new();
         io::stdin().read_line(&mut s).unwrap();
-        
+
         let nums: Vec<i32> = s.split_whitespace().map( |n| n.parse().unwrap()).collect();
-        
+
         println!("{}", nums[0]+nums[1]);
         t -= 1;
     }
@@ -101,16 +104,16 @@ fn main() {
     let total_cost = read();
     let n = read();
     let mut sum = 0;
-    
+
     for i in 0..n {
         let mut s = String::new();
         io::stdin().read_line(&mut s).unwrap();
-        
+
         let nums: Vec<i32> = s.split_whitespace().map( |n| n.parse().unwrap()).collect();
-        
+
         sum += nums[0]*nums[1];
     }
-    
+
     if sum == total_cost {
         println!("Yes");
     } else {
@@ -121,7 +124,7 @@ fn main() {
 
 ---
 
-# 15552.  빠른 A+B
+# 15552. 빠른 A+B
 
 빠르게 입력받고 출력하는 문제.
 
@@ -137,12 +140,12 @@ fn main() {
     let mut arr = buf.split_whitespace().map(|x| x.parse::<i32>().unwrap());
     let mut w = String::new();
     let mut num = || arr.next().unwrap();
-    
+
     for _ in 0..num() {
         let y = num() + num();
         writeln!(&mut w, "{}", y).unwrap();
     }
-    
+
     println!("{}", w);
 }
 ```
@@ -260,7 +263,7 @@ fn main() {
 
 ---
 
-# 10871.  X보다 작은 수
+# 10871. X보다 작은 수
 
 for와 if를 같이 쓰는 문제.
 
@@ -274,7 +277,7 @@ fn main() {
 	let stdin = io::stdin();
 	stdin.read_line(&mut buffer).unwrap();
 	let nums: Vec<i32> = buffer.split_whitespace().map(|x| x.parse().unwrap()).collect();
-	
+
 	buffer = String::new();
 	stdin.read_line(&mut buffer).unwrap();
 

@@ -1,5 +1,7 @@
 ---
-title: '108. Convert Sorted Array to Binary Search Tree'
+title: '0108. Convert Sorted Array to Binary Search Tree'
+posttitle: 'Leetcode #0108'
+postsubtitle: 'Convert Sorted Array to Binary Search Tree'
 date: '2022-09-18 19:00:00'
 tags:
   - leetcode

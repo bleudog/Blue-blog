@@ -1,5 +1,7 @@
 ---
-title: 'Stack - Linked List Implementation'
+title: 'Stack: Linked List'
+posttitle: 'Stack'
+postsubtitle: 'Linked List Implementation'
 date: '2022-07-09 07:30:00'
 tags:
   - stack

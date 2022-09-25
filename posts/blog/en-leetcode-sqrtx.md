@@ -1,5 +1,7 @@
 ---
-title: '69. Sqrt(x)'
+title: '0069. Sqrt(x)'
+posttitle: 'Leetcode #0069'
+postsubtitle: 'Sqrt(x)'
 date: '2022-09-16 10:20:00'
 tags:
   - leetcode

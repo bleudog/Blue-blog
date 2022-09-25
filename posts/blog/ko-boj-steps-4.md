@@ -1,13 +1,15 @@
 ---
-title: 'BOJ 04: 1차원 배열'
-date: "2022-08-13 10:00:00"
-tags: [BaekjoonOJ]
+title: 'BOJ 04: Array'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 04 - Array'
+date: '2022-08-13 10:00:00'
+tags:
+	- BaekjoonOJ
 lang: ko
 about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 네 번째 단계 [1차원 배열](https://www.acmicpc.net/step/6)의 풀이입니다.
-
 
 # 1546. 평균
 
@@ -34,7 +36,7 @@ fn main() {
 	let mut nums: Vec<i32> = read_vec();
 
 	nums.sort();
-	let max = nums[nums.len()-1] as f32; 
+	let max = nums[nums.len()-1] as f32;
 	let mut avg: f32 = 0.0;
 
 	for i in 0..nums.len() {
@@ -81,7 +83,7 @@ fn main() {
 
 # 3052. Modulo
 
-modulo 42를 하기 때문에 최대 배열을 42개로 잡았다. 연산이 끝난 후, 배열을 돌면서  해당 값이 사용되었으면 `cnt+1`을 한다.
+modulo 42를 하기 때문에 최대 배열을 42개로 잡았다. 연산이 끝난 후, 배열을 돌면서 해당 값이 사용되었으면 `cnt+1`을 한다.
 지금 생각해보면 배열을 `i32`가 아니라 `boolean`으로 해도 괜찮았을 것 같다.
 
 ```rust
@@ -106,7 +108,7 @@ fn main() {
     for i in 0..42 {
         cnt += arr[i as usize];
     }
-    
+
     println!("{}", cnt);
 }
 ```
@@ -206,7 +208,7 @@ fn main() {
 		for i in 0..chars.len() {
 			if chars[i] == 'O'{
 				score += point;
-				point += 1;	
+				point += 1;
 			} else {
 				point = 1;
 			}

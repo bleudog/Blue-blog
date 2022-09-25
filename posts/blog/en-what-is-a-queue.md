@@ -1,5 +1,7 @@
 ---
-title: 'Queue?'
+title: 'Queue: Array'
+posttitle: 'Queue'
+postsubtitle: 'Array Implementation'
 date: '2022-07-10 22:00:00'
 tags:
   - queue

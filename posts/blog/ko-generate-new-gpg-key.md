@@ -1,8 +1,10 @@
 ---
-title: GPG key 생성하기
-date: "2022-04-05"
-tags: 
-  - github 
+title: 'GitHub: GPG key 생성하기'
+posttitle: 'GitHub'
+postsubtitle: 'GPG Key 생성하기'
+date: '2022-04-05'
+tags:
+  - github
   - gpg
 lang: ko
 about: log
@@ -13,6 +15,7 @@ gpg (GnuPG) 2.3.3
 ## GPG key 페어 생성
 
 터미널을 열고 아래의 명령어를 입력.
+
 ```sh
 $ gpg --full-generate-key
 ```
@@ -55,43 +58,45 @@ Key is valid for? (0) 1y
 
 입력한 정보들을 확인하고 동의를 하면 GPG key의 생성이 완료된다.
 
-## GitHub: GPG Key 추가 
+## GitHub: GPG Key 추가
 
 우선 사용할 GPG key의 ID를 알아야한다.
 
 터미널을 열고 아래의 명령어를 입력.
+
 ```sh
 $ gpg --list-secret-keys --keyid-format=long
 ```
 
-그러면 아래와 같은 값이 출력된다. 
+그러면 아래와 같은 값이 출력된다.
 여기서 GPG Key ID는 `SAMPLE4371567BD2`이다. 이 부분을 복사한다.
 
 ```sh
 ------------------------------------
 sec   4096R/SAMPLE4371567BD2 2016-03-10 [expires: 2023-04-05]
-uid                          Rolemadelen <rolemadelen@pm.me> 
+uid                          Rolemadelen <rolemadelen@pm.me>
 ssb   4096R/42B317FD4BA89E7A 2016-03-10 [expires: 2023-04-05]
 ------------------------------------
 ```
 
 위에서 복사한 값을 가지고 아래의 명령어를 입력한다.
+
 ```sh
 $ gpg --armor --export SAMPLE4371567BD2
 ```
 
-해당 명령어는 GPG key ID를 ASCII armor 형태의 문자로 변환해준다. 
+해당 명령어는 GPG key ID를 ASCII armor 형태의 문자로 변환해준다.
 
 ```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-        
+
         <ASCII armor text>
 
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-`BEGIN`과 `END`열을 포함, 그 사이에 값들을 전부 복사한다. 
-이 값을 사용하여 GitHub에 새로운 GPG key를 추가하는 것이 가능하다. 
+`BEGIN`과 `END`열을 포함, 그 사이에 값들을 전부 복사한다.
+이 값을 사용하여 GitHub에 새로운 GPG key를 추가하는 것이 가능하다.
 
 ---
 

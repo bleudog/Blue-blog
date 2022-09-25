@@ -1,7 +1,9 @@
 ---
-title: "What is a Linked List?"
-date: "2022-07-31 15:00:00"
-tags: 
+title: 'What is a Linked List'
+posttitle: 'Linked List'
+postsubtitle: 'Part 01: What is a Linked List?'
+date: '2022-07-31 15:00:00'
+tags:
   - linked list
 lang: en
 about: ds
@@ -16,7 +18,6 @@ A Linked List is a linear data structure where data elements are connected via s
 ![Singly Linked List](/images/posts/linked-list/singly-linked-list.svg)
 
 Singly Linked List is a unidirectional linked list that only one-way traversing is allowed. Each node contains a data and a pointer to reference the next node.
-
 
 ```c
 struct Node {
@@ -33,7 +34,6 @@ struct Node {
 
 In doubly linked list, every node has two pointers to reference a node one before and after the current node. Benefit of having two pointers is that we can traverse in either direction: forward and backward.
 
-
 ```c
 struct Node {
     struct Node *next;
@@ -45,6 +45,7 @@ struct Node {
 ---
 
 ## Circular Linked List
+
 In a circular linked list, the last node's pointer references back to the first node in the list.
 
 ![Circular Singly Linked List](/images/posts/linked-list/circular-singly-linked-list.svg)
@@ -60,6 +61,7 @@ If implemented with a singly linked list, the last node's pointer will reference
 # Linked List Operations
 
 Here are four common operations done in a linked list:
+
 - **Insert** - adds a new node to the linked list
 - **Delete** - removes the existing node from the list
 - **Search** - find a node in the linked list
@@ -68,6 +70,7 @@ Here are four common operations done in a linked list:
 ---
 
 See also:
+
 - [Singly Linked List](./singly-linked-list)
 - [Doubly Linked List](./doubly-linked-list)
 - [Circular Linked List](./circular-linked-list)

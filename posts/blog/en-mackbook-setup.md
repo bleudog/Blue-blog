@@ -1,5 +1,7 @@
 ---
 title: 'Mac Setup 2022'
+posttitle: 'Mac Setup 2022'
+postsubtitle: 'Web Development'
 date: '2022-09-15 07:00:00'
 tags:
   - mac

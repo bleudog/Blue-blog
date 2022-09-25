@@ -1,14 +1,17 @@
 ---
-title: 'BOJ 09: 재귀 (WIP)'
-date: "2022-08-14"
-tags: [BaekjoonOJ]
+title: 'BOJ 09: Recursion'
+posttitle: 'Baekjoon OJ'
+postsubtitle: 'Part 09 - Recursion'
+date: '2022-08-14'
+tags:
+	- BaekjoonOJ
 lang: ko
 about: cp
 ---
 
 백준 온라인저지 [단계별로 문제풀기](https://www.acmicpc.net/step)의 아홉 번째 단계 [재귀](https://www.acmicpc.net/step/19) 풀이입니다.
 
-# 10872 팩토리얼	
+# 10872 팩토리얼
 
 팩토리얼은 단순 for문으로도 구할 수 있지만, 학습을 위해 재귀를 써 봅시다.
 
@@ -33,7 +36,7 @@ fn main() {
 
 ---
 
-# 10870 피보나치 수 5	
+# 10870 피보나치 수 5
 
 피보나치 수 역시 단순 for문으로도 구할 수 있지만, 학습을 위해 재귀를 써 봅시다.
 
@@ -59,7 +62,7 @@ fn main() {
 
 ---
 
-# 17478 재귀함수가 뭔가요?	
+# 17478 재귀함수가 뭔가요?
 
 재귀함수를 배우면서 재귀함수를 배우는 문제
 
@@ -114,6 +117,7 @@ fn main() {
 # 11729 하노이 탑 이동 순서
 
 재귀적인 패턴을 찾아서 재귀함수로 찍는 문제
+
 ```rust
 // https://www.acmicpc.net/problem/11729
 ```
