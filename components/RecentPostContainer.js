@@ -31,12 +31,12 @@ const RecentPostsContainer = ({ posts, title, link }) => {
             passHref
           >
             <RPPost>
-              <Date
+              {/* <Date
                 dateString={date}
                 customClass={
                   'text-sm w-auto break-normal inline-block mr-2'
                 }
-              />
+              /> */}
               <Title> {title} </Title>
             </RPPost>
           </Link>
