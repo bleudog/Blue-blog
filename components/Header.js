@@ -16,7 +16,9 @@ const Header = () => {
               <NavLink
                 key={tab.link}
                 link={tab.link}
-                customClass={'hover:bg-[#1691ff1c] p-2 rounded-lg'}
+                customClass={
+                  "font-['AmazonEmberDisplay'] hover:bg-[#1691ff1c] p-2 rounded-lg"
+                }
                 value={tab.name}
               />
             ))}

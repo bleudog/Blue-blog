@@ -1,25 +1,35 @@
-import Date from "@components/Date";
-import Link from "next/link";
-import { PostContainer, PageTitle, BackButton, Tag } from "./custom-tw-components";
-import { LanguageList, LanguageListWrapper } from "./custom-tw-components";
-import { useRouter } from "next/router";
-import utilStyles from "@styles/utils.module.scss";
-import Head from "next/head";
+import Date from '@components/Date';
+import Link from 'next/link';
+import {
+  PostContainer,
+  PageTitle,
+  PageSecondTitle,
+  BackButton,
+  Tag,
+} from './custom-tw-components';
+import {
+  LanguageList,
+  LanguageListWrapper,
+} from './custom-tw-components';
+import { useRouter } from 'next/router';
+import utilStyles from '@styles/utils.module.scss';
+import Head from 'next/head';
 
-const Post = ({ post, tags, title, date, children }) => {
+const Post = ({ post, tags, title, subtitle, date, children }) => {
   const router = useRouter();
   return (
     <PostContainer className={utilStyles.loadDown}>
       <Head>
         <title>{title}</title>
       </Head>
+      <PageTitle>{title}</PageTitle>
+      <PageSecondTitle>{subtitle}</PageSecondTitle>
       <Date
         dateString={date}
-        customClass={"text-sm break-normal inline-block"}
+        customClass={'mt-2 mb-2 text-sm break-normal inline-block'}
       />
-      <PageTitle>{title}</PageTitle>
       {tags && (
-        <div>
+        <div className={'text-center'}>
           {tags.map((tag, idx) => (
             <Tag key={`${tag}-${idx}`}>#{tag}</Tag>
           ))}
@@ -28,7 +38,10 @@ const Post = ({ post, tags, title, date, children }) => {
       {post && (
         <LanguageListWrapper>
           {post.availableLanguage.map((post) => (
-            <LanguageList className="languageSelector" key={`${post.lang}-${post.slug}`}>
+            <LanguageList
+              className="languageSelector"
+              key={`${post.lang}-${post.slug}`}
+            >
               <Link href={`/blog/${post.lang}/${post.slug}`}>
                 <a>{post.langName}</a>
               </Link>
@@ -38,8 +51,8 @@ const Post = ({ post, tags, title, date, children }) => {
       )}
       <hr />
       <BackButton onClick={() => router.back()}>
-        {(post.lang === 'ja') ? '← 戻る' : '← back'}
-        </BackButton>
+        {post.lang === 'ja' ? '← 戻る' : '← back'}
+      </BackButton>
       {children}
     </PostContainer>
   );

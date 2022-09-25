@@ -3,6 +3,15 @@
 @import "tailwindcss/utilities";
 @import "@styles/colors.module";
 
+@font-face {
+    font-family: AmazonEmberDisplay;
+    src: url(../public/font/AmazonEmberDisplay.otf);
+}
+@font-face {
+    font-family: AmazonEmberDisplayMedium;
+    src: url(../public/font/AmazonEmberDisplayMedium.ttf);
+}
+
 $--root: 18px;
 $--text: 16px;
 
@@ -29,17 +38,19 @@ h2,
 h3,
 h4,
 h5 {
+    font-family: AmazonEmberDisplayMedium;
     padding-top: 0.7em;
     padding-bottom: 0.5em;
 }
 
 h1 {
     font-size: 1.8em;
+    font-weight: bold;
 }
 
 h2 {
     font-size: 1.6em;
-    padding: 0.2em 0;
+    padding: 0.4em 0;
 }
 
 h2:before {

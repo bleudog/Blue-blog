@@ -1,9 +1,9 @@
-import tw from "tailwind-styled-components";
+import tw from 'tailwind-styled-components';
 
 //////////////////////////////////////////////////////
 ///  Blog Layout
 //////////////////////////////////////////////////////
-export const PostListContainer = tw.ul` 
+export const PostListContainer = tw.ul`
     list-none
     p-0
     m-0
@@ -16,24 +16,25 @@ export const PostListContainer = tw.ul`
 ///  Blog Post Layout
 //////////////////////////////////////////////////////
 export const Article = tw.article`
-    text-primary 
-    pb-5 
-    border-b-[1px] 
+    text-primary
+    pb-5
+    border-b-[1px]
 `;
 
 //////////////////////////////////////////////////////
 ///  LanguageSelector Layout
 //////////////////////////////////////////////////////
-export const LanguageListWrapper = tw.ul` 
+export const LanguageListWrapper = tw.ul`
     flex
     mt-3
     mb-4
     p-1
     overflow-x-auto
     duration-75
+    sm:justify-center
 `;
-    
-export const LanguageList = tw.li` 
+
+export const LanguageList = tw.li`
     min-w-max
     min-w-fit
     list-none
@@ -53,7 +54,7 @@ export const LanguageList = tw.li`
 ///  Post Component
 //////////////////////////////////////////////////////
 export const PostContainer = tw.section`
-    mt-8
+    mt-4
     text-primary
     text-sm
     w-full
@@ -65,7 +66,7 @@ export const PostTitle = tw.div`
     font-bold
 `;
 
-export const LanguageButtons = tw.div` 
+export const LanguageButtons = tw.div`
     flex
     absolute
     right-0
@@ -84,8 +85,8 @@ export const List = tw.li`
     cursor-pointer
 `;
 
-export const Title = tw.div` 
-    text-primary 
+export const Title = tw.div`
+    text-primary
     font-normal
     cursor-pointer
     duration-150
@@ -96,7 +97,7 @@ export const Title = tw.div`
 ///  Home Layout
 //////////////////////////////////////////////////////
 
-export const Banner = tw.div` 
+export const Banner = tw.div`
     relative
     text-center
 `;
@@ -111,20 +112,35 @@ export const PageHeader = tw.header`
     justify-center
 `;
 
-export const PageTitle = tw.div` 
+export const PageTitle = tw.div`
     font-bold
-    text-3xl
-    sm:text-4xl 
-    md:leading-tight 
-    text-gray-800 
+    uppercase
+    font-['AmazonEmberDisplayMedium']
+    text-4xl
+    sm:text-5xl
+    md:leading-tight
+    text-gray-800
+    text-center
+    text-[#4e72b0]
 `;
 
-export const PageSubtitle = tw.div` 
-    mt-3 
+export const PageSecondTitle = tw.div`
+    font-['AmazonEmberDisplay']
+    text-2xl
+    mt-3
+    mb-1
+    md:leading-tight
+    text-gray-800
+    text-center
+`;
+
+export const PageSubtitle = tw.div`
+    mt-3
     text-md
     md:text-lg
     font-light
     whitespace-pre-line
+    text-center
 `;
 
 //////////////////////////////////////////////////////
@@ -142,31 +158,31 @@ export const RPHeader = tw.div`
 `;
 
 export const RPTitle = tw.div`
-    py-2 
-    text-xl 
-    md:text-2xl 
-    font-semibold 
+    py-2
+    text-xl
+    md:text-2xl
+    font-semibold
     text-primary
 `;
 
 export const RPPosts = tw.ul`
-    list-none 
-    flex 
-    flex-wrap 
+    list-none
+    flex
+    flex-wrap
     justify-evenly
 `;
 
 export const RPPost = tw.li`
-    flex 
-    flex-col 
-    sm:flex-row 
-    sm:items-center 
+    flex
+    flex-col
+    sm:flex-row
+    sm:items-center
     pl-2
     pr-2
     mt-1
     mb-1
-    rounded w-full 
-    list-none 
+    rounded w-full
+    list-none
     duration-300
     cursor-pointer
     hover:bg-[#1691ff1c]
@@ -180,31 +196,31 @@ export const DocAsideContainer = tw.section`
     h-full
     pr-4
     pt-5
-    
+
     relative
     flex
     flex-col
     overflow-y-scroll
-    
+
     duration-300
 `;
 export const DocAsideHeader = tw.span`
     mt-2
-    
+
     text-1
     text-primary
 `;
 export const DocAsideLink = tw.a`
     px-2
-    
+
     text-[0.8em]
     text-[#2a75e9]
     leading-5
     my-[0.4em]
-    
+
     hover:text-[#1691ff1c]
     hover:no-underline
-    
+
     duration-300
 `;
 
@@ -224,21 +240,21 @@ export const BaseContainer = tw.section`
 //////////////////////////////////////////////////////
 ///  Footer Component
 //////////////////////////////////////////////////////
-export const FooterContainer = tw.footer` 
-    flex 
+export const FooterContainer = tw.footer`
+    flex
     justify-between
-    items-center 
+    items-center
     my-8
     px-2
-    text-sm 
-    text-primary 
+    text-sm
+    text-primary
 `;
 
 //////////////////////////////////////////////////////
 ///  Header Component
 //////////////////////////////////////////////////////
 export const HeaderContainer = tw.header`
-    flex 
+    flex
     relative
     items-center
     justify-between
@@ -258,7 +274,7 @@ export const BackButton = tw.button`
 
     shadow
     active:shadow-none
-`
+`;
 
 export const Tag = tw.span`
     min-w-full
@@ -269,4 +285,4 @@ export const Tag = tw.span`
     text-xs
     bg-[#f0f0f0]
     text-[#999]
-`
+`;

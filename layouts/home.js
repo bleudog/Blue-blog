@@ -1,11 +1,11 @@
-import Image from "next/image";
-import Footer from "@components/Footer";
-import Container from "@components/Container";
-import RecentPostContainer from "@components/RecentPostContainer";
-import PageBanner from "@components/PageBanner";
-import utilStyles from "@styles/utils.module.scss";
-import { Banner } from "@components/custom-tw-components";
-import profileImg from "../public/images/profile.png";
+import Image from 'next/image';
+import Footer from '@components/Footer';
+import Container from '@components/Container';
+import RecentPostContainer from '@components/RecentPostContainer';
+import PageBanner from '@components/PageBanner';
+import utilStyles from '@styles/utils.module.scss';
+import { Banner } from '@components/custom-tw-components';
+import profileImg from '../public/images/profile.png';
 
 const HomeLayout = ({ blog }) => {
   return (
@@ -14,19 +14,23 @@ const HomeLayout = ({ blog }) => {
         <Image
           priority
           className={utilStyles.circleImage}
-          width={174}
-          height={150}
+          width={214}
+          height={190}
           src={profileImg}
           alt="Rolemadelen"
         />
         <PageBanner
-          title={"Failure leads to understanding."}
+          title={'Failure leads to understanding'}
           subtitle={
             "If you're a living organism, failure in life is inevitable. \nWe fail by default -- so let's learn from it."
           }
         />
       </Banner>
-      <RecentPostContainer title={"Recent Logs"} link={"blog/"} posts={blog}/>
+      <RecentPostContainer
+        title={'Recent Logs'}
+        link={'blog/'}
+        posts={blog}
+      />
       <Footer />
     </Container>
   );
