@@ -56,7 +56,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 - initialize 2 pointers: front and rear
 - LOOP
   - if front (or rear) is not alpha-numeric, increase (or decrease)
-  - return `false` if front value != rear value because they're not pailndrome
+  - return `false` if front value != rear value because they're not palindrome
   - repeat above process
 - LOOP END
 - return `true`

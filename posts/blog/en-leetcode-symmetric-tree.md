@@ -94,5 +94,5 @@ Therefore, the worst time complexity is going to be **O(V)**, `V` = number of no
 
 # Space Complexity
 
-As we visit each node, we'll be enqueing all child nodes to the queue. So, the worst space complexity will be
+As we visit each node, we'll be enqueuing all child nodes to the queue. So, the worst space complexity will be
 **O(V)** where `V` = number of nodes or vertices.

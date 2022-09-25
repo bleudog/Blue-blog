@@ -41,7 +41,7 @@ Output: 2
 
 # Approach
 
-At first, I was going to use the [babylonian method](blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html) to find the square root.
+At first, I was going to use the [Babylonian method](blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html) to find the square root.
 
 However, we're only using integers here meaning we don't need to worry about decimal points at all. So, I used a binary search.
 

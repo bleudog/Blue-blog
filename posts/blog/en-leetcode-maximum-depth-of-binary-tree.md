@@ -15,11 +15,11 @@ Link: [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leet
 
 # Problem Statement
 
-Given the root of a binary tree, return its maximum depth.
+Given the `root` of a binary tree, return its maximum depth.
 
-A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+A binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
-Example 1:
+**Example 1:**
 ![Tree](https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg)
 
 ```text
@@ -29,7 +29,7 @@ Output: 3
 
 ---
 
-Example 2:
+**Example 2:**
 
 ```text
 Input: root = [1,null,2]

@@ -74,6 +74,6 @@ Let `n` be the length of the first string in the list (`n = strs[0].length()`) a
 
 # Space Complexity
 
-I'm not quite sure whether I should consider `string ans = ""` as extra space or not, but lets just say we should.
+I'm not quite sure whether I should consider `string ans = ""` as extra space or not, but let's just say we should.
 
 We know for sure that our answer wont be longer than the shortest word in the list. So the worst space complexity would be **O(S)** where `S` is a length of shortest word in the list.

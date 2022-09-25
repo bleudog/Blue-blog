@@ -28,7 +28,7 @@ Given a roman numeral, convert it to an integer.
 # Approach
 
 - Scan the string from left to right.
-- Add up corresponding values whan the symbol is either `V`, `L`, `D`, or `M`.
+- Add up corresponding values when the symbol is either `V`, `L`, `D`, or `M`.
 - Other symbols have special cases: `IV`, `IX`, `XL`, `XC`, `CD`, and `CM`.
   - For `I`, check if next character is `V` or `X`
   - For `X`, check if next character is `L` or `C`
@@ -101,4 +101,4 @@ We iterate through the string `S` times, where `S = string.length()`, therefore,
 
 # Space Complexity
 
-We didn't use any extra storage to store variables. The space complextiy is **O(1)**.
+We didn't use any extra storage to store variables. The space complexity is **O(1)**.
