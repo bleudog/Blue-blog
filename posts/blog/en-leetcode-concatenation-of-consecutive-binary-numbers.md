@@ -21,7 +21,7 @@ Given an integer `n`, return _the **decimal value** of the binary string formed 
 
 **Example 1:**
 
-```text1
+```text
 Input: n = 1
 Output: 1
 
