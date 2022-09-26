@@ -74,11 +74,19 @@ h3:before {
 }
 
 h4 {
-    font-size: 1.3em;
+    font-size: 1.2em;
+}
+
+h4:before {
+    content: "";
+    padding: 0 10px;
+    background-color: rgb(158 84 119 / 38%);
+    margin-right: 0.3em;
+    border-radius: 20px 0;
 }
 
 h5 {
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 
 main {
