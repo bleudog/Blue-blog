@@ -41,9 +41,7 @@ Output: false
 
 # Approach
 
-We cannot use same letter twice, so all we need to do is once we found `word[0]`, we proceed checking in all 4 directions using DFS.
-
-At first though, I was only checking the `next` and `down`
+Since we can't use the same letter twice, we just need to find the position of `word[0]`. Then, we'll proceed with checking all 4 directions using DFS.
 
 # Code
 
