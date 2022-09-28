@@ -25,6 +25,9 @@ const ExploreMoreContainer = ({ title }) => {
           <Link key={'data structure'} href={'/blog/log'}>
             <Category>Log</Category>
           </Link>
+          <Link key={'data structure'} href={'/blog'}>
+            <Category>View All</Category>
+          </Link>
         </CategoryList>
       </div>
     </>
