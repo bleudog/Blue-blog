@@ -2,7 +2,7 @@
 title: '0019. Remove Nth Node From End of List'
 posttitle: 'Leetcode #0019'
 postsubtitle: 'Remove Nth Node From End of List'
-date: '2022-09-29 05:055:00'
+date: '2022-09-29 05:30:00'
 tags:
   - leetcode
   - top interview questions
