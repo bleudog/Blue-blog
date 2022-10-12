@@ -49,40 +49,16 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding: 0.4em 0;
 }
 
-h2:before {
-    content: "";
-    padding: 0 10px;
-    background-color: rgba(0, 43, 123, 0.38);
-    margin-right: 0.3em;
-    border-radius: 20px 0;
-}
-
 h3 {
-    font-size: 1.4em;
-}
-
-h3:before {
-    content: "";
-    padding: 0 10px;
-    background-color: rgb(84 158 106 / 38%);
-    margin-right: 0.3em;
-    border-radius: 20px 0;
-}
-
-h4 {
     font-size: 1.2em;
 }
 
-h4:before {
-    content: "";
-    padding: 0 10px;
-    background-color: rgb(158 84 119 / 38%);
-    margin-right: 0.3em;
-    border-radius: 20px 0;
+h4 {
+    font-size: 1.1em;
 }
 
 h5 {
