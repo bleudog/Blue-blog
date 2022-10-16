@@ -110,20 +110,21 @@ function romanToInt(s: string): number {
   let num = 0;
   const SIZE = s.length;
 
-  let mp = new Map<string, number>();
-  mp.set('I', 1);
-  mp.set('IV', 4);
-  mp.set('V', 5);
-  mp.set('IX', 9);
-  mp.set('X', 10);
-  mp.set('XL', 40);
-  mp.set('L', 50);
-  mp.set('XC', 90);
-  mp.set('C', 100);
-  mp.set('CD', 400);
-  mp.set('D', 500);
-  mp.set('CM', 900);
-  mp.set('M', 1000);
+  let mp = new Map<string, number>([
+    ['I', 1],
+    ['IV', 4],
+    ['V', 5],
+    ['IX', 9],
+    ['X', 10],
+    ['XL', 40],
+    ['L', 50],
+    ['XC', 90],
+    ['C', 100],
+    ['CD', 400],
+    ['D', 500],
+    ['CM', 900],
+    ['M', 1000],
+  ]);
 
   for (let i = 0; i < SIZE; ) {
     const roman = s[i] + s[i + 1];
