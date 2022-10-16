@@ -95,10 +95,45 @@ public:
 };
 ```
 
-# Time Complexity
+### Complexity
 
 We iterate through the string `S` times, where `S = string.length()`, therefore, the worst case time complexity is **O(S)**.
 
-# Space Complexity
-
 We didn't use any extra storage to store variables. The space complexity is **O(1)**.
+
+## TypeScript
+
+I could've used HashMap rather than using bunch of if-statements or switch.
+
+```ts
+function romanToInt(s: string): number {
+  let num = 0;
+  const SIZE = s.length;
+
+  let mp = new Map<string, number>();
+  mp.set('I', 1);
+  mp.set('IV', 4);
+  mp.set('V', 5);
+  mp.set('IX', 9);
+  mp.set('X', 10);
+  mp.set('XL', 40);
+  mp.set('L', 50);
+  mp.set('XC', 90);
+  mp.set('C', 100);
+  mp.set('CD', 400);
+  mp.set('D', 500);
+  mp.set('CM', 900);
+  mp.set('M', 1000);
+
+  for (let i = 0; i < SIZE; ) {
+    const roman = s[i] + s[i + 1];
+    const word = mp.get(roman) ? roman : s[i];
+    num += mp.get(word);
+    i += word.length;
+  }
+
+  return num;
+}
+```
+
+Time complexity would be linear since lookup is amortized O(1) in hashmap.
