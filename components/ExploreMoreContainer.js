@@ -6,28 +6,28 @@ const ExploreMoreContainer = ({ title }) => {
       <CategoryHeader>{/* <span>{title}</span> */}</CategoryHeader>
       <div className={'category'}>
         <CategoryList>
-          <Link key={'data structure'} href={'/blog/ds'}>
+          <Link key={'data structure'} href={'/blog/ds'} passHref>
             <Category>
               Data Structures
               <span className='newPost'>NEW</span>
             </Category>
           </Link>
-          <Link key={'data structure'} href={'/blog/algo'}>
+          <Link key={'data structure'} href={'/blog/algo'} passHref>
             <Category>Algorithms</Category>
           </Link>
           <Link key={'data structure'} href={'/blog/programming'}>
             <Category>Programming</Category>
           </Link>
-          <Link key={'data structure'} href={'/blog/cp'}>
+          <Link key={'data structure'} href={'/blog/cp'} passHref>
             <Category>
               Competetive Programming
               <span className='newPost'>NEW</span>
             </Category>
           </Link>
-          <Link key={'data structure'} href={'/blog/log'}>
+          <Link key={'data structure'} href={'/blog/log'} passHref>
             <Category>Log</Category>
           </Link>
-          <Link key={'data structure'} href={'/blog'}>
+          <Link key={'data structure'} href={'/blog'} passHref>
             <Category>View All</Category>
           </Link>
         </CategoryList>
