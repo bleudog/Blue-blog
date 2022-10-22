@@ -16,99 +16,118 @@ A **singly linked list** is a linear collection of data elements. The order of t
 
 The simplest form of the element in a linked list called node, composes of data and a reference to the next link. This structure allows for efficient insertion and removal of elements from any position in the linked list. A drawback of linked lists is that access time is linear.
 
-## Pseudo-code
+## Pseudocode for Basic Operations
 
-### Access (get Nth node)
+### Access
 
-```rb
-# position -> 1-based index (1,2,3,...)
+```text
+getNode(head, i) → Node | ø
+    Pre: head is the 1st node in the list
+         i is a 1-based index of the node in the list we're trying to get
+    Post: ith node is returned from the list
 
-def getNthNode(position)
-    current = this.head
+    curr ← head
+    i    ← 1
 
-    for i=1 and i < position
-        current = current.next
-    end
+    WHILE i < pos
+      curr ← curr.next
+    END WHILE
 
-    return current
-end
+    RETURN current
+END getNode
 ```
 
 ### Search
 
-```rb
-def search(value)
-    current = this.head
+```text
+def search(head, value) → Node | ø
+    Pre: head is the 1st node in the list
+         value is the value to search for
+    Post: returns a node with the value; othewrise return ø (null)
 
-    while current.next != nil
-        if current.value === value
-            return true
-        end
+    current ← head
 
-        current = current.next
-    end
+    WHILE current
+        IF current.value == value
+            RETURN current
+        END IF
 
-    return false
-end
+        current ← current.next
+    END WHILE
+
+    RETURN ø
+END search
 ```
 
 ### prepend
 
-A function to insert a node in the beginning of the list.
+```text
+prepend(head, value) → void
+    Pre: head is the 1st node in the list
+         value is the value we're going to insert
+    Post: a new node has been inserted at the head of the list
 
-```rb
-def prepend(value)
-    newNode = new Node(value)
+    n ← Node(value)
 
-    if this.head == nil
-        this.head = newNode
-    else
-        newNode.next = this.head
-        this.head = newNode
-    end
-end
+    IF this.head == ø
+        this.head ← n
+    ELSE
+        n.next ← head
+        head   ← n
+    END IF
+end prepend
 ```
 
 ### append
 
-A function to insert a node at the end of the list.
+```text
+append(head, value)
+    Pre: head is the 1st node in the list
+         value is the value we're going to insert in the list
+    Post: a new node has been inserted at the end of the list
 
-```rb
-def append(value)
-    newNode = new Node(value)
+    n ← Node(value)
 
-    if this.head == nil
-        this.head = newNode
-    else
-        current = this.head
-        while current.next != nil
-            current = current.next
-        end
+    IF this.head == ø
+        this.head ← n
+    ELSE
+        current ← this.head
+        WHILE current.next
+            current ← current.next
+        END
 
-        current.next = newNode
-    end
-end
+        current.next ← n
+    END IF
+END append
 ```
 
 ### delete
 
-```rb
-def delete(value)
-    if this.head == nil
-        return nil
-    end
+```text
+delete(head, value) → Node | ø
+    Pre: head is the 1st node in the list
+         value is the value we're going to remove from the list
+    Post: a node has been removed from the list and returned; otherwise, return ø (null)
 
-    current = this.head
-    while current.next != nil
-        if current.next.value == value
-            deletedNode = current.next
-            current.next = current.next.next
+    IF head == ø
+        RETURN ø
+    ELSIF head == value
+        deletedNode ← head
+        head        ← head.next
+        RETURN deletedNode
+    END
+
+    current ← head
+    WHILE current.next
+        IF current.next.value == value
+            deletedNode  ← current.next
+            current.next ← current.next.next
             return deletedNode
-        end
-    end
+        END
+    END
 
-    return nil
-end
+    return ø
+END delete
 ```
 
 ## Time Complexity
@@ -120,8 +139,8 @@ end
 
 ## Space Complexity
 
-**O(n)**
+- **O(n)**
 
 ---
 
-- [Singly Linked List Implementation in TypeScript](https://github.com/rolemadelen/DataStructures-and-Algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)
+[Singly Linked List Implementation in TypeScript](https://github.com/rolemadelen/DataStructures-and-Algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)
