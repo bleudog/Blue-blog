@@ -3,158 +3,125 @@ title: 'Singly Linked List'
 posttitle: 'Linked List'
 postsubtitle: 'Part 02: Singly Linked List'
 date: '2022-07-31 15:50:00'
+updated: '2022-10-22 12:00:00'
 tags:
   - linked list
 lang: en
 about: ds
 ---
 
-# What is a Singly Linked List?
-
-Singly Linked List is a unidirectional linked list that only one-way traversing is allowed. Each node contains a data and a pointer to reference the next node.
+A **singly linked list** is a linear collection of data elements. The order of the element is not given by their physical location in memory. Instead, each element points to the next node using the address.
 
 ![Singly Linked List](/images/posts/linked-list/singly-linked-list.svg)
 
-Here's a structure of node implemented in Ruby:
+The simplest form of the element in a linked list called node, composes of data and a reference to the next link. This structure allows for efficient insertion and removal of elements from any position in the linked list. A drawback of linked lists is that access time is linear.
+
+## Pseudo-code
+
+### Access (get Nth node)
 
 ```rb
-class Node
-    attr_accessor :next
-    attr_reader :data
+# position -> 1-based index (1,2,3,...)
 
-    def initialize(value)
-        @data = value
-        @next = nil
+def getNthNode(position)
+    current = this.head
+
+    for i=1 and i < position
+        current = current.next
+    end
+
+    return current
+end
+```
+
+### Search
+
+```rb
+def search(value)
+    current = this.head
+
+    while current.next != nil
+        if current.value === value
+            return true
+        end
+
+        current = current.next
+    end
+
+    return false
+end
+```
+
+### prepend
+
+A function to insert a node in the beginning of the list.
+
+```rb
+def prepend(value)
+    newNode = new Node(value)
+
+    if this.head == nil
+        this.head = newNode
+    else
+        newNode.next = this.head
+        this.head = newNode
     end
 end
 ```
 
-These are methods that I'm gonna go over in this post:
+### append
 
-- Insert
-  - `push_front(value)`
-  - `push_back(value)`
-  - `insert_at(position, value)`
-- Delete
-  - `pop_front`
-  - `pop_back`
-  - `delete_at(position)`
+A function to insert a node at the end of the list.
+
+```rb
+def append(value)
+    newNode = new Node(value)
+
+    if this.head == nil
+        this.head = newNode
+    else
+        current = this.head
+        while current.next != nil
+            current = current.next
+        end
+
+        current.next = newNode
+    end
+end
+```
+
+### delete
+
+```rb
+def delete(value)
+    if this.head == nil
+        return nil
+    end
+
+    current = this.head
+    while current.next != nil
+        if current.next.value == value
+            deletedNode = current.next
+            current.next = current.next.next
+            return deletedNode
+        end
+    end
+
+    return nil
+end
+```
+
+## Time Complexity
+
+- Access: **O(N)**
+- Search: **O(N)**
+- Insertion: **O(1)**
+- Deletion: **O(1)**
+
+## Space Complexity
+
+**O(n)**
 
 ---
 
-I'm using a dummy head in my implementation. By doing this, I don't have to worry about performing operations on a `nil` or an empty list.
-
-```rb
-class SinglyLinkedList
-    def initialize
-        @dummy_head = Node.new(0)
-    end
-end
-```
-
-# Insert Operations
-
-## push_front
-
-Inserts a new node at the beginning of the list.
-
-```rb
-def push_front(value)
-    new_node = Node.new(value)
-    new_node.next = @dummy_head.next
-    @dummy_head.next = new_node
-end
-```
-
-## push_back
-
-Inserts a new node at the end of the list.
-
-```rb
-def push_back(value)
-    curr = @dummy_head
-    while curr.next != nil
-        curr = curr.next
-    end
-    curr.next = Node.new(value)
-end
-```
-
-## insert_at
-
-Inserts a new node in the middle of the list.
-
-```rb
-# 1-based index
-def insertAt(position, value)
-    new_node = Node.new(value)
-    curr = @dummy_head
-
-    (position-1).times do
-        curr = curr.next
-    end
-
-    new_node.next = curr.next
-    curr.next = new_node
-end
-```
-
----
-
-# Delete Operations
-
-## pop_front
-
-Removes the first element from the list.
-
-```rb
-def pop_front
-    return if self.empty?
-
-    data = @dummy_head.next.data
-    @dummy_head.next = @dummy_head.next.next
-    data
-end
-```
-
-## pop_back
-
-Removes the last element from the list.
-
-```rb
-def pop_back
-    return if self.empty?
-    return pop_front if self.size == 1
-
-    curr = @dummy_head.next
-    while curr.next.next
-        curr = curr.next
-    end
-
-    data = curr.next.data
-    curr.next = nil
-    data
-end
-```
-
-## delete_at
-
-Removes a node in the middle of the list.
-
-```rb
-# 1-based index
-def deleteAt(position)
-    curr = @dummy_head
-    (position-1).times do
-        curr = curr.next
-    end
-
-    data = curr.next.data
-    curr.next = curr.next.next
-    data
-end
-```
-
----
-
-Check full implementation from [here](https://github.com/rolemadelen/DataStructures-and-Algorithms/blob/main/02-linkedlists/singly-linked-list/ruby/main.rb)
+- [Singly Linked List Implementation in TypeScript](https://github.com/rolemadelen/DataStructures-and-Algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)

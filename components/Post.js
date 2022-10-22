@@ -7,15 +7,12 @@ import {
   BackButton,
   Tag,
 } from './custom-tw-components';
-import {
-  LanguageList,
-  LanguageListWrapper,
-} from './custom-tw-components';
+import { LanguageList, LanguageListWrapper } from './custom-tw-components';
 import { useRouter } from 'next/router';
 import utilStyles from '@styles/utils.module.scss';
 import Head from 'next/head';
 
-const Post = ({ post, tags, title, subtitle, date, children }) => {
+const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
   const router = useRouter();
   return (
     <PostContainer className={utilStyles.loadDown}>
@@ -24,10 +21,19 @@ const Post = ({ post, tags, title, subtitle, date, children }) => {
       </Head>
       <PageTitle>{title}</PageTitle>
       <PageSecondTitle>{subtitle}</PageSecondTitle>
-      <Date
-        dateString={date}
-        customClass={'mt-2 mb-2 text-sm break-normal inline-block'}
-      />
+      {updated === null && (
+        <Date
+          dateString={date}
+          customClass={'mt-2 mb-2 text-sm break-normal inline-block'}
+        />
+      )}
+      {updated !== null && (
+        <Date
+          updated={true}
+          dateString={updated}
+          customClass={'mt-2 mb-2 text-sm break-normal inline-block'}
+        />
+      )}
       {tags && (
         <div className={'text-center'}>
           {tags.map((tag, idx) => (
@@ -39,9 +45,8 @@ const Post = ({ post, tags, title, subtitle, date, children }) => {
         <LanguageListWrapper>
           {post.availableLanguage.map((post) => (
             <LanguageList
-              className="languageSelector"
-              key={`${post.lang}-${post.slug}`}
-            >
+              className='languageSelector'
+              key={`${post.lang}-${post.slug}`}>
               <Link href={`/blog/${post.lang}/${post.slug}`}>
                 <a>{post.langName}</a>
               </Link>

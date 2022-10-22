@@ -16,11 +16,10 @@ const BlogPostLayout = ({ post }) => {
         subtitle={post.postsubtitle}
         tags={post.tags}
         date={post.date}
+        updated={post.updated ? post.updated : null}
       />
       <Article className={utilStyles.loadUp}>
-        <ReactMarkdown components={Codeblock}>
-          {post.markdown}
-        </ReactMarkdown>
+        <ReactMarkdown components={Codeblock}>{post.markdown}</ReactMarkdown>
       </Article>
       <Comments />
       <Footer />

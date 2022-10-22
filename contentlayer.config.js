@@ -1,7 +1,4 @@
-import {
-  defineDocumentType,
-  makeSource,
-} from 'contentlayer/source-files';
+import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import highlight from 'rehype-highlight';
 
 export const urlFromFilePath = (doc) => {
@@ -16,6 +13,7 @@ export const Blog = defineDocumentType(() => ({
     posttitle: { type: 'string', required: true },
     postsubtitle: { type: 'string', required: false },
     date: { type: 'date', required: true },
+    updated: { type: 'date', required: false },
     lang: { type: 'string', required: true },
     about: { type: 'string', required: false },
     tags: { type: 'string', required: false },
