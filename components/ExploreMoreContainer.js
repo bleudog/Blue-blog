@@ -15,7 +15,7 @@ const ExploreMoreContainer = ({ title }) => {
           <Link key={'data structure'} href={'/blog/algo'} passHref>
             <Category>Algorithms</Category>
           </Link>
-          <Link key={'data structure'} href={'/blog/programming'}>
+          <Link key={'data structure'} href={'/blog/programming'} passHref>
             <Category>Programming</Category>
           </Link>
           <Link key={'data structure'} href={'/blog/cp'} passHref>
