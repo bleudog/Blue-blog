@@ -11,9 +11,9 @@ lang: en
 about: cp
 ---
 
-Link: [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+https://leetcode.com/problems/maximum-depth-of-binary-tree/
 
-# Problem Statement
+## Problem Statement
 
 Given the `root` of a binary tree, return its maximum depth.
 
@@ -27,8 +27,6 @@ Input: root = [3,9,20,null,null,15,7]
 Output: 3
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -36,9 +34,9 @@ Input: root = [1,null,2]
 Output: 2
 ```
 
-# Code
+## Code
 
-## C++ : DFS
+### Method 1: DFS
 
 ```cpp
 class Solution {
@@ -49,7 +47,7 @@ public:
 };
 ```
 
-## C++ : BFS
+### Method 2: BFS
 
 ```cpp
 class Solution {

@@ -11,21 +11,31 @@ lang: en
 about: cp
 ---
 
-# Problem Statement
+## 0013. Roman To Integer
 
-[https://leetcode.com/problems/roman-to-integer/](https://leetcode.com/problems/roman-to-integer/)
+https://leetcode.com/problems/roman-to-integer/
+
+## Problem Statement
 
 Given a roman numeral, convert it to an integer.
 
-- `I` : `1`
-- `V` : `5`
-- `X` : `10`
-- `L` : `50`
-- `C` : `100`
-- `D` : `500`
-- `M` : `1000`
+| Roman Numeral | Integer |
+| :-----------: | :-----: |
+|       I       |    1    |
+|      IV       |    4    |
+|       V       |    5    |
+|      IX       |    9    |
+|       X       |   10    |
+|      XL       |   40    |
+|       L       |   50    |
+|      XC       |   90    |
+|       C       |   100   |
+|      CD       |   400   |
+|       D       |   500   |
+|      CM       |   900   |
+|       M       |  1000   |
 
-# Approach
+## Approach
 
 - Scan the string from left to right.
 - Add up corresponding values when the symbol is either `V`, `L`, `D`, or `M`.
@@ -34,9 +44,9 @@ Given a roman numeral, convert it to an integer.
   - For `X`, check if next character is `L` or `C`
   - For `C`, check if next character is `D` or `M`
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -95,13 +105,12 @@ public:
 };
 ```
 
-### Complexity
+- Time Complexity: iterate through the string `S` times, where `S = string.length()`, therefore, the worst case time complexity is **O(S)**.
+- Space Complexity: We didn't use any extra storage to store variables. The space complexity is **O(1)**.
 
-We iterate through the string `S` times, where `S = string.length()`, therefore, the worst case time complexity is **O(S)**.
+---
 
-We didn't use any extra storage to store variables. The space complexity is **O(1)**.
-
-## TypeScript
+### TypeScript
 
 I could've used HashMap rather than using bunch of if-statements or switch.
 
@@ -137,4 +146,4 @@ function romanToInt(s: string): number {
 }
 ```
 
-Time complexity would be linear since lookup is amortized O(1) in hashmap.
+- Time Complexity: **O(N)** since lookup is amortized O(1) in hashmap.

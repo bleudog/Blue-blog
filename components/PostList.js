@@ -8,10 +8,12 @@ const PostList = ({ posts }) => {
         <Link
           key={`${post.lang}-${post.slug}-$`}
           href={`/blog/${post.lang}/${post.slug}`}
-          passHref
-        >
+          passHref>
           <List>
-            <Title>{post.title}</Title>
+            <Title>
+              {post.title}
+              {post.updated && <span className='updated'>updated</span>}
+            </Title>
           </List>
         </Link>
       ))}

@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0079. Word Search
+## 0079. Word Search
 
-[https://leetcode.com/problems/word-search/](https://leetcode.com/problems/word-search/)
+https://leetcode.com/problems/word-search/
 
-# Problem Statement
+## Problem Statement
 
 Given an `m x n` grid of characters `board` and a string `word`, return `true` _if_ `word` _exists in the grid_.
 
@@ -29,8 +29,6 @@ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "
 Output: true
 ```
 
----
-
 **Example 2:**
 ![Sample2](https://assets.leetcode.com/uploads/2020/10/15/word3.jpg)
 
@@ -39,13 +37,13 @@ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "
 Output: false
 ```
 
-# Approach
+## Approach
 
 Since we can't use the same letter twice, we just need to find the position of `word[0]`. Then, we'll proceed with checking all 4 directions using DFS.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -87,7 +85,7 @@ public:
 };
 ```
 
-# Time Complexity
+### Time Complexity
 
 - `N` = row
 - `M` = column

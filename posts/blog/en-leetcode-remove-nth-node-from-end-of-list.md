@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0019. Remove Nth Node From End of List
+## 0019. Remove Nth Node From End of List
 
-[https://leetcode.com/problems/remove-nth-node-from-end-of-list/](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
-# Problem Statement
+## Problem Statement
 
 Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.
 
@@ -28,16 +28,12 @@ Input: head = [1,2,3,4,5], n = 2
 Output: [1,2,3,5]
 ```
 
----
-
 **Example 2:**
 
 ```text
 Input: head = [1], n = 1
 Output: []
 ```
-
----
 
 **Example 3:**
 
@@ -46,7 +42,7 @@ Input: head = [1,2], n = 1
 Output: [1]
 ```
 
-# Approach
+## Approach
 
 **Two Pass:**
 
@@ -58,9 +54,9 @@ In order to solve it in 1-pass, we need to use two pointers `fast` and `slow`.
 
 We first traverse the list using the `fast` node `n` times. Then, we traverse `fast` and `slow` nodes together until `fast` node becomes `null`. In 1-pass, we found the position of the node to be deleted. And all we have to do is set the current node to be the next node.
 
-# Code
+## Code
 
-## 2-Pass
+### 2-Pass
 
 ```cpp
 class Solution {
@@ -96,7 +92,9 @@ public:
 };
 ```
 
-## 1-Pass
+---
+
+### 1-Pass
 
 ```cpp
 class Solution {
@@ -123,6 +121,4 @@ public:
 };
 ```
 
-# Complexity
-
-For both algorithms, the worst time complexity is **O(N)**.
+Time Complexity: for both algorithms, the worst time complexity is **O(N)**.

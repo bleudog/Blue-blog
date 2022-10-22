@@ -10,11 +10,11 @@ lang: en
 about: cp
 ---
 
-# 0027. Remove Element
+## 0027. Remove Element
 
-[https://leetcode.com/problems/remove-element/](https://leetcode.com/problems/remove-element/)
+https://leetcode.com/problems/remove-element/
 
-# Problem Statement
+## Problem Statement
 
 Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm). The relative order of the elements may be changed.
 
@@ -34,8 +34,6 @@ Explanation: Your function should return k = 2, with the first two elements of n
 It does not matter what you leave beyond the returned k (hence they are underscores).
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -47,13 +45,13 @@ Note that the five elements can be returned in any order.
 It does not matter what you leave beyond the returned k (hence they are underscores).
 ```
 
-# Approach
+## Approach
 
 Since I don't have to maintain the relative order of data in the list, I can simply swap its data with the last element in the list. For cases like `[3 2 2 3], delete = 3`, even if we swap the data it will still be `[3 2 2 3]`. So, I assigned a `null` value for deleted item before I swapped.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -74,10 +72,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-**O(N)**
-
-# Space Complexity
-
-**O(1)**
+- Time Complexity: **O(N)**
+- Space Complexity: **O(1)**

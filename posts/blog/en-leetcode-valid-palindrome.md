@@ -11,9 +11,11 @@ lang: en
 about: cp
 ---
 
-Link: [https://leetcode.com/problems/valid-palindrome/](https://leetcode.com/problems/valid-palindrome/)
+## 0125. Valid Palindrome
 
-# Problem Statement
+https://leetcode.com/problems/valid-palindrome/
+
+## Problem Statement
 
 A phrase is a **palindrome** if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 
@@ -24,34 +26,30 @@ Example 1:
 ```text
 Input: s = "A man, a plan, a canal: Panama"
 Output: true
+
+Explanation: "amanaplanacanalpanama" is a palindrome.
 ```
-
-**Explanation**: "amanaplanacanalpanama" is a palindrome.
-
----
 
 Example 2:
 
 ```text
 Input: s = "race a car"
 Output: false
+
+Explanation: "raceacar" is not a palindrome.
 ```
-
-**Explanation**: "raceacar" is not a palindrome.
-
----
 
 Example 3:
 
 ```text
 Input: s = " "
 Output: true
+
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
 ```
 
-**Explanation**: s is an empty string "" after removing non-alphanumeric characters.
-Since an empty string reads the same forward and backward, it is a palindrome.
-
-# Approach
+## Approach
 
 - initialize 2 pointers: front and rear
 - LOOP
@@ -61,9 +59,9 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 - LOOP END
 - return `true`
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -87,10 +85,7 @@ public:
 };
 ```
 
-# Time Complexity
-
-In worst case, we're iterating `n/2` times; thus, the worst time complexity is **O(n)**.
-
-# Space Complexity
-
-We're only using temporary variables, therefore the space complexity is just constant, **O(1)**.
+- Time Complexity
+  - in worst case, we're iterating `n/2` times; thus, the worst time complexity is **O(n)**.
+- Space Complexity
+  - we're only using temporary variables, therefore the space complexity is just constant, **O(1)**.

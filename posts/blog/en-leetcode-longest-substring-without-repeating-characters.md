@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0003. Longest Substring Without Repeating Characters
+## 0003. Longest Substring Without Repeating Characters
 
-[https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
-# Problem Statement
+## Problem Statement
 
 Given a string `s`, find the length of the **longest substring** without repeating characters.
 
@@ -28,8 +28,6 @@ Output: 3
 Explanation: The answer is "abc", with the length of 3.
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -38,8 +36,6 @@ Output: 1
 
 Explanation: The answer is "b", with the length of 1.
 ```
-
----
 
 **Example 3:**
 
@@ -51,9 +47,9 @@ Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 ```
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -76,10 +72,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-**O(S)**, where `S = length of a string`
-
-# Space Complexity
-
-O(256) => **O(1)**
+- Time Complexity: **O(S)**, where `S = length of a string`
+- Space Complexity: O(256) => **O(1)**

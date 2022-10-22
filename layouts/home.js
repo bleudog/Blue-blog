@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Footer from '@components/Footer';
 import Container from '@components/Container';
-import RecentPostContainer from '@components/RecentPostContainer';
 import ExploreMoreContainer from '@components/ExploreMoreContainer';
 import PageBanner from '@components/PageBanner';
 import utilStyles from '@styles/utils.module.scss';
@@ -18,12 +17,12 @@ const HomeLayout = ({ blog }) => {
           width={214}
           height={190}
           src={profileImg}
-          alt="Rolemadelen"
+          alt='Rolemadelen'
         />
         <PageBanner
           title={'Failure leads to understanding'}
           subtitle={
-            "If you're a living organism, failure in life is inevitable. \nWe fail by default -- so let's learn from it."
+            "If you're a human, failure in life is inevitable. \nWe fail by default. So try again and fail better."
           }
         />
       </Banner>

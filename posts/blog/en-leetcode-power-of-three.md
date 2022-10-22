@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0326. Power of Three
+## 0326. Power of Three
 
-[https://leetcode.com/problems/power-of-three/](https://leetcode.com/problems/power-of-three/)
+https://leetcode.com/problems/power-of-three/
 
-# Problem Statement
+## Problem Statement
 
 Given an integer `n`, return _`true` if it is a power of three. Otherwise, return `false`_.
 
@@ -30,8 +30,6 @@ Output: true
 Explanation: 27 = 3^3
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -40,8 +38,6 @@ Output: false
 
 Explanation: There is no x where 3^x = 0.
 ```
-
----
 
 **Example 3:**
 
@@ -52,9 +48,9 @@ Output: false
 Explanation: There is no x where 3^x = (-1).
 ```
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -72,10 +68,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-We're looping upto cube root of `n`, so the worst time complexity is going to be **O(N^{1/3})**.
-
-# Space Complexity
-
-**O(1)**
+- Time Complexity: we're looping upto cube root of `n`, so the worst time complexity is going to be **O(N^{1/3})**.
+- Space Complexity: **O(1)**

@@ -11,9 +11,11 @@ lang: en
 about: cp
 ---
 
-Link: [https://leetcode.com/problems/pascals-triangle/](https://leetcode.com/problems/pascals-triangle/)
+## 0118. Pascal's Triangle
 
-# Problem Statement
+https://leetcode.com/problems/pascals-triangle/
+
+## Problem Statement
 
 Given an integer numRows, return the first numRows of Pascal's triangle.
 
@@ -28,8 +30,6 @@ Input: numRows = 5
 Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 ```
 
----
-
 Example 2:
 
 ```text
@@ -37,7 +37,7 @@ Input: numRows = 1
 Output: [[1]]
 ```
 
-# Approach
+## Approach
 
 Draw it out and you can see that position `[i][j]` is a sum of `[i-1][j-1] + [i-1][j]`.
 
@@ -45,9 +45,9 @@ Draw it out and you can see that position `[i][j]` is a sum of `[i-1][j-1] + [i-
 pascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j];
 ```
 
-# Code
+## Code
 
-## C++
+### C++
 
 My failed attempt:
 
@@ -74,7 +74,7 @@ public:
 };
 ```
 
-solution code:
+solution:
 
 ```cpp
 class Solution {
@@ -94,10 +94,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-**O(n^2)** where `n` is number of rows.
-
-# Space Complexity
-
-I'm not 100% sure but I think it's **O(n^2)**, because if you look at the way pascal values grow, it wont ever reach `n^2`.
+- Time Complexity: **O(n^2)** where `n` is number of rows.
+- Space Complexity: I'm not 100% sure but I think it's **O(n^2)**, because if you look at the way pascal values grow, it wont ever reach `n^2`.

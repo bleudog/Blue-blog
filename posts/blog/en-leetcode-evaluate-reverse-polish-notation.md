@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0150. Evaluate Reverse Polish Notation
+## 0150. Evaluate Reverse Polish Notation
 
 [https://leetcode.com/problems/evaluate-reverse-polish-notation/](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
-# Problem Statement
+## Problem Statement
 
 Evaluate the value of an arithmetic expression in [Reverse Polish Notation](http://en.wikipedia.org/wiki/Reverse_Polish_notation).
 
@@ -34,8 +34,6 @@ Output: 9
 Explanation: ((2 + 1) * 3) = 9
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -44,8 +42,6 @@ Output: 6
 
 Explanation: (4 + (13 / 5)) = 6
 ```
-
----
 
 **Example 3:**
 
@@ -62,16 +58,16 @@ Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 = 22
 ```
 
-# Approach
+## Approach
 
 - sum -> add two numbers in any order (`a+b` or `b+a`)
 - difference -> subtract in proper order (`b-a`)
 - product -> multiply in any order (`a*b` or `b*a`)
 - quotient -> divide in proper order (`b/a`)
 
-# Code
+## Code
 
-## C++
+### Solution 1
 
 ```cpp
 class Solution {
@@ -101,15 +97,12 @@ public:
 };
 ```
 
-### Time Complexity
+- Time Complexity: **O(S)**, where `S = tokens.size()`
+- Space Complexity: **O(S)**, where `S = tokens.size()`
 
-**O(S)**, where `S = tokens.size()`
+---
 
-### Space Complexity
-
-**O(S)**, where `S = tokens.size()`
-
-## Other Solution
+## Solution 2
 
 by [hercule24](https://leetcode.com/problems/evaluate-reverse-polish-notation/discuss/47514/Fancy-C%2B%2B-lambda-expression-solution)
 

@@ -3,6 +3,7 @@ title: '0069. Sqrt(x)'
 posttitle: 'Leetcode #0069'
 postsubtitle: 'Sqrt(x)'
 date: '2022-09-16 10:20:00'
+updated: '2022-10-19 07:00:00'
 tags:
   - leetcode
   - top interview questions
@@ -11,9 +12,11 @@ lang: en
 about: cp
 ---
 
-Link: [https://leetcode.com/problems/sqrtx/](https://leetcode.com/problems/sqrtx/)
+## 0069. Sqrt(x)
 
-# Problem Statement
+https://leetcode.com/problems/sqrtx/
+
+## Problem Statement
 
 Given a non-negative integer x, compute and return the square root of x.
 
@@ -21,31 +24,27 @@ Since the return type is an integer, the decimal digits are **truncated**, and *
 
 Note: You are not allowed to use any built-in exponent function or operator, such as `pow(x, 0.5)` or `x ** 0.5`.
 
-Example 1:
+**Example 1:**
 
 ```text
 Input: x = 4
 Output: 2
 ```
 
----
-
-Example 2:
+**Example 2:**
 
 ```text
 Input: x = 8
 Output: 2
+
+Explanation: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned.
 ```
 
-**Explanation**: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned.
-
-# Approach
+## Approach
 
 At first, I was going to use the [Babylonian method](blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html) to find the square root.
 
 However, we're only using integers here meaning we don't need to worry about decimal points at all. So, I used a binary search.
-
-# Code
 
 ## C++
 
@@ -73,10 +72,51 @@ public:
 };
 ```
 
-# Time Complexity
+- Time Complexity: we're using binary search here, so the worst time complexity is same as binary search which is **O(logn)**.
+- Space Complexity: no extra storage so **O(1)**.
 
-We're using binary search here, so the worst time complexity is same as binary search which is **O(logn)**.
+## TypeScript
 
-# Space Complexity
+### Method 1: Simple Iteration
 
-No extra storage so **O(1)**.
+```ts
+function mySqrt(x: number): number {
+  if (x <= 1) return x;
+
+  let cnt = 1;
+  while (cnt * cnt <= x) {
+    cnt += 1;
+  }
+
+  return cnt - 1;
+}
+```
+
+Time Complexity: `sqrt`만큼 반복하기 때문에 시간복잡도는 **O(sqrt N)**.
+
+### Method 2: Binary Search
+
+```ts
+function mySqrt(x: number): number {
+  if (x <= 1) return x;
+
+  let low = 0;
+  let high = x;
+  let res: number = 0;
+
+  while (low <= high) {
+    let mid = low + ((high - low) >> 1);
+
+    if (mid * mid <= x) {
+      res = mid;
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+
+  return res;
+}
+```
+
+Time Complexity: Binary search를 사용해서 검색하는 범위가 매번 반으로 줄어들기 때문에 시간복잡도는 **O(logn)**.

@@ -144,51 +144,6 @@ export const PageSubtitle = tw.div`
 `;
 
 //////////////////////////////////////////////////////
-/// RecentPostContainer Component
-//////////////////////////////////////////////////////
-export const RPContainer = tw.div`
-    mb-8
-`;
-
-export const RPHeader = tw.div`
-    flex
-    justify-between
-    items-center
-    mt-4
-`;
-
-export const RPTitle = tw.div`
-    py-2
-    text-xl
-    md:text-2xl
-    font-semibold
-    text-primary
-`;
-
-export const RPPosts = tw.ul`
-    list-none
-    flex
-    flex-wrap
-    justify-evenly
-`;
-
-export const RPPost = tw.li`
-    flex
-    flex-col
-    sm:flex-row
-    sm:items-center
-    pl-2
-    pr-2
-    mt-1
-    mb-1
-    rounded w-full
-    list-none
-    duration-300
-    cursor-pointer
-    hover:bg-[#1691ff1c]
-`;
-
-//////////////////////////////////////////////////////
 ///  DocAside  Component
 //////////////////////////////////////////////////////
 export const DocAsideContainer = tw.section`

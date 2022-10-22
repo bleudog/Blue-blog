@@ -11,13 +11,15 @@ lang: en
 about: cp
 ---
 
-Link: [https://leetcode.com/problems/symmetric-tree/](https://leetcode.com/problems/symmetric-tree/)
+## 0101. Symmetric Tree
 
-# Problem Statement
+https://leetcode.com/problems/symmetric-tree/
+
+## Problem Statement
 
 Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
 
-Example 1:
+**Example 1:**
 
 ![Tree](https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg)
 
@@ -26,7 +28,7 @@ Input: root = [1,2,2,3,4,4,3]
 Output: true
 ```
 
-# Approach
+## Approach
 
 I used BFS to scan the tree in level order and checked if two nodes are same or not.
 Be careful with the order of nodes you're enqueuing.
@@ -40,9 +42,9 @@ q.push(right_child->left);
 
 If you mess up the order, you wont be able to pop 2 nodes that you really want.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 /**
@@ -87,12 +89,7 @@ public:
 };
 ```
 
-# Time Complexity
-
-When a tree is symmetrical, we'll be checking every nodes in the queue.
-Therefore, the worst time complexity is going to be **O(V)**, `V` = number of nodes or vertices.
-
-# Space Complexity
-
-As we visit each node, we'll be enqueuing all child nodes to the queue. So, the worst space complexity will be
-**O(V)** where `V` = number of nodes or vertices.
+- Time Complexity
+  - When a tree is symmetrical, we'll be checking every nodes in the queue. Therefore, the worst time complexity is going to be **O(V)**, `V` = number of nodes or vertices.
+- Space Complexity
+  - As we visit each node, we'll be enqueuing all child nodes to the queue. So, the worst space complexity will be **O(V)** where `V` = number of nodes or vertices.

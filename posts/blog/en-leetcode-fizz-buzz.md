@@ -11,9 +11,11 @@ lang: en
 about: cp
 ---
 
-Link: [https://leetcode.com/problems/fizz-buzz/](https://leetcode.com/problems/fizz-buzz/)
+## 412. Fizz Buzz
 
-# Problem Statement
+[https://leetcode.com/problems/fizz-buzz/](https://leetcode.com/problems/fizz-buzz/)
+
+## Problem Statement
 
 Given an integer n, return a string array answer (1-indexed) where:
 
@@ -31,16 +33,12 @@ Input: n = 3
 Output: ["1","2","Fizz"]
 ```
 
----
-
 Example 2:
 
 ```text
 Input: n = 5
 Output: ["1","2","Fizz","4","Buzz"]
 ```
-
----
 
 Example 3:
 
@@ -49,16 +47,16 @@ Input: n = 15
 Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 ```
 
-# Approach
+## Approach
 
 - Check if a number is divisible by 3 and 5 which is simply checking for 15 -> `FizzBuzz`
 - Check if a number is divisible by 5 -> `Buzz`
 - Check if a number is divisible by 3 -> `Fizz`
 - If none, print the integer as a string -> `to_string(integer)`
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -83,10 +81,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-We're iterating from `1` to `n`; thus the worst time complexity is **O(n)**.
-
-# Space Complexity
-
-**O(1)**
+- Time Complexity: we're iterating from `1` to `n`; thus the worst time complexity is **O(n)**.
+- Space Complexity: **O(1)**

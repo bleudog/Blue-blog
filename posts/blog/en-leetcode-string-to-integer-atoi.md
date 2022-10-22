@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0008. String to Integer (atoi)
+## 0008. String to Integer (atoi)
 
-[https://leetcode.com/problems/string-to-integer-atoi/](https://leetcode.com/problems/string-to-integer-atoi/)
+https://leetcode.com/problems/string-to-integer-atoi/
 
-# Problem Statement
+## Problem Statement
 
 Implement the `myAtoi(string s)` function, which converts a string to a 32-bit signed integer (similar to C/C++'s `atoi` function).
 
@@ -42,15 +42,15 @@ The parsed integer is 42.
 Since 42 is in the range [-231, 231 - 1], the final result is 42.
 ```
 
-# Approach
+## Approach
 
 I wasn't sure how to check overflowed number. So I added bunch of if-else statements here and there which made my code dirty.
 
 After I submitted my code, I learned from other solutions that I could've done it much easier. For overflowing, I can simply check `INT_MAX / 10` and make sure my last digit `num % 10` is less than `7` because `INT_MAX` in 32bits machine is `2147483647`. But `INT_MIN` is `-2147483648` (it ends with `8`), so I can check for the `sign` at the end and decide whether to return `INT_MAX` or `INT_MIN` for the overflow.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -113,15 +113,12 @@ public:
 };
 ```
 
-### Time Complexity
+- Time Complexity: **O(S^2)**, where S = length of a given string
+- Space Complexity: **O(S)**, because of the extra string variable `parseInt`
 
-**O(S^2)**, where S = length of a given string
+---
 
-### Space Complexity
-
-**O(S)**, because of the extra string variable `parseInt`
-
-## Other Solution
+### Other Solution
 
 ```cpp
 class Solution {
@@ -150,10 +147,5 @@ public:
 };
 ```
 
-### Time Complexity
-
-**O(S)**, where S = length of a given string
-
-### Space Complexity
-
-**O(1)**
+- Time Complexity: **O(S)**, where S = length of a given string
+- Space Complexity: **O(1)**

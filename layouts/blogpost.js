@@ -3,7 +3,7 @@ import Post from '@components/Post';
 import Footer from '@components/Footer';
 import Comments from '@components/Comments';
 import Container from '@components/Container';
-import Codeblock from '@lib/codeblock.js';
+import Preview from '@lib/codeblock.js';
 import { Article } from '@components/custom-tw-components';
 import utilStyles from '@styles/utils.module.scss';
 
@@ -19,7 +19,8 @@ const BlogPostLayout = ({ post }) => {
         updated={post.updated ? post.updated : null}
       />
       <Article className={utilStyles.loadUp}>
-        <ReactMarkdown components={Codeblock}>{post.markdown}</ReactMarkdown>
+        {/* <ReactMarkdown components={Codeblock}>{post.markdown}</ReactMarkdown> */}
+        <Preview markdown={post.markdown} />
       </Article>
       <Comments />
       <Footer />

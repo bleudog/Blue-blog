@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0002. Add Two Numbers
+## 0002. Add Two Numbers
 
 [https://leetcode.com/problems/add-two-numbers/](https://leetcode.com/problems/add-two-numbers/)
 
-# Problem Statement
+## Problem Statement
 
 You are given two **non-empty** linked lists representing two non-negative integers. The digits are stored in **reverse order**, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 
@@ -28,8 +28,6 @@ Input: l1 = [0], l2 = [0]
 Output: [0]
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -37,9 +35,9 @@ Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 Output: [8,9,9,9,0,0,0,1]
 ```
 
-# Code
+## Code
 
-## C++
+### Solution 1
 
 ```cpp
 class Solution {
@@ -84,15 +82,10 @@ public:
 };
 ```
 
-### Time Complexity
+- Time Complexity: **O(N + M)**, where `N = l1.length` & `M = l2.length`
+- Space Complexity: **O(L)**, where `L = l1.length + l2.length`
 
-**O(N + M)**, where `N = l1.length`, `M = l2.length`
-
-### Space Complexity
-
-**O(L)**, where `L = l1.length + l2.length`
-
-## Other solution
+### Solution 2
 
 ```cpp
 class Solution {

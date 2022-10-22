@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0350. Intersection of Two Arrays II
+## 0350. Intersection of Two Arrays II
 
 [https://leetcode.com/problems/intersection-of-two-arrays-ii/](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
 
-# Problem Statement
+## Problem Statement
 
 Given two integer arrays `nums1` and `nums2`, return _an array of their intersection_. Each element in the result must appear as many times as it shows in both arrays and you may return the result in **any order**.
 
@@ -26,8 +26,6 @@ Input: nums1 = [1,2,2,1], nums2 = [2,2]
 Output: [2,2]
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -37,13 +35,13 @@ Output: [4,9]
 Explanation: [9,4] is also accepted.
 ```
 
-# Approach
+## Approach
 
 I simply counted data in both arrays and extracted one that seen more than once.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -66,10 +64,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-Scanning two arrays linearly ≫ **O(N)**
-
-# Space Complexity
-
-O(1001) ≫ **O(1)**
+- Time Complexity: scanning two arrays linearly ≫ **O(N)**
+- Space Complexity: O(1001) ≫ **O(1)**

@@ -10,11 +10,11 @@ lang: en
 about: cp
 ---
 
-# 0658. Find K Closest Elements
+## 0658. Find K Closest Elements
 
 [https://leetcode.com/problems/find-k-closest-elements/](https://leetcode.com/problems/find-k-closest-elements/)
 
-# Problem Statement
+## Problem Statement
 
 Given a **sorted** integer array `arr`, two integers `k` and `x`, return the `k` closest integers to `x` in the array. The result should also be sorted in ascending order.
 
@@ -30,8 +30,6 @@ Input: arr = [1,2,3,4,5], k = 4, x = 3
 Output: [1,2,3,4]
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -39,15 +37,15 @@ Input: arr = [1,2,3,4,5], k = 4, x = -1
 Output: [1,2,3,4]
 ```
 
-# Approach
+## Approach
 
 At first I tried using a hashmap, but I forgot that it doesn't store duplicated keys. So I just use a `vector` with a `pair<int, int>`, which is going to be `pair<|a-x|, a>`.
 
 Then, I'll simply grab the first `k` elements from `vector<pair<int, int>>` and that'll be the answer.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -71,7 +69,5 @@ public:
 };
 ```
 
-# Complexity
-
-- Time complexity is O(n + n logn) which becomes **O(n logn)**. `n` is the length of the list.
-- Space complexity is **O(n)** because we're using an extra vector storage to store `n` or `arr.length` elements.
+- Time Complexity: O(n + n logn) which becomes **O(n logn)**. `n` is the length of the list.
+- Space Complexity: **O(n)** because we're using an extra vector storage to store `n` or `arr.length` elements.

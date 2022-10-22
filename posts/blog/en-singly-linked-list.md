@@ -16,6 +16,12 @@ A **singly linked list** is a linear collection of data elements. The order of t
 
 The simplest form of the element in a linked list called node, composes of data and a reference to the next link. This structure allows for efficient insertion and removal of elements from any position in the linked list. A drawback of linked lists is that access time is linear.
 
+## Complexity
+
+| Space | Access | Search | Insertion | Deletion |
+| :---: | :----: | :----: | :-------: | :------: |
+| O(n)  |  O(n)  |  O(n)  |   O(1)    |   O(n)   |
+
 ## Pseudocode for Basic Operations
 
 ### Access
@@ -130,17 +136,6 @@ delete(head, value) → Node | ø
 END delete
 ```
 
-## Time Complexity
-
-- Access: **O(N)**
-- Search: **O(N)**
-- Insertion: **O(1)**
-- Deletion: **O(1)**
-
-## Space Complexity
-
-- **O(n)**
-
 ---
 
-[Singly Linked List Implementation in TypeScript](https://github.com/rolemadelen/DataStructures-and-Algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)
+Full implementation of Singly Linked List can be found [here](https://github.com/rolemadelen/DataStructures-and-Algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts).

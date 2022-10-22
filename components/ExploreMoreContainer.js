@@ -1,9 +1,5 @@
 import Link from 'next/link';
-import {
-  CategoryList,
-  Category,
-  CategoryHeader,
-} from './custom-tw-components';
+import { CategoryList, Category, CategoryHeader } from './custom-tw-components';
 const ExploreMoreContainer = ({ title }) => {
   return (
     <>
@@ -11,7 +7,10 @@ const ExploreMoreContainer = ({ title }) => {
       <div className={'category'}>
         <CategoryList>
           <Link key={'data structure'} href={'/blog/ds'}>
-            <Category>Data Structures</Category>
+            <Category>
+              Data Structures
+              <span className='newPost'>NEW</span>
+            </Category>
           </Link>
           <Link key={'data structure'} href={'/blog/algo'}>
             <Category>Algorithms</Category>
@@ -20,7 +19,10 @@ const ExploreMoreContainer = ({ title }) => {
             <Category>Programming</Category>
           </Link>
           <Link key={'data structure'} href={'/blog/cp'}>
-            <Category>Competetive Programming</Category>
+            <Category>
+              Competetive Programming
+              <span className='newPost'>NEW</span>
+            </Category>
           </Link>
           <Link key={'data structure'} href={'/blog/log'}>
             <Category>Log</Category>

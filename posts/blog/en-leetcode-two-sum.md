@@ -13,7 +13,11 @@ lang: en
 about: cp
 ---
 
-# Problem Statement
+## 0001. Two Sum
+
+https://leetcode.com/problems/two-sum/
+
+## Problem Statement
 
 Given an array of integers `nums` and an integer `target`, return _indices of the two numbers such that they add up to `target`_.
 
@@ -30,8 +34,6 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -39,16 +41,12 @@ Input: nums = [3,2,4], target = 6
 Output: [1,2]
 ```
 
----
-
 **Example 3:**
 
 ```text
 Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
-
-# Code
 
 ## Rust
 
@@ -73,6 +71,8 @@ impl Solution {
     }
 }
 ```
+
+---
 
 ### HashMap
 
@@ -119,6 +119,8 @@ impl Solution {
 }
 ```
 
+---
+
 ## TypeScript
 
 ### Bruteforce
@@ -141,7 +143,9 @@ function twoSum(nums: number[], target: number): number[] {
 }
 ```
 
-Time complexity: O(N^2)
+- Time complexity: O(N^2)
+
+---
 
 ### HashMap
 
@@ -169,4 +173,4 @@ HashMap을 사용한 경우 get/set은 O(1)이기에 최종 시간 복잡도는 
 
 > The specification requires maps to be implemented "that, on average, provide access times that are sublinear on the number of elements in the collection". Therefore, it could be represented internally as a hash table (with O(1) lookup), a search tree (with O(log(N)) lookup), or any other data structure, as long as the complexity is better than O(N).
 
-ref: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+Ref: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)

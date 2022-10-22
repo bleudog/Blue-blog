@@ -11,9 +11,11 @@ lang: en
 about: cp
 ---
 
-Link: [https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+## 108. Convert Sorted Array to Binary Search Tree
 
-# Problem Statement
+[https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+## Problem Statement
 
 Given an integer array `nums` where the elements are sorted in **ascending order**, convert it to a **height-balanced** binary search tree.
 
@@ -25,13 +27,11 @@ A **height-balanced** binary tree is a binary tree in which the depth of the two
 ```text
 Input: nums = [-10,-3,0,5,9]
 Output: [0,-3,9,-10,null,5]
-```
 
 Explanation: [0,-10,5,null,-3,null,9] is also accepted:
+```
 
 ![Tree2](https://assets.leetcode.com/uploads/2021/02/18/btree2.jpg)
-
----
 
 **Example 2:**
 ![Tree3](https://assets.leetcode.com/uploads/2021/02/18/btree.jpg)
@@ -39,11 +39,11 @@ Explanation: [0,-10,5,null,-3,null,9] is also accepted:
 ```text
 Input: nums = [1,3]
 Output: [3,1]
-```
 
 Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
+```
 
-# Approach
+## Approach
 
 I actually had no idea how to approach this problem. I had to look up solutions 🥲
 
@@ -51,11 +51,9 @@ I found two beautiful solutions: one is using a recursion and other is using a D
 
 The general idea is to find the middle node in every iteration or recursion and construct a subtree based on that middle node. Why middle node? to make our BST balanced (I think? I mean it makes sense, because if you grab a middle node for every subtree, your tree wont ever be skewed).
 
-# Code
+## Code
 
-## C++
-
-Recursion:
+### Method 1: Recursion
 
 ```cpp
 class Solution {
@@ -77,7 +75,12 @@ public:
 };
 ```
 
-DFS:
+- Time complexity: **O(n)**, `n` is number of nodes
+- Space complexity: **O(logn)**, `n` is number of nodes
+
+---
+
+### Method 2: DFS
 
 ```cpp
 // Reference: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/discuss/2406623/c-straightforward-iterative-bfs-and-dfs-and-recursive-solution
@@ -109,12 +112,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-- Recursion: **O(n)**, `n` is number of nodes
-- DFS: **O(n)**
-
-# Space Complexity
-
-- Recursion: **O(logn)**, `n` is number of nodes
-- DFS: ?? I feel like it's gonna be more than `logn`.. but I'm not sure 🥲
+- Time Complexity: **O(n)**
+- Space Complexity: ?? I feel like it's gonna be more than `logn`.. but I'm not sure 🥲

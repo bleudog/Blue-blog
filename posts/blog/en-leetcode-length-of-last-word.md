@@ -10,11 +10,11 @@ lang: en
 about: cp
 ---
 
-# 058. Length of Last word
+## 058. Length of Last word
 
 [https://leetcode.com/problems/length-of-last-word/](https://leetcode.com/problems/length-of-last-word/)
 
-# Problem Statement
+## Problem Statement
 
 Given a string `s` consisting of words and spaces, return _the length of the **last** word in the string._
 
@@ -29,8 +29,6 @@ Output: 5
 Explanation: The last word is "World" with length 5.
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -39,8 +37,6 @@ Output: 4
 
 Explanation: The last word is "moon" with length 4.
 ```
-
----
 
 **Example 3:**
 
@@ -51,14 +47,14 @@ Output: 6
 Explanation: The last word is "joyboy" with length 6.
 ```
 
-# Approach
+## Approach
 
 I first removed all spaces at the end of the string `s`.
 Then, I simply counted number of characters until I encounter a space or beginning of the string.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -75,10 +71,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-**O(L + S)**, where `L = length of the last word` and `S = length of spaces` at the end
-
-# Space Complexity
-
-**O(1)**
+- Time Complexity: **O(L + S)**, where `L = length of the last word` and `S = length of spaces` at the end
+- Space Complexity: **O(1)**

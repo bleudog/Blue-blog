@@ -11,9 +11,11 @@ lang: en
 about: cp
 ---
 
-Link: [https://leetcode.com/problems/reverse-integer](https://leetcode.com/problems/reverse-integer/)
+## 0007. Reverse Integer
 
-# Problem Statement
+https://leetcode.com/problems/reverse-integer/
+
+## Problem Statement
 
 Given a signed 32-bit integer `x`, return `x` with its digits reversed. If reversing `x` causes the value to go outside the signed 32-bit integer range `[-2^31, 2^31 - 1]`, then return `0`.
 
@@ -26,16 +28,12 @@ Input: x = 123
 Output: 321
 ```
 
----
-
 **Example 2:**
 
 ```text
 Input: x = -123
 Output: -321
 ```
-
----
 
 **Example 3:**
 
@@ -44,7 +42,7 @@ Input: x = 120
 Output: 21
 ```
 
-# Approach
+## Approach
 
 I thought about reversing a number using `% 10` to get the last number and `* 10` to shift one to the left.
 
@@ -52,9 +50,7 @@ But since our number may overflow, I need to have a way to check before it overf
 
 If `sum == INT_MAX / 10`, I just need to check whether the number I'm going to add (`% 10`) is greater than `7` because `INT_MAX` in 32bits system ends with `7`.
 
-# Code
-
-## C++
+## Code
 
 ### Failed attempt
 
@@ -83,7 +79,7 @@ public:
 };
 ```
 
-### Passed
+### Solution
 
 ```cpp
 class Solution {

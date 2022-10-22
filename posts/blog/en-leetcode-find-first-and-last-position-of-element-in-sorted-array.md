@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0034. Find First and Last position of Element in Sorted Array
+## 0034. Find First and Last position of Element in Sorted Array
 
 [https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
-# Problem Statement
+## Problem Statement
 
 Given an array of integers `nums` sorted in non-decreasing order, find the starting and ending position of a given `target` value.
 
@@ -30,16 +30,12 @@ Input: nums = [5,7,7,8,8,10], target = 8
 Output: [3,4]
 ```
 
----
-
 **Example 2:**
 
 ```text
 Input: nums = [5,7,7,8,8,10], target = 6
 Output: [-1,-1]
 ```
-
----
 
 **Example 3:**
 
@@ -48,7 +44,7 @@ Input: nums = [], target = 0
 Output: [-1,-1]
 ```
 
-# Approach
+## Approach
 
 We're gonna use binary search because we need a logarithmic solution. One modification to the algorithm is that we're not going to terminate the algorithm when we found the target.
 
@@ -56,9 +52,9 @@ Imagine we have `[1,8,8,8,8,10]` and our target is `8`. If we return right at th
 
 For the last position of `8`, we simply look for the position of `9`. Then we subtract `1` from its position and that's going to be either the first position if `8` is the only number in the list, or the last position of `8`.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -85,10 +81,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-It takes logarithmic time to find the target, so it's **O(log n)**.
-
-# Space Complexity
-
-**O(1)**
+- Time Complexity: It takes logarithmic time to find the target, so it's **O(log n)**.
+- Space Complexity: **O(1)**

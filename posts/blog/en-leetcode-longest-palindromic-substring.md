@@ -11,11 +11,11 @@ lang: en
 about: cp
 ---
 
-# 0005. Longest Palindromic Substring
+## 0005. Longest Palindromic Substring
 
 https://leetcode.com/problems/longest-palindromic-substring/
 
-# Problem Statement
+## Problem Statement
 
 Given a string `s`, return _the longest palindromic substring_ in `s`.
 
@@ -30,8 +30,6 @@ Output: "bab"
 Explanation: "aba" is also a valid answer.
 ```
 
----
-
 **Example 2:**
 
 ```text
@@ -39,16 +37,16 @@ Input: s = "cbbd"
 Output: "bb"
 ```
 
-# Approach
+## Approach
 
 At first I was gonna append characters one by one and test whether it's a palindrome or not.
 If it's a palindrome, I'll remember that string and continue appending the next character and repeat the above process. But I soon realized this not gonna work for the case like `aba`. It will return false for `ab` and there's no way to get `aba`.
 
 I looked at the solution and their were many ways to solve it. With a help from [here](https://leetcode.com/problems/longest-palindromic-substring/discuss/2928/Very-simple-clean-java-solution), I decided to use a method where I start from one character, and start extending the range to check if a string is a palindrome.
 
-# Code
+## Code
 
-## C++
+### C++
 
 ```cpp
 class Solution {
@@ -84,10 +82,5 @@ public:
 };
 ```
 
-# Time Complexity
-
-**O(S^2)**, where `S = length of a string`
-
-# Space Complexity
-
-**O(1)**
+- Time Complexity: **O(S^2)**, where `S = length of a string`
+- Space Complexity: **O(1)**
