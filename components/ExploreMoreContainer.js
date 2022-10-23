@@ -7,10 +7,7 @@ const ExploreMoreContainer = ({ title }) => {
       <div className={'category'}>
         <CategoryList>
           <Link key={'data structure'} href={'/blog/ds'} passHref>
-            <Category>
-              Data Structures
-              <span className='newPost'>NEW</span>
-            </Category>
+            <Category>Data Structures</Category>
           </Link>
           <Link key={'data structure'} href={'/blog/algo'} passHref>
             <Category>Algorithms</Category>
@@ -19,10 +16,7 @@ const ExploreMoreContainer = ({ title }) => {
             <Category>Programming</Category>
           </Link>
           <Link key={'data structure'} href={'/blog/cp'} passHref>
-            <Category>
-              Competetive Programming
-              <span className='newPost'>NEW</span>
-            </Category>
+            <Category>Competetive Programming</Category>
           </Link>
           <Link key={'data structure'} href={'/blog/log'} passHref>
             <Category>Log</Category>
