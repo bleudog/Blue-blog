@@ -27,21 +27,21 @@ Return _the head of the merged linked list_.
 
 ![](https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg)
 
-```ex
+```text
 Input: list1 = [1,2,4], list2 = [1,3,4]
 Output: [1,1,2,3,4,4]
 ```
 
 **Example 2:**
 
-```ex
+```text
 Input: list1 = [], list2 = []
 Output: []
 ```
 
 **Example 3:**
 
-```ex
+```text
 Input: list1 = [], list2 = [0]
 Output: [0]
 ```

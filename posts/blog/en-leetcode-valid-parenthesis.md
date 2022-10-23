@@ -27,21 +27,21 @@ An input string is valid if:
 
 **Example 1:**
 
-```ex
+```text
 Input: s = "()"
 Output: true
 ```
 
 **Example 2:**
 
-```ex
+```text
 Input: s = "()[]{}"
 Output: true
 ```
 
 **Example 3:**
 
-```ex
+```text
 Input: s = "(]"
 Output: false
 ```

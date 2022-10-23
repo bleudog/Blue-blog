@@ -27,7 +27,7 @@ Do **not** allocate extra space for another array. You must do this by **modifyi
 
 **Example 1:**
 
-```ex
+```text
 Input: nums = [1,1,2]
 Output: 2, nums = [1,2,_]
 
@@ -37,7 +37,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Example 2:**
 
-```ex
+```text
 Input: nums = [0,0,1,1,1,2,2,3,3,4]
 Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
 
