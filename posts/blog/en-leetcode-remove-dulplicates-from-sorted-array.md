@@ -2,7 +2,7 @@
 title: '0026. Remove Duplicates from Sorted Array'
 posttitle: 'Leetcode #0026'
 postsubtitle: 'Remove Duplicates from Sorted Array'
-date: '2022-10-19 22:00:00'
+date: '2022-10-18 22:00:00'
 tags:
   - leetcode
   - top interview questions
@@ -25,27 +25,9 @@ Return `k` _after placing the final result in the first_ `k` _slots of_ `nums`.
 
 Do **not** allocate extra space for another array. You must do this by **modifying the input array [in-place](https://en.wikipedia.org/wiki/In-place_algorithm)** with O(1) extra memory.
 
-**Custom Judge:**
-
-The judge will test your solution with the following code:
-
-```text
-int[] nums = [...]; // Input array
-int[] expectedNums = [...]; // The expected answer with correct length
-
-int k = removeDuplicates(nums); // Calls your implementation
-
-assert k == expectedNums.length;
-for (int i = 0; i < k; i++) {
-    assert nums[i] == expectedNums[i];
-}
-```
-
-If all assertions pass, then your solution will be **accepted**.
-
 **Example 1:**
 
-```text
+```ex
 Input: nums = [1,1,2]
 Output: 2, nums = [1,2,_]
 
@@ -55,7 +37,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Example 2:**
 
-```text
+```ex
 Input: nums = [0,0,1,1,1,2,2,3,3,4]
 Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
 

@@ -92,7 +92,7 @@ function mySqrt(x: number): number {
 }
 ```
 
-Time Complexity: `sqrt`만큼 반복하기 때문에 시간복잡도는 **O(sqrt N)**.
+- Time complexity: **O(sqrt(n))**
 
 ### Method 2: Binary Search
 
@@ -119,4 +119,4 @@ function mySqrt(x: number): number {
 }
 ```
 
-Time Complexity: Binary search를 사용해서 검색하는 범위가 매번 반으로 줄어들기 때문에 시간복잡도는 **O(logn)**.
+Time complexity: **O(logn)**

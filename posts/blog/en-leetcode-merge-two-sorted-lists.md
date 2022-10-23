@@ -2,7 +2,7 @@
 title: '0021. Merge Two Sorted Lists'
 posttitle: 'Leetcode #0021'
 postsubtitle: 'Merge Two Sorted Lists'
-date: '2022-10-18 07:00:00'
+date: '2022-10-19 17:00:00'
 tags:
   - leetcode
   - top interview questions
@@ -15,13 +15,74 @@ about: cp
 
 https://leetcode.com/problems/merge-two-sorted-lists/
 
+## Problem Statement
+
+You are given the heads of two sorted linked lists `list1` and `list2`.
+
+Merge the two lists in a one **sorted** list. The list should be made by splicing together the nodes of the first two lists.
+
+Return _the head of the merged linked list_.
+
+**Example 1:**
+
+![](https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg)
+
+```ex
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
+```
+
+**Example 2:**
+
+```ex
+Input: list1 = [], list2 = []
+Output: []
+```
+
+**Example 3:**
+
+```ex
+Input: list1 = [], list2 = [0]
+Output: [0]
+```
+
 ## Approach
 
-- 두 리스트 중 하나가 `null`에 도달할 때까지 두 값을 비교.
-- 둘 중 작은 값을 가진 노드를 `head.next`에 연결.
-- 순회가 끝나면 `list1` 혹은 `list2`에 노드가 남아있는지 확인하고, 나머지를 그대로 `head` 맨뒤에 연결해준다.
+- Compare two values from the list until one of the them reaches the NULL
+- Link a node with the smaller value to the new list
+- After the iteration, link rest of the nodes to the end of the new list.
+
+```text
+mergeTwoLists(L1, L2) → ListNode | null
+  Pre: L1 and L2 are the list we're going to merge
+  Post: L1 and L2 is merged into one list sorted in ascending order
+
+  current ← new Node(0)
+  WHILE L1 and L2
+    IF L1.value < L2.value
+      current.next ← L1
+      L1           ← L1.next
+    ELSE
+      current.next ← L2
+      L2           ← L2.next
+    END IF
+
+    current ← current.next
+  END WHILE
+
+  IF L1
+    current.next ← L1
+  END IF
+
+  IF L2
+    current.next ← L2
+  END IF
+END
+```
 
 ## TypeScript
+
+### Solution 1
 
 ```ts
 function mergeTwoLists(
@@ -52,7 +113,12 @@ function mergeTwoLists(
 }
 ```
 
-Modified the code to use less space.
+- Time Complexity: **O(N + M)**
+- Space Complexity: **O(N + M)**
+
+### Solution 2
+
+Using less space.
 
 ```ts
 function mergeTwoLists(
@@ -83,6 +149,5 @@ function mergeTwoLists(
 }
 ```
 
-## Complexity
-
-`list1`의 노드의 개수가 `N`, `list2`의 크기가 `M`이라고 할 때, 시간복잡도는 O(min(N, M))이 된다.
+- Time Complexity: **O(N + M)**
+- Space Complexity: **O(1)**

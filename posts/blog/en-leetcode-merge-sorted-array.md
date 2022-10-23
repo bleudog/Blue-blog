@@ -3,7 +3,7 @@ title: '0088. Merge Sorted Array'
 posttitle: 'Leetcode #0088'
 postsubtitle: 'Merge Sorted Array'
 date: '2022-09-16 11:00:00'
-updated: '2022-10-22 21:00:00'
+updated: '2022-10-21 17:00:00'
 tags:
   - leetcode
   - top interview questions
@@ -138,9 +138,7 @@ The space complexity is **O(1)**.
 
 ### Method 1
 
-처음 문제를 봤을 때 딱 떠오른 방법. 그냥 단순히 두 리스트를 머지하는 것 처럼 비교하고 새로운 배열에 하나하나 추가한다. 그리고 마지막에 `nums1`에 덮어씌운다.
-
-in-place라고 했으니... 반칙일수도..
+We're not supposed to use an extra auxiliary storage for this problem, but this is one way to solve it if we weren't bound to the space restriction.
 
 ```ts
 function merge(nums1: number[], m: number, nums2: number[], n: number): void {
@@ -174,8 +172,8 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
 }
 ```
 
-- 시간 복잡도: **O(m+n)**
-- 공간 복잡도: **O(m+n)**
+- Time Complexity: **O(m+n)**
+- Space Complexity: **O(m+n)**
 
 ### Method 2: In-place
 
@@ -195,5 +193,5 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
 }
 ```
 
-- 시간 복잡도: **O(m+n)**
-- 공간 복잡도: **O(1)**
+- Time Complexity: **O(m+n)**
+- Space Complexity: **O(1)**

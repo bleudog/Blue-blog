@@ -15,11 +15,43 @@ about: cp
 
 https://leetcode.com/problems/valid-parentheses/
 
+## Problem Statement
+
+Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+
+An input string is valid if:
+
+1. Open brackets must be closed by the same type of brackets.
+2. Open brackets must be closed in the correct order.
+3. Every close bracket has a corresponding open bracket of the same type.
+
+**Example 1:**
+
+```ex
+Input: s = "()"
+Output: true
+```
+
+**Example 2:**
+
+```ex
+Input: s = "()[]{}"
+Output: true
+```
+
+**Example 3:**
+
+```ex
+Input: s = "(]"
+Output: false
+```
+
 ## Approach
 
-- `i`번째 문자가 open parenthesis일 경우 스택에 추가.
-- closed parenthesis일 경우 스택 top을 확인하고 페어인 경우 pop, 아니면 종료.
-- 반복문 종료 후, 스택에 괄호가 남아있는지 확인한다. empty면 `true` 아니면 `false`
+1. if `i_th` character is an open parenthesis, push it to the stack.
+2. if it's a closed parenthesis, check top of the stack if it matches.
+3. If it matches, pop it. Otherwise, return `false`.
+4. At the end of the iteration, check if the stack is empty. If it's empty, return `true` else `false`.
 
 ## TypeScript
 
@@ -55,4 +87,4 @@ function isValid(s: string): boolean {
 }
 ```
 
-- Time Complexity: 문자열을 한 번 순회하기 때문에 **O(S)**, `S = s.length`
+- Time Complexity: **O(S)**, `S = s.length`
