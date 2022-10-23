@@ -125,4 +125,4 @@ END reverseTraversal
 
 ---
 
-[Full implementation of Doubly Linked List TypeScript](https://github.com/rolemadelen/DataStructures-and-Algorithms/blob/main/src/data-structures/doubly-linked-list/DoublyLinkedList.ts)
+[Full implementation of Doubly Linked List TypeScript](https://github.com/rolemadelen/typescript-algorithms/tree/main/src/data-structures/doubly-linked-list)
