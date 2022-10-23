@@ -29,7 +29,7 @@ By repeating these steps, we can halve the search range in every iteration which
 
 ## Pseudocode
 
-```textile
+```text
 BinarySearch(arr, len, value) → number
     Pre: arr is a sorted array
          len is the total size
