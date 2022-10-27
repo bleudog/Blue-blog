@@ -1,8 +1,8 @@
 ---
 title: '0141. Linked List Cycle'
 posttitle: 'Leetcode #0141'
-postsubtitle: 'Merge Two Sorted Lists'
-date: '2022-10-19 17:00:00'
+postsubtitle: 'Linked List Cycle'
+date: '2022-10-27 17:00:00'
 tags:
   - leetcode
   - top interview questions
