@@ -20,7 +20,7 @@ The simplest form of the element in a linked list called node, composes of data 
 
 | Space | Access | Search | Insertion | Deletion |
 | :---: | :----: | :----: | :-------: | :------: |
-| O(n)  |  O(n)  |  O(n)  |   O(1)    |   O(n)   |
+| O(n)  |  O(n)  |  O(n)  |   O(1)    |   O(1)   |
 
 ## Pseudocode for Basic Operations
 
