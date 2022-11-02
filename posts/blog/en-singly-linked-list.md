@@ -142,22 +142,22 @@ END delete
 
 Linked list related problems selected from [Leetcode](https://leetcode.com/tag/linked-list/).
 
-| #             | Problem                                           | Difficulty |
-| :------------ | :------------------------------------------------ | :--------- |
-| [2][i2]       | Add Two Numbers                                   | Medium     |
-| [19][i19]     | Remove Nth Node From End of List                  | Medium     |
-| [21][i21]     | Merge Two Sorted Lists                            | Easy       |
-| [23][i23]     | Merge k Sorted Lists                              | Hard       |
-| [83][i83]     | Remove Duplicates from Sorted List                | Easy       |
-| [141][i141]   | Linked List Cycle                                 | Easy       |
-| [146][i146]   | LRU Cache                                         | Medium     |
-| [160][i160]   | Intersection of Two Linked Lists                  | Easy       |
-| [203][i203]   | Remove Linked List Elements                       | Easy       |
-| [206][i206]   | Reverse Linked List                               | Easy       |
-| [234][i234]   | Palindrome Linked List                            | Easy       |
-| [237][i237]   | Delete Node in a Linked List                      | Easy       |
-| [432][i432]   | All O`one Data Structure                          | Hard       |
-| [876][i876]   | Middle of the Linked List                         | Easy       |
+|       #       | Problem                                           | Difficulty |
+| :-----------: | :------------------------------------------------ | :--------- |
+|    [2][i2]    | Add Two Numbers                                   | Medium     |
+|   [19][i19]   | Remove Nth Node From End of List                  | Medium     |
+|   [21][i21]   | Merge Two Sorted Lists                            | Easy       |
+|   [23][i23]   | Merge k Sorted Lists                              | Hard       |
+|   [83][i83]   | Remove Duplicates from Sorted List                | Easy       |
+|  [141][i141]  | Linked List Cycle                                 | Easy       |
+|  [146][i146]  | LRU Cache                                         | Medium     |
+|  [160][i160]  | Intersection of Two Linked Lists                  | Easy       |
+|  [203][i203]  | Remove Linked List Elements                       | Easy       |
+|  [206][i206]  | Reverse Linked List                               | Easy       |
+|  [234][i234]  | Palindrome Linked List                            | Easy       |
+|  [237][i237]  | Delete Node in a Linked List                      | Easy       |
+|  [432][i432]  | All O`one Data Structure                          | Hard       |
+|  [876][i876]  | Middle of the Linked List                         | Easy       |
 | [1206][i1206] | Convert Binary Number in a Linked List to Integer | Easy       |
 | [1290][i1290] | Design Skiplist                                   | Hard       |
 | [1669][i1669] | Merge In Between Linked Lists                     | Medium     |
