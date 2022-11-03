@@ -130,3 +130,7 @@ Stack related problems selected from [GeeksForGeeks](https://practice.geeksforge
 [i15]: https://practice.geeksforgeeks.org/problems/reverse-each-word-in-a-given-string1001/1?page=2&category%5B%5D=Stack&sortBy=submissions
 [i16]: https://practice.geeksforgeeks.org/problems/queue-using-stack/1?page=3&category%5B%5D=Stack&sortBy=submissions
 [i17]: https://practice.geeksforgeeks.org/problems/clone-a-stack-without-usinig-extra-space/1?page=3&category%5B%5D=Stack&sortBy=submissions
+
+## See also
+
+- [Stack - Linked List](./stack-linked-list)
