@@ -81,8 +81,6 @@ END
 | :--: | :-----: | :-----: | :---: | :--: |
 | Time |  O(1)   |  O(1)   | O(1)  | O(1) |
 
----
-
 ## Limitations of Array Queue
 
 Imagine we have a fully occupied queue:
