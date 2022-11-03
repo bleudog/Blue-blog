@@ -18,7 +18,7 @@ One node(`tortoise`), will visit every node and move one step at a time.
 On the other hand, the second node(`hare`), will move twice faster than the `tortoise` node.
 That is, it will move 2 steps at a time.
 
-If there is no cycle in the list, either `tortoise` or `hare` will be at `NULL` and we know there is no cycle.
+If there is no cycle in the list, either `tortoise` or `hare` will be at `ø` and we know there is no cycle.
 Otherwise, two nodes will meet eventually and we can safely conclude that there is a cycle and return `true`.
 
 ![Tortoise and Hare Example](/images/posts/tortoise-and-hare/tortoise-and-hare.png)
@@ -34,7 +34,7 @@ has_cycle(Node head) {
     tortoise = tortoise->next
     hare = hare->next->next
 
-    return false if (tortoise == NULL) OR (hare == NULL)
+    return false if (tortoise == ø) || (hare == ø)
   }
 
   return true

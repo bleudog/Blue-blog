@@ -37,11 +37,11 @@ getNode(head, i) → Node | ø
     curr ← head
     i    ← 1
 
-    WHILE i < pos
+    WHILE (i < pos)
       curr ← curr.next
     END WHILE
 
-    RETURN current
+    return current
 END getNode
 ```
 
@@ -55,15 +55,15 @@ def search(head, value) → Node | ø
 
     current ← head
 
-    WHILE current
-        IF current.value == value
-            RETURN current
+    WHILE (current)
+        IF (current.value == value)
+            return current
         END IF
 
         current ← current.next
     END WHILE
 
-    RETURN ø
+    return ø
 END search
 ```
 
@@ -77,7 +77,7 @@ prepend(head, value) → void
 
     n ← Node(value)
 
-    IF this.head == ø
+    IF (this.head == ø)
         this.head ← n
     ELSE
         n.next ← head
@@ -96,11 +96,11 @@ append(head, value)
 
     n ← Node(value)
 
-    IF this.head == ø
+    IF (this.head == ø)
         this.head ← n
     ELSE
         current ← this.head
-        WHILE current.next
+        WHILE (current.next)
             current ← current.next
         END
 
@@ -117,17 +117,17 @@ delete(head, value) → Node | ø
          value is the value we're going to remove from the list
     Post: a node has been removed from the list and returned; otherwise, return ø (null)
 
-    IF head == ø
-        RETURN ø
-    ELSIF head == value
+    IF (head == ø)
+        return ø
+    ELSE IF (head == value)
         deletedNode ← head
         head        ← head.next
-        RETURN deletedNode
+        return deletedNode
     END
 
     current ← head
-    WHILE current.next
-        IF current.next.value == value
+    WHILE (current.next)
+        IF (current.next.value == value)
             deletedNode  ← current.next
             current.next ← current.next.next
             return deletedNode

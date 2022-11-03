@@ -56,15 +56,15 @@ removeDuplicates(nums, n, i=1) → number
        i is the index we'll use to track unique elements
   Post: first 'i' elements are unique without duplicates
 
-  FOR i = 1 and i < n
-    IF nums[i] != nums[i-1]
+  FOR (i=1 to n)
+    IF (nums[i] != nums[i-1])
       nums[pos] = nums[i]
-      i += 1
+      ++i;
     END IF
   END FOR
 
   // new array contains 'i' elements which is the size
-  RETURN i
+  return i
 END removeDuplicates
 ```
 

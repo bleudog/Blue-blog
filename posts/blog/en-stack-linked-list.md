@@ -1,7 +1,7 @@
 ---
 title: 'Stack: Linked List'
 posttitle: 'Stack'
-postsubtitle: 'Linked List Implementation'
+postsubtitle: 'Part 02: Linked List Implementation'
 date: '2022-07-09 07:30:00'
 updated: '2022-11-02 09:26:00'
 tags:
@@ -40,11 +40,11 @@ pop(top) → Node | null
 
     n   ← top
 
-    IF top AND top.next
+    IF (top && top.next)
         top ← top.next
     END IF
 
-    RETURN n
+    return n
 END
 ```
 
@@ -55,10 +55,10 @@ peek(top) → Node | ø
     Pre: top is the top node on the stack;
     Post: returns the top node on the stack; returns ø if stack is empty;
 
-    IF top
-        RETURN top.value
+    IF (top)
+        return top.value
     ELSE
-        RETURN ø
+        return ø
     END
 END
 ```
@@ -70,7 +70,7 @@ empty(top) → boolean
     Pre: top is the top node on the stack;
     Post: returns true if stack is empty; otherwise false;
 
-    RETURN top == ø
+    return top == ø
 END
 ```
 

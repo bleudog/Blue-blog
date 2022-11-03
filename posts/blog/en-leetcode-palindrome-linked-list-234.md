@@ -53,13 +53,13 @@ isPalindrome(head) → boolean
     cnt   ← 1
     stack ← Stack(slow)
 
-    WHILE fast AND fast.next
+    WHILE (fast && fast.next)
         slow ← slow.next
-        stack.PUSH(slow.val)
+        stack.push(slow.val)
         fast ← fast.next
         cnt  ← cnt + 1
 
-        IF NOT fast
+        IF (!fast)
             break
         END IF
 
@@ -67,25 +67,25 @@ isPalindrome(head) → boolean
         cnt  ← cnt + 1
     END WHILE
 
-    IF cnt.EVEN
-        stack.POP
+    IF (cnt.even)
+        stack.pop
     END IF
 
     fast ← slow.next
 
-    WHILE stack NOT EMPTY
-        tp ← stack.TOP
+    WHILE (!stack.empty)
+        tp ← stack.top
 
-        IF tp NOT EQ fast.val
-            RETURN false
+        IF (tp != fast.val)
+            return false
         END IF
     END WHILE
 
-    RETURN true
+    return true
 END
 ```
 
-above pseudocode didn't worked actually but that's the general idea.
+above pseudocode didn't worked actually but that's the gist of it.
 
 ### TypeScript
 

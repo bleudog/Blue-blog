@@ -49,7 +49,7 @@ pop(stack, top) → Type
     Post: top element has been removed from the stack
 
     val ← stack[--top]
-    RETURN val
+    return val
 END
 ```
 
@@ -61,7 +61,7 @@ peek(stack, top) → Type | undefined
          top is an index or a position in stack
     Post: returns the top element in the stack
 
-    RETURN stack[top - 1]
+    return stack[top - 1]
 END
 ```
 
@@ -73,7 +73,7 @@ empty(stack, top) → boolean
          top is an index or a position in stack
     Post: returns true if stack is empty; otherwise false;
 
-    RETURN top === 0
+    return top === 0
 END
 ```
 

@@ -45,13 +45,13 @@ From the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,
 
 ![](https://assets.leetcode.com/uploads/2021/03/05/160_example_3.png)
 
-```text
+````text
 Input: intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
 Output: No intersection
 
 Explanation: From the head of A, it reads as [2,6,4]. From the head of B, it reads as [1,5]. Since the two lists do not intersect, intersectVal must be 0, while skipA and skipB can be arbitrary values.
 Explanation: The two lists do not intersect, so return null.
-```
+```F
 
 ## Approach 1
 
@@ -64,25 +64,25 @@ getIntersectionNode(headA, headB, map) → Node
          map is a hash map used to check whether certain nodes are already visited or not
     Post: true is returned if intersection exists; otherwise false
 
-    IF headA == ø OR headB == ø
-        RETURN ø
+    IF (headA == ø or headB == ø)
+        return ø
     END IF
 
-    WHILE headA
-        map.INSERT(headA)
+    WHILE (headA)
+        map.insert(headA)
         headA ← headA.next
     END WHILE
 
-    WHILE headB
-        IF map.find(headB) IS NOT EQ map.END
-            RETURN headB
+    WHILE (headB)
+        IF (map.find(headB) != ø)
+            return headB
         END IF
         headB ← headB.next
     END WHILE
 
-    RETURN ø
+    return ø
 END
-```
+````
 
 ### TypeScript Code
 

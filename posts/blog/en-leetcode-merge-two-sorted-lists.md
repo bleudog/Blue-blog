@@ -58,8 +58,8 @@ mergeTwoLists(L1, L2) → ListNode | null
   Post: L1 and L2 is merged into one list sorted in ascending order
 
   current ← new Node(0)
-  WHILE L1 and L2
-    IF L1.value < L2.value
+  WHILE (L1 && L2)
+    IF (L1.value < L2.value)
       current.next ← L1
       L1           ← L1.next
     ELSE
@@ -70,11 +70,11 @@ mergeTwoLists(L1, L2) → ListNode | null
     current ← current.next
   END WHILE
 
-  IF L1
+  IF (L1)
     current.next ← L1
   END IF
 
-  IF L2
+  IF (L2)
     current.next ← L2
   END IF
 END

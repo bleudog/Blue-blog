@@ -42,11 +42,11 @@ prepend(head, tail, value) → void
     n      ← Node(value)
     n.next ← head
 
-    IF head != ø
+    IF (head != ø)
         head.prev ← n
     END IF
 
-    IF tail == ø
+    IF (tail == ø)
         tail ← n
     END IF
 
@@ -66,12 +66,12 @@ append(head, tail, value) → void
     n      ← Node(value)
     n.prev ← tail
 
-    IF tail != ø
+    IF (tail != ø)
         tail.next ← n
     END IF
     tail ← n
 
-    IF head == ø
+    IF (head == ø)
         head ← n
     END IF
 END append
@@ -88,17 +88,17 @@ deleteHead(head, tail, del) → Node
 
     del ← ø
 
-    IF head == tail
+    IF (head == tail)
         del  ← head
         head ← ø
         tail ← ø
-    ELSE IF head != ø
+    ELSE IF (head != ø)
         del       ← head
         head      ← head.next
         head.prev ← ø
     END IF
 
-    RETURN del
+    return del
 END
 ```
 
@@ -113,17 +113,17 @@ deleteTail(head, tail, del) → Node
 
         del ← ø
 
-    IF tail == head
+    IF (tail == head)
         del  ← tail
         head ← ø
         tail ← ø
-    ELSIF tail != ø
+    ELSE IF (tail != ø)
         del       ← head
         tail      ← tail.prev
         tail.next ← ø
     END IF
 
-    RETURN del
+    return del
 END
 ```
 
@@ -137,26 +137,26 @@ delete(head, tail, value) → Node | ø
     Post: a node is removed from the list and returned; otherwise, return ø
 
     // FIND returns the node with a given value or ø
-    node ← call FIND(value)
+    node ← find(value)
 
-    IF node
-        IF node.prev AND node.next
+    IF (node)
+        IF (node.prev && node.next)
             node.prev.next ← node.next;
             node.next.prev ← node.prev;
-            RETURN node;
-        ELSIF node == head && node == tail
+            return node;
+        ELSE IF (node == head && node == tail)
             head ← ø
             tail ← ø
-        ELSIF node == head
+        ELSE IF (node == head)
             head       ← head.next
             head?.prev ← ø
-        ELSIF node == tail
+        ELSE IF (node == tail)
             tail       ← tail.prev
             tail?.next ← ø
         END IF
     END IF
 
-    RETURN node
+    return node
 END delete
 ```
 
@@ -168,7 +168,7 @@ reverseTraversal(tail)
     Post: a list has been traversed in reverse order
 
     n ← tail
-    WHILE n != ø
+    WHILE (n != ø)
         print n.value
         n ← n.prev
     END WHILE
