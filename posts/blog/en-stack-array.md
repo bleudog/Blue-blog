@@ -73,7 +73,7 @@ empty(stack, top) → boolean
          top is an index or a position in stack
     Post: returns true if stack is empty; otherwise false;
 
-    return top === 0
+    return top == 0
 END
 ```
 
