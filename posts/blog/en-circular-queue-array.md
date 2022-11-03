@@ -1,7 +1,7 @@
 ---
 title: 'Circular Queue: Array'
 posttitle: 'Circular Queue'
-postsubtitle: 'Array Implementation'
+postsubtitle: 'Part 01: Array Implementation'
 date: '2022-07-12 07:50:00'
 tags:
   - circular queue
@@ -139,8 +139,7 @@ The complexity of `enqueue` and `dequeue` operations in a circular queue using a
 
 See also:
 
-- [What is a Queue?](./what-is-a-queue)
-- [Queue related problems from BOJ and Leetcode](https://github.com/rolemadelen/DataStructures-and-Algorithms/tree/main/04-queue)
+- [Circular Queue - Linked List](./circular-queue-linked-list)
 
 Reference:
 

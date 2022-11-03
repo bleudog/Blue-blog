@@ -102,3 +102,7 @@ This type of queue is called **Circular Queue**.
 - Disk Scheduling.
 - Handling of interrupts in real-time-systems.
 - Call center phone systems use queues to hold people calling them in order.
+
+## See also
+
+- [Queue - Linked List](./queue-linked-list)

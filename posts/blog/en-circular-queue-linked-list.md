@@ -1,21 +1,29 @@
 ---
-title: 'Queue: Linked List'
-posttitle: 'Queue'
-postsubtitle: 'Part 02: Linked List Implementation'
-date: '2022-07-12 21:00:00'
-updated: '2022-11-03 10:30:00'
+title: 'Circular Queue: Linked List'
+posttitle: 'Circular Queue'
+postsubtitle: 'Part 01: Linked List Implementation'
+date: '2022-07-16 09:00:00'
+updated: '2022-11-03 16:20:00'
 tags:
-  - queue
+  - circular queue
   - linked list
 lang: en
 about: ds
 ---
 
-Queue is a linear data structure that follows a particular order (First-In, First-Out) in which operations are performed.
+Circular Queue is an extended version of a regular queue where rear element is connected to the front element.
+
+![Circular Queue](/images/posts/what-is-a-circular-queue/circular-queue2.svg)
+
+When implementing a circular queue with a linked list, it can be implemented either with a singly or doubly linked list.
+
+|      | enqueue | dequeue | empty | front | rear |
+| :--: | :-----: | :-----: | :---: | :---: | :--: |
+| Time |  O(1)   |  O(1)   | O(1)  | O(1)  | O(1) |
 
 ## Pseudocode for Basic Operations
 
-Click [here](https://github.com/rolemadelen/typescript-algorithms/blob/main/src/data-structures/queue-linked-list/QueueList.ts) to view the entire code of linked list queue written in TypeScript.
+Click [here](https://github.com/rolemadelen/typescript-algorithms/blob/main/src/data-structures/circular-queue/CircularQueue.ts) to view the full source code of linked list circular queue written in TypeScript.
 
 ### enqueue
 
@@ -33,7 +41,9 @@ enqueue(queue<T>, front, rear, value) → void
         front      ← n
         rear       ← n
         front.next ← rear
+        rear.next  ← front
     ELSE
+        n.next    ← front
         rear.next ← n
         rear      ← n
     END IF
@@ -49,8 +59,9 @@ dequeue(queue<T>, front, rear) → Node<T>
          rear references the last node in the queue
     Post: front element has been removed from the queue
 
-    elem  ← front
-    front ← front.next
+    elem      ← front
+    front     ← front.next
+    rear.next ← front
     return elem
 END
 ```
@@ -67,12 +78,6 @@ empty(queue<T>, front) → boolean
 END
 ```
 
-## Time Complexity
-
-|      | enqueue | dequeue | empty |
-| :--: | :-----: | :-----: | :---: |
-| Time |  O(1)   |  O(1)   | O(1)  |
-
 ## See also
 
-- [Queue - Array](./queue-array)
+- [Circular Queue - Array](./circular-queue-array)
