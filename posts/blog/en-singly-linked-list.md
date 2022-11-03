@@ -181,3 +181,9 @@ Linked list related problems selected from [Leetcode](https://leetcode.com/tag/l
 [i1290]: https://leetcode.com/problems/design-skiplist/
 [i1669]: https://leetcode.com/problems/merge-in-between-linked-lists/
 [i2181]: https://leetcode.com/problems/merge-nodes-in-between-zeros/
+
+## See also:
+
+- [What is a Linked List](./what-is-a-linked-list)
+- [Doubly Linked List](./doubly-linked-list)
+- [Circular Linked List](./circular-linked-list)

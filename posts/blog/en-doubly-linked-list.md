@@ -28,7 +28,7 @@ Drawback of using doubly linked list is that it consumes more memory because of 
 
 ## Pseudocode of Basic Operations
 
-[Full implementation of Doubly Linked List TypeScript](https://github.com/rolemadelen/typescript-algorithms/blob/main/src/data-structures/doubly-linked-list/DoublyLinkedList.ts)
+Click [here](https://github.com/rolemadelen/typescript-algorithms/blob/main/src/data-structures/doubly-linked-list/DoublyLinkedList.ts) to view the full source code Doubly Linked List implementation.
 
 ### prepend
 
@@ -218,3 +218,9 @@ Linked list related problems selected from [Leetcode](https://leetcode.com/tag/l
 [i1290]: https://leetcode.com/problems/design-skiplist/
 [i1669]: https://leetcode.com/problems/merge-in-between-linked-lists/
 [i2181]: https://leetcode.com/problems/merge-nodes-in-between-zeros/
+
+## See also
+
+- [What is a Linked List](./what-is-a-linked-list)
+- [Singly Linked List](./singly-linked-list)
+- [Circular Linked List](./circular-linked-list)

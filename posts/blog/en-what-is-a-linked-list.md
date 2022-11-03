@@ -1,7 +1,7 @@
 ---
 title: 'What is a Linked List'
 posttitle: 'Linked List'
-postsubtitle: 'Part 01: What is a Linked List?'
+postsubtitle: 'Part 01: Types of Linked List'
 date: '2022-07-31 15:00:00'
 updated: '2022-10-21 12:00:00'
 tags:
@@ -11,8 +11,6 @@ about: ds
 ---
 
 A Linked List is a linear data structure where data elements are connected via series of nodes. Each node contains the data item and reference to the next node.
-
-# Types of Linked Lists
 
 ## Singly Linked List (unidirectional)
 
@@ -33,8 +31,6 @@ class Node {
   }
 }
 ```
-
----
 
 ## Doubly Linked List (bidirectional)
 
@@ -58,8 +54,6 @@ class Node {
 }
 ```
 
----
-
 ## Circular Linked List
 
 In a circular linked list, the last node's pointer references back to the first node in the list.
@@ -72,18 +66,14 @@ If implemented with a singly linked list, the last node's pointer will reference
 
 ![Circular Doubly Linked List](/images/posts/linked-list/circular-doubly-linked-list.svg)
 
----
-
-# Basic Linked List Operations
+## Basic Linked List Operations
 
 - **append** (push_back) - add a new node at the end of the list
 - **prepend** (push_front) - add a new node in beginning of the list
 - **delete** - remove the existing node from the list
 - **search** - check if certain node (or a value) exists in the list
 
----
-
-See also:
+## See also:
 
 - [Singly Linked List](./singly-linked-list)
 - [Doubly Linked List](./doubly-linked-list)
