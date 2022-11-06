@@ -8,9 +8,19 @@ const PostList = ({ posts }) => {
   m7.setDate(m7.getDate() - 5);
 
   const ymd3 =
-    m3.getUTCFullYear() + '-' + (m3.getUTCMonth() + 1) + '-' + m3.getUTCDate();
+    m3.getUTCFullYear() +
+    '-' +
+    (m3.getUTCMonth() + 1) +
+    '-' +
+    (m3.getUTCDate() <= '9' ? '0' : '') +
+    m3.getUTCDate();
   const ymd7 =
-    m7.getUTCFullYear() + '-' + (m7.getUTCMonth() + 1) + '-' + m7.getUTCDate();
+    m7.getUTCFullYear() +
+    '-' +
+    (m7.getUTCMonth() + 1) +
+    '-' +
+    (m7.getUTCDate() <= '9' ? '0' : '') +
+    m7.getUTCDate();
 
   return (
     <>
@@ -21,12 +31,6 @@ const PostList = ({ posts }) => {
           passHref>
           <List>
             <Title>
-              {post.updated &&
-                console.debug(
-                  `updated: ${parseInt(
-                    post.updated.split(' ')[0].split('-')[2]
-                  )}`
-                )}
               {post.title}
               {post.date && post.date.split(' ')[0] >= ymd3 && (
                 <span className='newPost'>NEW</span>
