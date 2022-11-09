@@ -10,7 +10,7 @@ lang: en
 about: ds
 ---
 
-# Circular Queue
+## Circular Queue
 
 Circular Queue is an extended version of a regular queue where last element is connected to the first element.
 
@@ -23,7 +23,7 @@ Circular Queue lets you re-use those spaces by circulating back to the beginning
 
 ![Circular Queue](/images/posts/what-is-a-queue/circular-queue.svg)
 
-# Circular Increment
+## Circular Increment
 
 Circular queue works by the process of circular increment. As we enqueue data, we increase the index of `rear` by `1`.
 We use modulo division to keep the index within the size of the queue.
@@ -56,9 +56,9 @@ else
 end
 ```
 
-# Operations of Circular Queue
+## Operations of Circular Queue
 
-## enqueue
+### enqueue
 
 Add an element to the end of the queue.
 
@@ -76,7 +76,7 @@ def enqueue(item)
 end
 ```
 
-## dequeue
+### dequeue
 
 Remove an element from the front of the queue.
 
@@ -99,7 +99,7 @@ def dequeue
 end
 ```
 
-## isEmpty
+### isEmpty
 
 Check if the queue is empty.
 
@@ -109,7 +109,7 @@ def empty?
 end
 ```
 
-## isFull
+### isFull
 
 Check if the queue is full.
 
@@ -119,7 +119,7 @@ def full?
 end
 ```
 
-## front
+### front
 
 Get the value at the front of the queue without removing it.
 
@@ -131,9 +131,39 @@ def front
 end
 ```
 
-# Time Complexity
+## Time Complexity
 
 The complexity of `enqueue` and `dequeue` operations in a circular queue using an array is `O(1)`.
+
+## Problems
+
+Queue related problems selected from [Leetcode](https://leetcode.com/tag/queue/).
+
+|       #       | Problem                                | Difficulty |
+| :-----------: | :------------------------------------- | :--------- |
+|  [225][i225]  | Implement Stack using Queues           | Easy       |
+|  [933][i933]  | Number of Recent Calls                 | Easy       |
+| [1700][i1700] | Number of Students Unable to Eat Lunch | Easy       |
+|  [622][i622]  | Design Circular Queue                  | Medium     |
+|  [950][i950]  | Reveal Cards In Increasing Order       | Medium     |
+| [1670][i1670] | Design Front Middle Back Queue         | Medium     |
+| [1823][i1823] | Find the Winner of the Circular Game   | Medium     |
+| [2327][i2327] | Number of People Aware of a Secret     | Medium     |
+|  [239][i239]  | Sliding Window Maximum                 | Hard       |
+|  [936][i936]  | Stamping The Sequence                  | Hard       |
+| [2444][i2444] | Count Subarrays With Fixed Bounds      | Hard       |
+
+[i225]: https://leetcode.com/problems/implement-stack-using-queues/
+[i933]: https://leetcode.com/problems/number-of-recent-calls/
+[i1700]: https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/
+[i622]: https://leetcode.com/problems/design-circular-queue
+[i950]: https://leetcode.com/problems/reveal-cards-in-increasing-order/
+[i1670]: https://leetcode.com/problems/design-front-middle-back-queue/
+[i1823]: https://leetcode.com/problems/find-the-winner-of-the-circular-game/
+[i2327]: https://leetcode.com/problems/number-of-people-aware-of-a-secret/
+[i239]: https://leetcode.com/problems/sliding-window-maximum/
+[i936]: https://leetcode.com/problems/stamping-the-sequence/
+[i2444]: https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
 
 ---
 

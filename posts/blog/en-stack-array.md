@@ -91,45 +91,47 @@ END
 
 ## Problems
 
-Stack related problems selected from [GeeksForGeeks](https://practice.geeksforgeeks.org/explore?page=1&category%5B%5D=Stack&curated%5B%5D=1&sortBy=submissions&curated_names%5B%5D=SDE%20Sheet).
+Stack related problems selected from [Leetcode](https://leetcode.com/tag/stack/).
 
-| Problem                                        | Difficulty |
-| :--------------------------------------------- | :--------: |
-| [Parenthesis Checker][i1]                      |    Easy    |
-| [Queue using two Stacks][i3]                   |    Easy    |
-| [Implement two stack in an array][i5]          |    Easy    |
-| [Sort a stack][i7]                             |    Easy    |
-| [Reverse a string using Stack][i9]             |    Easy    |
-| [Special Stack][i10]                           |    Easy    |
-| [Evaluation of Postfix Expression][i11]        |    Easy    |
-| [Reverse First K elements of Queue][i12]       |    Easy    |
-| [Delete middle element of a stack][i13]        |    Easy    |
-| [Queue using stack][i16]                       |    Easy    |
-| [Clone a stack without using extra space][i17] |    Easy    |
-| [Implement stack using array][i4]              |   Basic    |
-| [Implement stack using linked list][i6]        |   Basic    |
-| [Get minimum element from stack][i2]           |   Medium   |
-| [Infix to Postfix][i14]                        |   Medium   |
-| [Reverse each word in a given string][i15]     |   Medium   |
-| [Longest valid Parentheses][i8]                |    Hard    |
+|       #       | Problem                                              | Difficulty |
+| :-----------: | :--------------------------------------------------- | :--------- |
+|   [20][i20]   | Valid Parentheses                                    | Easy       |
+|  [232][i232]  | Implement Queue using Stacks                         | Easy       |
+|  [234][i234]  | Palindrome Linked List                               | Easy       |
+| [1021][i1021] | Remove Outermost Parentheses                         | Easy       |
+| [1047][i1047] | Remove All Adjacent Duplicates In String             | Easy       |
+| [1614][i1614] | Maximum Nesting Depth of the Parentheses             | Easy       |
+|  [173][i173]  | Binary Search Tree Iterator                          | Medium     |
+|  [654][i654]  | Maximum Binary Tree                                  | Medium     |
+|  [946][i946]  | Validate Stack Sequences                             | Medium     |
+| [1008][i1008] | Construct Binary Search Tree from Preorder Traversal | Medium     |
+| [1381][i1381] | Design a Stack With Increment Operation              | Medium     |
+| [1441][i1441] | Build an Array With Stack Operations                 | Medium     |
+| [1472][i1472] | Design Browser History                               | Medium     |
+| [2130][i2130] | Maximum Twin Sum of a Linked List                    | Medium     |
+|  [726][i726]  | Number of Atoms                                      | Hard       |
+|  [736][i736]  | Parse Lisp Expression                                | Hard       |
+|  [895][i895]  | Maximum Frequency Stack                              | Hard       |
+| [1944][i1944] | Number of Visible People in a Queue                  | Hard       |
 
-[i1]: https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i2]: https://practice.geeksforgeeks.org/problems/get-minimum-element-from-stack/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i3]: https://practice.geeksforgeeks.org/problems/queue-using-two-stacks/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i4]: https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i5]: https://practice.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i6]: https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i7]: https://practice.geeksforgeeks.org/problems/sort-a-stack/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i8]: https://practice.geeksforgeeks.org/problems/longest-valid-parentheses5657/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i9]: https://practice.geeksforgeeks.org/problems/reverse-a-string-using-stack/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i10]: https://practice.geeksforgeeks.org/problems/special-stack/1?page=1&category%5B%5D=Stack&sortBy=submissions
-[i11]: https://practice.geeksforgeeks.org/problems/evaluation-of-postfix-expression1735/1?page=2&category%5B%5D=Stack&sortBy=submissions
-[i12]: https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1?page=2&category%5B%5D=Stack&sortBy=submissions
-[i13]: https://practice.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1?page=2&category%5B%5D=Stack&sortBy=submissions
-[i14]: https://practice.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1?page=2&category%5B%5D=Stack&sortBy=submissions
-[i15]: https://practice.geeksforgeeks.org/problems/reverse-each-word-in-a-given-string1001/1?page=2&category%5B%5D=Stack&sortBy=submissions
-[i16]: https://practice.geeksforgeeks.org/problems/queue-using-stack/1?page=3&category%5B%5D=Stack&sortBy=submissions
-[i17]: https://practice.geeksforgeeks.org/problems/clone-a-stack-without-usinig-extra-space/1?page=3&category%5B%5D=Stack&sortBy=submissions
+[i20]: https://leetcode.com/problems/valid-parentheses/
+[i232]: https://leetcode.com/problems/implement-queue-using-stacks/
+[i234]: https://leetcode.com/problems/palindrome-linked-list/
+[i1021]: https://leetcode.com/problems/remove-outermost-parentheses/
+[i1047]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+[i1614]: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/
+[i173]: https://leetcode.com/problems/binary-search-tree-iterator/
+[i654]: https://leetcode.com/problems/maximum-binary-tree/
+[i946]: https://leetcode.com/problems/validate-stack-sequences/
+[i1008]: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
+[i1381]: https://leetcode.com/problems/design-a-stack-with-increment-operation/
+[i1441]: https://leetcode.com/problems/build-an-array-with-stack-operations/
+[i1472]: https://leetcode.com/problems/design-browser-history/
+[i2130]: https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
+[i726]: https://leetcode.com/problems/number-of-atoms/
+[i736]: https://leetcode.com/problems/parse-lisp-expression/
+[i895]: https://leetcode.com/problems/maximum-frequency-stack/
+[i1944]: https://leetcode.com/problems/number-of-visible-people-in-a-queue/
 
 ## See also
 
