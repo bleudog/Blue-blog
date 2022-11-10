@@ -3,7 +3,7 @@ title: 'Queue: Array'
 posttitle: 'Queue'
 postsubtitle: 'Part 01: Array Implementation'
 date: '2022-07-10 22:00:00'
-updated: '2022-11-03 10:00:00'
+updated: '2022-11-10 09:00:00'
 tags:
   - queue
   - data structure
@@ -134,3 +134,4 @@ Queue related problems selected from [Leetcode](https://leetcode.com/tag/queue/)
 ## See also
 
 - [Queue - Linked List](./queue-linked-list)
+- [Double Ended Queue (Deque)](./double-ended-queue)

@@ -3,7 +3,7 @@ title: 'Queue: Linked List'
 posttitle: 'Queue'
 postsubtitle: 'Part 02: Linked List Implementation'
 date: '2022-07-12 21:00:00'
-updated: '2022-11-03 10:30:00'
+updated: '2022-11-10 09:00:00'
 tags:
   - queue
   - linked list
@@ -104,3 +104,4 @@ Queue related problems selected from [Leetcode](https://leetcode.com/tag/queue/)
 ## See also
 
 - [Queue - Array](./queue-array)
+- [Double Ended Queue (Deque)](./double-ended-queue)
