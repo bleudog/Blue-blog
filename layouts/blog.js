@@ -1,31 +1,26 @@
 import PostList from "@components/PostList";
-import Container from "@components/Container";
-import Footer from "@components/Footer";
-import metadata from "@data/metadata";
-import { PostListContainer } from "@components/custom-tw-components";
-import PageBanner from "@components/PageBanner";
-import LanguageSelector from "@components/LanguageSelector";
+import { PostListContainer, Header } from "@components/custom-tw-components";
+import utilStyles from '@styles/utils.module.scss';
+import Link from "next/link";
 
 const BlogLayout = ({ posts }) => {
-  const customMeta = {
-    title: `${metadata.title} - Blog`,
-  };
+    return (
+        <div>
+            <PostListContainer>
+                <Header>rolemadelen</Header>
+                <Link
+                    key={'home'}
+                    href={'/'}
+                    passHref>
+                    {'home'}
+                </Link>
+            </PostListContainer>
 
-  return (
-    <Container page={"blog"} customMeta={customMeta}>
-      <PageBanner
-        title={"Rolemadelen"}
-        subtitle={
-          "Records about my journey to become a better developer."
-        }
-      />
-      <LanguageSelector />
-      <PostListContainer>
-        <PostList posts={posts} />
-      </PostListContainer>
-      <Footer />
-    </Container>
-  );
+            <PostListContainer>
+                <PostList posts={posts} />
+            </PostListContainer>
+        </div>
+    );
 };
 
 export default BlogLayout;

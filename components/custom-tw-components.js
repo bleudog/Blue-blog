@@ -3,13 +3,17 @@ import tw from 'tailwind-styled-components';
 //////////////////////////////////////////////////////
 ///  Blog Layout
 //////////////////////////////////////////////////////
-export const PostListContainer = tw.ul`
-    list-none
-    p-0
-    m-0
-    pt-[1em]
-    border-t-[1px]
-    border-b-[1px]
+export const PostListContainer = tw.div`
+   mx-auto
+   max-w-[50em]
+   mb-8
+`;
+export const Header = tw.p`
+    px-2
+    mt-4
+    text-4xl
+    font-['AmazonEmberDisplay']
+    font-black
 `;
 
 //////////////////////////////////////////////////////
@@ -79,18 +83,28 @@ export const List = tw.li`
     list-none
     p-2
     flex
-    flex-col
     hover:bg-[#1691ff1c]
     hover:rounded-lg
     cursor-pointer
 `;
 
+export const PostDate = tw.div`
+    text-secondary
+    cursor-pointer
+    flex
+    items-center
+    font-['AmazonEmberDisplay']
+    text-sm
+    mr-8
+`;
+
 export const Title = tw.div`
     text-primary
-    font-normal
     cursor-pointer
     duration-150
     flex-wrap
+    font-['AmazonEmberDisplay']
+    text-sm
 `;
 
 //////////////////////////////////////////////////////
