@@ -63,6 +63,16 @@
             }
         }
     }
+
+    &Figure {
+        z-index: -5;
+        position: absolute;
+        top: -110%;
+        left: -120%;
+        animation: slideRight 1s forwards ease-in;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
     .h1 {
         font-size: 1.8em;
     }
@@ -198,11 +208,11 @@
         line-height: 5rem;
     }
 }
-@keyframes blinkLink {
+@keyframes slideRight {
     0% {
-        color: #000;
+        left: -120%;
     }
     100% {
-        color: #7498e8;
+        left: -40%;
     }
 }

@@ -1,11 +1,22 @@
 import Container from '@components/Container';
 import Footer from '@components/Footer';
 import utilStyles from '@styles/utils.module.scss';
+import Image from 'next/image';
 import Link from 'next/link';
+import figure from '../public/images/aboutme.png';
 
 export default function About() {
 	return (
 		<div className={`${utilStyles.hero} ${utilStyles.about}`}>
+			<div className={`${utilStyles.aboutFigure}`}>
+				<Image
+					priority
+					width={290}
+					height={450}
+					src={figure}
+					alt='Rolemadelen'
+				/>
+			</div>
 			<p className={`${utilStyles.h1}`}>
 				Hi. I&apos;m <b>Rolemadelen</b> or <b>Madelen</b> for short.
 			</p>
