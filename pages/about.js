@@ -7,9 +7,9 @@ export default function About() {
 	return (
 		<div className={`${utilStyles.hero} ${utilStyles.about}`}>
 			<p className={`${utilStyles.h1}`}>
-				Hi. I'm <b>Rolemadelen</b> or <b>Madelen</b> for short.
+				Hi. I&apos;m <b>Rolemadelen</b> or <b>Madelen</b> for short.
 			</p>
-			<p className={`${utilStyles.h2}`}>I'm a Frontend Developer.</p>
+			<p className={`${utilStyles.h2}`}>I&apos;m a Frontend Developer.</p>
 			<div className={`${utilStyles.aboutMenu}`}>
 				<span>
 					<Link
