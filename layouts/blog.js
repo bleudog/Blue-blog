@@ -7,13 +7,14 @@ const BlogLayout = ({ posts }) => {
     return (
         <div>
             <PostListContainer>
-                <Header>rolemadelen</Header>
-                <Link
-                    key={'home'}
-                    href={'/'}
-                    passHref>
-                    {'home'}
-                </Link>
+                <Header>
+                    <Link
+                        key={'home'}
+                        href={'/'}
+                        passHref>
+                        {'rolemadelen'}
+                    </Link>
+                </Header>
             </PostListContainer>
 
             <PostListContainer>

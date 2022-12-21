@@ -6,7 +6,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: loadFigure 1.5s forwards ease-out;
+    animation: loadFigure 1.5s forwards ease-in;
     z-index: 1000;
 }
 
@@ -69,8 +69,8 @@
         position: absolute;
         top: -110%;
         left: -120%;
-        animation: slideRight 1s forwards ease-in;
-        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation: slideRight 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        // animation: slideRight 1s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .h1 {
@@ -185,11 +185,11 @@
 }
 
 @keyframes loadAbout {
-    0% {
+    from {
         opacity: 0;
     }
 
-    100% {
+    to {
         opacity: 1;
     }
 }
@@ -209,10 +209,10 @@
     }
 }
 @keyframes slideRight {
-    0% {
+    from {
         left: -120%;
     }
-    100% {
+    to {
         left: -40%;
     }
 }

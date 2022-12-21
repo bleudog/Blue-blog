@@ -14,6 +14,7 @@ export const Header = tw.p`
     text-4xl
     font-['AmazonEmberDisplay']
     font-black
+    postHeader
 `;
 
 //////////////////////////////////////////////////////
