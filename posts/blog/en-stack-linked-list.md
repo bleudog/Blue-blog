@@ -8,7 +8,7 @@ tags:
   - stack
   - data structure
 lang: en
-about: ds
+about: dsa
 ---
 
 Stack is a linear data structure that follows a particular order (Last-In, Last-Out; LIFO) in which operations are performed.

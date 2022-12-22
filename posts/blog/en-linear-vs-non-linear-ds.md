@@ -7,7 +7,7 @@ tags:
   - linear data structure
   - non-linear data structure
 lang: en
-about: ds
+about: dsa
 ---
 
 What are the differences between Linear and Non-Linear data structures?

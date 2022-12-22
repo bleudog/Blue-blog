@@ -7,7 +7,7 @@ updated: '2022-10-21 12:00:00'
 tags:
   - linked list
 lang: en
-about: ds
+about: dsa
 ---
 
 A Linked List is a linear data structure where data elements are connected via series of nodes. Each node contains the data item and reference to the next node.
@@ -22,13 +22,13 @@ Singly Linked List is a unidirectional linked list that only one-way traversing 
 type ListNode = Node | null;
 
 class Node {
-  value: number;
-  next: ListNode;
+	value: number;
+	next: ListNode;
 
-  constructor(value: number, next: ListNode = null) {
-    this.value = value;
-    this.next = next;
-  }
+	constructor(value: number, next: ListNode = null) {
+		this.value = value;
+		this.next = next;
+	}
 }
 ```
 
@@ -42,15 +42,15 @@ In doubly linked list, every node has two pointers to reference a node one befor
 type ListNode = Node | null;
 
 class Node {
-  value: number;
-  next: ListNode;
-  prev: ListNode;
+	value: number;
+	next: ListNode;
+	prev: ListNode;
 
-  constructor(value: number, prev: ListNode = null, next: ListNode = null) {
-    this.value = value;
-    this.prev = prev;
-    this.next = next;
-  }
+	constructor(value: number, prev: ListNode = null, next: ListNode = null) {
+		this.value = value;
+		this.prev = prev;
+		this.next = next;
+	}
 }
 ```
 

@@ -5,16 +5,17 @@ import tw from 'tailwind-styled-components';
 //////////////////////////////////////////////////////
 export const PostListContainer = tw.div`
    mx-auto
-   max-w-[50em]
+   max-w-[46em]
    mb-8
 `;
+
 export const Header = tw.p`
     px-2
     mt-4
     text-4xl
-    font-['AmazonEmberDisplay']
-    font-black
+    font-['AmazonEmberDisplayMedium']
     postHeader
+    whitespace-nowrap
 `;
 
 //////////////////////////////////////////////////////
@@ -22,37 +23,8 @@ export const Header = tw.p`
 //////////////////////////////////////////////////////
 export const Article = tw.article`
     text-primary
-    pb-5
+    py-10
     border-b-[1px]
-`;
-
-//////////////////////////////////////////////////////
-///  LanguageSelector Layout
-//////////////////////////////////////////////////////
-export const LanguageListWrapper = tw.ul`
-    flex
-    mt-3
-    mb-4
-    p-1
-    overflow-x-auto
-    duration-75
-    sm:justify-center
-`;
-
-export const LanguageList = tw.li`
-    min-w-max
-    min-w-fit
-    list-none
-    px-2
-    mr-2
-    shadow
-    shadow-blue-400/40
-    rounded-md
-    font-medium
-    cursor-pointer
-    hover:bg-[#1691ff1c]
-    duration-75
-    active:shadow-none
 `;
 
 //////////////////////////////////////////////////////
@@ -71,12 +43,6 @@ export const PostTitle = tw.div`
     font-bold
 `;
 
-export const LanguageButtons = tw.div`
-    flex
-    absolute
-    right-0
-`;
-
 //////////////////////////////////////////////////////
 ///  PostList Component
 //////////////////////////////////////////////////////
@@ -84,8 +50,7 @@ export const List = tw.li`
     list-none
     p-2
     flex
-    hover:bg-[#1691ff1c]
-    hover:rounded-lg
+    hover:font-black
     cursor-pointer
 `;
 
@@ -128,25 +93,18 @@ export const PageHeader = tw.header`
 `;
 
 export const PageTitle = tw.div`
-    font-bold
     uppercase
     font-['AmazonEmberDisplayMedium']
-    text-4xl
-    sm:text-5xl
-    md:leading-tight
-    text-gray-800
-    text-center
-    text-[#4e72b0]
+    whitespace-nowrap
+    postHeader
 `;
 
 export const PageSecondTitle = tw.div`
     font-['AmazonEmberDisplay']
-    text-2xl
-    mt-3
+    text-xl
+    mt-1
     mb-1
-    md:leading-tight
     text-gray-800
-    text-center
 `;
 
 export const PageSubtitle = tw.div`
@@ -155,43 +113,6 @@ export const PageSubtitle = tw.div`
     md:text-lg
     font-light
     whitespace-pre-line
-    text-center
-`;
-
-//////////////////////////////////////////////////////
-///  DocAside  Component
-//////////////////////////////////////////////////////
-export const DocAsideContainer = tw.section`
-    w-48
-    h-full
-    pr-4
-    pt-5
-
-    relative
-    flex
-    flex-col
-    overflow-y-scroll
-
-    duration-300
-`;
-export const DocAsideHeader = tw.span`
-    mt-2
-
-    text-1
-    text-primary
-`;
-export const DocAsideLink = tw.a`
-    px-2
-
-    text-[0.8em]
-    text-[#2a75e9]
-    leading-5
-    my-[0.4em]
-
-    hover:text-[#1691ff1c]
-    hover:no-underline
-
-    duration-300
 `;
 
 //////////////////////////////////////////////////////
@@ -224,12 +145,12 @@ export const FooterContainer = tw.footer`
 ///  Header Component
 //////////////////////////////////////////////////////
 export const HeaderContainer = tw.header`
-    flex
-    relative
-    items-center
-    justify-between
-    flex-wrap
-    pb-20
+    px-2
+    mt-4
+    text-4xl
+    font-['AmazonEmberDisplayMedium']
+    postHeader
+    whitespace-nowrap
 `;
 
 export const BackButton = tw.button`
@@ -239,7 +160,7 @@ export const BackButton = tw.button`
     rounded-md
 
     text-primary
-    hover:bg-[#f0696945]
+    hover:bg-[#96adff45]
     duration-75
 
     shadow
@@ -261,22 +182,12 @@ export const Tag = tw.span`
 ///  Explore More Component
 //////////////////////////////////////////////////////
 
-export const CategoryHeader = tw.header`
-    font-[AmazonEmberDisplayMedium]
-    border-t-2
-    text-2xl
-    mt-4
-    mb-8
-`;
-
 export const CategoryList = tw.ul`
     flex
-    sm:flex-row
-    flex-col
     align-center
     flex-wrap
     justify-between
-    mx-8
+    mx-auto
 `;
 
 export const Category = tw.li`
@@ -286,22 +197,8 @@ export const Category = tw.li`
     justify-center
     text-center
 
-    hover: cursor-pointer
-    list-none
-
-    rounded-md
-    shadow-[0_1px_3px_-1px_#4e71b0]
-    w-full
-    sm:w-5/12
-
-    py-6
     px-2
     mb-4
 
     text-gray-700
-    text-xl
-    hover:bg-[#1691ff1c]
-
-    ease-in-out
-    duration-200
 `;

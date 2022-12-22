@@ -6,10 +6,8 @@ date: '2022-07-06 07:00:00'
 tags:
   - algorithm
 lang: en
-about: algo
+about: dsa
 ---
-
-# Asymptotic Analysis
 
 Asymptotic analysis "is the study of change in performance of the algorithm with the change in the order of the input size". In other words, it is a method to compute and measure the running-time of an algorithm.
 

@@ -70,7 +70,6 @@
         top: -110%;
         left: -120%;
         animation: slideRight 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        // animation: slideRight 1s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .h1 {
@@ -213,6 +212,6 @@
         left: -120%;
     }
     to {
-        left: -40%;
+        left: -45%;
     }
 }

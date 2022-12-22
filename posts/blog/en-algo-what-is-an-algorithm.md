@@ -6,7 +6,7 @@ date: '2022-07-05 05:55:00'
 tags:
   - algorithm
 lang: en
-about: algo
+about: dsa
 ---
 
 # Algorithm

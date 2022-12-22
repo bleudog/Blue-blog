@@ -1,15 +1,10 @@
+import { getAllPosts } from '@lib/blog';
 import PostList from '@components/PostList';
-import {
-	PostListContainer,
-	Header,
-	CategoryList,
-	Category,
-	BlogHeaderContainer,
-} from '@components/custom-tw-components';
+import { PostListContainer, Header } from '@components/custom-tw-components';
 import utilStyles from '@styles/utils.module.scss';
 import Link from 'next/link';
 
-const BlogLayout = ({ posts }) => {
+export default function Blog({ posts }) {
 	return (
 		<div>
 			<PostListContainer>
@@ -29,6 +24,13 @@ const BlogLayout = ({ posts }) => {
 			</PostListContainer>
 		</div>
 	);
-};
+}
 
-export default BlogLayout;
+export async function getStaticProps() {
+	const posts = getAllPosts().filter((post) => post.about === 'dsa');
+	return {
+		props: {
+			posts,
+		},
+	};
+}

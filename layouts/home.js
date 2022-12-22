@@ -1,14 +1,13 @@
 import Image from 'next/image';
 import Footer from '@components/Footer';
 import Container from '@components/Container';
-import ExploreMoreContainer from '@components/ExploreMoreContainer';
-import PageBanner from '@components/PageBanner';
 import utilStyles from '@styles/utils.module.scss';
 import { Banner } from '@components/custom-tw-components';
 import profileImg1 from '../public/images/rolemadelen1.png';
 import profileImg2 from '../public/images/rolemadelen2.png';
 import profileImg3 from '../public/images/rolemadelen3.png';
 import Link from 'next/link';
+
 const HomeLayout = ({ blog }) => {
 	const figureType = Math.floor((Math.random() * 10) % 3);
 	return (

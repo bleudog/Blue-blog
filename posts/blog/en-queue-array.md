@@ -8,7 +8,7 @@ tags:
   - queue
   - data structure
 lang: en
-about: ds
+about: dsa
 ---
 
 Queue is a linear data structure that follows a particular order (First-In, First-Out) in which operations are performed.

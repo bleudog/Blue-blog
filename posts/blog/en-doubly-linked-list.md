@@ -7,7 +7,7 @@ updated: '2022-10-24 06:00:00'
 tags:
   - linked list
 lang: en
-about: ds
+about: dsa
 ---
 
 # What is a Doubly Linked List?
