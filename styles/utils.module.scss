@@ -133,44 +133,6 @@
     }
 }
 
-.loadDown {
-    animation: loadDown 1s forwards ease-in-out;
-}
-
-.loadUp {
-    animation: loadUp 1s forwards ease-out;
-}
-
-@keyframes loadDown {
-    0% {
-        transform: translateY(-400px);
-        opacity: 0;
-    }
-    80% {
-        transform: translateY(20px);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes loadUp {
-    0% {
-        transform: translateY(30em);
-        opacity: 0;
-    }
-    80% {
-        transform: translateY(-1em);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 @keyframes loadFigure {
     0% {
         opacity: 0;

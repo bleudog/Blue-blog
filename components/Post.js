@@ -8,7 +8,6 @@ import {
 	Tag,
 	HeaderContainer,
 } from './custom-tw-components';
-import { LanguageList, LanguageListWrapper } from './custom-tw-components';
 import { useRouter } from 'next/router';
 import utilStyles from '@styles/utils.module.scss';
 import Head from 'next/head';
