@@ -14,7 +14,7 @@ const BlogLayout = ({ posts }) => {
 		<div>
 			<PostListContainer>
 				<Header>
-					<span>–––––––––––––––––––––––––– </span>
+					<span>––––––––––––––––––––––––––</span>
 					<Link
 						key={'home'}
 						href={'/'}

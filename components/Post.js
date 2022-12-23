@@ -20,8 +20,13 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 				<title>{title}</title>
 			</Head>
 			<HeaderContainer>
-				<span>–––––––––––––––––––––––––– </span>
-				<span>{title}</span>
+				<span>–––––––––––––––––––––––––-</span>
+				<Link
+					key={'post'}
+					href={'/blog'}
+					passHref>
+					{title}
+				</Link>
 			</HeaderContainer>
 			<PageSecondTitle>{subtitle}</PageSecondTitle>
 
@@ -46,7 +51,7 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 				</div>
 			)} */}
 
-			<BackButton onClick={() => router.back()}>{'back'}</BackButton>
+			<BackButton onClick={() => router.back()}>{'←'}</BackButton>
 			{children}
 		</PostContainer>
 	);

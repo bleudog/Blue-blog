@@ -5,7 +5,7 @@ import tw from 'tailwind-styled-components';
 //////////////////////////////////////////////////////
 export const PostListContainer = tw.div`
    mx-auto
-   max-w-[46em]
+   max-w-[40em]
    mb-8
 `;
 
@@ -102,8 +102,7 @@ export const PageTitle = tw.div`
 export const PageSecondTitle = tw.div`
     font-['AmazonEmberDisplay']
     text-xl
-    mt-1
-    mb-1
+    my-1
     text-gray-800
 `;
 
@@ -160,7 +159,7 @@ export const BackButton = tw.button`
     rounded-md
 
     text-primary
-    hover:bg-[#96adff45]
+    hover:bg-[#649aeb47]
     duration-75
 
     shadow

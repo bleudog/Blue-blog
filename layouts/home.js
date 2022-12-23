@@ -8,7 +8,7 @@ import profileImg2 from '../public/images/rolemadelen2.png';
 import profileImg3 from '../public/images/rolemadelen3.png';
 import Link from 'next/link';
 
-const HomeLayout = ({ blog }) => {
+const HomeLayout = () => {
 	const figureType = Math.floor((Math.random() * 10) % 3);
 	return (
 		<>

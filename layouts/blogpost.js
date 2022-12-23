@@ -1,4 +1,3 @@
-import ReactMarkdown from 'react-markdown';
 import Post from '@components/Post';
 import Footer from '@components/Footer';
 import Comments from '@components/Comments';
@@ -24,10 +23,9 @@ const BlogPostLayout = ({ post }) => {
 				updated={post.updated ? post.updated : null}
 			/>
 			<Article>
-				{/* <ReactMarkdown components={Codeblock}>{post.markdown}</ReactMarkdown> */}
 				<Preview markdown={post.markdown} />
 			</Article>
-			<Comments />
+			{/* <Comments /> */}
 			<Footer />
 		</PostListContainer>
 	);
