@@ -20,13 +20,27 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 				<title>{title}</title>
 			</Head>
 			<HeaderContainer>
-				<span>–––––––––––––––––––––––––-</span>
+				<span>–––––––––––</span>
 				<Link
 					key={'post'}
 					href={'/blog'}
 					passHref>
-					{title}
+					{'•'}
 				</Link>
+				<span>–</span>
+				<Link
+					key={'post'}
+					href={'/blog/note'}
+					passHref>
+					{'•'}
+				</Link>
+				<span>–––––•–––––– </span>
+				{/* <Link
+					key={'post'}
+					href={'/blog'}
+					passHref>
+				</Link> */}
+				<span>{title}</span>
 			</HeaderContainer>
 			<PageSecondTitle>{subtitle}</PageSecondTitle>
 

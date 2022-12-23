@@ -30,46 +30,31 @@ const HomeLayout = () => {
 			</Link>
 			<div className={utilStyles.hero}>
 				{figureType === 0 && (
-					<Link
-						key={'blog'}
-						href={'/about/'}
-						passHref>
-						<Image
-							priority
-							width={300}
-							height={600}
-							src={profileImg1}
-							alt='Rolemadelen'
-						/>
-					</Link>
+					<Image
+						priority
+						width={300}
+						height={600}
+						src={profileImg1}
+						alt='Rolemadelen'
+					/>
 				)}
 				{figureType === 1 && (
-					<Link
-						key={'blog'}
-						href={'/about/'}
-						passHref>
-						<Image
-							priority
-							width={250}
-							height={600}
-							src={profileImg2}
-							alt='Rolemadelen'
-						/>
-					</Link>
+					<Image
+						priority
+						width={250}
+						height={600}
+						src={profileImg2}
+						alt='Rolemadelen'
+					/>
 				)}
 				{figureType === 2 && (
-					<Link
-						key={'blog'}
-						href={'/about/'}
-						passHref>
-						<Image
-							priority
-							width={280}
-							height={600}
-							src={profileImg3}
-							alt='Rolemadelen'
-						/>
-					</Link>
+					<Image
+						priority
+						width={280}
+						height={600}
+						src={profileImg3}
+						alt='Rolemadelen'
+					/>
 				)}
 			</div>
 		</>
