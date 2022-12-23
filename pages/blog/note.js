@@ -12,9 +12,9 @@ export default function Blog({ posts }) {
 					<span>–––––––––––––––––––––––––– </span>
 					<Link
 						key={'home'}
-						href={'/'}
+						href={'/blog'}
 						passHref>
-						{'rolemadelen'}
+						{'rm/note'}
 					</Link>
 				</Header>
 			</PostListContainer>
