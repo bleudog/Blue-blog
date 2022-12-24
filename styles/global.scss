@@ -303,6 +303,19 @@ header {
     }
 }
 
+article {
+    p {
+        a {
+            color: unset;
+            border-bottom: 2px solid #0c64c1;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 @keyframes slideRight {
     from {
         transform: translateX(-150%);
