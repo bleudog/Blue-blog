@@ -104,6 +104,7 @@ export const PageSecondTitle = tw.div`
     text-xl
     my-1
     text-gray-800
+    w-full
 `;
 
 export const PageSubtitle = tw.div`

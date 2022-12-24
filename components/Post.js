@@ -42,7 +42,13 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 				</Link> */}
 				<span>{title}</span>
 			</HeaderContainer>
-			<PageSecondTitle>{subtitle}</PageSecondTitle>
+			<div className={'flex'}>
+				<PageSecondTitle>{subtitle}</PageSecondTitle>
+				<Date
+					dateString={date}
+					customClass={'mt-2 mb-2 text-sm break-normal inline-block text-right'}
+				/>
+			</div>
 
 			{/* {updated === null && (
 				<Date
