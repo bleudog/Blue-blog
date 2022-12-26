@@ -296,9 +296,24 @@ header {
         transition: all 0.3s ease-out;
         &:nth-of-type(1):hover {
             color: #5070e3 !important;
+
+            &::before {
+                content: 'blog';
+                font-size: 0.8rem;
+                position: absolute;
+                top: -25%;
+                left: 31%;
+            }
         }
         &:nth-of-type(2):hover {
             color: #ee7cc4 !important;
+            &::before {
+                content: 'note';
+                font-size: 0.8rem;
+                position: absolute;
+                top: -25%;
+                left: 36%;
+            }
         }
     }
 }

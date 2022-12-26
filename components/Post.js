@@ -14,6 +14,7 @@ import Head from 'next/head';
 
 const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 	const router = useRouter();
+
 	return (
 		<PostContainer>
 			<Head>
@@ -34,13 +35,10 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 					passHref>
 					{'•'}
 				</Link>
-				<span>–––––•–––––– </span>
-				{/* <Link
-					key={'post'}
-					href={'/blog'}
-					passHref>
-				</Link> */}
-				<span>{title}</span>
+				<span>–––––––––––</span>
+				<span className={'top'}>•</span>
+
+				<span> {title}</span>
 			</HeaderContainer>
 			<div className={'flex'}>
 				<PageSecondTitle>{subtitle}</PageSecondTitle>
@@ -49,28 +47,6 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 					customClass={'mt-2 mb-2 text-sm break-normal inline-block text-right'}
 				/>
 			</div>
-
-			{/* {updated === null && (
-				<Date
-					dateString={date}
-					customClass={'mt-2 mb-2 text-sm break-normal inline-block'}
-				/>
-			)}
-			{updated !== null && (
-				<Date
-					updated={true}
-					dateString={updated}
-					customClass={'mt-2 mb-2 text-sm break-normal inline-block'}
-				/>
-			)} */}
-			{/* {tags && (
-				<div>
-					{tags.map((tag, idx) => (
-						<Tag key={`${tag}-${idx}`}>#{tag}</Tag>
-					))}
-				</div>
-			)} */}
-
 			<BackButton onClick={() => router.back()}>{'←'}</BackButton>
 			{children}
 		</PostContainer>
