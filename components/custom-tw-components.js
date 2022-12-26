@@ -153,6 +153,15 @@ export const HeaderContainer = tw.header`
     whitespace-nowrap
 `;
 
+export const MobileHeaderContainer = tw.header`
+    px-2
+    mt-4
+    text-2xl
+    font-['AmazonEmberDisplay']
+    mobilePostHeader
+    whitespace-nowrap
+`;
+
 export const BackButton = tw.button`
     px-2
     sm:px-4

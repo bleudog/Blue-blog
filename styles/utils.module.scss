@@ -6,7 +6,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: loadFigure 1.5s forwards ease-in;
+    animation: loadFigure 1s forwards ease-in;
     z-index: 1000;
 }
 
@@ -102,7 +102,7 @@
     top: 40%;
     left: 44%;
     transform: translate(-50%, -50%) rotateZ(-45deg);
-    animation: fadeIn 0.8s forwards ease-in-out;
+    animation: fadeIn 0.7s forwards ease-in-out;
     transition: all 0.5s ease;
     text-shadow: 1px 1px white;
 
@@ -122,7 +122,7 @@
     left: 55%;
     transform: translate(0%, -100%) rotateZ(45deg);
     letter-spacing: 1px;
-    animation: fadeIn 1s forwards ease;
+    animation: fadeIn 0.9s forwards ease;
     transition: all 0.5s ease;
     text-shadow: 1px 1px white;
 
@@ -175,5 +175,63 @@
     }
     to {
         left: -45%;
+    }
+}
+
+@keyframes bounce {
+    from {
+        top: 36%;
+    }
+
+    to {
+        top: 37%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero {
+        transform: translate(-50%, 0);
+        top: 37%;
+        left: 50%;
+        animation: bounce 1s infinite alternate ease;
+        z-index: 1000;
+        width: 25vh;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .homeHeader {
+        top: 15%;
+        left: 0%;
+        transform: none;
+        font-size: 4rem;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        padding: 0;
+
+        &:hover {
+            transform: none;
+        }
+
+        br {
+            content: "";
+        }
+    }
+
+    .homeHeader2 {
+        top: 25%;
+        left: 0%;
+        transform: none;
+        font-size: 4rem;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        padding: 0;
+
+        &:hover {
+            transform: none;
+        }
     }
 }

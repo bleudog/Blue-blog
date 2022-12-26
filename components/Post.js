@@ -36,7 +36,7 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 					{'•'}
 				</Link>
 				<span>–––––––––––</span>
-				<span className={'top'}>•</span>
+				<span>•</span>
 
 				<span> {title}</span>
 			</HeaderContainer>
