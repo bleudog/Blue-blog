@@ -3,7 +3,7 @@ import { List, Title, PostDate } from './custom-tw-components';
 
 const PostList = ({ posts }) => {
 	return (
-		<>
+		<div className='px-4'>
 			{posts.map((post) => (
 				<Link
 					key={`${post.lang}-${post.slug}-$`}
@@ -15,7 +15,7 @@ const PostList = ({ posts }) => {
 					</List>
 				</Link>
 			))}
-		</>
+		</div>
 	);
 };
 

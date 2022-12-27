@@ -45,7 +45,6 @@ const BlogLayout = ({ posts }) => {
 			</PostListContainer>
 
 			<PostListContainer>
-				{console.dir(posts)}
 				<PostList posts={posts} />
 			</PostListContainer>
 		</div>
