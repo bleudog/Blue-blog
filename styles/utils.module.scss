@@ -1,13 +1,26 @@
 @import "@styles/colors.module";
 
 .hero {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: loadFigure 1s forwards ease-in;
-    z-index: 1000;
+    // display: block;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // // animation: loadFigure 1s forwards ease-in;
+    img {
+        animation: bounce 1s infinite alternate ease;
+        z-index: 1000;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-5px);
+    }
+
+    to {
+        transform: translateY(5px);
+    }
 }
 
 .about {
@@ -182,15 +195,7 @@
     }
 }
 
-@keyframes bounce {
-    from {
-        top: 36%;
-    }
 
-    to {
-        top: 37%;
-    }
-}
 
 @media only screen and (max-width: 767px) {
     .hero {

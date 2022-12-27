@@ -129,6 +129,10 @@ export const BaseContainer = tw.section`
     mx-auto
     relative
     mt-5
+    flex
+    items-center
+    justify-center
+    h-screen
 `;
 
 //////////////////////////////////////////////////////

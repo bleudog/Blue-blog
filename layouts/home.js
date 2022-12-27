@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Footer from '@components/Footer';
 import Container from '@components/Container';
 import utilStyles from '@styles/utils.module.scss';
-import { Banner } from '@components/custom-tw-components';
+import { Banner, BaseContainer } from '@components/custom-tw-components';
 import profileImg1 from '../public/images/rolemadelen1.png';
 import profileImg2 from '../public/images/rolemadelen2.png';
 import profileImg3 from '../public/images/rolemadelen3.png';
@@ -11,8 +11,8 @@ import Link from 'next/link';
 const HomeLayout = () => {
 	const figureType = Math.floor((Math.random() * 10) % 3);
 	return (
-		<>
-			<Link
+		<BaseContainer>
+			{/* <Link
 				key={'blog'}
 				href={'/about/'}
 				passHref>
@@ -27,7 +27,7 @@ const HomeLayout = () => {
 				href={'/blog/'}
 				passHref>
 				<h1 className={`${utilStyles.homeHeader2}`}>blog</h1>
-			</Link>
+			</Link> */}
 			<div className={utilStyles.hero}>
 				{figureType === 0 && (
 					<Link
@@ -72,7 +72,7 @@ const HomeLayout = () => {
 					</Link>
 				)}
 			</div>
-		</>
+		</BaseContainer>
 	);
 };
 
