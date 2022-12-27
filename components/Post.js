@@ -22,7 +22,7 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 				<title>{title}</title>
 			</Head>
 			<HeaderContainer>{title}</HeaderContainer>
-			<div className={'flex'}>
+			<div className={'flex px-4'}>
 				<PageSecondTitle>{subtitle}</PageSecondTitle>
 				<Date
 					dateString={date}

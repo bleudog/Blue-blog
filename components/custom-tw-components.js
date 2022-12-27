@@ -27,6 +27,7 @@ export const Header = tw.p`
 export const Article = tw.article`
     text-primary
     py-10
+    px-4
     border-b-[1px]
 `;
 
@@ -134,6 +135,7 @@ export const BaseContainer = tw.section`
     items-center
     justify-center
     h-screen
+    baseContainer
 `;
 
 //////////////////////////////////////////////////////
@@ -158,9 +160,11 @@ export const HeaderContainer = tw.header`
     font-['AmazonEmberDisplay']
     postHeader
     whitespace-nowrap
+    px-4
 `;
 
 export const BackButton = tw.button`
+    ml-4
     px-2
     sm:px-4
     mb-6
