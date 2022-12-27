@@ -12,65 +12,60 @@ const HomeLayout = () => {
 	const figureType = Math.floor((Math.random() * 10) % 3);
 	return (
 		<BaseContainer>
-			{/* <Link
-				key={'blog'}
-				href={'/about/'}
-				passHref>
-				<h1 className={`${utilStyles.homeHeader}`}>
-					role
-					<br />
-					madelen
-				</h1>
-			</Link>
-			<Link
-				key={'blog'}
-				href={'/blog/'}
-				passHref>
-				<h1 className={`${utilStyles.homeHeader2}`}>blog</h1>
-			</Link> */}
-			<div className={utilStyles.hero}>
+			<div className={utilStyles.figure}>
 				{figureType === 0 && (
-					<Link
-						key={'blog'}
-						href={'/blog/'}
-						passHref>
-						<Image
-							priority
-							width={300}
-							height={600}
-							src={profileImg1}
-							alt='Rolemadelen'
-						/>
-					</Link>
+					<Image
+						priority
+						width={300}
+						height={600}
+						src={profileImg1}
+						alt='Rolemadelen'
+					/>
 				)}
 				{figureType === 1 && (
-					<Link
-						key={'blog'}
-						href={'/blog/'}
-						passHref>
-						<Image
-							priority
-							width={260}
-							height={600}
-							src={profileImg2}
-							alt='Rolemadelen'
-						/>
-					</Link>
+					<Image
+						priority
+						width={260}
+						height={600}
+						src={profileImg2}
+						alt='Rolemadelen'
+					/>
 				)}
 				{figureType === 2 && (
+					<Image
+						priority
+						width={300}
+						height={600}
+						src={profileImg3}
+						alt='Rolemadelen'
+					/>
+				)}
+			</div>
+			<p className={utilStyles.banner}>
+				<Link
+					key={'blog'}
+					href={'/blog/'}
+					passHref>
+					rolemadelen
+				</Link>
+			</p>
+			<div className={`${utilStyles.aboutMenu}`}>
+				<span>
+					<Link
+						key={'home'}
+						href={'/about'}
+						passHref>
+						{'about'}
+					</Link>
+				</span>
+				<span>
 					<Link
 						key={'blog'}
 						href={'/blog/'}
 						passHref>
-						<Image
-							priority
-							width={300}
-							height={600}
-							src={profileImg3}
-							alt='Rolemadelen'
-						/>
+						{'blog'}
 					</Link>
-				)}
+				</span>
 			</div>
 		</BaseContainer>
 	);

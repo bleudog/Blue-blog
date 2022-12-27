@@ -130,6 +130,7 @@ export const BaseContainer = tw.section`
     relative
     mt-5
     flex
+    flex-col
     items-center
     justify-center
     h-screen
