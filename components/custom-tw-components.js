@@ -149,18 +149,9 @@ export const FooterContainer = tw.footer`
 //////////////////////////////////////////////////////
 export const HeaderContainer = tw.header`
     mt-4
-    text-4xl
-    font-['AmazonEmberDisplayMedium']
-    postHeader
-    whitespace-nowrap
-`;
-
-export const MobileHeaderContainer = tw.header`
-    px-2
-    mt-4
     text-2xl
     font-['AmazonEmberDisplay']
-    mobilePostHeader
+    postHeader
     whitespace-nowrap
 `;
 

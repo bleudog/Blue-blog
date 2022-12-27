@@ -25,7 +25,7 @@ const BlogPostLayout = ({ post }) => {
 			<Article>
 				<Preview markdown={post.markdown} />
 			</Article>
-			<Comments />
+			{/* <Comments /> */}
 			<Footer />
 		</PostListContainer>
 	);
