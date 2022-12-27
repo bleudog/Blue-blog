@@ -191,7 +191,7 @@
 @media only screen and (max-width: 767px) {
     .hero {
         transform: translate(-50%, 0);
-        top: 37%;
+        top: 40%;
         left: 50%;
         animation: bounce 1s infinite alternate ease;
         z-index: 1000;
@@ -202,10 +202,10 @@
         }
     }
     .homeHeader {
-        top: 15%;
+        top: 3%;
         left: 0%;
         transform: none;
-        font-size: 4rem;
+        font-size: 13vw;
         text-align: center;
         width: 100%;
         text-transform: uppercase;
@@ -215,13 +215,13 @@
             transform: none;
         }
 
-        br {
-            content: "";
-        }
+        // br {
+        //     content: "";
+        // }
     }
 
     .homeHeader2 {
-        top: 25%;
+        top: 27%;
         left: 0%;
         transform: none;
         font-size: 4rem;

@@ -95,15 +95,6 @@ main {
     font-size: min(15vw, 3.75em);
 }
 
-a {
-    color: $--link;
-
-    &:hover {
-        text-decoration: underline;
-        text-decoration-thickness: from-font;
-    }
-}
-
 li {
     position: relative;
 }
@@ -277,7 +268,28 @@ footer {
 }
 
 .mobilePostHeader {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+        animation: slideRight 1s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    div:first-child {
+        font-size: 1.4rem;
+    }
+
+    div:last-child {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 0.5rem 0 1rem;
+
+        div {
+            font-size: 0.8rem;
+        }
+    }
+
+    a {
+        color: rgb(27, 33, 46);
+    }
 }
 
 .postHeader {
@@ -296,33 +308,6 @@ footer {
     }
 }
 
-header {
-    a {
-        transition: all 0.3s ease-out;
-        &:nth-of-type(1):hover {
-            color: #5070e3 !important;
-
-            &::before {
-                content: 'blog';
-                font-size: 0.8rem;
-                position: absolute;
-                top: -25%;
-                left: 31%;
-            }
-        }
-        &:nth-of-type(2):hover {
-            color: #ee7cc4 !important;
-            &::before {
-                content: 'note';
-                font-size: 0.8rem;
-                position: absolute;
-                top: -25%;
-                left: 36%;
-            }
-        }
-    }
-}
-
 article {
     p {
         a {
@@ -332,6 +317,15 @@ article {
             &:hover {
                 text-decoration: none;
             }
+        }
+    }
+}
+
+header {
+    .currentPage {
+        a {
+            text-decoration: underline 10% rgb(50, 50, 50);
+            text-underline-offset: 18%;
         }
     }
 }
@@ -363,10 +357,10 @@ article {
 
 @keyframes slideRight {
     from {
-        transform: translateX(-150%);
+        transform: translateY(-500%);
     }
 
     to {
-        transform: translateX(-74%);
+        transform: translateY(0%);
     }
 }

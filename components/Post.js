@@ -7,6 +7,7 @@ import {
 	BackButton,
 	Tag,
 	HeaderContainer,
+	MobileHeaderContainer,
 } from './custom-tw-components';
 import { useRouter } from 'next/router';
 import utilStyles from '@styles/utils.module.scss';
@@ -20,26 +21,7 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 			<Head>
 				<title>{title}</title>
 			</Head>
-			<HeaderContainer>
-				<span>–––––––––––</span>
-				<Link
-					key={'post'}
-					href={'/blog'}
-					passHref>
-					{'•'}
-				</Link>
-				<span>–</span>
-				<Link
-					key={'post'}
-					href={'/blog/note'}
-					passHref>
-					{'•'}
-				</Link>
-				<span>–––––––––––</span>
-				<span>•</span>
-
-				<span> {title}</span>
-			</HeaderContainer>
+			<HeaderContainer>{title}</HeaderContainer>
 			<div className={'flex'}>
 				<PageSecondTitle>{subtitle}</PageSecondTitle>
 				<Date

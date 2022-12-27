@@ -15,7 +15,7 @@ const BlogLayout = ({ posts }) => {
 	return (
 		<div>
 			<PostListContainer>
-				<HeaderContainer>
+				{/* <HeaderContainer>
 					<span>–––––––––––</span>
 					<Link
 						key={'post'}
@@ -37,7 +37,7 @@ const BlogLayout = ({ posts }) => {
 						passHref>
 						{'rolemadelen'}
 					</Link>
-				</HeaderContainer>
+				</HeaderContainer> */}
 				<MobileHeaderContainer>
 					<div>
 						<Link
@@ -48,7 +48,7 @@ const BlogLayout = ({ posts }) => {
 						</Link>
 					</div>
 					<div>
-						<div>
+						<div className={'currentPage'}>
 							<Link
 								key={'blog'}
 								href={'/blog'}

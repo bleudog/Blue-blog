@@ -5,7 +5,10 @@ import tw from 'tailwind-styled-components';
 //////////////////////////////////////////////////////
 export const PostListContainer = tw.div`
    mx-auto
-   max-w-[40em]
+   md:max-w-[40em]
+   sm:max-w-[30em]
+   max-w-[25em]
+   min-w-[25em]
    mb-8
 `;
 
@@ -145,7 +148,6 @@ export const FooterContainer = tw.footer`
 ///  Header Component
 //////////////////////////////////////////////////////
 export const HeaderContainer = tw.header`
-    px-2
     mt-4
     text-4xl
     font-['AmazonEmberDisplayMedium']

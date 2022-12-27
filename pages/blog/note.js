@@ -4,6 +4,7 @@ import {
 	PostListContainer,
 	Header,
 	HeaderContainer,
+	MobileHeaderContainer,
 } from '@components/custom-tw-components';
 import utilStyles from '@styles/utils.module.scss';
 import Link from 'next/link';
@@ -12,7 +13,7 @@ export default function Blog({ posts }) {
 	return (
 		<div>
 			<PostListContainer>
-				<HeaderContainer>
+				{/* <HeaderContainer>
 					<span>–––––––––––</span>
 					<Link
 						key={'post'}
@@ -34,7 +35,35 @@ export default function Blog({ posts }) {
 						passHref>
 						{'note'}
 					</Link>
-				</HeaderContainer>
+				</HeaderContainer> */}
+				<MobileHeaderContainer>
+					<div>
+						<Link
+							key={'home'}
+							href={'/'}
+							passHref>
+							{'rolemadelen'}
+						</Link>
+					</div>
+					<div>
+						<div>
+							<Link
+								key={'blog'}
+								href={'/blog'}
+								passHref>
+								{'blog'}
+							</Link>
+						</div>
+						<div className={'currentPage'}>
+							<Link
+								key={'note'}
+								href={'/blog/note'}
+								passHref>
+								{'note'}
+							</Link>
+						</div>
+					</div>
+				</MobileHeaderContainer>
 			</PostListContainer>
 
 			<PostListContainer>
