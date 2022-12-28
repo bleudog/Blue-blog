@@ -27,15 +27,15 @@ export default function Blog({ posts }) {
 								key={'blog'}
 								href={'/blog'}
 								passHref>
-								{'blog'}
+								{'dev'}
 							</Link>
 						</div>
 						<div className={'currentPage'}>
 							<Link
-								key={'note'}
-								href={'/blog/note'}
+								key={'log'}
+								href={'/blog/log'}
 								passHref>
-								{'note'}
+								{'log'}
 							</Link>
 						</div>
 					</div>

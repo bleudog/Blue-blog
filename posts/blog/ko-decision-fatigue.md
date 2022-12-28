@@ -22,7 +22,7 @@ about: note
 그렇다면 아침을 매번 같은 걸 해먹으면 해결되지 않을까?라는 생각에 바로 행동으로 옮겼다.
 지금까지 대략 10일이 지났고, 지난 10일간 똑같은 아침을 먹었다.
 
-![toast](/images/posts/note/decision-fatigue/breakfast-toast.jpg)
+![toast](/images/posts/log/decision-fatigue/breakfast-toast.jpg)
 
 아침 6:00\~6:10분 쯤 주방으로 가서 빵 한조각, 달갈 하나, 치즈 두 장을 꺼내서 요리(?)를 시작하면,
 대략 3\~5분 사이의 맛있는 스크램블 치즈 토스트가 완성된다.
@@ -36,7 +36,7 @@ about: note
 
 안 입는 옷들을 정리하니 이렇게나 많이 나왔다.
 
-![clothes2](/images/posts/note/decision-fatigue/clothes2.jpg)
+![clothes2](/images/posts/log/decision-fatigue/clothes2.jpg)
 
 이 옷들은 중고로 내놓거나 기부하는 방식으로 처분할 것 같다.
 
@@ -47,7 +47,7 @@ about: note
 
 하기 싫은 것 혹은 내가 하기 귀찮은 것들에는 갖가지 이유를 붙여가며 고민만 하는거에 지쳐서, 그냥 닥치고 일어나서 집 주변을 걷기 시작했다.
 
-![walk](/images/posts/note/decision-fatigue/walk.jpg)
+![walk](/images/posts/log/decision-fatigue/walk.jpg)
 
 저녁으로 미루면 안할 것을 알기 때문에 귀찮은 것을 제일 먼저하기로 했다.
 

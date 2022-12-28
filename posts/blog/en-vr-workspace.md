@@ -29,7 +29,7 @@ He said he's still coding in VR. He uses a pomodoro technique where he works for
 I never used VR before, but I thought it'd be a good experience to try it. If it doesn't work out, I can just have fun with VR.
 
 So I bought Meta Quest 2 and immersed. And here's what my working space is like:
-![immersed](/images/posts/note/vr/immersed.gif)
+![immersed](/images/posts/log/vr/immersed.gif)
 
 I bought the subscription so I have an access to all 5 monitors but only using 4 for now.
 

@@ -1,9 +1,6 @@
 const navlink = {
 	base: [{ name: 'Blog', link: '/blog' }],
-	blog: [
-		{ name: 'Data Structures', link: '/blog/dsa' },
-		{ name: 'Log', link: '/blog/note' },
-	],
+	blog: [{ name: 'Log', link: '/blog/log' }],
 };
 
 export default navlink;

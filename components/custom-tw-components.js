@@ -64,8 +64,8 @@ export const PostDate = tw.div`
     flex
     items-center
     font-['AmazonEmberDisplay']
-    text-sm
-    mr-8
+    text-xs
+    mr-6
 `;
 
 export const Title = tw.div`

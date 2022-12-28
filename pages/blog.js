@@ -7,7 +7,7 @@ export default function Blog({ posts }) {
 
 export async function getStaticProps() {
 	// const posts = getAllPosts();
-	const posts = getAllPosts();
+	const posts = getAllPosts().filter((post) => post.about !== 'note');
 	return {
 		props: {
 			posts,

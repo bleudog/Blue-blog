@@ -6,7 +6,7 @@ date: '2022-09-15 07:00:00'
 tags:
   - mac
 lang: en
-about: note
+about: dev
 ---
 
 inspired by [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/).

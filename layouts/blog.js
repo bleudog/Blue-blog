@@ -1,4 +1,5 @@
 import PostList from '@components/PostList';
+import Footer from '@components/Footer';
 import {
 	PostListContainer,
 	Header,
@@ -29,15 +30,15 @@ const BlogLayout = ({ posts }) => {
 								key={'blog'}
 								href={'/blog'}
 								passHref>
-								{'blog'}
+								{'dev'}
 							</Link>
 						</div>
 						<div>
 							<Link
-								key={'note'}
-								href={'/blog/note'}
+								key={'log'}
+								href={'/blog/log'}
 								passHref>
-								{'note'}
+								{'log'}
 							</Link>
 						</div>
 					</div>
@@ -46,6 +47,7 @@ const BlogLayout = ({ posts }) => {
 
 			<PostListContainer>
 				<PostList posts={posts} />
+				<Footer />
 			</PostListContainer>
 		</div>
 	);

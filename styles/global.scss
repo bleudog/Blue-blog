@@ -291,17 +291,18 @@ footer {
     justify-content: space-between;
         animation: slideRight 1s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
 
-    div:first-child {
+    & > div:first-child {
         font-size: 1.4rem;
     }
 
-    div:last-child {
+    & > div:last-child {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
 
         div {
             font-size: 0.8rem;
+            margin: auto 8px;
         }
     }
 
@@ -343,7 +344,6 @@ header {
     .currentPage {
         backdrop-filter: invert(1);
         padding: 0 4px;
-        margin: auto 8px;
         a {
             color: white;
             // text-decoration: underline 10% rgb(50, 50, 50);
