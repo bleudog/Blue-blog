@@ -26,7 +26,8 @@ export const Header = tw.p`
 //////////////////////////////////////////////////////
 export const Article = tw.article`
     text-primary
-    py-10
+    pt-4
+    pb-10
     px-4
     border-b-[1px]
 `;
@@ -167,7 +168,6 @@ export const BackButton = tw.button`
     ml-4
     px-2
     sm:px-4
-    mb-6
     rounded-md
 
     text-primary

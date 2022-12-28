@@ -54,31 +54,35 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: AmazonEmberDisplayMedium;
-    padding: 0.5em 0;
+    font-family: AmazonEmberDisplay;
+    margin-bottom: 0.5rem;
 }
 
 h1 {
     font-size: 1.8em;
     font-weight: bold;
+    margin-top: 1.5rem;
 }
 
 h2 {
     font-size: 1.4em;
     padding: 0.5em 0 0 0;
-    margin-bottom: 0.5em;
+    margin-top: 1.25rem;
 }
 
 h3 {
     font-size: 1.2em;
+    margin-top: 1.1rem;
 }
 
 h4 {
     font-size: 1.1em;
+    margin-top: 1rem;
 }
 
 h5 {
     font-size: 1.0em;
+    margin-top: 0.8rem;
 }
 
 main {
@@ -112,16 +116,9 @@ table {
     }
 }
 
-p {
-    padding: 0.25em 0;
-}
-
-img {
-    margin: 0.5em;
-}
-
 code {
-    background-color: #dedede;
+    background-color: rgba(12, 100, 193, 0.2);
+    color: rgba(12, 100, 193, 1.0);
     font-size: 0.9rem;
     font-family: monospace;
     padding: 1px 4px;
@@ -134,14 +131,16 @@ pre {
     code {
         background-color: transparent;
         padding: 0 !important;
-        border: none;
-        box-shadow: none;
-        margin: inherit;
     }
 
     div {
-        margin: 0 !important;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.88) !important;
     }
+}
+
+ul, ol {
+    margin-bottom: 1rem;
 }
 
 ol>li {
@@ -201,25 +200,20 @@ hr {
 
 blockquote {
     display: flex;
-    background-color: rgb(242, 242, 242);
-    padding-right: 5px;
-    p {
-        color: #656565;
-        font-style: italic;
-    }
-    &::before {
-        content: "";
-        background: #8c8c8c;
-        width: 0.5em;
-        margin-right: 10px;
-    }
+    background-color: rgba(242, 242, 242, 1.0);
+    color: rgba(145, 147, 151, 1.0);
+    margin-bottom: 1rem;
+    border-left: 4px solid #51a5ff;
 
-    > p::before {
-        content: "“ "
+    p {
+        padding: 2px 0.5em 2px 1em;
     }
-    > p::after {
-        content: " ”"
-    }
+    // &::before {
+    //     content: "";
+    //     background: #8aa4ff;
+    //     width: 0.3em;
+    //     margin-right: 1em;
+    // }
 }
 
 footer {
@@ -268,10 +262,14 @@ footer {
 }
 
 article {
+    p:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
     p {
         a {
             color: unset;
-            border-bottom: 2px solid #0c64c1;
+            border-bottom: 2px solid #51a5ff;
 
             &:hover {
                 text-decoration: none;
