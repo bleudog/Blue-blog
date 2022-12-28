@@ -2,7 +2,6 @@ import { getAllPosts } from '@lib/blog';
 import PostList from '@components/PostList';
 import {
 	PostListContainer,
-	Header,
 	HeaderContainer,
 } from '@components/custom-tw-components';
 import utilStyles from '@styles/utils.module.scss';
@@ -32,10 +31,10 @@ export default function Blog({ posts }) {
 						</div>
 						<div className={'currentPage'}>
 							<Link
-								key={'log'}
-								href={'/blog/log'}
+								key={'note'}
+								href={'/blog/note'}
 								passHref>
-								{'log'}
+								{'note'}
 							</Link>
 						</div>
 					</div>

@@ -54,7 +54,6 @@ export const List = tw.li`
     list-none
     p-2
     flex
-    hover:font-black
     cursor-pointer
 `;
 
@@ -75,6 +74,7 @@ export const Title = tw.div`
     flex-wrap
     font-['AmazonEmberDisplay']
     text-sm
+    hover:text-[#465a87]
 `;
 
 //////////////////////////////////////////////////////

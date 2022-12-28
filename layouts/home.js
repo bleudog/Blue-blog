@@ -31,7 +31,7 @@ const HomeLayout = () => {
 					/>
 				)}
 			</div>
-			<p className={utilStyles.banner}>
+			<p className={utilStyles.homeTitle}>
 				<Link
 					key={'blog'}
 					href={'/blog/'}

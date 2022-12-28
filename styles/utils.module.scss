@@ -3,11 +3,10 @@
 .figure {
     position: absolute;
     z-index: -1000;
-    opacity: 0;
-    animation: loadFigure 1s forwards ease-in;
+    animation: fadeIn 1s forwards ease;
 }
 
-.banner {
+.homeTitle {
     transition: all 0.3s ease;
     font-family: 'AmazonEmberDisplayMedium';
     font-size: 2rem;
@@ -21,6 +20,77 @@
     }
 }
 
+.aboutContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div:first-child {
+        font-size: 1.3rem;
+        padding: 0 1rem;
+    }
+
+    div:last-child {
+        margin-top: 1.5rem;
+        width: 15rem;
+    }
+}
+
+.aboutMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+
+    span {
+        transition: all 0.2s ease;
+        a {
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: #465a87;
+            }
+        }
+
+    }
+
+    span:first-child {
+        &::before {
+            content: "«";
+            display: inline-block;
+        }
+        &:hover {
+            transform: translateX(-10px);
+            transition: all 0.2s ease;
+        }
+    }
+
+    span:last-child {
+        &::after {
+            content: "»";
+            display: inline-block;
+        }
+
+        &:hover {
+            transform: translateX(10px);
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.4;
+    }
+}
+
 @keyframes bounce {
     from {
         transform: translateY(-2px);
@@ -28,98 +98,5 @@
 
     to {
         transform: translateY(2px);
-    }
-}
-
-.about {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: loadAbout 1s forwards ease-out;
-    z-index: 1000;
-    font-family: 'AmazonEmberDisplay';
-
-    &Menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 10rem;
-
-        span {
-            transition: all 0.2s ease;
-            a {
-                color: black;
-                text-decoration: none;
-                &:hover {
-                    color: #465a87;
-                }
-            }
-
-        }
-
-        font-weight: 300;
-        span:first-child {
-            &::before {
-                content: "«";
-                display: inline-block;
-            }
-            &:hover {
-                transform: translateX(-10px);
-                transition: all 0.2s ease;
-            }
-        }
-
-        span:last-child {
-            &::after {
-                content: "»";
-                display: inline-block;
-            }
-
-            &:hover {
-                transform: translateX(10px);
-                transition: all 0.2s ease;
-            }
-        }
-    }
-
-    .h1 {
-        font-size: 1.8em;
-    }
-
-    .h2 {
-        font-size: 1.4em;
-    }
-
-    .h3 {
-        font-size: 1.2em;
-    }
-
-    .h4 {
-        font-size: 1.1em;
-    }
-
-    .h5 {
-        font-size: 1.0em;
-    }
-}
-
-@keyframes loadFigure {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 0.3;
-    }
-}
-
-@keyframes loadAbout {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
     }
 }

@@ -8,14 +8,14 @@ import figure from '../public/images/aboutme.png';
 
 export default function About() {
 	return (
-		<div className={'aboutContainer'}>
+		<div className={utilStyles.aboutContainer}>
 			<div>
 				<p>
 					Hi. I&apos;m <b>Rolemadelen</b> or <b>Madelen</b> for short.
 				</p>
 				<p>I&apos;m a Frontend Developer.</p>
 			</div>
-			<div className={`${utilStyles.aboutMenu}`}>
+			<div className={utilStyles.aboutMenu}>
 				<span>
 					<Link
 						key={'home'}

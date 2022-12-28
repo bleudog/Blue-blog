@@ -33,6 +33,12 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
 }
 
 pre {
@@ -41,18 +47,6 @@ pre {
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
-}
-
-img {
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
-}
-
-time {
-    width: 5rem;
 }
 
 h1,
@@ -91,54 +85,8 @@ main {
     position: relative;
 }
 
-.aboutContainer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    div:first-child {
-        font-size: 1.3rem;
-        padding: 0 1rem;
-    }
-
-    div:last-child {
-        margin-top: 1.5rem;
-        width: 15rem;
-    }
-}
-
-.home-header {
-    font-size: min(15vw, 3.75em);
-}
-
 li {
     position: relative;
-}
-
-.hide {
-    display: none !important;
-}
-
-.postTag {
-    top: 2em;
-
-    a {
-        margin: 1em 0.5em 0 0.5em;
-        padding: 0 0.7em;
-        font-weight: 400;
-        font-size: 15px;
-        border-radius: 5px;
-        border: 1px solid #cccccc;
-
-        &:hover {
-            text-decoration: none;
-            border: 1px solid #6c8bff;
-            transition: all 0.3s ease-out;
-        }
-    }
 }
 
 table {
@@ -274,7 +222,6 @@ blockquote {
     }
 }
 
-
 footer {
     a {
         color: $--primary;
@@ -289,7 +236,7 @@ footer {
 .postHeader {
     display: flex;
     justify-content: space-between;
-        animation: slideRight 1s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: slideDown 1s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
 
     & > div:first-child {
         font-size: 1.4rem;
@@ -306,13 +253,6 @@ footer {
         }
     }
 
-    a {
-        color: rgb(27, 33, 46);
-    }
-}
-
-.postHeader {
-    animation: slideRight 1s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
 
     a {
         color: rgb(27, 33, 46);
@@ -352,7 +292,7 @@ header {
     }
 }
 
-@keyframes slideRight {
+@keyframes slideDown {
     from {
         transform: translateY(-500%);
     }
