@@ -1,11 +1,6 @@
 import PostList from '@components/PostList';
-import Footer from '@components/Footer';
 import {
 	PostListContainer,
-	Header,
-	CategoryList,
-	Category,
-	BlogHeaderContainer,
 	HeaderContainer,
 } from '@components/custom-tw-components';
 import utilStyles from '@styles/utils.module.scss';
@@ -47,7 +42,6 @@ const BlogLayout = ({ posts }) => {
 
 			<PostListContainer>
 				<PostList posts={posts} />
-				<Footer />
 			</PostListContainer>
 		</div>
 	);
