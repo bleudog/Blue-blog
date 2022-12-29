@@ -37,6 +37,7 @@ export const Article = tw.article`
 //////////////////////////////////////////////////////
 export const PostContainer = tw.section`
     mt-4
+    mb-4
     text-primary
     text-sm
     w-full
@@ -157,7 +158,7 @@ export const FooterContainer = tw.footer`
 //////////////////////////////////////////////////////
 export const HeaderContainer = tw.header`
     mt-4
-    text-2xl
+    text-3xl
     font-['AmazonEmberDisplay']
     postHeader
     whitespace-nowrap

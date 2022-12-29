@@ -9,8 +9,6 @@ lang: 'en'
 about: dev
 ---
 
-# Data Structures
-
 A data structure is a collection of data organized and processed in certain way that allows you to access and modify data efficiently.
 
 ## Types of Data Structure

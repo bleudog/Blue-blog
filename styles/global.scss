@@ -12,8 +12,7 @@
     src: url(../public/font/AmazonEmberDisplayMedium.ttf);
 }
 
-$--root: 17px;
-$--text: 16px;
+$--root: 16px;
 
 * {
     box-sizing: border-box;
@@ -57,27 +56,27 @@ h5 {
     font-family: AmazonEmberDisplay;
     margin-top:1rem;
     margin-bottom:1rem;
-}
-
-h1 {
-    font-size: 1.8em;
     font-weight: bold;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
 h2 {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 h3 {
-    font-size: 1.2em;
-}
-
-h4 {
     font-size: 1.1em;
 }
 
-h5 {
+h4 {
     font-size: 1.0em;
+}
+
+h5 {
+    font-size: 0.8em;
 }
 
 main {
@@ -121,7 +120,7 @@ code {
 }
 
 pre {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     code {
         background-color: transparent;
         padding: 0 !important;
@@ -158,8 +157,10 @@ ol>li {
 }
 
 ul>li {
-    margin-left: 1rem;
-    list-style: disc;
+    &::before {
+        content: "•";
+        margin-right: 0.5em;
+    }
 
     ol>li {
         list-style: upper-alpha;
@@ -194,7 +195,7 @@ hr {
 
 blockquote {
     display: flex;
-    background-color: rgba(242, 242, 242, 1.0);
+    background-color: rgba(242, 242, 242, 0.5);
     color: rgba(145, 147, 151, 1.0);
     margin-bottom: 2rem;
     border-left: 4px solid #51a5ff;
@@ -263,7 +264,7 @@ article {
     p {
         a {
             color: unset;
-            border-bottom: 2px solid #51a5ff;
+            border-bottom: 1.5px solid #51a5ff;
 
             &:hover {
                 text-decoration: none;
