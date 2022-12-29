@@ -34,7 +34,7 @@ export default function Blog({ posts }) {
 								key={'note'}
 								href={'/blog/note'}
 								passHref>
-								{'note'}
+								{'journal'}
 							</Link>
 						</div>
 					</div>
@@ -49,7 +49,7 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-	const posts = getAllPosts().filter((post) => post.about === 'note');
+	const posts = getAllPosts().filter((post) => post.about === 'journal');
 	return {
 		props: {
 			posts,

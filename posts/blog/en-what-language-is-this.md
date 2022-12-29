@@ -7,7 +7,7 @@ tags:
   - programming
   - regex
 lang: en
-about: programming
+about: dev
 ---
 
 Depends on the language of the name (English or Japanese), I need to display names in different order: `<FIRST> <LAST>` (western convention) or `<LAST> <FIRST>` (eastern convention); _I apologize if this isn't necessarily western or eastern._

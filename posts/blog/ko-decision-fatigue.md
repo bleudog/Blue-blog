@@ -6,7 +6,7 @@ date: '2022-12-11 17:00:00'
 tags:
   - log
 lang: ko
-about: note
+about: journal
 ---
 
 사람은 살아가면서 수많은 고민을 한다.

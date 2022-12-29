@@ -8,7 +8,7 @@ tags:
   - circular queue
   - linked list
 lang: en
-about: dsa
+about: dev
 ---
 
 Circular Queue is an extended version of a regular queue where rear element is connected to the front element.

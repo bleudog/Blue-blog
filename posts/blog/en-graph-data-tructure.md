@@ -7,7 +7,7 @@ tags:
   - programming
   - data structure
 lang: en
-about: dsa
+about: dev
 ---
 
 Graph is a non-linear data structure consisting of vertices and edges.

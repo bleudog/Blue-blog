@@ -6,7 +6,7 @@ date: '2022-11-30 17:00:00'
 tags:
   - programming
 lang: en
-about: programming
+about: journal
 ---
 
 I use [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) in VS Code to format my code and my indents are set to 2 spaces.
@@ -33,9 +33,9 @@ You can write more (2 characters more?) code in one-line but it's better to brea
 
 One advantage I can think of using the 4-space indents is that you can differentiate the block a bit better than 2-space indents.
 
-2-space indents:
-
 ```ts
+// 2-space indents
+
 function foo() {
   if (...) {
     statement;
@@ -45,9 +45,9 @@ function foo() {
 }
 ```
 
-4-space indents:
-
 ```ts
+// 4-space indents
+
 function foo() {
     if (...) {
         statement;

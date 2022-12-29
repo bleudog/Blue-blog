@@ -8,7 +8,7 @@ tags:
   - search
   - linear
 lang: en
-about: dsa
+about: dev
 ---
 
 ## Linear Search

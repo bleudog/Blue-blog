@@ -8,7 +8,7 @@ tags:
   - search
   - binary
 lang: en
-about: dsa
+about: dev
 ---
 
 ## Binary Search

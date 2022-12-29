@@ -6,7 +6,7 @@ date: '2022-12-01 17:00:00'
 tags:
   - log
 lang: en
-about: note
+about: jounrnal
 ---
 
 What is a Dvorak keyboard?

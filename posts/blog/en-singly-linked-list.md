@@ -7,7 +7,7 @@ updated: '2022-10-22 12:00:00'
 tags:
   - linked list
 lang: en
-about: dsa
+about: dev
 ---
 
 A **singly linked list** is a linear collection of data elements. The order of the element is not given by their physical location in memory. Instead, each element points to the next node using the address.

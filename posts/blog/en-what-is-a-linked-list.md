@@ -7,7 +7,7 @@ updated: '2022-10-21 12:00:00'
 tags:
   - linked list
 lang: en
-about: dsa
+about: dev
 ---
 
 A Linked List is a linear data structure where data elements are connected via series of nodes. Each node contains the data item and reference to the next node.

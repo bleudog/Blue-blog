@@ -6,7 +6,7 @@ date: '2022-07-31 18:50:00'
 tags:
   - linked list
 lang: en
-about: dsa
+about: dev
 ---
 
 # What is a Circular Linked List?

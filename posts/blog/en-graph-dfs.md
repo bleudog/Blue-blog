@@ -7,7 +7,7 @@ tags:
   - programming
   - data structure
 lang: en
-about: dsa
+about: dev
 ---
 
 ## Depth First Search

@@ -7,7 +7,7 @@ tags:
   - circular queue
   - data structure
 lang: en
-about: dsa
+about: dev
 ---
 
 ## Circular Queue

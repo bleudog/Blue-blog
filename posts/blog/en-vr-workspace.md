@@ -7,7 +7,7 @@ tags:
   - programming
   - vr
 lang: en
-about: note
+about: journal
 ---
 
 How many monitors do you own?

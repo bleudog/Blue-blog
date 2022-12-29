@@ -171,7 +171,8 @@ export const BackButton = tw.button`
     rounded-md
 
     text-primary
-    hover:bg-[#649aeb47]
+    hover:bg-[#51a5ff]
+    hover:text-white
     duration-75
 
     shadow

@@ -7,7 +7,7 @@ tags:
   - programming
   - data structure
 lang: en
-about: dsa
+about: dev
 ---
 
 How can we determine whether a cycle is present in the graph or not?
