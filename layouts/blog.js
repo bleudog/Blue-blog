@@ -30,8 +30,8 @@ const BlogLayout = ({ posts }) => {
 						</div>
 						<div>
 							<Link
-								key={'note'}
-								href={'/blog/note'}
+								key={'journal'}
+								href={'/blog/journal'}
 								passHref>
 								{'journal'}
 							</Link>

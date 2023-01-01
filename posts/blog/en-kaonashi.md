@@ -6,7 +6,7 @@ date: '2022-12-15 17:00:00'
 tags:
   - drawing
 lang: en
-about: journal
+about: pending
 ---
 
 _Kao (顔)_ means 'face' and _nashi (無し)_ means 'nothing'. So Kaonash means faceless.

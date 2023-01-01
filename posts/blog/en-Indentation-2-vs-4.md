@@ -6,7 +6,7 @@ date: '2022-11-30 17:00:00'
 tags:
   - programming
 lang: en
-about: journal
+about: pending
 ---
 
 I use [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) in VS Code to format my code and my indents are set to 2 spaces.

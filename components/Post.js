@@ -26,7 +26,7 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 				<PageSecondTitle>{subtitle}</PageSecondTitle>
 				<Date
 					dateString={date}
-					customClass={'mt-2 mb-2 text-sm break-normal inline-block text-right'}
+					customClass={'mt-2 mb-2 text-md break-normal inline-block text-right'}
 				/>
 			</div>
 			<BackButton onClick={() => router.back()}>{'←'}</BackButton>

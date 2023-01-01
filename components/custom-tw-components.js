@@ -107,9 +107,9 @@ export const PageTitle = tw.div`
 
 export const PageSecondTitle = tw.div`
     font-['AmazonEmberDisplay']
-    text-xl
+    text-lg
     my-1
-    text-gray-800
+    text-gray-500
     w-full
 `;
 
@@ -161,7 +161,7 @@ export const HeaderContainer = tw.header`
     text-3xl
     font-['AmazonEmberDisplay']
     postHeader
-    whitespace-nowrap
+    whitespace-pre-wrap
     px-4
 `;
 

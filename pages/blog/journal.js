@@ -31,8 +31,8 @@ export default function Blog({ posts }) {
 						</div>
 						<div className={'currentPage'}>
 							<Link
-								key={'note'}
-								href={'/blog/note'}
+								key={'journal'}
+								href={'/blog/journal'}
 								passHref>
 								{'journal'}
 							</Link>

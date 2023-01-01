@@ -83,6 +83,10 @@ main {
     position: relative;
 }
 
+// em {
+//     color: rgb(155, 155, 155)
+// }
+
 li {
     position: relative;
 }
@@ -189,7 +193,7 @@ li {
 }
 
 hr {
-    margin: 1em 0;
+    margin-bottom: 2em;
     border-color: $--hr;
 }
 
