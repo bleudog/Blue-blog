@@ -38,7 +38,7 @@ Life is all about making decisions.
 
 When your morning alarm hits, you decide whether to hit that snooze button or not. You spend time thinking about your meals. You goto grocery and wonder around because you don't know what you really want - _should I get this for my lunch? for dinner?_. You also spend time in front of your wardrobe - _what should I wear today?_ And it goes on and on...
 
-But are all decisions same in terms of how important they are? Is a decision about '_what I should have as a breakfast_' equally important as '_should I goto college_'? Probabbly not.
+But are all decisions same in terms of how important they are? Is making a decision for '_what should I wear today_' equally important as '_Should I go abroad_'?. Probably not.
 
 This _thing_ that I'm trying to decide could be very tiny that nobody cares or it could be a massive one that can have a huge impact on my life.
 
@@ -46,9 +46,13 @@ There's nothing I can do about such important decisions because I'd sleep on it 
 
 If it's not that important, why should I spend so much time on it?
 
+What if there's only one choice I can choose from? If so, I can save these time and use it more meaningfully.
+
 ---
 
-> "I'm spending too much time pondering about breakfast"
+Let's start with a meal.
+
+> "What should I eat today? a bowl of rice? a noodle? a toast?"
 
 I realized that I can just have same breakfast everyday, then I don't need to spend time thinking about what to eat.
 
@@ -56,15 +60,17 @@ So I did.
 
 ![toast](/images/posts/note/decision-fatigue/breakfast-toast.jpg)
 
-I've been eating cheese and egg toast for about a month now and it definitely helped me saving some time. I stopped wondering around the kitchen. I stopped re-opening and closing the fridge meaninglessly.
+I've been eating cheese-egg-toast for about a month now and it gave me so much extra time to spend on my morning routine/tasks.
 
-Now when the clock hits 6:00 AM, I goto the kitchen and open the fridge, grab a bread, an egg, two slices of cheese, and my breakfast is ready to go.
+When the clock hits 6:00 AM, I goto the kitchen, open the fridge, grab a loaf of bread, an egg, two slices of cheese, and start making my food. From the moment I open the fridge, it takes about 5~7 minutes for my cheese-egg-toast to be ready.
 
 I also spent far less time on grocery because I know exactly what I need. Assuming that no people are lining up at a register, I can get my business done in less than 5 minutes.
 
 ---
 
-> "I'm spending too much time in front of my wardrobe"
+Another place where I spent so much time on is at my wardrobe (_not that I dress well... like wth? who knows why_)
+
+> "What should I wear today? Oh what is this shirt? Why do I have this?"
 
 Go open your closet now and see how much clothes you own. Do you wear all of them? Do you remember when was the last time you wore each clothes? Are any of them too old or is it new that you haven't even got rid of the tag (and still like years old)?
 
@@ -82,3 +88,9 @@ All these clothes are in 80% category and I'll get rid of them eventually.
 Now I own about 30 clothes total. I don't know if it's still too much but it's including all tops, bottoms, and outers. When I open my closet, I can literally grab any pairs of top and bottom and I know I'll like it -- one reason for that is because my wardrobe is monochromatic; as I reduced number of clothes, I reduced color choices as well.
 
 I still think I have too many tops that I want to reduce it down to less than 5 shirts 🤔
+
+---
+
+I've only done two things: 1) reduced every other options for my breakfast, and 2) picked out 20% of clothes that I wear 80% of the time. It may look nothing but these two changes allowed me to spend more time on things that I really want to focus on.
+
+There are other areas where I'm spending time meaninglessly. I'll hunt down those time-wasters and eliminate them 🥷🏼 to improve quality of my life.
