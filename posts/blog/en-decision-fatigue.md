@@ -85,7 +85,7 @@ I kept about 20% of clothes that I frequently wear and stored rest 80% out of si
 All these clothes are in 80% category and I'll get rid of them eventually.
 ![clothes2](/images/posts/note/decision-fatigue/clothes2.jpg)
 
-Now I own about 30 clothes total. I don't know if it's still too much but it's including all tops, bottoms, and outers. When I open my closet, I can literally grab any pairs of top and bottom and I know I'll like it -- one reason for that is because my wardrobe is monochromatic; as I reduced number of clothes, I reduced color choices as well.
+Now I own about 30 clothes total. I don't know if it's still too much but it's including all tops, bottoms, and outers. When I open my closet, I can grab any clothes and I know I'll like it. One reason for that is because my wardrobe is monochromatic. As I reduced number of clothes, I reduced color choices as well.
 
 I still think I have too many tops that I want to reduce it down to less than 5 shirts 🤔
 
