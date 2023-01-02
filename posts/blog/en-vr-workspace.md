@@ -1,44 +1,64 @@
 ---
 title: 'VR Workspace'
 posttitle: 'VR Workspace'
-postsubtitle: 'Immersed'
-date: '2022-12-16 17:00:00'
+postsubtitle: 'by rolemadelen'
+date: '2023-01-02 14:00:00'
 tags:
-  - programming
   - vr
 lang: en
 about: journal
 ---
 
-How many monitors do you own?
+Here's my current workspace setup.
 
-I used to have two separate monitors connected to my mac: a curved 32" monitor and 27" monitor in vertical. But recently, I felt like these are taking up too much space. Do I really need these monitors? Can I replace these monitors with something smaller?
+- [31.5" AOC Curved Gaming Monitor](https://www.amazon.co.jp/-/en/gp/product/B07KSNSFLB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- [23.6" AOC Curved Gaming Monitor](https://www.amazon.co.jp/-/en/gp/product/B07KSDKWCC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- M1 MacBook Air 2020
+- Magic Trackpad White
+- HHKB Professional Classic Black
 
-I did some research and I came across with [Immersed](https://immersed.com/) in VR.
+I operate my mac in a clamshell mode so it stays shut on a stand on the side of a desk. 32-inch monitor is positioned horizontally at the center and the smaller one is placed vertically to the left of the larger one.
 
-It's basically a workspace in VR with 5 extra monitors max (default 3 monitors and 2 extra after buying the subscription).
+I've been using this setup for about 2 years and I was pretty satisfied with it. Recently though, I started feeling unsure about owning multiple monitors.
 
-Before I get myself into this though, I wanted to see whether this is actually do-able or not. Because, I've seen people _trying_ to code using VR but those resolutions looked terrible and disgusting.
+_"Do I really need these monitors taking up most of the space? **Wouldn't it be nice if I can let these montiors float in mid-air?"**_
 
-I spent so much time on digging through reddit posts and even twitter to see whether this thing is legit or not.
+At this moment I thought about a _Virtual Reality_. I remember reading an article (or it might be a blog post) about people working in virtual reality. If this works out, maybe I can replace all my monitors with a VR headset.
 
-Then, I found one guy in twitter who's been coding using Immersed for about a year. I DM this person and asked whether he's still using VR to code or not and if not, why stopped using it.
+---
 
-He said he's still coding in VR. He uses a pomodoro technique where he works for 30 minutes and rest for 10 minutes and repeat the cycle. This way he can reduce tho stress on his head and neck for wearing the gear for too long. Everything was good for him.
+After a bit of research, I found two promising VR apps that allows you to project your laptop screen into VR. One is [_VR Desktop_](https://www.vrdesktop.net/) and another one is called [_Immersed VR_](https://immersed.com/).
 
-I never used VR before, but I thought it'd be a good experience to try it. If it doesn't work out, I can just have fun with VR.
+Among the two, I decided to go with Immersed VR only because it gave you three default monitors to start with and additional two screens when I buy the subscription. VR Desktop seemed like it only projects your screen to VR; nothing more, nothing less.
 
-So I bought Meta Quest 2 and immersed. And here's what my working space is like:
+And for the VR headset, Oculus Quest 2 seems goes well with the app immersed so I'm gonna go with Oculust Quest 2 or [Meta Quest 2](https://www.meta.com/jp/en/quest/products/quest-2/) I should say.
+
+---
+
+I've decided what I'm going to experiment with. But before I open my wallet, I wanted to check whether this is actually doable or not.
+
+Can I actually do my work or code using VR? Is it readable? Any sort of motion sickness? Is it going to affect my lasik-operated eyes?
+
+I've spent some time reading reviewes from people who tried working/coding with VR. Their were lots of pros and cons, but this [post](https://medium.com/immersedteam/working-from-orbit-39bf95a6d385) and a [tweet](https://twitter.com/hmartapp/status/1444891624538996740?s=20) pushed my mind towards buying VR headset and Immersed.
+
+---
+
+I bought Meta Quest 2 and Immersed and here's a short clip of what my current working space is like.
+
 ![immersed](/images/posts/note/vr/immersed.gif)
 
-I bought the subscription so I have an access to all 5 monitors but only using 4 for now.
+_'the resolution sucks!'_
 
-At first, it was like a trial and error. I had to adjust the monitor size and position like endlessly but eventually I got it and it's mind-blowing.
+Well this clip is a poor illutstration of what I actually see. The resolution sucks indeed but it lacks depth and scale as well.
 
-Despite all those negative reviews about bad resolution, hard to read, etc.. I can read clearly. It's more than doable.
+The _real_ experience is far from what you can imagine from looking at an image or a clip. It's **comfortable**.
 
-I do have a feeling that my eyes and neck is gonna get super tired. So, I decided to use pomodoro technique as well just like the other guy from twitter.
+I can resize screens, change screen resolution, re-position them however I want, make the screen vertical or horizontal, and I have five screens to work with. I can watch, read, and code perfectly fine.
 
-I use this app called [flow](https://flowapp.info/) which is basically a pomodoro timer; you see it on that gif, bottom-left. I work for 30 minutes in VR and take off the gear to rest for 10 minutes. I do 4 rounds of this and then take 15 minutes long break and back to the cycle again.
+---
 
-👋🏼
+I've been using this setup for about a month now and I'm happy with what I have so far.
+
+To reduce any sort of stress on my eyes and neck, I use [pomodoro technique](https://todoist.com/productivity-methods/pomodoro-technique) while I'm working with VR. I put it on for 30 minutes, then I take a break for 10 minutes. After 4 rounds of pomodoro, I take 20 minutes long break and repeat 30/10 again.
+
+I haven't heard that VR is causing any damage to our eyes but I've done lasik surgery and want to be careful as much as I can. Also pomodoro is actually a productive way to get my work done so it's a win-win to me.

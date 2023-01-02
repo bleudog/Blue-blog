@@ -83,12 +83,17 @@ main {
     position: relative;
 }
 
-// em {
-//     color: rgb(155, 155, 155)
-// }
-
 li {
     position: relative;
+
+    a {
+        color: unset;
+        border-bottom: 1.5px solid #51a5ff;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 table {
@@ -296,5 +301,15 @@ header {
 
     to {
         transform: translateY(0%);
+    }
+}
+
+.hero {
+    max-height: 300px !important;
+    overflow: hidden;
+    img {
+        max-height: 300px !important;
+        width: 100vw !important;
+        object-fit: cover;
     }
 }
