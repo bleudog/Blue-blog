@@ -120,11 +120,12 @@ table {
 }
 
 code {
-    background-color: rgba(12, 100, 193, 0.2);
+    background-color: rgba(12, 100, 193, 0.1);
     color: rgba(12, 100, 193, 1.0);
     font-size: 0.9rem;
     font-family: monospace;
     padding: 1px 4px;
+    margin: auto 2px;
     border-radius: 3px;
 }
 
@@ -137,7 +138,7 @@ pre {
 
     div {
         border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.88) !important;
+        background-color: rgb(22, 29, 40);
     }
 }
 

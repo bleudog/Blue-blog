@@ -2,7 +2,7 @@
 title: 'VR Workspace'
 posttitle: 'VR Workspace'
 postsubtitle: 'by rolemadelen'
-date: '2023-01-02 14:00:00'
+date: '2023-01-02 17:00:00'
 tags:
   - vr
 lang: en

@@ -1,7 +1,6 @@
 ---
 title: 'How to generate a GPG key on Mac'
 posttitle: 'Generating a GPG key'
-postsubtitle: 'GNU Privacy Guard'
 date: '2022-12-28 05:29:00'
 tags:
   - github
