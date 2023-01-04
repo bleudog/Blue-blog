@@ -27,7 +27,8 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 			<div className={'flex px-4'}>
 				<PageSecondTitle>{'by rolemadelen'}</PageSecondTitle>
 				<Date
-					dateString={date}
+					updated={updated}
+					dateString={updated ? updated : date}
 					customClass={'mt-2 mb-2 text-md break-normal inline-block text-right'}
 				/>
 			</div>
