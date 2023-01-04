@@ -17,6 +17,7 @@ import Image from 'next/image';
 
 const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 	const router = useRouter();
+	router.basePath = '/blog';
 
 	return (
 		<PostContainer>
@@ -32,7 +33,8 @@ const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
 					customClass={'mt-2 mb-2 text-md break-normal inline-block text-right'}
 				/>
 			</div>
-			<BackButton onClick={() => router.back()}>{'←'}</BackButton>
+			{/* <BackButton onClick={() => router.back()}>{'←'}</BackButton> */}
+			<BackButton onClick={() => router.push('/blog')}>{'←'}</BackButton>
 			{children}
 		</PostContainer>
 	);
