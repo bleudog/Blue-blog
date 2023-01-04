@@ -10,7 +10,12 @@ const PostList = ({ posts }) => {
 					href={`/blog/${post.lang}/${post.slug}`}
 					passHref>
 					<List>
-						<PostDate>{post.date && post.date.split(' ')[0]}</PostDate>
+						{!post.updated && (
+							<PostDate>{post.date && post.date.split(' ')[0]}</PostDate>
+						)}
+						{post.updated && (
+							<PostDate>{post.updated && post.updated.split(' ')[0]}</PostDate>
+						)}
 						<Title>{post.title}</Title>
 					</List>
 				</Link>
