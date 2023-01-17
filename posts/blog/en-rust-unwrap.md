@@ -1,6 +1,6 @@
 ---
-title: 'What is unwrap()?'
-posttitle: 'Rust: What is unwrap()?'
+title: 'Rust: What is unwrap()?'
+posttitle: 'What is unwrap()?'
 date: '2023-01-17 22:00:00'
 lang: en
 tags:

@@ -1,5 +1,5 @@
 ---
-title: 'Variable Shadowing?'
+title: 'Rust: Variable Shadowing?'
 posttitle: 'Variable Shadowing?'
 date: '2023-01-16 08:00:00'
 lang: en
