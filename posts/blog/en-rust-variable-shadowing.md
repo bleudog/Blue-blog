@@ -3,7 +3,7 @@ title: 'Variable Shadowing?'
 posttitle: 'Variable Shadowing?'
 date: '2023-01-16 08:00:00'
 lang: en
-about: journal
+about: dev
 ---
 
 I started learning [Rust](https://www.rust-lang.org/) and there was this concept called _shadowing_.
