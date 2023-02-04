@@ -11,7 +11,7 @@ about: dev
 
 [JavaScript30](https://github.com/wesbos/JavaScript30) is mini project challenge designed by Wes Bos.
 
-First challenge was to create a JavaScript Drum Kit. Here's a [demo link](https://rolemadelen.github.io/js30/01-drum-kit/index.html).
+First challenge was to create a JavaScript Drum Kit. Here's a [demo](https://rolemadelen.github.io/js30/01-drum-kit/index.html).
 
 ![demo image](/images/posts/dev/js30/drumkit/demo.jpg)
 
