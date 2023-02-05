@@ -1,15 +1,11 @@
 import Post from '@components/Post';
 import Footer from '@components/Footer';
 import Comments from '@components/Comments';
-import Container from '@components/Container';
 import Preview from '@lib/codeblock.js';
 import {
 	Article,
 	PostListContainer,
-	Header,
 } from '@components/custom-tw-components';
-import utilStyles from '@styles/utils.module.scss';
-import Link from 'next/link';
 
 const BlogPostLayout = ({ post }) => {
 	return (
@@ -25,7 +21,7 @@ const BlogPostLayout = ({ post }) => {
 			<Article>
 				<Preview markdown={post.markdown} />
 			</Article>
-			{/* <Comments /> */}
+			<Comments />
 			<Footer />
 		</PostListContainer>
 	);
