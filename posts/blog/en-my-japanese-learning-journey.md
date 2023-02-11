@@ -1,6 +1,6 @@
 ---
-title: 'I can speak Japanese, but how?'
-posttitle: 'I can speak Japanese, but how?'
+title: 'My Japanese Learning Journey?'
+posttitle: 'My Japanese Learning Journey?'
 date: '2022-12-12 17:00:00'
 updated: '2023-01-04 16:00:00'
 lang: en
