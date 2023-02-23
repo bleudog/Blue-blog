@@ -21,21 +21,50 @@
 }
 
 .aboutContainer {
-    width: 100%;
+    width: 980px;
     height: 100vh;
+    margin: 0 auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 
-    div:first-child {
-        font-size: 1.3rem;
-        padding: 0 1rem;
+    img {
+        border-radius: 15px;
     }
 
-    div:last-child {
-        margin-top: 1.5rem;
-        width: 15rem;
+    .wrapper {
+        display: flex;
+
+        div {
+            margin: 0 1rem;
+        }
+    }
+}
+
+.table {
+    border: none;
+    a {
+        color: #4c6ada;
+
+        &:hover {
+            color: #3951a5;
+        }
+    }
+}
+
+.bgtext {
+    position: absolute;
+    font-size: 15rem;
+    font-weight: bold;
+    left: -4%;
+    top: 18%;
+    transform: rotateZ(90deg);
+    opacity: 0.3;
+
+    &:nth-of-type(2) {
+        left: 0%;
+        font-size: 2rem;
     }
 }
 
@@ -79,6 +108,14 @@
             transition: all 0.2s ease;
         }
     }
+}
+
+.note {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.4;
+    padding: 2rem 1rem;
 }
 
 @keyframes fadeIn {

@@ -4,7 +4,6 @@ import {
 	PostListContainer,
 	HeaderContainer,
 } from '@components/custom-tw-components';
-import utilStyles from '@styles/utils.module.scss';
 import Link from 'next/link';
 
 export default function Blog({ posts }) {
@@ -17,7 +16,7 @@ export default function Blog({ posts }) {
 							key={'home'}
 							href={'/'}
 							passHref>
-							{'rolemadelen'}
+							{'role:madelen'}
 						</Link>
 					</div>
 					<div>
@@ -26,7 +25,7 @@ export default function Blog({ posts }) {
 								key={'blog'}
 								href={'/blog'}
 								passHref>
-								{'dev'}
+								{'pensieve'}
 							</Link>
 						</div>
 						<div className={'currentPage'}>
