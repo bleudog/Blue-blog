@@ -34,7 +34,7 @@ const BlogLayout = ({ posts }) => {
 
 			<PostListContainer>
 				<span className={utilStyles.note}>
-					*글은 작성 시간이 아닌 관련도에 따라 묶여 있으며 의도한 순서로 표시됩니다. 
+					*글은 작성 시간이 아닌 관련도에 따라 묶여 있으며, 의도한 순서로 표시됩니다. 
 					</span>
 				<PostList posts={posts} />
 			</PostListContainer>

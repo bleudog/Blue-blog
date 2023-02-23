@@ -1,15 +1,13 @@
 const metadata = {
-  author: "Rolemadelen",
-  title: "Rolemadelen",
+  author: "rolemadelen",
+  title: "role:madelen",
   description: "",
   repo: "https://github.com/rolemadelen/rolemadelen-blog",
   url: "https://rolemadelen.com",
-  profileImage: "/images/profile.jpg",
 
   social: {
     github: "https://github.com/rolemadelen",
     twitter: "https://twitter.com/rolemadelen",
-    mysetting: "https://mysetting.io/u/rolemadelen",
   },
 
   socialHandle: {

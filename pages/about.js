@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import utilStyles from '@styles/utils.module.scss';
 import taikoGIF from '../public/images/about.gif';
+import { AboutWrapper } from '@components/custom-tw-components';
 
 export default function About() {
 	return (
 		<div className={utilStyles.aboutContainer}>
 			<span className={utilStyles.bgtext}>Jii Eu</span>
 			<span className={utilStyles.bgtext}>role:madelen</span>
-			<div className={utilStyles.wrapper}>
+			<AboutWrapper>
 				<div>
 					<Image
 						priority
@@ -36,7 +37,7 @@ export default function About() {
 						</tbody>
 					</table>
 				</div>
-			</div>
+			</AboutWrapper>
 		</div>
 	);
 }

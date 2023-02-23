@@ -56,6 +56,8 @@ export const List = tw.li`
     list-none
     p-2
     flex
+    flex-col
+    md:flex-row
     cursor-pointer
 `;
 
@@ -66,7 +68,7 @@ export const PostDate = tw.div`
     items-center
     font-['AmazonEmberDisplay']
     text-xs
-    mr-6
+    md:mr-6
 `;
 
 export const Title = tw.div`
@@ -75,7 +77,8 @@ export const Title = tw.div`
     duration-150
     flex-wrap
     font-['AmazonEmberDisplay']
-    text-sm
+    text-md
+    md:text-sm
     hover:text-[#465a87]
 `;
 
@@ -216,3 +219,13 @@ export const Category = tw.li`
 
     text-gray-700
 `;
+
+
+//////////////////////////////////////////////////////
+/// About Page
+//////////////////////////////////////////////////////
+export const AboutWrapper = tw.section`
+    flex
+    flex-col
+    sm:flex-row
+`
