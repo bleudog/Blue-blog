@@ -10,6 +10,8 @@ uid: '1'
 
 August Dvorak은 미네소타 글렌코 출신으로 University of Washington (UW)의 박사였으며, 2차 세계대전 당시 미 해군 잠수함의 장교로 복무한 인물이다.
 
+![August Dvorak](/images/b/august-dvorak.jpg)
+
 Dvorak이 타자와 자판에 흥미를 느끼게 된 계기는 당시 타자기로 타자 수업을 하던 한 교수의 질문에서 비롯된다.
 
 > "저희 학생들은 왜 4자 이하의 짧은 단어들을 칠 때 매번 실수하는 걸까요?"
