@@ -9,7 +9,6 @@ export default function About() {
 
 	return (
 		<div className={utilStyles.aboutContainer}>
-			<span className={utilStyles.bgtext}>{author.name}</span>
 			<span className={utilStyles.bgtext}>{author.id}</span>
 			<AboutWrapper>
 				<div>
@@ -22,7 +21,8 @@ export default function About() {
 					/>
 				</div>
 				<div>
-					<h2>태고・太鼓 하는 프론트엔드 개발자</h2>
+					<h1 className={utilStyles.title}>Jii Eu</h1>
+					<h2 className={utilStyles.subtitle}>태고・太鼓 하는 프론트엔드 개발자</h2>
 					<table className={utilStyles.table}>
 						<tbody>
 							<tr>

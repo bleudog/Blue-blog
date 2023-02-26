@@ -61,18 +61,12 @@
     display: block;
     overflow: hidden;
     position: absolute;
+    left: -10%;
+    transform: rotateZ(-90deg);
     
-    font-size: clamp(5rem, 19vw, 15rem);
+    font-size: clamp(3rem, 19vw, 12rem);
     font-weight: bold;
     opacity: 0.2;
-    
-    &:last-of-type {
-        bottom: 0;
-    }
-    
-    &:first-of-type {
-       top: 0;
-    }
 }
 
 .menu {
@@ -115,6 +109,17 @@
             transition: all 0.2s ease;
         }
     }
+}
+
+.title {
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+}
+.subtitle {
+    text-align: center;
 }
 
 .note {
