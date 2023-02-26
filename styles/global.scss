@@ -294,6 +294,14 @@ header {
     }
 }
 
+section[role="doc-endnotes"] {
+    font-size: 14px;
+
+    ul, ol {
+        margin: 0;
+    }
+}
+
 .footnote-ref {
     color: #4b8fd8;
     font-weight: bold;
