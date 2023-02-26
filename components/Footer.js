@@ -1,19 +1,19 @@
-import metadata from '@data/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FooterContainer } from './custom-tw-components';
+import metadata from '@data/metadata';
 
 const Footer = () => {
 	const sns = [
-		{ name: 'github', link: metadata.social.github },
-		{ name: 'twitter', link: metadata.social.twitter },
+		{ name: 'github', link: metadata.url.github },
+		{ name: 'twitter', link: metadata.url.twitter },
 	];
 	return (
 		<FooterContainer>
 			<div>
 				© 2022{' '}
-				<a href='https://github.com/rolemadelen/rolemadelen-blog'>
-					Rolemadelen
+				<a href={metadata.url.repo}>
+					{metadata.author.id}
 				</a>
 				. Powered by&nbsp;<a href='https://vercel.com/'>Vercel</a>
 			</div>

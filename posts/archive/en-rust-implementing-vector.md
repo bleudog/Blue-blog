@@ -4,9 +4,9 @@ posttitle: 'Data Structure'
 postsubtitle: 'Vector Implementation'
 date: '2022-08-17 07:00:00'
 tags:
-  - vector
-  - data structure
-  - rust
+    - vector
+    - data structure
+    - rust
 lang: en
 about: ds
 ---
@@ -17,26 +17,26 @@ I tried implementing a vector with a fixed size array in Rust.
 
 My vector contains following functions:
 
-- `size() -> i32`
-- `capacity() -> i32`
-- `is_empty() -> bool`
-- `at(index) -> i32`
-- `push(item)`
-- `insert(index, item)`
-- `prepend(item)`
-- `pop() -> i32`
-- `delete(index)` - deletes an item at `index`
-- `remove(item)` - remove all occurrences of `item`
-- `find(item) -> i32`
-- `resize(new_capacity)` (**not yet implemented**)
-  - when you reach the capacity, double the container size.
-  - when current size becomes 1/4th of the capacity, halve the container size.
+-   `size() -> i32`
+-   `capacity() -> i32`
+-   `is_empty() -> bool`
+-   `at(index) -> i32`
+-   `push(item)`
+-   `insert(index, item)`
+-   `prepend(item)`
+-   `pop() -> i32`
+-   `delete(index)` - deletes an item at `index`
+-   `remove(item)` - remove all occurrences of `item`
+-   `find(item) -> i32`
+-   `resize(new_capacity)` (**not yet implemented**)
+    -   when you reach the capacity, double the container size.
+    -   when current size becomes 1/4th of the capacity, halve the container size.
 
 ---
 
 I don't even know how to create a class in Rust (it has one right?) so let's start from there.
 
-If you just want to see the code, [here you go](https://github.com/rolemadelen/rust-algorithms/tree/main/src/data_structures/vector).
+If you just want to see the code, [here you go](https://github.com/bprsstnt/rust-algorithms/tree/main/src/data_structures/vector).
 
 # Classes in Rust
 
@@ -177,8 +177,8 @@ If current number of item (`self.size`) is equal to the capacity that our vector
 
 If it's not full, we use our `size` as an index value and store the `item` at the end of the array.
 
-- Time complexity: O(1)
-- Space complexity: O(1)
+-   Time complexity: O(1)
+-   Space complexity: O(1)
 
 ## prepend(item)
 
@@ -201,8 +201,8 @@ We need to shift all elements to the right before we can add an element at index
 
 So I'm starting at `size` and assigning a previous value to current position: `arr[size] = arr[size-1]`.
 
-- Time complexity: O(N), N = number of items
-- Space complexity: O(1)
+-   Time complexity: O(N), N = number of items
+-   Space complexity: O(1)
 
 ## insert(index, item)
 
@@ -240,8 +240,8 @@ For inserting at the end and in the beginning, I used `push(item)` and `prepend(
 
 When we insert in the middle, we need to shift all elements to the right from `index` to `size`. And finally we can insert the item at `arr[index]`.
 
-- Time complexity: O(2N) -> O(N), N = number of items
-- Space complexity: O(1)
+-   Time complexity: O(2N) -> O(N), N = number of items
+-   Space complexity: O(1)
 
 ## pop()
 
@@ -261,8 +261,8 @@ pub fn pop(&mut self) -> i32 {
 
 We're not actually deleting anything here but just pretending by reducing the size.
 
-- Time complexity: O(1)
-- Space complexity: O(1)
+-   Time complexity: O(1)
+-   Space complexity: O(1)
 
 ## delete(index)
 
@@ -291,8 +291,8 @@ pub fn delete(&mut self, index: usize) {
 I'm shifting all elements to the left from `index` where we're trying to delete.
 And then reduce the total size so that it looks like it's deleted from the array.
 
-- Time complexity: O(N), N = number of items
-- Space complexity: O(1)
+-   Time complexity: O(N), N = number of items
+-   Space complexity: O(1)
 
 ## find(item)
 
@@ -315,8 +315,8 @@ pub fn find(&mut self, item: i32) -> i32 {
 
 If `item` is found, it returns the index of that item. If not, return `-1`.
 
-- Time complexity: O(N), N = number of items
-- Space complexity: O(1)
+-   Time complexity: O(N), N = number of items
+-   Space complexity: O(1)
 
 ## remove(item)
 
@@ -335,5 +335,5 @@ pub fn remove(&mut self, item: i32) {
 
 I used `find(item)` to get the index of 1st occurrence of `item` in the vector and passed that index in `delete(index)` to delete it.
 
-- Time complexity: O(2N) -> O(N), N = number of items
-- Space complexity: O(1)
+-   Time complexity: O(2N) -> O(N), N = number of items
+-   Space complexity: O(1)

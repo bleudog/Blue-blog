@@ -1,3 +1,3 @@
-# [Blog](http://rolemadelen.com/) 
+# Blog
 
-Multilingual programming blog.
+Personal Programming Blog.

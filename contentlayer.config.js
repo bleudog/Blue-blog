@@ -14,7 +14,7 @@ export const Blog = defineDocumentType(() => ({
 		postsubtitle: { type: 'string', required: false },
 		date: { type: 'date', required: true },
 		updated: { type: 'date', required: false },
-		lang: { type: 'string', required: true },
+		uid: { type: 'string', required: true },
 		about: { type: 'string', required: false },
 		tags: { type: 'string', required: false },
 	},

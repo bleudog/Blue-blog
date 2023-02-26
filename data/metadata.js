@@ -1,24 +1,23 @@
 const metadata = {
-  author: "rolemadelen",
-  title: "role:madelen",
-  description: "",
-  repo: "https://github.com/rolemadelen/rolemadelen-blog",
-  url: "https://rolemadelen.com",
-
-  social: {
-    github: "https://github.com/rolemadelen",
-    twitter: "https://twitter.com/rolemadelen",
+  author: {
+    name: "Jii Eu",
+    id: "bprsstnt",
   },
-
-  socialHandle: {
-    github: "@rolemadelen",
-    twitter: "@rolemadelen",
+  title: "be persistent",
+  email: "bprsstnt@pm.me",
+  description: "",
+  url: {
+    blog: "https://bepersistent.dev",
+    twitter: "https://twitter.com/bprsstnt",
+    github: "https://github.com/bprsstnt",
+    repo: "https://github.com/bprsstnt/blog",
+    linkedin: "https://www.linkedin.com/in/jiieu/"
   },
 
   giscus: {
-    id: "rolemadelen",
+    id: "bprsstnt",
     url: "https://giscus.app/client.js",
-    repo: "rolemadelen/rolemadelen-blog",
+    repo: "bprsstnt/blog",
     repoId: "R_kgDOHRtelA",
     category: "General",
     categoryId: "DIC_kwDOHRtelM4CO6wU",

@@ -21,9 +21,10 @@
 }
 
 .aboutContainer {
-    width: 100%;
+    max-width: 960px;
     height: 100vh;
     margin: 0 auto;
+    overflow: hidden;
 
     display: flex;
     justify-content: center;
@@ -34,6 +35,10 @@
     }
 
     section {
+        backdrop-filter: blur(5px);
+        background-color: #fcfdff26;
+        border-radius: 5px;
+
         div {
             margin: 0 1rem;
         }
@@ -52,21 +57,25 @@
 }
 
 .bgtext {
+    z-index: -1;
+    display: block;
+    overflow: hidden;
     position: absolute;
-    font-size: 15rem;
+    
+    font-size: clamp(5rem, 19vw, 15rem);
     font-weight: bold;
-    left: -4%;
-    top: 18%;
-    transform: rotateZ(90deg);
-    opacity: 0.3;
-
-    &:nth-of-type(2) {
-        left: 0%;
-        font-size: 2rem;
+    opacity: 0.2;
+    
+    &:last-of-type {
+        bottom: 0;
+    }
+    
+    &:first-of-type {
+       top: 0;
     }
 }
 
-.aboutMenu {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;

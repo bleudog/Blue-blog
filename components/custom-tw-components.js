@@ -12,14 +12,6 @@ export const PostListContainer = tw.div`
    mb-8
 `;
 
-export const Header = tw.p`
-    px-2
-    mt-4
-    text-4xl
-    font-['AmazonEmberDisplayMedium']
-    postHeader
-    whitespace-nowrap
-`;
 
 //////////////////////////////////////////////////////
 ///  Blog Post Layout
@@ -43,12 +35,6 @@ export const PostContainer = tw.section`
     w-full
 `;
 
-export const PostTitle = tw.div`
-    text-primary
-    md:text-3xl
-    font-bold
-`;
-
 //////////////////////////////////////////////////////
 ///  PostList Component
 //////////////////////////////////////////////////////
@@ -57,6 +43,7 @@ export const List = tw.li`
     p-2
     flex
     flex-col
+    md:items-center
     md:flex-row
     cursor-pointer
 `;
@@ -82,46 +69,22 @@ export const Title = tw.div`
     hover:text-[#465a87]
 `;
 
-//////////////////////////////////////////////////////
-///  Home Layout
-//////////////////////////////////////////////////////
-
-export const Banner = tw.div`
-    relative
-    text-center
-`;
+export const RefUID = tw.div`
+    text-gray-500
+    text-xs
+    md:mr-3
+    min-w-[1.5em]
+`
 
 //////////////////////////////////////////////////////
 ///  PageBanner Layout
 //////////////////////////////////////////////////////
-export const PageHeader = tw.header`
-    pb-[1em]
-    flex
-    flex-col
-    justify-center
-`;
-
-export const PageTitle = tw.div`
-    uppercase
-    font-['AmazonEmberDisplayMedium']
-    whitespace-nowrap
-    postHeader
-`;
-
 export const PageSecondTitle = tw.div`
     font-['AmazonEmberDisplay']
     text-lg
     my-1
     text-gray-500
     w-full
-`;
-
-export const PageSubtitle = tw.div`
-    mt-3
-    text-md
-    md:text-lg
-    font-light
-    whitespace-pre-line
 `;
 
 //////////////////////////////////////////////////////
@@ -184,43 +147,6 @@ export const BackButton = tw.button`
     active:shadow-none
 `;
 
-export const Tag = tw.span`
-    min-w-full
-    py-[1px]
-    px-[3px]
-    mr-2
-    rounded-md
-    text-xs
-    bg-[#f0f0f0]
-    text-[#999]
-`;
-
-//////////////////////////////////////////////////////
-///  Explore More Component
-//////////////////////////////////////////////////////
-
-export const CategoryList = tw.ul`
-    flex
-    align-center
-    flex-wrap
-    justify-between
-    mx-auto
-`;
-
-export const Category = tw.li`
-    font-[AmazonEmberDisplay]
-    flex
-    items-center
-    justify-center
-    text-center
-
-    px-2
-    mb-4
-
-    text-gray-700
-`;
-
-
 //////////////////////////////////////////////////////
 /// About Page
 //////////////////////////////////////////////////////
@@ -228,4 +154,5 @@ export const AboutWrapper = tw.section`
     flex
     flex-col
     sm:flex-row
+    items-center
 `

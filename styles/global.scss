@@ -157,7 +157,7 @@ ol>li {
         }
     }
 
-    ul>li {
+    > ul>li {
         list-style: circle;
         ul>li {
             list-style: square;
@@ -166,11 +166,6 @@ ol>li {
 }
 
 ul>li {
-    &::before {
-        content: "•";
-        margin-right: 0.5em;
-    }
-
     ol>li {
         list-style: upper-alpha;
 
@@ -179,7 +174,7 @@ ul>li {
         }
     }
 
-    ul>li {
+    > ul>li {
         list-style: circle;
         ul>li {
             list-style: square;
@@ -203,21 +198,26 @@ hr {
 }
 
 blockquote {
-    display: flex;
-    background-color: rgba(242, 242, 242, 0.5);
-    color: rgba(145, 147, 151, 1.0);
-    margin-bottom: 2rem;
-    border-left: 4px solid #51a5ff;
+    &::before {
+        content: "\201C";
+        font-size: 5rem;
+        line-height: 0.78;
+        line-height: 1;
+        position: absolute;
+        top: -5px;
+        left: 0;
+        z-index: 1;
+        font-family: sans-serif, serif;
+        color: #bbb;
+    }
+    position: relative;
+    margin: 2rem auto;
+    padding-left: 1.5rem;
+    opacity: 0.9;
 
     p {
         padding: 2px 0.5em 2px 1em;
     }
-    // &::before {
-    //     content: "";
-    //     background: #8aa4ff;
-    //     width: 0.3em;
-    //     margin-right: 1em;
-    // }
 }
 
 footer {
@@ -312,4 +312,16 @@ header {
         width: 100vw !important;
         object-fit: cover;
     }
+}
+
+.footnote-ref {
+    color: #4b8fd8;
+    font-weight: bold;
+    border: none;
+    margin-left: 1px;
+}
+.footnote-back {
+    margin-left: 5px;
+    text-decoration: none;
+    border: none;
 }

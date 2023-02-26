@@ -10,14 +10,7 @@ import {
 const BlogPostLayout = ({ post }) => {
 	return (
 		<PostListContainer>
-			<Post
-				post={post}
-				title={post.posttitle}
-				subtitle={post.postsubtitle}
-				tags={post.tags}
-				date={post.date}
-				updated={post.updated ? post.updated : null}
-			/>
+			<Post post={post} />
 			<Article>
 				<Preview markdown={post.markdown} />
 			</Article>

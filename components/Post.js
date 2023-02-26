@@ -1,36 +1,32 @@
 import Date from '@components/Date';
 import {
 	PostContainer,
-	PageTitle,
 	PageSecondTitle,
 	BackButton,
-	Tag,
 	HeaderContainer,
-	MobileHeaderContainer,
-	Hero,
 } from './custom-tw-components';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import metadata from '@data/metadata';
 
-const Post = ({ post, tags, title, subtitle, date, updated, children }) => {
+const Post = ({ post, children }) => {
 	const router = useRouter();
 	router.basePath = '/blog';
 
 	return (
 		<PostContainer>
 			<Head>
-				<title>{title}</title>
+				<title>{post.title}</title>
 			</Head>
-			<HeaderContainer>{title}</HeaderContainer>
+			<HeaderContainer>{post.posttitle}</HeaderContainer>
 			<div className={'flex px-4'}>
-				<PageSecondTitle>{'by rolemadelen'}</PageSecondTitle>
+				<PageSecondTitle>{`by ${metadata.author.id}`}</PageSecondTitle>
 				<Date
-					updated={updated}
-					dateString={updated ? updated : date}
+					updated={post.updated}
+					dateString={post.updated ? post.updated : post.date}
 					customClass={'mt-2 mb-2 text-md break-normal inline-block text-right'}
 				/>
 			</div>
-			{/* <BackButton onClick={() => router.back()}>{'←'}</BackButton> */}
 			<BackButton onClick={() => router.push('/blog')}>{'←'}</BackButton>
 			{children}
 		</PostContainer>

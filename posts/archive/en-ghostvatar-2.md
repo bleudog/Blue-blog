@@ -4,7 +4,7 @@ posttitle: 'Ghostvatar'
 postsubtitle: '👻 Reflection Part 02'
 date: '2022-07-17 22:00:00'
 tags:
-  - side-project
+    - side-project
 lang: en
 about: log
 ---
@@ -31,17 +31,17 @@ let eye = 1;
 const EYE_MAX = 6;
 
 function switchPrevEye() {
-  const eyeImg = document.querySelector('.ghost-eye__img');
-  eye -= 1;
-  if (eye <= 0) eye = EYE_MAX;
-  eyeImg.src = `./assets/eyes/ghost-eye${eye}.png`;
+    const eyeImg = document.querySelector('.ghost-eye__img');
+    eye -= 1;
+    if (eye <= 0) eye = EYE_MAX;
+    eyeImg.src = `./assets/eyes/ghost-eye${eye}.png`;
 }
 
 function switchNextEye() {
-  const eyeImg = document.querySelector('.ghost-eye__img');
-  eye += 1;
-  if (eye > EYE_MAX) eye = 1;
-  eyeImg.src = `./assets/eyes/ghost-eye${eye}.png`;
+    const eyeImg = document.querySelector('.ghost-eye__img');
+    eye += 1;
+    if (eye > EYE_MAX) eye = 1;
+    eyeImg.src = `./assets/eyes/ghost-eye${eye}.png`;
 }
 ```
 
@@ -55,21 +55,21 @@ Thanks to stackoverflow, I learned about this library [html2canvas](https://html
 
 ```js
 function saveImage() {
-  html2canvas(document.querySelector('.preview'), { scale: 4 }).then(
-    (canvas) => {
-      let canvasUrl = canvas.toDataURL();
-      // Create an anchor, and set the href value to our data URL
-      const createEl = document.createElement('a');
-      createEl.href = canvasUrl;
+    html2canvas(document.querySelector('.preview'), { scale: 4 }).then(
+        (canvas) => {
+            let canvasUrl = canvas.toDataURL();
+            // Create an anchor, and set the href value to our data URL
+            const createEl = document.createElement('a');
+            createEl.href = canvasUrl;
 
-      // This is the name of our downloaded file
-      createEl.download = 'ghostvatar';
+            // This is the name of our downloaded file
+            createEl.download = 'ghostvatar';
 
-      // Click the download button, causing a download, and then remove it
-      createEl.click();
-      createEl.remove();
-    }
-  );
+            // Click the download button, causing a download, and then remove it
+            createEl.click();
+            createEl.remove();
+        }
+    );
 }
 ```
 
@@ -89,9 +89,9 @@ I had to set `scale` to get better quality.
 
 see also:
 
-- [👻 Toy Project::Ghostvatar pt.1](./ghostvatar-1)
-- [👻 Toy Project::Ghostvatar pt.3](./ghostvatar-3)
+-   [👻 Toy Project::Ghostvatar pt.1](./ghostvatar-1)
+-   [👻 Toy Project::Ghostvatar pt.3](./ghostvatar-3)
 
 Link:
 
-- [Ghostvatar repository](https://github.com/rolemadelen/ghost-vatar)
+-   [Ghostvatar repository](https://github.com/bprsstnt/ghost-vatar)

@@ -1,6 +1,7 @@
 const navlink = {
-	base: [{ name: 'Blog', link: '/blog' }],
-	blog: [{ name: 'Log', link: '/blog/log' }],
+	root: { name: 'be persistent', link: '/' },
+	blog: { name: 'blog', link: '/blog' },
+	about: { name: 'about', link: '/about' },
 };
 
 export default navlink;
