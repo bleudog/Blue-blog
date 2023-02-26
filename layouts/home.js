@@ -1,17 +1,20 @@
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import utilStyles from '@styles/utils.module.scss';
 import { BaseContainer } from '@components/custom-tw-components';
 import profileImg1 from '../public/images/bprsstnt1.png';
 import profileImg2 from '../public/images/bprsstnt2.png';
-import profileImg3 from '../public/images/bprsstnt3.png';
 import Link from 'next/link';
 import navlink from '@data/navlink';
 
 const HomeLayout = () => {
 	const {blog, about} = navlink;
-	const images = [profileImg1, profileImg2, profileImg3];
-	const imageIndex = Math.floor((Math.random() * 10) % 3);
-
+	const images = [profileImg1, profileImg2];
+	const [imageIndex, setImageIndex] = useState(0);
+	
+	useEffect(() => {
+		setImageIndex(Math.floor((Math.random() * 10) % 2));
+	}, [])
 	const getProfileImage = (width, height) => {
 		return (
 			<Image
@@ -19,7 +22,7 @@ const HomeLayout = () => {
 			width={width}
 			height={height}
 			src={images[imageIndex]}
-			alt={`image${imageIndex}`}
+			alt="profile image"
 			/>
 		)
 	}
