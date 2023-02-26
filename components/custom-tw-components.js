@@ -5,8 +5,8 @@ import tw from 'tailwind-styled-components';
 //////////////////////////////////////////////////////
 export const PostListContainer = tw.div`
    mx-auto
-   md:max-w-[40em]
-   sm:max-w-[30em]
+   md:max-w-[45em]
+   sm:max-w-[35em]
    max-w-[25em]
    min-w-[25em]
    mb-8

@@ -10,12 +10,6 @@ const PostList = ({ posts }) => {
 					href={`/blog/${post.slug}`}
 					passHref>
 					<List>
-						{/* {!post.updated && (
-							<PostDate>{post.date && post.date.split(' ')[0]}</PostDate>
-						)}
-						{post.updated && (
-							<PostDate>{post.updated && post.updated.split(' ')[0]}</PostDate>
-						)} */}
 						<RefUID>{post.uid}</RefUID>
 						<Title>{post.title}</Title>
 					</List>
