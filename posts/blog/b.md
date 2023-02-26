@@ -10,7 +10,7 @@ uid: '1'
 
 August Dvorak은 미네소타 글렌코 출신으로 University of Washington (UW)의 박사였으며, 2차 세계대전 당시 미 해군 잠수함의 장교로 복무한 인물이다.
 
-![August Dvorak](/images/b/august-dvorak.jpg)
+![August Dvorak](/images/b/august-dvorak.webp)
 
 Dvorak이 타자와 자판에 흥미를 느끼게 된 계기는 당시 타자기로 타자 수업을 하던 한 교수의 질문에서 비롯된다.
 
@@ -46,9 +46,9 @@ Dvorak은 타자기의 자판을 보면서 의문을 품기 시작했다. 자주
 아래는 내가 작성한 영어 블로그의 글을 드보락 자판을 사용했을 때와 사용하지 않았을때의 히트맵이다.[^b]
 
 현재 전세계적으로 널리 쓰이는 자판:
-![qwerty heat map](/images/b/qwerty-heatmap.jpg)
+![qwerty heat map](/images/b/qwerty-heatmap.webp)
 드보락 자판:
-![dvorak heat map](/images/b/dvorak-heatmap.jpg)
+![dvorak heat map](/images/b/dvorak-heatmap.webp)
 
 ---
 
