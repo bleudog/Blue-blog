@@ -14,10 +14,10 @@ export default function About() {
 			<AboutWrapper>
 				<div>
 					<Image
+						priority
 						width={350}
 						height={390}
 						src={taikoGIF}
-						loading='lazy'
 						alt='GIF is loading.'
 					/>
 				</div>
