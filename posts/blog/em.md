@@ -1,58 +1,93 @@
 ---
-title: 'Mac Setup 2022'
-posttitle: 'Mac Setup 2022'
+title: 'Mac Setup 2023'
+posttitle: 'Mac Setup 2023'
 date: '2022-09-15 07:00:00'
-uid: 'M'
+updated: '2023-02-28 08:00:00'
+uid: '3b'
 ---
 
-inspired by [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/).
+[Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/)을 참고했다.
 
 ---
 
-## MacBook Pro Specification
+## MacBook Pro
 
 -   13-inch
 -   2 GHz Quad-Core Intel Core i5
+-   Intel Iris Plus Graphics 1536 MB
 -   16 GB RAM
 -   512 GB SSD
 -   DVORAK (English), Japanese (Romaji), Korean (3-Beolsik)
--   macOS Monterey
+-   ~~macOS Monterey~~
+-   macOS Ventura 13.2.1
 
 ## System Preferences
 
+-   Notifications
+    -   ~~Off, except calendar, mail, and reminders~~
+    -   Off except Calendar, LINE, Mail, Messages, Reminders, and Slack
+-   Sound
+    -   Play sound on startup - [Off]
 -   General
+    -   Sharing
+        -   Turn off ~~"AirPlay Receiver" and~~ all sharings / Caching
+        -   Change local hostname
+        -   Also terminal:
+            -   `sudo scutil --set ComputerName "newname"`
+            -   `sudo scutil --set LocalHostName "newname"`
+            -   `sudo scutil --set HostName "newname"`
+        -   AirDrop & Handoff
+            -   AirPlay Receiver - [OFF]
+-   Appearance
     -   Appearance - Auto
--   Dock
-    -   position right
-    -   remove most apps from Dock
-    -   automatic hide
-    -   size - close to small
-    -   turn on the magnification - slightly larger than the size
-    -   "show recent apps in Dock" OFF
-    -   "show indicators for open apps" ON
-    -   "automatically hide and show the menu bar on desktop" ON
--   Menu Bar
-    -   Wi-Fi | Bluetooth | Airdrop | Sound | Now Playing | Spotlight | Siri
-        -   "show in menu bar" OFF
+    -   Accent Color - Blue
+    -   Show scroll bars - When scrolling
+-   Control Center
+    -   ~~Wi-Fi~~ | Bluetooth | Airdrop | Stage Manager | ~~Sound~~ | Now Playing | Spotlight | Siri | Time Machine
+        -   Show in menu bar - [OFF]
     -   Battery
-        -   "show percentage" ON
+        -   Show in Menu Bar - [ON]
+        -   Show Percentage - [ON]
     -   Clock
-        -   "use a 24-hour clock" ON
-        -   "announce the time" -> on the hour ON (\*first time using it)
--   Mission Control
-    -   Hot Corners: disable all
+        -   "use a 24-hour clock"
+        -   "announce the time" -> on the hour
 -   Siri
     -   disable
 -   Spotlight
     -   Disable all except 'Applications' and 'System Preferences'
--   Notifications
-    -   Off, except calendar, mail, and reminders
--   Security and Privacy
-    -   require password '5 minutes' after sleep or screen saver begins
-    -   "use your apple watch to unlock apps and your mac" ON
+-   Privacy and Security
     -   Turn on FileVault
-    -   Add your browser to "Screen Recording" in privacy
+    -   Turn on Lockdown Mode
+-   Desktop & Dock
+    -   Dock
+        -   Size - close to small
+        -   Magnification - slightly larger than the size
+        -   Position on screen - ~~Right~~ Bottom
+        -   remove most apps from Dock
+        -   Automatically hide and show the Dock - [ON]
+        -   Show recent apps in Dock - [OFF]
+        -   Show indicators for open apps - [ON]
+    -   Menu Bar
+        -   Automatically hide and show the menu bar - [Always]
+    -   Windows & Apps
+        -   Close windows when quitting an app - [ON]
+        -   Default web browser - [Arc]
+    -   Mission Control
+        -   Hot Corners: disable all
+-   Display
+    -   Nightshift - Custom 22:30 to 5:00
+-   Lock Screen
+    -   Start Screen Saver when inactive - [Never]
+    -   Turn display off on battery when inactive - [For 2 minutes]
+    -   Turn display off on power adapter when inactive - [For 10 minutes]
+    -   Require password after screen saver begins or display is turned off - [Immediately]
+-   Touch ID & Password
+    -   Turn on 'use apple watch to unlock your app and your Mac'
 -   Keyboard
+    -   Text Input
+        -   Dvorak
+        -   Japanese - Romaji
+        -   3-Set Korean (390)
     -   Text
         -   "correct spelling automatically" OFF
         -   "capitalize words automatically" OFF
@@ -60,22 +95,14 @@ inspired by [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-we
         -   "use smart quotes and dashes" OFF
         -   use "abc" for double quotes
         -   use 'abc' for single quotes
-        -   Turn the microphone off
+    -   Dictation
+        -   'press control key twice' to activate
 -   Trackpad
-    -   "Tap top Click" ON
-    -   "Point & Click -> Look up & data detectors" OFF
-    -   "Silent clicking" ON
-    -   speed 7/10
--   Display
-    -   nightshift on
--   Sharing
-    -   Change computer name
-    -   Also terminal:
-        -   `sudo scutil --set ComputerName "newname"`
-        -   `sudo scutil --set LocalHostName "newname"`
-        -   `sudo scutil --set HostName "newname"`
-    -   turn off "AirPlay Receiver" and all other sharings
--   Finder Preferences
+    -   Silent clicking - [ON]
+    -   Tap top Click - [ON]
+    -   Tracking speed - 7/10
+    -   Click - Firm
+-   Finder Settings
     -   Tags
         -   disable all
     -   Sidebar
@@ -84,7 +111,6 @@ inspired by [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-we
         -   "show all filename extensions" ON
             -   "remove items from the trash after 30 days" ON
     -   View -> Show Preview (for images)
--   Default Browser - Arc (download it first)
 
 ## System Preferences (terminal)
 
@@ -123,7 +149,6 @@ brew install --cask \
  visual-studio-code \
  discord \
  slack \
- docker \
  imageoptim \
  raycast \
  spotify
@@ -203,24 +228,11 @@ I used [Karabiner](https://karabiner-elements.pqrs.org/) to remap `international
 
 ## Other Apps
 
--   Arc [https://thebrowser.company/](https://thebrowser.company/)
--   Nota [https://nota.md](https://nota.md/)
--   Setapp [https://setapp.com/](https://setapp.com/)
+-   Arc - https://thebrowser.company/
+-   Nota - https://nota.md
+-   ~~Setapp - https://setapp.com/~~
+-   Immersed VR - https://immersed.com/
 
-## Setapp
+## Immersed VR
 
--   Two Macs plan
--   referral link: [https://go.setapp.com/invite/kj6niwmi](https://go.setapp.com/invite/kj6niwmi)
--   What I'm using
-    -   ⭐️ Session
-    -   ⭐️ CleanMyMac X
-    -   ⭐️ Lofi Garden
-    -   ⭐️ CodeRunner
-    -   ⭐️ CleanShot X
-    -   Bartender
-    -   Mosaic
-    -   Step Two
-    -   ClearVPN
-    -   One Switch
-    -   Petrify
-    -   SnippetsLab
+[모니터를 처분하고 가상환경으로 대체했다](./e)
