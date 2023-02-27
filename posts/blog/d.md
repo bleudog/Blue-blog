@@ -31,7 +31,7 @@ uid: '33'
 -   **어휘력/독해** → 문법이나 한자와 단어를 공부하지 않았기 때문에 처참한 수준
 -   **말하기** → 애니메이션과 드라마를 통해 외운 문장 외, 직접 문장을 만들 수는 없는 상태
 
-전공은 [Human Computer Interaction](https://cogsci.ucsd.edu/undergraduates/major/design-interaction.html)이었고 지금까지와 마찬가지로 일본어 공부에 관해서는 관심 없이 지냈다. 그렇게 4학년이 되었을 때, 듣고 싶은 수업도 별로 없고 학점도 웬만큼 채운 상태라, 뭐 재밌는 강의 없나 찾아보다가 기초 일본어 강의([JAPN 10A. First-Year Japanese](https://catalog.ucsd.edu/courses/JAPN.html))를 발견했고, 재밌을 것 같아서 신청했고 아주 잘한 선택이었다.
+전공은 [Human Computer Interaction](https://cogsci.ucsd.edu/undergraduates/major/design-interaction.html)이었고 지금까지와 마찬가지로 일본어 공부에 관해서는 관심 없이 지냈다. 그렇게 4학년이 되었을 때, 듣고 싶은 수업도 별로 없고 학점도 웬만큼 채운 상태라, 뭐 재밌는 강의 없나 찾아보다가 기초 일본어 강의([JAPN 10A. First-Year Japanese](https://catalog.ucsd.edu/courses/JAPN.html))를 발견했다. 재밌을 것 같아서 신청했고, 이는 아주 잘한 선택이었다.
 
 내가 지금 일본어로 대화할 수 있는 이유는 전부 이 수업 덕이다.
 
