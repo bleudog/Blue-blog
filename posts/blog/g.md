@@ -2,7 +2,6 @@
 title: 'gpg: signing failed: No pinentry 오류 해결'
 posttitle: 'gpg: signing failed: No pinentry 오류 해결'
 date: '2023-02-05 12:00:00'
-updated: '2023-02-28 06:25:00'
 uid: '45'
 ---
 
