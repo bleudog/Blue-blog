@@ -2,7 +2,8 @@
 title: 'Regex: Detecting Foreign Characters'
 posttitle: 'Regex: Detecting Foreign Characters'
 date: '2022-12-19 17:00:00'
-uid: 'H'
+updated: '2023-02-28 15:00:00'
+uid: '55'
 ---
 
 Depends on the language of the name (English or Japanese), I need to display names in different order: `<FIRST> <LAST>` (western convention) or `<LAST> <FIRST>` (eastern convention); _I apologize if this isn't necessarily western or eastern._
