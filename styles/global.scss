@@ -100,13 +100,16 @@ table {
 }
 
 code {
-    background-color: rgba(12, 100, 193, 0.1);
-    color: rgba(12, 100, 193, 1.0);
+    background-color: rgba(98, 174, 255, 0.2);
     font-size: 0.9rem;
-    font-family: monospace;
+    font-family: Courier, monospace;
     padding: 1px 4px;
     margin: auto 2px;
     border-radius: 3px;
+}
+
+img {
+    box-shadow: 0 0 5px 0px #dcdcdc;
 }
 
 pre {
