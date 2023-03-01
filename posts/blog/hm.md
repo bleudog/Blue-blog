@@ -1,6 +1,6 @@
 ---
-title: 'Regex Expression: 언어 구분하기'
-posttitle: 'Regex Expression: 언어 구분하기'
+title: 'Regular Expression: 언어 구분하기'
+posttitle: 'Regular Expression: 언어 구분하기'
 date: '2022-12-19 17:00:00'
 uid: '56'
 ---

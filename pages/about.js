@@ -27,8 +27,8 @@ export default function About() {
 					<h2 className={utilStyles.subtitle}>태고・太鼓 하는 프론트엔드 개발자</h2>
 					<p>
 						・ 조용히 눈에 띄는 걸 좋아합니다. <br />
+						・ 기록하는 것을 좋아합니다. <br />
 						・ 새로운 경험을 좋아합니다. <br />
-						・ 기록을 좋아합니다. <br />
 					</p>
 					<div className={utilStyles.contactLinks}>
 						<a href={url.twitter}>
