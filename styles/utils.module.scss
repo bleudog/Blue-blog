@@ -43,18 +43,19 @@
             margin: 0 1rem;
         }
     }
-}
 
-.table {
-    border: none;
-    a {
-        color: #4c6ada;
+    svg {
+        width: 20px;
+        height: 20px;
+    }
 
-        &:hover {
-            color: #3951a5;
-        }
+    .contactLinks {
+        margin-top: 3em;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
+
 
 .bgtext {
     z-index: -1;

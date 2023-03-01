@@ -9,6 +9,7 @@ const metadata = {
   url: {
     blog: "https://bepersistent.dev",
     twitter: "https://twitter.com/bprsstnt",
+    instagram: "https://www.instagram.com/dayofmadelen/",
     github: "https://github.com/bprsstnt",
     repo: "https://github.com/bprsstnt/blog",
     linkedin: "https://www.linkedin.com/in/jiieu/"
