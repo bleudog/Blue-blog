@@ -1,30 +1,27 @@
 ---
-title: 'How to sort integers correctly in JavaScript'
-posttitle: 'How to sort integers correctly in JavaScript'
+title: 'JavaScript 숫자 정렬하기'
+posttitle: 'JavaScript 숫자 정렬하기'
 date: '2023-01-04 05:30:00'
+updated: '2023-03-02 16:00:00'
 uid: '68'
 ---
 
-Given an array of integers `[11, 17, 2, 5, 3, 0, 9]`, we want to sort this array in numerical order.
-
-We can use the built-in `sort()` method.
+다음과 같은 배열 `[11, 17, 2, 5, 3, 0, 9]`를 내부 함수인 `sort()`를 사용해서 오름 순으로 정렬해보자.
 
 ```js
 let arr = [11, 17, 2, 5, 3, 0, 9];
 arr.sort();
 ```
 
-Did it work? Let's take a look at the output of `arr.sort()`.
+위와 같이 사용하면 될 것 같다. 하지만 출력해보면 결과가 이상하다.
 
 ```text
 > [0, 11, 17, 2, 3, 5, 9]
 ```
 
-It's not quite right 🤔
+`11`과 `17`이 중간에 정렬되어 있다. 이유는 `sort()` 함수가 기본적으로 값을 사전 순으로 정렬하기 때문이다.[^a]
 
-You might have noticed from the order of `11` and `17`, but the default ordering for `sort()` is lexicographic (alphabetical order).
-
-In order to sort integers numerically, we need to pass in a compare function.
+사전 순(문자)로 `1`이 `2`보다 앞서기 때문에 위와 같이 정렬된다. 숫자로 정렬하기 위해서는 비교 함수(compare function)를 넘겨주어야 한다.
 
 ```js
 let arr = [11, 17, 2, 5, 3, 0, 9];
@@ -34,7 +31,7 @@ arr.sort(integerCompareFunction);
 // [0, 2, 3, 5, 9, 11, 17]
 ```
 
-We can also pass in an arrow function directly to the `sort()` method.
+좀 더 간단하게 인자에서 화살표 함수를 사용해서 바로 넘겨줄 수도 있다.
 
 ```js
 let arr = [11, 17, 2, 5, 3, 0, 9];
@@ -42,3 +39,5 @@ let arr = [11, 17, 2, 5, 3, 0, 9];
 arr.sort((a, b) => a - b);
 // [0, 2, 3, 5, 9, 11, 17]
 ```
+
+[^a]: 정확히는 아스키코드값에 따라 정렬이 이루어진다.

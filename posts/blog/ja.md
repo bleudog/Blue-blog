@@ -7,30 +7,30 @@ uid: '67'
 
 ## Array.prototype.filter
 
-`filter()` function calls predicate function on each element and filters out one that passes a test.
+`filter()` function calls a predicate function on every element and filters the one who passes a test.
 
-![predicate](/images/posts/dev/javascript/predicate.png)
+![predicate](/images/ja/predicate.jpg)
 
 ```js
 let nums = [0, 1, 2, 3, 4, 5, 6];
 nums.filter((x) => x * 2); // [1, 2, 3, 4, 5, 6]
 ```
 
-The predicate function we used to determine whether to filter out the element or not is `x * 2`. In JavaScript, non-zero values are regarded as `true`. So every element except `0` were filtered out because `0 * 2` is `0` which is `false`.
+The predicate function we used to determine if the item should be filtered or not is `x * 2`. In JavaScript, non-zero values are regarded as `true`. Therefore, all elements except 0 have been filtered.
 
 ## Array.prototype.map
 
-`map()` function creates a new array filled with elements resulted from a callback function and returns it.
+`map()` creates a new array of elements from a callback function and returns the array.
 
-![callback](/images/posts/dev/javascript/callback.png)
+![callback](/images/ja/callback.jpg)
 
 ```js
 let nums = [0, 1, 2, 3, 4, 5, 6];
 nums.map((x) => x * 2); // [0, 2, 4, 6, 8, 10, 12];
 ```
 
-`map(callback)` function executes callback on each element and stores the data in a new array then returns it when all elements were processed.
+`map(callback)` function runs callback on each item and stores the data in a new array and returns when all items have been processed.
 
 ## Summary
 
-The `filter` function focuses on selecting elements from the original array while `map` function focuses on creating a new array using the original data.
+The `filter` function focuses on the selection of items from the original array while the `map` function focuses on creating a new array using the original data.
