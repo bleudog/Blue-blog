@@ -2,7 +2,7 @@
 title: 'How to sort integers correctly in JavaScript'
 posttitle: 'How to sort integers correctly in JavaScript'
 date: '2023-01-04 05:30:00'
-uid: 'IA'
+uid: '68'
 ---
 
 Given an array of integers `[11, 17, 2, 5, 3, 0, 9]`, we want to sort this array in numerical order.
