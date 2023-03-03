@@ -2,7 +2,7 @@
 title: 'Linear vs. Non-Linear Data Structure'
 posttitle: 'Linear vs. Non-Linear Data Structure'
 date: '2022-07-05 05:00:00'
-uid: 'A1'
+uid: '78'
 ---
 
 What are the differences between Linear and Non-Linear data structures?

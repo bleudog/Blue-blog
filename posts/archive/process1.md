@@ -2,7 +2,7 @@
 title: 'What is a Data Structure?'
 posttitle: 'What is a Data Structure?'
 date: '2022-07-04 22:20:00'
-uid: 'A'
+uid: '77'
 ---
 
 A data structure is a collection of data organized and processed in certain way that allows you to access and modify data efficiently.
