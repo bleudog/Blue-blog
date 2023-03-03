@@ -41,10 +41,12 @@ END LinearSearch
 
 ## 구현
 
-TypeScript
-
 ```ts
-function linearSearch(arr: number[], target: number): number {
+interface Array<T> {
+    linearSearch(target: number): number;
+}
+
+Array.prototype.linearSearch = (target) => {
     const length = arr.length;
 
     for (let i = 0; i < length; ++i) {
@@ -53,11 +55,9 @@ function linearSearch(arr: number[], target: number): number {
         }
     }
     return -1;
-}
+};
 
-let arr = [1, 2, 3, 4, 5];
-
-console.log(linearSearch(arr, 1)); // 0
-console.log(linearSearch(arr, 5)); // 4
-console.log(linearSearch(arr, 10)); // -1
+console.log(arr.linearSearch(1)); // 0
+console.log(arr.linearSearch(5)); // 4
+console.log(arr.linearSearch(10)); // -1
 ```
