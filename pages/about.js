@@ -38,9 +38,6 @@ export default function About() {
                 <p>
 				2020년에 일본으로 넘어가 1년간 초등학교에서 외국어 교사 (FLT; Foreign Language Teacher)로 일을 했습니다. 그 후 의료 분야 일본 스타트업에 입사해 2년 동안 프론트엔드 개발자로 일을 했습니다. 사내 애플리케이션의 UI 수정 및 유지보수, 그리고 버그를 고치는 작업을 주로 했고, 회사 서비스 소개 및 문의 페이지를 혼자서 처음부터 만들기도 했습니다. 외국어 능력을 살려 개발자들 사이의 영어-일본어 통역도 했었습니다.
                 </p>
-                <p>
-					2023년 3월, 일본에서의 생활을 마무리하고 미국으로 돌아왔습니다.
-                </p>
                 <BackButton className={'mx-0'} onClick={() => router.push('/')}>{'←'}</BackButton>
                 <ContactLinks>
                     <ContactIcon href={url.twitter}>
