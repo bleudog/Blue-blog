@@ -47,7 +47,7 @@ export default function About() {
                         <FontAwesomeIcon icon={faGithub} /> GitHub
                     </ContactIcon>
                     <ContactIcon href={url.instagram}>
-                        <FontAwesomeIcon icon={faInstagram} /> Insta
+                        <FontAwesomeIcon icon={faInstagram} /> Instagram
                     </ContactIcon>
                     <ContactIcon href={url.linkedin}>
                         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
