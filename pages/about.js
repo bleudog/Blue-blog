@@ -40,8 +40,8 @@ export default function About() {
                 </p>
                 <BackButton className={'mx-0'} onClick={() => router.push('/')}>{'←'}</BackButton>
                 <ContactLinks>
-                    <ContactIcon href={url.twitter}>
-                        <FontAwesomeIcon icon={faTwitter} />Twitter
+                    <ContactIcon role="button" href={url.twitter}>
+                        <FontAwesomeIcon icon={faTwitter} /> Twitter
                     </ContactIcon>
                     <ContactIcon href={url.github}>
                         <FontAwesomeIcon icon={faGithub} /> GitHub

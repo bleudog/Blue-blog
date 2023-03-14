@@ -154,7 +154,10 @@ export const ContactLinks = tw.div`
 `;
 
 export const ContactIcon = tw.a`
-    flex
+    inline-grid
+    grid-cols-1
+    grid-rows-2
+    justify-items-center
     w-11
     h-11
     text-[10px]
@@ -162,7 +165,7 @@ export const ContactIcon = tw.a`
     mx-1
     btn 
     btn-link 
-    btn-sm 
+    btn-sm
     hover:btn-ghost
     no-underline
     hover:no-underline
