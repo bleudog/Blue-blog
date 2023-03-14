@@ -4,12 +4,12 @@ import tw from 'tailwind-styled-components';
 ///  Blog Layout
 //////////////////////////////////////////////////////
 export const PostListContainer = tw.div`
-   mx-auto
-   md:max-w-[45em]
-   sm:max-w-[35em]
-   max-w-[25em]
-   min-w-[25em]
-   mb-8
+    mx-auto
+    md:max-w-[45em]
+    sm:max-w-[35em]
+    max-w-[25em]
+    min-w-[25em]
+    mb-8
 `;
 
 
@@ -17,11 +17,10 @@ export const PostListContainer = tw.div`
 ///  Blog Post Layout
 //////////////////////////////////////////////////////
 export const Article = tw.article`
-    text-primary
     pt-4
     pb-10
-    px-4
     border-b-[1px]
+    text-primary
 `;
 
 //////////////////////////////////////////////////////
@@ -30,7 +29,6 @@ export const Article = tw.article`
 export const PostContainer = tw.section`
     mt-4
     mb-4
-    text-primary
     text-sm
     w-full
 `;
@@ -46,20 +44,21 @@ export const List = tw.li`
     md:items-center
     md:flex-row
     cursor-pointer
+    text-primary
 `;
 
 export const PostDate = tw.div`
-    text-secondary
     cursor-pointer
     flex
     items-center
     font-['AmazonEmberDisplay']
     text-xs
     md:mr-6
+    text-secondary
+    font-bold
 `;
 
 export const Title = tw.div`
-    text-primary
     cursor-pointer
     duration-150
     flex-wrap
@@ -70,21 +69,10 @@ export const Title = tw.div`
 `;
 
 export const RefUID = tw.div`
-    text-gray-500
     text-xs
     md:mr-3
     min-w-[1.5em]
-`
-
-//////////////////////////////////////////////////////
-///  PageBanner Layout
-//////////////////////////////////////////////////////
-export const PageSecondTitle = tw.div`
-    font-['AmazonEmberDisplay']
-    text-lg
-    my-1
-    text-gray-500
-    w-full
+    text-accent
 `;
 
 //////////////////////////////////////////////////////
@@ -113,35 +101,32 @@ export const FooterContainer = tw.footer`
     flex
     justify-between
     items-center
-    my-8
-    px-2
+    pt-16
+    px-4
     text-sm
-    text-primary
 `;
 
 //////////////////////////////////////////////////////
 ///  Header Component
 //////////////////////////////////////////////////////
 export const HeaderContainer = tw.header`
-    mt-4
-    text-3xl
-    font-['AmazonEmberDisplay']
-    postHeader
-    whitespace-pre-wrap
-    px-4
+    mt-4 
+    mb-2
+    flex
+    text-3xl 
+    font-['AmazonEmberDisplay'] 
+    whitespace-pre-wrap 
+    text-primary
 `;
 
 export const BackButton = tw.button`
+    btn
+    btn-xs
+    btn-outline
+
     mt-2
-    ml-4
-    px-2
     sm:px-4
     rounded-md
-
-    text-primary
-    hover:bg-[#51a5ff]
-    hover:text-white
-    duration-75
 
     shadow
     active:shadow-none
@@ -151,8 +136,33 @@ export const BackButton = tw.button`
 /// About Page
 //////////////////////////////////////////////////////
 export const AboutWrapper = tw.section`
-    flex
+    min-w-[384px]
+    max-w-[750px]
+    container
+    mx-auto
     flex-col
-    sm:flex-row
+    flex
+    px-8
+    about-wrapper
+`;
+
+export const ContactLinks = tw.div`
+    flex
+    justify-center
     items-center
-`
+    my-16
+`;
+
+export const ContactIcon = tw.a`
+    flex
+    w-[45px]
+    h-[45px]
+    text-[10px]
+    mx-4
+    btn 
+    btn-link 
+    btn-sm 
+    hover:btn-ghost
+    no-underline
+    hover:no-underline
+`;

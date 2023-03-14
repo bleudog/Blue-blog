@@ -3,7 +3,9 @@ module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
 		'./components/**/*.{js,ts,jsx,tsx}',
+		'./layouts/**/*.{js,ts,jsx,tsx}',
 	],
+
 	presets: [],
 	darkMode: 'class', // or 'media'
 	theme: {
@@ -42,22 +44,6 @@ module.exports = {
 			fuchsia: colors.fuchsia,
 			pink: colors.pink,
 			rose: colors.rose,
-			theme: '#fbfbfb',
-			primary: '#4a5161',
-			secondary: '#1b212e91',
-			card_bg: '#cbddf36e',
-			tags_bg: '#acc3d785',
-			dark_card_bg: '#0d131c',
-			cool_gray_50: '#F5F7FA',
-			cool_gray_400: '#7B8794',
-			cool_gray_500: '#616E7C',
-			cool_gray_600: '#52606D',
-			cool_gray_700: '#3E4C59',
-			cool_gray_800: '#323F4B',
-			dtags_bg: '#324d64',
-			dprimary: '#e5e5e5',
-			dsecondary: '#BDC6CF',
-			dtheme_surface: '#151515',
 		}),
 		columns: {
 			auto: 'auto',
@@ -950,5 +936,31 @@ module.exports = {
 		'active',
 		'disabled',
 	],
-	plugins: [],
+
+	plugins: [require("daisyui")],
+	daisyui: {
+		themes: [
+		{
+			lofi: {
+				...require("daisyui/src/colors/themes")["[data-theme=lofi]"],
+				primary: "#525252",
+				secondary: "#7e7e7e",
+				accent: "#456eda"
+			}
+		}, 
+		{
+			dark: {
+				...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+				primary: "#ccc",
+				secondary: "#949494",
+			}
+		}],
+		darkTheme: "dark",
+		styled: true,
+		base: true,
+		utils: true,
+		logs: true,
+		rtl: false,
+		prefix: "",
+	  },
 };
