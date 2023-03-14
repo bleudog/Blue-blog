@@ -5,10 +5,9 @@ import tw from 'tailwind-styled-components';
 //////////////////////////////////////////////////////
 export const PostListContainer = tw.div`
     mx-auto
-    md:max-w-[45em]
-    sm:max-w-[35em]
-    max-w-[25em]
-    min-w-[25em]
+    min-w-96
+    max-w-[45em]
+    px-8
     mb-8
 `;
 
@@ -136,7 +135,7 @@ export const BackButton = tw.button`
 /// About Page
 //////////////////////////////////////////////////////
 export const AboutWrapper = tw.section`
-    min-w-[384px]
+    min-w-96
     max-w-[750px]
     container
     mx-auto
@@ -151,14 +150,16 @@ export const ContactLinks = tw.div`
     justify-center
     items-center
     my-16
+    mx-auto
 `;
 
 export const ContactIcon = tw.a`
     flex
-    w-[45px]
-    h-[45px]
+    w-11
+    h-11
     text-[10px]
-    mx-4
+    sm:mx-4
+    mx-1
     btn 
     btn-link 
     btn-sm 
