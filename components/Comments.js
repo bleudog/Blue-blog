@@ -12,9 +12,11 @@ const Comments = () => {
         category: metadata.giscus.category,
         categoryId: metadata.giscus.categoryId,
         mapping: 'pathname',
-        theme: 'light',
+        theme: 'preferred_color_scheme',
         crossorigin: 'anonymous',
         loading: 'lazy',
+        lang: 'ko',
+        inputPosition: 'top',
         ref: comment,
     });
 
