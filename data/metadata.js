@@ -20,8 +20,11 @@ const metadata = {
         url: 'https://giscus.app/client.js',
         repo: 'bprsstnt/blog',
         repoId: 'R_kgDOHRtelA',
-        category: 'General',
+        category: 'Comments',
         categoryId: 'DIC_kwDOHRtelM4CO6wU',
+        theme: 'preferred_color_scheme',
+        lang: 'ko',
+        mapping: 'pathname',
     },
 
     analytics: {
