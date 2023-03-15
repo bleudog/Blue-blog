@@ -60,12 +60,12 @@ Dvorak은 타자기의 자판을 보면서 의문을 품기 시작했다. 자주
 
 이런 시간과 비용을 감당하면서 지금의 자판을 버려야 할 정도로, 효율적인 자판의 필요성을 느끼지 못했다.
 
-> "I’m tired of trying to do something worthwhile for the human race. They simply don’t want to change!" - August Dvorak
+> I’m tired of trying to do something worthwhile for the human race. They simply don’t want to change! - August Dvorak
 
 ## Source
 
--   https://hackaday.com/2020/03/31/perhaps-august-dvorak-is-more-your-type/
--   https://www.historylink.org/File/20997
+- <https://hackaday.com/2020/03/31/perhaps-august-dvorak-is-more-your-type/>
+- <https://www.historylink.org/File/20997>
 
 [^a]: brother-in-law이자 대학교 박사였던 William Dealey와 함께 진행했다.
 [^b]: [@patrickwied](https://twitter.com/patrickwied)가 만든 [웹사이트](https://www.patrick-wied.at/projects/heatmap-keyboard/)를 사용했다.
