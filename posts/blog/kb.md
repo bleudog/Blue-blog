@@ -1,8 +1,7 @@
 ---
 title: 'Stack이란?'
 posttitle: 'Stack이란? (with TypeScript)'
-date: '2022-07-07 08:20:00'
-updated: '2023-03-15 15:00:00'
+date: '2023-03-15 15:00:00'
 uid: '79'
 ---
 
