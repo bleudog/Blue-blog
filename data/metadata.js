@@ -21,7 +21,7 @@ const metadata = {
         repo: 'bprsstnt/blog',
         repoId: 'R_kgDOHRtelA',
         category: 'Comments',
-        categoryId: 'DIC_kwDOHRtelM4CO6wU',
+        categoryId: 'DIC_kwDOHRtelM4CU4YD',
         theme: 'preferred_color_scheme',
         lang: 'ko',
         mapping: 'pathname',
