@@ -28,7 +28,7 @@ const BlogLayout = ({ posts }) => {
                             {blog.name}
                         </a>
                     </div>
-            </HeaderContainer>
+                </HeaderContainer>
             </PostListContainer>
 
             <PostListContainer>
