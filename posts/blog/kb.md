@@ -14,54 +14,9 @@ uid: '79'
 ## 스택의 연산
 
 - **push** - 스택에 데이터를 집어넣는 함수
-
-```text
-push(stack, top, value) → void
-    Pre: stack = 스택으로 사용되는 배열
-           top = 데이터를 집어넣을 위치 (0-based index)
-         value = 집어넣을 데이터
-    Post: 스택에 새로운 데이터를 집어넣는데 성공
-
-    stack[top++] ← val;
-END
-```
-
 - **pop** - 스택에서 데이터를 빼는 함수
-
-```text
-pop(stack, top) → T | undefined
-    Pre: stack = 스택으로 사용되는 배열
-           top = 데이터를 집어넣을 위치 (0-based index)
-    Post: 스택에서 최근에 집어넣은 데이터를 삭제하는데 성공
-
-    val ← stack[--top]
-    return val
-END
-```
-
 - **isEmpty** - 스택이 비어있는지 확인하는 함수
-
-```text
-isEmpty(stack, top) → boolean
-    Pre: stack = 스택으로 사용되는 배열
-           top = 데이터를 집어넣을 위치 (0-based index)
-    Post: 스택이 비어있다면 true를 아니면 false를 반환
-
-    return top == 0
-END
-```
-
 - **peek** - 스택 가장 위(top)에 있는 데이터를 확인하는 함수
-
-```text
-peek(stack, top) → T | undefined
-    Pre: stack = 스택으로 사용되는 배열
-           top = 데이터를 집어넣을 위치 (0-based index)
-    Post: 스택에 마지막으로 삽입된 데이터를 반환
-
-    return stack[top - 1]
-END
-```
 
 ## 스택의 구현 방법
 
