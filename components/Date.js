@@ -15,7 +15,7 @@ export default function Date({ updated, dateString, customClass }) {
         <time
             dateTime={dateString}
             className={`w-full text-secondary tracking-wide ${customClass}`}>
-            {updated.length !== 0 ? 'last updated: ' : ''}
+            {updated ? 'last updated: ' : ''}
             {format(date, 'LLL dd, yyyy')}{' '}
         </time>
     );
