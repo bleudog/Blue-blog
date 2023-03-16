@@ -136,6 +136,13 @@ export class StackList<T> {
 - 수식의 괄호 검사 [^e]
 - 후위 표기법 (postfix) 계산 [^f]
 
+## Source
+
+- <https://cwjuns.tistory.com/18>
+- <https://velog.io/@jimmy48/%EC%8A%A4%ED%83%9D%EC%9D%B4%EB%9E%80>
+- <https://gmlwjd9405.github.io/2018/08/03/data-structure-stack.html>
+- <https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D>
+
 [^1]: 선입후출 (FILO; First-In, Last-Out)이라고 부르기도 한다.
 [^a]: [TypeScript로 구현한 스택 - Array](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/stack-array/StackDynamicArray.ts)
 [^b]: [TypeScript로 구현한 Linked List](https://github.com/bprsstnt/typescript-algorithms/blob/main/src/data-structures/linked-list/LinkedList.ts)

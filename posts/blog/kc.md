@@ -84,7 +84,7 @@ class QueueArray<T> {
 
 `enqueue` / `dequeue`를 하는 과정에서 각각 `rear` / `front` 인덱스가 한 칸씩 앞으로 이동한다. n번의 `enqueue` 연산 이후 `rear` 인덱스가 리스트 끝에 위치하게 될 때, 만약 `dequeue`를 한 번이라도 호출했다면 `front` 인덱스의 위치가 `0`이 아니게 된다. 즉, 리스트 앞에 공간이 남아있음에도 프로그램은 큐를 포화 상태로 인식한다.
 
-위 상황을 해결하기 위한 한 가지 방법으로는 '원형 큐 (Circular Queue)'가 있다[^a].
+위 상황을 해결하기 위한 한 가지 방법으로는 '원형 큐 (Circular Queue)'가 있다[^a]. 원형 큐는 선형 큐와 같이 배열로 구현하지만, 배열의 처음과 끝이 연결되어 있는 것 처럼 생각하며 구현된다.
 
 ### 구현 - Linked List
 
@@ -149,6 +149,11 @@ class QueueList<T> {
 - 우선순위가 있는 태스크 관리 [^b]
 - 프로세스 관리
 - 네트워크 트래픽 제어
+
+## Source
+
+- <https://galid1.tistory.com/483>
+- <https://gmlwjd9405.github.io/2018/08/02/data-structure-queue.html>
 
 [^a]: Circular Buffer: https://en.wikipedia.org/wiki/Circular_buffer
 [^b]: 문제 - 프린터 큐: https://www.acmicpc.net/problem/1966
