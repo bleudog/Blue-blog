@@ -9,7 +9,7 @@ uid: '79'
 
 스택은 한쪽 끝에서만 데이터의 추가와 삭제가 가능한 단일구조 형식의 자료구조이다.
 
-스택에 데이터를 집어넣는 것을 `push`라고 하고, 데이터를 빼는 것을 `pop`이라고 한다. `pop` 연산을 하면 가장 나중에 들어간 데이터가 먼저 나오며, 처음에 집어넣은 데이터가 가장 마지막에 나오게 된다. 이와 같은 구조를 후입선출 (LIFO; Last In, First Out) 구조라고 한다.[^1]
+스택에 데이터를 집어넣는 것을 `push`라고 하고, 데이터를 빼는 것을 `pop`이라고 한다. `pop` 연산 실행 시 가장 나중에 들어간 데이터가 먼저 나오며, 처음에 집어넣은 데이터가 가장 마지막에 나오게 된다. 이와 같은 구조를 후입선출 (LIFO; Last In, First Out) 구조라고 한다.[^1]
 
 ## 스택의 연산
 
@@ -41,6 +41,7 @@ export class StackArray<T> {
     }
   }
 
+  // O(1)
   push(val: T): void {
     if(this.top >= this.size) {
       throw new Error('Stack overflow');
@@ -50,6 +51,7 @@ export class StackArray<T> {
     this.top += 1;
   }
 
+  // O(1)
   pop(): T | undefined {
     if (this.isEmpty()) {
       throw new Error('Stack underflow');
@@ -60,10 +62,12 @@ export class StackArray<T> {
     return val;
   }
 
+  // O(1)
   isEmpty(): boolean {
     return this.top === 0;
   }
 
+  // O(1)
   peek(): T | undefined {
     if (this.isEmpty()) {
       throw new Error('Stack is empty');
@@ -92,16 +96,19 @@ export class StackList<T> {
     }
   }
 
+  // O(1)
   isEmpty(): boolean {
     return this.top === null;
   }
 
+  // O(1)
   push(value: T): void {
     let newNode = new LinkedListNode(value);
     newNode.next = this.top;
     this.top = newNode;
   }
 
+  // O(1)
   pop(): ListNode<T> {
     let poppedNode = this.top;
 
@@ -112,6 +119,7 @@ export class StackList<T> {
     return poppedNode;
   }
 
+  // O(1)
   peek(): ListNode<T> {
     if (this.top) {
       return this.top;

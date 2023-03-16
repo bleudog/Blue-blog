@@ -6,6 +6,7 @@ uid: '80'
 ---
 
 ## 큐(Queue)의 개념
+
 데이터의 삽입과 제거 연산이 리스트 양 끝에서 행해지는 단일 형식의 자료구조이다. 한쪽 끝(rear)에서는 데이터의 추가가, 반대편(front)에서는 데이터의 삭제가 이루어진다.
 
 큐는 먼저 삽입된 데이터가 먼저 리스트를 빠져나오는 선입선출(FIFO; First In, First Out)의 구조로 되어 있다. 어딘가의 계산대에 먼저 온 손님이 먼저 계산하고 나가는 것과 같다.
@@ -45,10 +46,12 @@ class QueueArray<T> {
         }
     }
 
+    // O(1)
     isEmpty(): boolean {
         return this.front === this.rear;
     }
 
+    // O(1)
     enqueue(val: T): void {
         if (this.rear === this.size) {
             throw new Error('Queue is full');
@@ -58,6 +61,7 @@ class QueueArray<T> {
         this.rear += 1;
     }
 
+    // O(1)
     dequeue(): T | undefined {
         if (this.isEmpty()) {
             throw new Error('Queue is empty');
@@ -68,6 +72,7 @@ class QueueArray<T> {
         return val;
     }
 
+    // O(1)
     getFront(): T | undefined {
         if (this.isEmpty()) {
             throw new Error('Queue is empty');
@@ -110,10 +115,12 @@ class QueueList<T> {
         }
     }
     
+    // O(1)
     isEmpty(): boolean {
         return this.front == null;
     }
     
+    // O(1)
     enqueue(value: T): void {
         let newNode = new LinkedListNode(value);
         
@@ -127,6 +134,7 @@ class QueueList<T> {
         }
     }
     
+    // O(1)
     dequeue(): ListNode<T> {
         let frontNode = this.front;
         
@@ -137,6 +145,7 @@ class QueueList<T> {
         return frontNode;
     }
     
+    // O(1)
     getFront(): ListNode<T> {
         return this.front;
     }
