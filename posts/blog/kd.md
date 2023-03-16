@@ -33,7 +33,7 @@ end
 ```text
 isEmpty() → boolean
     return (front == -1 && rear == -1);
-end // O(1)
+end
 ```
 
 ### **isFull**
@@ -43,7 +43,7 @@ end // O(1)
 ```text
 isFull() → boolean
     return (rear+1 % capacity) == front;
-end // O(1)
+end
 ```
 
 ### **enqueue**
@@ -62,7 +62,7 @@ enqueue(item) → void
         rear     ← (rear + 1) % capacity;
         cq[rear] ← item;
     end
-end // O(1)
+end
 ```
 
 ### **dequeue**
@@ -83,7 +83,7 @@ dequeue(item) → item
         front ← (front + 1) % capacity;
         ret item;
     end
-end // O(1)
+end
 ```
 
 ## 구현
@@ -107,15 +107,17 @@ export class CircularQueueArray<T> {
         }
     }
     
+    // O(1)
     isEmpty(): boolean {
         return this.front == -1 && this.rear == -1;
     }
-    
+
+    // O(1)
     isFull(): boolean {
         return (this.rear + 1) % this.capacity == this.front;
     }
     
-    
+    // O(1)
     enqueue(item: T): void {
         if(this.isFull()) {
             throw new Error("Queue is full");
@@ -129,6 +131,7 @@ export class CircularQueueArray<T> {
         }
     }
     
+    // O(1)
     dequeue(): T | undefined {
         if(this.isEmpty()) {
             throw new Error("Queue is empty");
