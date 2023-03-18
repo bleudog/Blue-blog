@@ -6,7 +6,7 @@ import tw from 'tailwind-styled-components';
 export const PostListContainer = tw.div`
     mx-auto
     min-w-96
-    max-w-[45em]
+    max-w-[50em]
     px-8
     mb-8
 `;
@@ -20,6 +20,7 @@ export const Article = tw.article`
     pb-10
     border-b-[1px]
     text-primary
+    text-md
 `;
 
 //////////////////////////////////////////////////////
@@ -28,7 +29,7 @@ export const Article = tw.article`
 export const PostContainer = tw.section`
     mt-4
     mb-4
-    text-sm
+    text-md
     w-full
 `;
 
@@ -51,7 +52,7 @@ export const PostDate = tw.div`
     flex
     items-center
     font-['AmazonEmberDisplay']
-    text-xs
+    text-sm
     md:mr-6
     text-secondary
     font-bold
@@ -62,8 +63,8 @@ export const Title = tw.div`
     duration-150
     flex-wrap
     font-['AmazonEmberDisplay']
-    text-md
-    md:text-sm
+    sm:text-md
+    text-sm
     hover:text-[#465a87]
 `;
 
