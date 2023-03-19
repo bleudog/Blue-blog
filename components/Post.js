@@ -33,7 +33,7 @@ const Post = ({ post, children }) => {
                     customClass={'mt-2 mb-2 text-md break-normal inline-block text-right'}
                 />
             </div>
-            <BackButton onClick={() => router.push('/blog')}>{'←'}</BackButton>
+            <BackButton onClick={() => router.push(router.pathname.replace('[...id]', ''))}>{'←'}</BackButton>
             {children}
         </PostContainer>
     );

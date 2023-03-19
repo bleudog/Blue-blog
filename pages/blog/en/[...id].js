@@ -12,7 +12,7 @@ export default function Post({ post }) {
 }
 
 export async function getStaticPaths() {
-    const paths = getAllPostIds();
+    const paths = getAllPostIds('en');
     return {
         paths,
         fallback: false,
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const post = await getPostData(params.id);
+    const post = await getPostData(params.id, 'en');
     return {
         props: {
             post,

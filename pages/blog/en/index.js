@@ -12,7 +12,7 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-    const posts = getAllPosts('ko');
+    const posts = getAllPosts('en');
     return {
         props: {
             posts,
