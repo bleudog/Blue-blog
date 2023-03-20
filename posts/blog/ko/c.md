@@ -3,7 +3,7 @@ title: 'Mac Setup 2023'
 posttitle: 'Mac Setup 2023'
 date: '2022-09-15 07:00:00'
 updated: '2023-02-28 08:00:00'
-uid: '3'
+uid: 'c'
 ---
 
 [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/)을 참고했다.
@@ -235,4 +235,4 @@ I used [Karabiner](https://karabiner-elements.pqrs.org/) to remap `international
 
 ## Immersed VR
 
-[모니터를 처분하고 가상환경으로 대체했다](./e)
+[모니터를 처분하고 가상환경으로 대체했다](./bc)

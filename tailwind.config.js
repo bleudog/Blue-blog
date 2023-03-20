@@ -937,31 +937,31 @@ module.exports = {
         'disabled',
     ],
 
-    plugins: [require("daisyui")],
+    plugins: [require('daisyui')],
     daisyui: {
         themes: [
             {
                 lofi: {
-                    ...require("daisyui/src/colors/themes")["[data-theme=lofi]"],
-                    primary: "#525252",
-                    secondary: "#7e7e7e",
-                    accent: "#456eda"
+                    ...require('daisyui/src/colors/themes')['[data-theme=lofi]'],
+                    primary: '#525252',
+                    secondary: '#7e7e7e',
+                    accent: '#456eda'
                 }
             }, 
             {
                 dark: {
-                    ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
-                    primary: "#f1f3f5",
-                    secondary: "#949494",
-                    "base-100": "#16191d"
+                    ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
+                    primary: '#ffffffe0',
+                    secondary: '#fefefe',
+                    'base-100': '#282c35'
                 }
             }],
-        darkTheme: "dark",
+        darkTheme: 'dark',
         styled: true,
         base: true,
         utils: true,
         logs: true,
         rtl: false,
-        prefix: "",
+        prefix: '',
     },
 };

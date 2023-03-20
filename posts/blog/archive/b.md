@@ -2,26 +2,22 @@
 title: 'Asymptotic Analysis: Big-O, Omega, and Theta'
 posttitle: 'Asymptotic Analysis: Big-O, Omega, and Theta'
 date: '2022-07-06 07:00:00'
-uid: 'BA'
+uid: '2'
 ---
 
 Asymptotic analysis "is the study of change in performance of the algorithm with the change in the order of the input size". In other words, it is a method to compute and measure the running-time of an algorithm.
 
 Asymptotic notations are used to describe the computed running-time or complexity of an algorithm.
 
-![Big-O Chart](/images/posts/big-o-chart.png)
-
-# Asymptotic Notations
+## Asymptotic Notations
 
 Asymptotic notations are mathematical notations used to describe the complexity of an algorithm.
 
 There are mainly three different notations to describe three different states of complexity:
 
--   Theta (Θ) Notation (_a_)
--   Big-O Notation (_b_)
--   Omega (Ω) Notation (_c_)
-
-![Asymptotic Notations Graph](/images/posts/asymptotic-analysis/asymptotic-notations.png)
+- Theta (Θ) Notation (_a_)
+- Big-O Notation (_b_)
+- Omega (Ω) Notation (_c_)
 
 ## Big-O Notation
 
@@ -59,6 +55,6 @@ For a function `g(n)` and `Θ(g(n))` is given by the relation:
 
 # Reference
 
--   [https://www.programiz.com/dsa/asymptotic-notations](https://www.programiz.com/dsa/asymptotic-notations)
--   image: [big-o graph](https://danielmiessler.com/study/big-o-notation/)
--   image: [asymptotic notations graph](https://www.dotnetlovers.com/images/coolnikhilj2256c883d1-b9fc-46e9-b225-588ac5063c3d.png)
+- [https://www.programiz.com/dsa/asymptotic-notations](https://www.programiz.com/dsa/asymptotic-notations)
+- image: [big-o graph](https://danielmiessler.com/study/big-o-notation/)
+- image: [asymptotic notations graph](https://www.dotnetlovers.com/images/coolnikhilj2256c883d1-b9fc-46e9-b225-588ac5063c3d.png)

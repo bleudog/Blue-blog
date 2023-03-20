@@ -66,6 +66,7 @@ export const Title = tw.div`
     sm:text-md
     text-sm
     hover:text-[#465a87]
+    dark:hover:text-[#1eb2a5]
 `;
 
 export const RefUID = tw.div`

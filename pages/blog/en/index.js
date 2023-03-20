@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { getAllPosts } from '@lib/blog';
-import BlogLayout from '@layouts/blog';
+import BlogLayout from '@layouts/blog_en';
 
 Blog.propTypes = {
     posts: PropTypes.array.isRequired,

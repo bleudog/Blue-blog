@@ -9,12 +9,11 @@ import utilStyles from '@styles/utils.module.scss';
 import navlink from '@data/navlink';
 import Footer from '@components/Footer';
 
-
 const BlogLayout = ({ posts }) => {
     BlogLayout.propTypes = {
         posts: PropTypes.array.isRequired,
     };
-    const {root, en, ko} = navlink;
+    const {root, ko, en} = navlink;
 
     return (
         <div>
@@ -24,10 +23,10 @@ const BlogLayout = ({ posts }) => {
                         <a role="button" className="btn btn-ghost normal-case text-xl" href={root.link}>{root.name}</a>
                     </div>
                     <div className="flex-none">
-                        <a role="button" className="btn btn-sm normal-case" href={ko.link}>
+                        <a role="button" className="btn btn-sm btn-ghost normal-case" href={ko.link}>
                             {ko.name}
                         </a>
-                        <a role="button" className="btn btn-sm btn-ghost normal-case" href={en.link}>
+                        <a role="button" className="btn btn-sm normal-case" href={en.link}>
                             {en.name}
                         </a>
                     </div>
@@ -36,7 +35,7 @@ const BlogLayout = ({ posts }) => {
 
             <PostListContainer>
                 <span className={utilStyles.note}>
-					*글은 관련성에 따라 의도한 순서로 나열되어 있습니다. 작성 시간순이 아님을 유념해주세요.
+                    *Posts are ordered by relevance, not by time of writing.
                 </span>
                 <PostList posts={posts} />
                 <Footer />
