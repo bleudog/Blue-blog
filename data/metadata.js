@@ -23,7 +23,7 @@ const metadata = {
         category: 'Comments',
         categoryId: 'DIC_kwDOHRtelM4CU4YD',
         theme: 'preferred_color_scheme',
-        lang: 'ko',
+        lang: 'en',
         mapping: 'pathname',
     },
 
