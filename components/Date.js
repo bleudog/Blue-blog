@@ -10,7 +10,6 @@ Date.propTypes = {
 
 export default function Date({ updated, dateString, customClass }) {
     const date = parseISO(dateString);
-    console.log(updated);
     return (
         <time
             dateTime={dateString}

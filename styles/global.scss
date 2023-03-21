@@ -140,7 +140,7 @@ blockquote {
 }
 
 article {
-    p:not(:last-of-type) {
+    p {
         margin: 1.5rem 0;
     }
 
