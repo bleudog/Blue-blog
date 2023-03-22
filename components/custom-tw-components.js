@@ -41,8 +41,6 @@ export const List = tw.li`
     p-2
     flex
     flex-col
-    md:items-center
-    md:flex-row
     cursor-pointer
     text-primary
 `;
@@ -71,9 +69,8 @@ export const Title = tw.div`
 
 export const RefUID = tw.div`
     text-xs
-    md:mr-3
-    min-w-[1.5em]
     text-accent
+    
 `;
 
 //////////////////////////////////////////////////////

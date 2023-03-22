@@ -2,12 +2,12 @@
 title: 'Installing Rust'
 posttitle: 'Installing Rust'
 date: '2022-08-12 17:42:00'
-uid: 'aa/gg'
+uid: 'gg/aa'
 ---
 
-The official documentation recommends using `rustup` to install or upgrade Rust on your device.
+공식 문서에서는 기기에 Rust를 설치하거나 업그레이드하기 위해 `rustup`을 사용하는 것을 권장한다.
 
-If you have installed Rust without `rustup`, you can remove it from your machine by running the following command:
+`rustup` 없이 Rust를 설치한 경우 다음 명령어를 실행하여 기기에서 제거할 수 있다:
 
 ```shell
 $ /usr/local/lib/rustlib/uninstall.sh
@@ -19,9 +19,9 @@ install: uninstalling component 'rust-docs'
     Rust Documentation is uninstalled.
 ```
 
-## Installation
+## 설치
 
-You can install `rustup` on your machine by executing the following command:
+아래의 명령어를 실행하여 `rustup`을 설치한다.
 
 ```shell
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -37,7 +37,7 @@ This would reload your PATH environment variable to include
 Cargo's bin directory ($HOME/.cargo/bin).
 ```
 
-Now check the version:
+제대로 설치되었다면 `rustc` 명령어를 사용할 수 있다. 버전을 확인해보자.
 
 ```shell
 $ rustc --version
@@ -46,14 +46,14 @@ rustc 1.63.0 (4b91a6ea7 2022-08-08)
 
 ## Hello World
 
-We'll use `cargo` to create a new project.
+`cargo` 명령어를 사용해서 새로운 러스트 프로젝트를 생성한다. 프로젝트 이름은 뭐든 상관없다. 여기서는 `hello_word`를 사용한다.
 
 ```shell
 $ cargo new hello_world
      Created binary (application) `hello_world` package
 ```
 
-Move to the directory `hello_world` and try to run the code.
+만들어진 프로젝트 디렉토리로 이동해서 프로젝트를 컴파일하고 실행해보자.
 
 ```shell
 $ cd hello_world
@@ -65,7 +65,7 @@ $ cargo run
 Hello, world!
 ```
 
-You can find the source code of `hello_world` in `src/` directory.
+프로젝트가 실행하는 `main.rs` 파일은 해당 프로젝트의 `src/` 디렉토리에서 확인할 수 있다.
 
 ```rust
 // main.rs file
@@ -74,7 +74,7 @@ fn main() {
 }
 ```
 
-To check for any errors in your code without actually running it, you can use the `cargo check` command.
+코드를 실행하지 않고 오류의 여부만 확인하고 싶다면 `cargo check` 명령어를 사용하면 된다.
 
 ```shell
 $ cargo check 
