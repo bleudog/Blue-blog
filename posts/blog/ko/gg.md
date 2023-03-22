@@ -1,6 +1,6 @@
 ---
-title: 'Installing Rust'
-posttitle: 'Installing Rust'
+title: 'Rust 설치하기'
+posttitle: 'Rust 설치하기'
 date: '2022-08-12 17:42:00'
 uid: 'gg/aa'
 ---
