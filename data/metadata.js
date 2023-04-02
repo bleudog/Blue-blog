@@ -8,7 +8,7 @@ const metadata = {
     description: '',
     url: {
         blog: 'https://bepersistent.dev',
-        twitter: 'https://twitter.com/bprsstnt',
+        twitter: 'https://twitter.com/jii_bprsstnt',
         instagram: 'https://www.instagram.com/dayofmadelen/',
         github: 'https://github.com/bprsstnt',
         repo: 'https://github.com/bprsstnt/blog',
