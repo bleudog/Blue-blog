@@ -2,7 +2,7 @@
 title: '소수를 구하는 여러 가지 방법'
 posttitle: '소수를 구하는 여러 가지 방법'
 date: '2023-04-03 06:45:00'
-uid: 'hh'
+uid: 'hh/ba'
 ---
 
 
@@ -122,7 +122,7 @@ const isPrime = (k: number): boolean => {
 
 연산횟수가 줄어들었지만, 이 알고리즘 역시 제곱근을 이용하기 때문에 시간복잡도는 `O(sqrt(N))`이다.[^2]
 
-[^2]: O(sqrt(6N) / 6) → O(sqrt(N))
+[^2]: O(sqrt(N) / 6) → O(sqrt(N))
 
 ## 에라토스테네스의 체
 
