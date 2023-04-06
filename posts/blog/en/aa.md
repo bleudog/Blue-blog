@@ -2,7 +2,7 @@
 title: 'Installing Rust'
 posttitle: 'Installing Rust'
 date: '2022-08-12 17:42:00'
-uid: 'aa/gg'
+uid: 'aa'
 ---
 
 The official documentation recommends using `rustup` to install or upgrade Rust on your device.

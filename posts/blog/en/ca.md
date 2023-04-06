@@ -2,7 +2,7 @@
 title: 'What is a Stack?'
 posttitle: 'What is a Stack? (with TypeScript)'
 date: '2023-04-05 08:00:00'
-uid: 'ca/i'
+uid: 'ca'
 ---
 
 ## What is a Stack?

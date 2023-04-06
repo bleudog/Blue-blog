@@ -3,7 +3,7 @@ title: 'Mac Setup 2023'
 posttitle: 'Mac Setup 2023'
 date: '2022-09-15 07:00:00'
 updated: '2023-02-28 08:00:00'
-uid: 'c/d'
+uid: 'c'
 ---
 
 [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/)을 참고했다.

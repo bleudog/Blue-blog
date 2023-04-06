@@ -2,7 +2,7 @@
 title: 'Rust 설치하기'
 posttitle: 'Rust 설치하기'
 date: '2022-08-12 17:42:00'
-uid: 'gg/aa'
+uid: 'gg'
 ---
 
 공식 문서에서는 기기에 Rust를 설치하거나 업그레이드하기 위해 `rustup`을 사용하는 것을 권장한다.

@@ -3,7 +3,7 @@ title: 'Mac Setup 2023'
 posttitle: 'Mac Setup 2023'
 date: '2022-09-15 07:00:00'
 updated: '2023-02-28 08:00:00'
-uid: 'd/c'
+uid: 'd'
 ---
 
 Here I'm sharing my Mac setup for web development which I got inspired by [Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/).

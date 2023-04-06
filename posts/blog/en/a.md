@@ -2,7 +2,7 @@
 title: 'JavaScript filter vs. map'
 posttitle: 'JavaScript filter vs. map'
 date: '2023-02-13 11:45:00'
-uid: 'a/g'
+uid: 'a'
 ---
 
 ## Array.prototype.filter
