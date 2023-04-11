@@ -7,9 +7,11 @@ import profileImg1 from '../public/images/bprsstnt1.png';
 import profileImg2 from '../public/images/bprsstnt2.png';
 import Link from 'next/link';
 import navlink from '@data/navlink';
+import metadata from '@data/metadata';
 
 const HomeLayout = () => {
     const {blog, about} = navlink;
+    const {author} = metadata;
     const images = [profileImg1, profileImg2];
     const [imageIndex, setImageIndex] = useState(0);
 	
@@ -36,7 +38,7 @@ const HomeLayout = () => {
             </div>
             <p className={utilStyles.homeTitle}>
                 <Link key={blog.name} href={blog.link} passHref>
-					bprssnt
+                    {author.id}
                 </Link>
             </p>
             <div className={`${utilStyles.menu}`}>
