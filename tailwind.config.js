@@ -951,9 +951,9 @@ module.exports = {
 		{
 			dark: {
 				...require("daisyui/src/colors/themes")["[data-theme=dark]"],
-				primary: "#e6e6e6",
+				primary: "#f1f3f5",
 				secondary: "#949494",
-				"base-100": "#000408"
+				"base-100": "#16191d"
 			}
 		}],
 		darkTheme: "dark",
@@ -963,5 +963,5 @@ module.exports = {
 		logs: true,
 		rtl: false,
 		prefix: "",
-	  },
+	},
 };

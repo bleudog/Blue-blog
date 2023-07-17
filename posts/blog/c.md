@@ -1,40 +1,238 @@
 ---
-title: '내가 기록하는 방법: Pensieve'
-posttitle: '내가 기록하는 방법: Pensieve'
-date: '2023-02-26 15:00:00'
-uid: '11'
+title: 'Mac Setup 2023'
+posttitle: 'Mac Setup 2023'
+date: '2022-09-15 07:00:00'
+updated: '2023-02-28 08:00:00'
+uid: '3'
 ---
 
-아래는 현재 내가 쓰고 있는 노트 펜시브(Pensieve)[^a] 의 일부분이다.[^b]
+[Robin Wieruch's Mac Setup](https://www.robinwieruch.de/mac-setup-web-development/)을 참고했다.
 
-![pensieve note](/images/c/pensieve-note.webp)
+---
 
-영어도 보이고, 한글도 보이고, 숫자도 보인다. 정렬되어 있는 건가? 무질서처럼 보이기도 한다.
-하지만 놀랍게도 제대로 정렬된 상태다.
+## MacBook Pro
 
-> Sort by Relevance!
+-   13-inch
+-   2 GHz Quad-Core Intel Core i5
+-   Intel Iris Plus Graphics 1536 MB
+-   16 GB RAM
+-   512 GB SSD
+-   DVORAK (English), Japanese (Romaji), Korean (3-Beolsik)
+-   ~~macOS Monterey~~
+-   macOS Ventura 13.2.1
 
-정렬의 규칙은 관련성이다.
+## System Preferences
 
-내부구조? 내부는 없다. 카테고리도 없다. 보이는 저게 구조의 전부이다.
-폴더 하나. 끝.
+-   Notifications
+    -   ~~Off, except calendar, mail, and reminders~~
+    -   Off except Calendar, LINE, Mail, Messages, Reminders, and Slack
+-   Sound
+    -   Play sound on startup - [Off]
+-   General
+    -   Sharing
+        -   Turn off ~~"AirPlay Receiver" and~~ all sharings / Caching
+        -   Change local hostname
+        -   Also terminal:
+            -   `sudo scutil --set ComputerName "newname"`
+            -   `sudo scutil --set LocalHostName "newname"`
+            -   `sudo scutil --set HostName "newname"`
+        -   AirDrop & Handoff
+            -   AirPlay Receiver - [OFF]
+-   Appearance
+    -   Appearance - Auto
+    -   Accent Color - Blue
+    -   Show scroll bars - When scrolling
+-   Control Center
+    -   ~~Wi-Fi~~ | Bluetooth | Airdrop | Stage Manager | ~~Sound~~ | Now Playing | Spotlight | Siri | Time Machine
+        -   Show in menu bar - [OFF]
+    -   Battery
+        -   Show in Menu Bar - [ON]
+        -   Show Percentage - [ON]
+    -   Clock
+        -   "use a 24-hour clock"
+        -   "announce the time" -> on the hour
+-   Siri
+    -   disable
+-   Spotlight
+    -   Disable all except 'Applications' and 'System Preferences'
+-   Privacy and Security
+    -   Turn on FileVault
+    -   Turn on Lockdown Mode
+-   Desktop & Dock
+    -   Dock
+        -   Size - close to small
+        -   Magnification - slightly larger than the size
+        -   Position on screen - ~~Right~~ Bottom
+        -   remove most apps from Dock
+        -   Automatically hide and show the Dock - [ON]
+        -   Show recent apps in Dock - [OFF]
+        -   Show indicators for open apps - [ON]
+    -   Menu Bar
+        -   Automatically hide and show the menu bar - [Always]
+    -   Windows & Apps
+        -   Close windows when quitting an app - [ON]
+        -   Default web browser - [Arc]
+    -   Mission Control
+        -   Hot Corners: disable all
+-   Display
+    -   Nightshift - Custom 22:30 to 5:00
+-   Lock Screen
+    -   Start Screen Saver when inactive - [Never]
+    -   Turn display off on battery when inactive - [For 2 minutes]
+    -   Turn display off on power adapter when inactive - [For 10 minutes]
+    -   Require password after screen saver begins or display is turned off - [Immediately]
+-   Touch ID & Password
+    -   Turn on 'use apple watch to unlock your app and your Mac'
+-   Keyboard
+    -   Text Input
+        -   Dvorak
+        -   Japanese - Romaji
+        -   3-Set Korean (390)
+    -   Text
+        -   "correct spelling automatically" OFF
+        -   "capitalize words automatically" OFF
+        -   "add period with double-space" OFF
+        -   "use smart quotes and dashes" OFF
+        -   use "abc" for double quotes
+        -   use 'abc' for single quotes
+    -   Dictation
+        -   'press control key twice' to activate
+-   Trackpad
+    -   Silent clicking - [ON]
+    -   Tap top Click - [ON]
+    -   Tracking speed - 7/10
+    -   Click - Firm
+-   Finder Settings
+    -   Tags
+        -   disable all
+    -   Sidebar
+        -   activate all Favorites
+    -   Advanced
+        -   "show all filename extensions" ON
+            -   "remove items from the trash after 30 days" ON
+    -   View -> Show Preview (for images)
 
-각 링크가 하나의 주제이고, 링크를 타고 가면 해당 주제에 관한 설명, 내 생각 내지는 간단한 기록을 볼 수 있다. 제텔카스텐[^c]에 대해 알고 있다면 이해하기가 쉬울 것이다. 차이점이라면 노트 하나에 아이디어 한 개라든가, 완전한 문장이라던 가와 같은 규칙은 없다는 점.
+## System Preferences (terminal)
 
-새로운 내용을 기록할 때, 기억하고 싶은 주제를 제목으로 적어서 파일을 만든다. 그리고 펜시브를 살펴보면서 관련 있는 주제가 있는지 확인하고, 있으면 그 주위에 삽입한다. 없으면 가장 밑에 추가한다.
+```sh
+# take screenshots as jpg (usually smaller size) and not png
+defaults write com.apple.screencapture type jpg
 
-하나하나 "내용"을 확인하는 것이 아니다.
+# do not open previous previewed files (e.g. PDFs) when opening a new one
+defaults write com.apple.Preview ApplePersistenceIgnoreState YES
 
-처음 사진에서 네 번째에 보이는 "독과 벽력탄"은 대체 뭔 내용인지 싶겠지만, 최대한 제목만 보고 무슨 내용인지 "내가" 기억할 수 있게 되어있다. 단순히 어디서 복사해 붙인 정보들의 아카이브가 아니라, 내가 정리한 기록이기 때문에 어떤 주제를 가진 노트인지 바로 떠올릴 수 있다. 혹시 모르면 뭐 어떤가. 링크 타고 가서 확인하면 되는데.
+# show Library folder
+chflags nohidden ~/Library
 
-> 이런 기록을 했었나?
+# show path bar
+defaults write com.apple.finder ShowPathbar -bool true
 
-아무리 내가 정리한 노트라고 해도, 그 개수가 많아지면 "이런 기록을 했었나?" 하는 순간이 생기기 마련이다.
+# show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
 
-새로운 노트를 삽입할 위치를 찾는 과정에서 위에서 아래로 (혹은 반대로) 노트의 제목들을 쭉 훑게 되는데, 이때 자연히 예전 기록을 확인하게 된다. 정 모르겠으면 `ctrl + f`로 단어를 검색하면 되니 큰 문제는 아니다.
+killall Finder;
+```
 
-그리고 나만 그런 건지 모르겠지만 제목을 보면서 하나하나 떠올리는 재미도 있다 😄
+## Homebrew
 
-[^a]: 해리포터에서의 펜시브가 맞다. 사람의 기억을 볼 수 있는 마법 물건이다. 오글거리더라도 넘어가자.
-[^b]: 엘프화가의 [무한 서랍](https://brunch.co.kr/@labica/61)에서 영향을 받았다. 기록하는 방법만 다를 뿐 구조는 같다.
-[^c]: 제텔카스텐 - https://zettelkasten.de/introduction/
+```sh
+# install homebrew as a package manager for macOS
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# update everything in homebrew to recent version
+brew update
+
+# install GUI applications
+brew install --cask \
+ bitwarden \
+ iterm2 \
+ visual-studio-code \
+ discord \
+ slack \
+ imageoptim \
+ raycast \
+ spotify
+
+# install terminal applications
+brew install \
+ wget \
+ exa \
+ git \
+ nvm \
+ pnpm \
+ graphicsmagick
+```
+
+## OH MY ZSH
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# omz update
+source ~/.zshrc
+```
+
+## Oh My Zsh Theme + Fonts
+
+```sh
+brew install starship
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+```
+
+## exa setting
+
+Set aliases for `exa`:
+
+```sh
+if [[ $(command -v exa) ]]; then
+  alias e='exa --icons'
+  alias l=e
+  alias ls=e
+  alias ea='exa -a --icons'
+  alias la=ea
+  alias ee='exa -aal --icons'
+  alias ll=ee
+  alias et='exa -T -L 3 -a -I "node_modules|.git|.cache" --icons'
+  alias lt=et
+  alias eta='exa -T -a -I "node_modules|.git|.cache" --color=always --icons | less -r'
+  alias lta=eta
+fi
+```
+
+## VS Code
+
+-   [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+-   [Auto Hide](https://marketplace.visualstudio.com/items?itemName=sirmspencer.vscode-autohide)
+-   [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+-   [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+-   [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+-   [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+-   [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+-   [Formatting Toggle](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle)
+-   [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
+-   [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+-   [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+-   [VSCode React Refactor](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor)
+-   [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components)
+-   [The Doki Theme](https://marketplace.visualstudio.com/items?itemName=unthrottled.doki-theme)
+
+## Happy Hacking Keyboard
+
+My mac had an issue with recognizing the keyboard.
+It couldn't read `international1` key which was used for backtick(\`) and tilde(~).
+
+I used [Karabiner](https://karabiner-elements.pqrs.org/) to remap `international1` to `grave_accent_and_tilde` and it works great :)
+
+## Other Apps
+
+-   Arc - https://thebrowser.company/
+-   Nota - https://nota.md
+-   ~~Setapp - https://setapp.com/~~
+-   Immersed VR - https://immersed.com/
+
+## Immersed VR
+
+[모니터를 처분하고 가상환경으로 대체했다](./e)

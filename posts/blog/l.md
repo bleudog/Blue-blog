@@ -2,7 +2,7 @@
 title: 'Linked List란?'
 posttitle: '연결 리스트(Linked List)란?'
 date: '2023-03-18 09:20:00'
-uid: '82'
+uid: '12'
 ---
 
 ## 연결 리스트(Linked List) 개념

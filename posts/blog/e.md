@@ -1,74 +1,74 @@
 ---
-title: '모니터를 처분하고 가상환경으로 대체했다'
-posttitle: '모니터를 처분하고 가상환경으로 대체했다'
-date: '2022-12-28 17:00:00'
-updated: '2023-02-27 20:00:00'
-uid: '33'
+title: 'unicode-range: 언어별 다른 폰트 설정하기'
+posttitle: 'unicode-range: 언어별 다른 폰트 설정하기'
+date: '2023-01-13 05:00:00'
+uid: '5'
 ---
 
-작년 2022년 11월, 아래의 [트윗](https://twitter.com/hmartapp/status/1444891624538996740?s=20)을 우연히 보게 되었다.
+팀 디자이너분이 영어와 일본어에 각기 다른 폰트 스타일을 적용한 디자인을 넘겨주었다.
 
-![hm vr tweet](/images/e/hm-vr-setup.webp)
+언어별로 페이지가 있는 거면 몰라도 같은 페이지, 같은 문장 안에 언어가 혼용되어 있으면 `font-family`를 다르게 줄 수 있나? 하는 의문이 들었지만 내가 모르는 거지 불가능 한게 아니라 생각해서 일단 찾아봤고, 역시나 방법은 있었다.
 
-곧 일본 생활을 접고 돌아갈 준비를 하던 시기라, 가지고 있는 두 대의 모니터[^a]며 온갖 것들이 짐처럼 느껴지던 시기였다. 그때, 노트북 한 대와 VR 기기 하나만 가지고 가상환경에서 개발하는 [𝒽𝓂](https://twitter.com/hmartapp) 님의 트윗은 매력적으로 다가왔다.
+## :lang 의사 클래스
 
-> VR 기기.... 저게 진짜 될까?
+첫 번째로 `:lang` 의사 클래스를 사용하는 방법이 있다.
 
-하지만 조심스러웠다. 나는 VR 기기를 가지고 있지 않기 때문에, 순간의 호기심으로 무턱대고 구입했다가는 돈 낭비만 하는 셈이 된다. 싼 가격도 아니고 말이다.
+```css
+body {
+    font-family: 'your font', sans-serif;
+}
+:lang(ja) {
+    font-family: 'Klee-Medium', 'Noto Sans JP';
+}
+```
 
-당장 궁금한 점은 "잘 보이나?" 였다.
+태그의 요소로 `lang='ja'`을 추가하면, `:lang(ja)`으로 해당 태그를 지정할 수 있게 된다.
 
-![hm vr tweet 1](/images/e/hm-vr-tweet-1.webp)
+하지만 위 방법을 사용할 시, 일본어가 나올 때마다 `<span lang="ja"></spean>`을 중간중간 추가해야 하는데 너무 비효율적이다.
 
-해결됐다.
+다른 방법으로는 unicode-range를 사용하는 방법이 있다.
 
----
+## unicode-range
 
-그다음 궁금한 점은 눈의 피로도였다.
+MDN은 `unicode-range`를 아래와 같이 설명하고 있다.
 
-VR 기기를 착용한 상태로 몇 시간 동안 계속 개발을 하면 눈의 무리가 가지 않을까 걱정됐다. 나는 라식을 한 지 채 1년이 지나지 않았기 때문에 특히나 이 부분에 대해서는 더 예민했다.
+> The unicode-range CSS descriptor sets the specific range of characters to be used from a font defined by @font-face and made available for use on the current page. If the page doesn't use any character in this range, the font is not downloaded; if it uses at least one, the whole font is downloaded.
 
-![hm vr tweet 2](/images/e/hm-vr-tweet-2.webp)
+`@font-face`로 폰트를 정의할 때, 해당 폰트를 적용할 문자의 범위를 설정할 수 있다. 범위안에 문자를 찾을 수 없으면 해당 폰트는 로드되지 않지만, 페이지 내 단 하나의 문자라도 범위안에 속하면 폰트 전체가 로드된다고 한다.
 
-𝒽𝓂님은 포모도로 타이머를 사용해서 집중할 때만 VR 기기를 착용하고, 쉴 때는 확실히 휴식을 취하는 방식으로 눈의 피로를 더는 것 같다.
+[Unicode Character Ranges](https://jrgraphix.net/r/Unicode/)에 의하면 일본어의 카나(かな)와 한자(漢字)의 범위는 아래와 같다.
 
-이 트윗을 보고 '나는 바보인가?'' 싶었다. 왜냐면 나도 이미 [Flow](https://flowapp.info/)라는 포모도로 타이머를 사용하며 30분마다 5분의 휴식을 취하고 있기 때문이다. '휴식할 때 VR 기기를 벗으면 되지'하는 생각을 왜 못했는가 싶다.
+```text
+3040 — 309F  	Hiragana
+30A0 — 30FF  	Katakana
+4E00 — 9FFF  	CJK Unified Ideographs
+```
 
-목에 관한 얘기도 하고 있는데, 찾아보니 VR 기기의 무게를 다들 부담스러워하는 것 같다.
+이 범위를 `@font-face`에 지정해주면 된다.
 
-![vr reddit](/images/e/vr-reddit.webp)
+```css
+h1 {
+    font-family: 'Klee-Medium', sans-serif;
+}
 
-하지만 중간마다 눈의 피로를 덜면서 나의 목 또한 휴식을 취할 수 있으니 일거양득이다. 𝒽𝓂님처럼 평소에 목 받침이 있는 의자를 사용해도 되고 말이다.
+// for Japanese
+@font-face {
+    font-family: 'Klee-Medium';
+    src: local('Klee-Medium');
+    unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FFF;
+}
+```
 
----
+만약 `h1` 태그안에 위에서 지정한 범위의 문자가 포함되어 있다면 `Klee-Medium` 폰트[^a]를 적용하게 된다.
 
-궁금한 점은 전부 해소됐고, 마지막으로 해당 트윗의 당사자인 𝒽𝓂님에 최근 근황을 알고 싶었다. 트윗이 올라오고 1년이 지났는데, 혹시 불편한 점이 생겨서 사용하지 않고 있을 수도 있지 않은가.
+```html
+<h1>This is a paragraph in English.</h1>
+<h1>これは日本語のパラグラフです。</h1>
+<h1>Hello おはよう</h1>
+```
 
-DM을 했고, 바로 다음 날 연락을 주셨다.
-![hm vr dm](/images/e/hm-vr-dm.webp)
+일본어에만 해당 폰트가 적용된 것을 확인할 수 있다.
 
-주변 환경이 제대로 보이지 않는 단점이 있지만 계속 사용하고 계신다고 한다. 나야 VR 기기를 집 외의 장소에서 사용할 생각은 없으니 그 정도는 문제없다고 느꼈다.
+## ![unicode-range example](/images/e/unicode-range.webp)
 
----
-
-가상환경에서의 코딩, 충분히 시도해볼 만하다고 느꼈고 바로 [Meta Quest 2](https://www.meta.com/jp/en/quest/products/quest-2/)를 구매했다.
-
-![meta quest](/images/e/meta-quest.webp)
-
-본 트윗 타래에도 언급된 [_Immersed VR_](https://immersed.com/) 을 바로 설치하고 VR 기기와 연결했다.
-
-나에게 맞는 화면의 크기, 각도, 등등 설정하는 데 시간이 좀 걸렸지만, 아래처럼 세팅을 완료했다.
-
-![immersed gif](/images/e/immersed.gif)
-
-생각한 것 이상으로 글씨도 잘 보이고, 별다른 설정 없이 포켓 와이파이[^b]를 연결해서 무선으로 쓰고 있는데 버벅거리는 현상도 없다.
-
-왜 진작에 이렇게 안 했을까 후회할 정도로 만족하며 잘 쓰고 있다.
-계속해서 사용해봐야 알겠지만, 지금대로라면 귀국하고 나서도 모니터를 추가로 구매하는 일은 없을 것 같다.
-
----
-
-참고로 내가 찍은 위 영상을 보면서 느끼는 거지만, VR을 영상 혹은 사진으로 보는 것과 실제로 저 안에 들어가서 체감하는 건 전혀 다르다. 흥미가 있다면 나처럼 바로 구매하지 말고, 주변 VR 기기를 가지고 있는 사람에게 빌리거나 VR 체험이 가능한 곳에 가서 먼저 경험해보고 결정하길 바란다.
-
-[^a]: [31.5" AOC Curved Gaming Monitor](https://www.amazon.co.jp/-/en/gp/product/B07KSNSFLB/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)와 [23.6" AOC Curved Gaming Monitor](https://www.amazon.co.jp/-/en/gp/product/B07KSDKWCC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)를 사용하고 있다.
-[^b]: 지금 사는 곳에 추가 공사를 하지 않으면 인터넷 선을 끌어올 수 없어서 포켓 와이파이를 쓰고있다.
+[^a]: macOS Sierra에서 처음부터 설치되어 있는 일본어 폰트 - https://wakufactory.jp/densho/font/osx_sierra.html

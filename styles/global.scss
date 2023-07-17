@@ -144,14 +144,12 @@ article {
         margin: 1.5rem 0;
     }
 
-    p {
-        a {
-            color: unset;
-            border-bottom: 1.5px solid #51a5ff;
+    a {
+        color: unset;
+        border-bottom: 2px solid #33a4ff;
 
-            &:hover {
-                text-decoration: none;
-            }
+        &:hover {
+            text-decoration: none;
         }
     }
 }
